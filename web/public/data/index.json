@@ -15,15 +15,15 @@
     "abstain": false,
     "goalpost_drift": 49.8,
     "confidence": "low",
-    "peer_percentile": 100.0
+    "peer_percentile": 50.0
   },
   {
     "company": "microsoft",
     "display_name": "Microsoft",
-    "overall_score": 65.8,
+    "overall_score": 64.1,
     "abstain": false,
-    "goalpost_drift": null,
+    "goalpost_drift": 57.6,
     "confidence": "low",
-    "peer_percentile": null
+    "peer_percentile": 100.0
   }
 ]

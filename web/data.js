@@ -1,7 +1,7 @@
 window.__GREENWASH_DATA__ = {
  "amazon": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-19T21:21:58+00:00",
+  "generated_at": "2026-09-19T23:19:51+00:00",
   "summary": {
    "company": "amazon",
    "display_name": "Amazon",
@@ -14912,14 +14912,14 @@ window.__GREENWASH_DATA__ = {
  },
  "hm": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-19T21:21:58+00:00",
+  "generated_at": "2026-09-19T23:19:51+00:00",
   "summary": {
    "company": "hm",
    "display_name": "H&M Group",
    "overall_score": 46.3,
    "confidence": "low",
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
-   "peer_percentile": 100.0,
+   "peer_percentile": 50.0,
    "abstain": false,
    "abstain_reasons": [],
    "headline": "15 of 18 republished figures were restated between reports (median move 9.21%, max 19.48%). Language: 5 substantive softening events across reports (8 recycled boilerplate excluded).",
@@ -29080,36 +29080,38 @@ window.__GREENWASH_DATA__ = {
  },
  "microsoft": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-19T21:21:58+00:00",
+  "generated_at": "2026-09-19T23:19:51+00:00",
   "summary": {
    "company": "microsoft",
    "display_name": "Microsoft",
-   "overall_score": 65.8,
+   "overall_score": 64.1,
    "confidence": "low",
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
-   "peer_percentile": null,
+   "peer_percentile": 100.0,
    "abstain": false,
    "abstain_reasons": [
-    "say_do_gap: not measurable from available data",
-    "goalpost_drift: not measurable from available data"
+    "say_do_gap: not measurable from available data"
    ],
-   "headline": "No metric-year was published by more than one report, so restatement behaviour cannot be assessed from the available documents. Language: 24 substantive softening events across reports (25 recycled boilerplate excluded).",
+   "headline": "2 of 2 republished figures were restated between reports (median move 6.67%, max 11.19%). Language: 24 substantive softening events across reports (25 recycled boilerplate excluded).",
    "sub_scores": {
     "vagueness": 84.2,
     "unsupported_claims": 95.7,
     "sins_severity": 30.8,
     "say_do_gap": null,
-    "goalpost_drift": null
+    "goalpost_drift": 57.6
    }
   },
   "coverage": {
-   "n_documents": 2,
+   "n_documents": 3,
    "n_pages": 0,
    "n_chunks": 0,
    "n_claims": 220,
    "n_evidence_verified": 0,
-   "n_did_rows": 18,
+   "n_did_rows": 23,
    "did_years": [
+    2017,
+    2018,
+    2019,
     2020,
     2021,
     2022,
@@ -29144,6 +29146,30 @@ window.__GREENWASH_DATA__ = {
   },
   "timeline": [
    {
+    "year": 2017,
+    "said_claim_ids": [],
+    "did_points": [],
+    "drift_ids": [],
+    "score_as_of": null,
+    "score_hindsight": null
+   },
+   {
+    "year": 2018,
+    "said_claim_ids": [],
+    "did_points": [],
+    "drift_ids": [],
+    "score_as_of": null,
+    "score_hindsight": null
+   },
+   {
+    "year": 2019,
+    "said_claim_ids": [],
+    "did_points": [],
+    "drift_ids": [],
+    "score_as_of": null,
+    "score_hindsight": null
+   },
+   {
     "year": 2020,
     "said_claim_ids": [],
     "did_points": [
@@ -29157,9 +29183,11 @@ window.__GREENWASH_DATA__ = {
       "page": 30
      }
     ],
-    "drift_ids": [],
+    "drift_ids": [
+     "microsoft-drift-000"
+    ],
     "score_as_of": null,
-    "score_hindsight": null
+    "score_hindsight": 18.6
    },
    {
     "year": 2021,
@@ -29188,9 +29216,11 @@ window.__GREENWASH_DATA__ = {
       "page": 30
      }
     ],
-    "drift_ids": [],
+    "drift_ids": [
+     "microsoft-drift-001"
+    ],
     "score_as_of": null,
-    "score_hindsight": null
+    "score_hindsight": 3.6
    },
    {
     "year": 2022,
@@ -29389,7 +29419,7 @@ window.__GREENWASH_DATA__ = {
      }
     ],
     "drift_ids": [
-     "microsoft-drift-000"
+     "microsoft-drift-002"
     ],
     "score_as_of": 25.0,
     "score_hindsight": 25.0
@@ -29397,7 +29427,7 @@ window.__GREENWASH_DATA__ = {
   ],
   "year_scores": [
    {
-    "year": 2020,
+    "year": 2017,
     "sub_scores": {
      "vagueness": null,
      "unsupported_claims": null,
@@ -29409,12 +29439,68 @@ window.__GREENWASH_DATA__ = {
     "confidence": "low",
     "abstain": true,
     "abstain_reasons": [
-     "say_do_gap: not measurable from available data",
-     "goalpost_drift: not measurable from available data"
+     "say_do_gap: not measurable from available data"
     ],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
+   },
+   {
+    "year": 2018,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": null
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [
+     "say_do_gap: not measurable from available data"
+    ],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 0
+   },
+   {
+    "year": 2019,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": null
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [
+     "say_do_gap: not measurable from available data"
+    ],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 0
+   },
+   {
+    "year": 2020,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": 18.6
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [
+     "say_do_gap: not measurable from available data"
+    ],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 1
    },
    {
     "year": 2021,
@@ -29423,18 +29509,17 @@ window.__GREENWASH_DATA__ = {
      "unsupported_claims": null,
      "sins_severity": null,
      "say_do_gap": null,
-     "goalpost_drift": null
+     "goalpost_drift": 3.6
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
     "abstain_reasons": [
-     "say_do_gap: not measurable from available data",
-     "goalpost_drift: not measurable from available data"
+     "say_do_gap: not measurable from available data"
     ],
     "n_claims": 0,
     "n_verified_quotes": 0,
-    "n_drift_events": 0
+    "n_drift_events": 1
    },
    {
     "year": 2022,
@@ -29449,8 +29534,7 @@ window.__GREENWASH_DATA__ = {
     "confidence": "low",
     "abstain": true,
     "abstain_reasons": [
-     "say_do_gap: not measurable from available data",
-     "goalpost_drift: not measurable from available data"
+     "say_do_gap: not measurable from available data"
     ],
     "n_claims": 0,
     "n_verified_quotes": 0,
@@ -29469,8 +29553,7 @@ window.__GREENWASH_DATA__ = {
     "confidence": "low",
     "abstain": true,
     "abstain_reasons": [
-     "say_do_gap: not measurable from available data",
-     "goalpost_drift: not measurable from available data"
+     "say_do_gap: not measurable from available data"
     ],
     "n_claims": 0,
     "n_verified_quotes": 0,
@@ -29489,8 +29572,7 @@ window.__GREENWASH_DATA__ = {
     "confidence": "low",
     "abstain": true,
     "abstain_reasons": [
-     "say_do_gap: not measurable from available data",
-     "goalpost_drift: not measurable from available data"
+     "say_do_gap: not measurable from available data"
     ],
     "n_claims": 0,
     "n_verified_quotes": 0,
@@ -29509,8 +29591,7 @@ window.__GREENWASH_DATA__ = {
     "confidence": "low",
     "abstain": true,
     "abstain_reasons": [
-     "say_do_gap: not measurable from available data",
-     "goalpost_drift: not measurable from available data"
+     "say_do_gap: not measurable from available data"
     ],
     "n_claims": 0,
     "n_verified_quotes": 0,
@@ -42111,6 +42192,34 @@ window.__GREENWASH_DATA__ = {
   "drift_events": [
    {
     "drift_id": "microsoft-drift-000",
+    "year": 2020,
+    "type": "metric_restated",
+    "canonical_metric": "total_emissions",
+    "old": "11585000",
+    "new": "12881000",
+    "magnitude_pct": 11.19,
+    "description": "total_emissions for 2020 was published as 11585000 metric tons CO2e in 2021_sustainability_report.pdf, then restated to 12881000 metric tons CO2e in 2025_sustainability_report.pdf (+11.2%)",
+    "evidence_chunk_ids": [],
+    "old_source": "microsoft/2021_sustainability_report.pdf",
+    "new_source": "microsoft/2025_sustainability_report.pdf",
+    "page": 30
+   },
+   {
+    "drift_id": "microsoft-drift-001",
+    "year": 2021,
+    "type": "metric_restated",
+    "canonical_metric": "total_emissions",
+    "old": "14073000",
+    "new": "13772000",
+    "magnitude_pct": -2.14,
+    "description": "total_emissions for 2021 was published as 14073000 metric tons CO2e in 2021_sustainability_report.pdf, then restated to 13772000 metric tons CO2e in 2025_sustainability_report.pdf (-2.1%)",
+    "evidence_chunk_ids": [],
+    "old_source": "microsoft/2021_sustainability_report.pdf",
+    "new_source": "microsoft/2025_sustainability_report.pdf",
+    "page": 30
+   },
+   {
+    "drift_id": "microsoft-drift-002",
     "year": 2025,
     "type": "metric_redefined",
     "canonical_metric": "carbon_removal_contributed",
@@ -42811,6 +42920,51 @@ window.__GREENWASH_DATA__ = {
    }
   ],
   "did_points": [
+   {
+    "year": 2017,
+    "metric": "total_emissions",
+    "value": 10909000.0,
+    "unit": "metric tons CO2e",
+    "scope": "Scopes 1+2+3 market-based; Table 1",
+    "source": "microsoft/2021_sustainability_report.pdf",
+    "page": 98
+   },
+   {
+    "year": 2018,
+    "metric": "total_emissions",
+    "value": 12027000.0,
+    "unit": "metric tons CO2e",
+    "scope": "Scopes 1+2+3 market-based; Table 1",
+    "source": "microsoft/2021_sustainability_report.pdf",
+    "page": 98
+   },
+   {
+    "year": 2019,
+    "metric": "total_emissions",
+    "value": 11859000.0,
+    "unit": "metric tons CO2e",
+    "scope": "Scopes 1+2+3 market-based; Table 1",
+    "source": "microsoft/2021_sustainability_report.pdf",
+    "page": 98
+   },
+   {
+    "year": 2020,
+    "metric": "total_emissions",
+    "value": 11585000.0,
+    "unit": "metric tons CO2e",
+    "scope": "Scopes 1+2+3 market-based; Table 1",
+    "source": "microsoft/2021_sustainability_report.pdf",
+    "page": 98
+   },
+   {
+    "year": 2021,
+    "metric": "total_emissions",
+    "value": 14073000.0,
+    "unit": "metric tons CO2e",
+    "scope": "Scopes 1+2+3 market-based; Table 1",
+    "source": "microsoft/2021_sustainability_report.pdf",
+    "page": 98
+   },
    {
     "year": 2020,
     "metric": "total_emissions",
@@ -43607,7 +43761,7 @@ window.__GREENWASH_DATA__ = {
      },
      {
       "report_year": 2025,
-      "numeric_restatements": 1,
+      "numeric_restatements": 3,
       "language_softenings": 2,
       "both": true
      }

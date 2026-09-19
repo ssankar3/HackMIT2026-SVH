@@ -1,4 +1,9 @@
 year,metric,value,unit,scope,source,page
+2017,total_emissions,10909000,metric tons CO2e,Scopes 1+2+3 market-based; Table 1,microsoft/2021_sustainability_report.pdf,98
+2018,total_emissions,12027000,metric tons CO2e,Scopes 1+2+3 market-based; Table 1,microsoft/2021_sustainability_report.pdf,98
+2019,total_emissions,11859000,metric tons CO2e,Scopes 1+2+3 market-based; Table 1,microsoft/2021_sustainability_report.pdf,98
+2020,total_emissions,11585000,metric tons CO2e,Scopes 1+2+3 market-based; Table 1,microsoft/2021_sustainability_report.pdf,98
+2021,total_emissions,14073000,metric tons CO2e,Scopes 1+2+3 market-based; Table 1,microsoft/2021_sustainability_report.pdf,98
 2020,total_emissions,12881000,metric tons CO2e,FY20 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
 2021,total_emissions,13772000,metric tons CO2e,FY21 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
 2022,total_emissions,13635000,metric tons CO2e,FY22 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30

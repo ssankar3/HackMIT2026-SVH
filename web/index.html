@@ -3,153 +3,247 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Greenwash Time Machine</title>
+<title>Restated</title>
 <style>
   :root{
-    --bg:#0b0e13; --panel:#141922; --panel2:#1b2130; --line:#26303f;
-    --tx:#e7ecf3; --tx2:#9aa7ba; --tx3:#6b7a90;
-    --teal:#2dd4bf; --amber:#f5b342; --red:#f2604c; --violet:#8b7cf6; --blue:#5aa9f7;
+    --bg:#f3eee4; --paper:#fffdf7; --paper2:#f7f1e6; --ink:#1c1814;
+    --ink2:#5a5348; --ink3:#8a8174; --rule:#d9cfc0; --rule2:#c9bba8;
+    --leaf:#2a6b4f; --leaf2:#3d8b68; --rust:#b4412e; --amber:#c4841d;
+    --violet:#6b4c9a; --blue:#2f6f9a; --hl:#f3e0a8;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
     --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--tx);
-    font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+  html,body{margin:0;overflow-x:hidden}
+  body{background:
+      radial-gradient(1200px 500px at 10% -10%, #efe6d4, transparent 55%),
+      radial-gradient(900px 400px at 110% 0%, #e8dcc8, transparent 50%),
+      var(--bg);
+    color:var(--ink);
+    font:16px/1.55 var(--sans);
     -webkit-font-smoothing:antialiased}
   a{color:var(--blue)}
-  .wrap{max-width:1480px;margin:0 auto;padding:0 16px 48px}
+  .wrap{max-width:1180px;margin:0 auto;padding:22px 22px 64px}
 
-  header{border-bottom:1px solid var(--line);background:rgba(11,14,19,.92);
-    backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
-  .hrow{max-width:1480px;margin:0 auto;padding:12px 16px;display:flex;gap:16px;
-    align-items:center;flex-wrap:wrap}
-  .brand{font-weight:650;letter-spacing:-.01em;font-size:15px;white-space:nowrap}
-  .brand span{color:var(--tx3);font-weight:400}
+  header{border-bottom:1px solid var(--rule);background:rgba(243,238,228,.92);
+    backdrop-filter:blur(10px);position:sticky;top:0;z-index:20}
+  .mast{max-width:1180px;margin:0 auto;padding:14px 22px 12px;
+    display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap}
+  .brand{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1}
+  .brand small{display:block;font-family:var(--sans);font-size:10px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin-bottom:4px}
   .pills{display:flex;gap:6px;flex-wrap:wrap}
-  .pill{background:var(--panel);border:1px solid var(--line);color:var(--tx2);
-    padding:6px 13px;border-radius:999px;cursor:pointer;font-size:13px;
-    transition:.15s;font-weight:500}
-  .pill:hover{border-color:#3a4759;color:var(--tx)}
-  .pill.on{background:var(--tx);color:#0b0e13;border-color:var(--tx);font-weight:600}
-  .paste{margin-left:auto;display:flex;gap:6px;align-items:center}
-  .paste input{background:var(--panel);border:1px solid var(--line);border-radius:7px;
-    padding:7px 11px;color:var(--tx2);width:210px;font-size:13px}
-  .paste input:disabled{opacity:.45;cursor:not-allowed}
-  .tag{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--tx3);
-    border:1px solid var(--line);padding:3px 7px;border-radius:5px}
+  .pill{background:transparent;border:1px solid var(--rule2);color:var(--ink2);
+    padding:6px 14px;border-radius:999px;cursor:pointer;font-size:13px;
+    transition:.18s;font-weight:550}
+  .pill:hover{border-color:var(--ink);color:var(--ink)}
+  .pill.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .tag{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);
+    border:1px solid var(--rule);padding:3px 7px;border-radius:5px}
+  .try-btn{margin-left:auto;background:var(--paper);border:1px solid var(--rule2);
+    color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer;
+    font:650 13px/1 var(--sans);transition:.18s}
+  .try-btn:hover,.try-btn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .try-layer{position:fixed;inset:0;z-index:40;background:rgba(28,24,20,.28);
+    opacity:0;visibility:hidden;pointer-events:none;overflow:hidden;
+    transition:opacity .2s,visibility .2s}
+  .try-layer.on{opacity:1;visibility:visible;pointer-events:auto}
+  .try-panel{position:absolute;top:0;right:0;bottom:0;width:min(460px,92vw);
+    background:var(--paper);border-left:1px solid var(--rule);
+    transform:translateX(100%);transition:transform .25s ease;
+    padding:22px 22px 36px;overflow-y:auto;
+    box-shadow:-16px 0 40px rgba(28,24,20,.12)}
+  .try-layer.on .try-panel{transform:none}
+  .try-panel h2{margin:0;font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:-.02em}
+  .try-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+  .try-close{background:none;border:1px solid var(--rule);color:var(--ink2);
+    width:32px;height:32px;border-radius:999px;cursor:pointer;font:650 16px/1 var(--sans)}
+  .try-close:hover{border-color:var(--ink);color:var(--ink)}
+  .try-panel textarea{width:100%;min-height:220px;resize:vertical;background:var(--bg);
+    border:1px solid var(--rule2);border-radius:12px;padding:16px 18px;color:var(--ink);
+    font:18px/1.5 var(--serif);display:block}
+  .try-panel textarea:focus{outline:2px solid rgba(42,107,79,.25);border-color:var(--leaf)}
+  .try-out{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
 
-  .grid{display:grid;grid-template-columns:minmax(0,1.62fr) minmax(0,1fr);gap:16px;margin-top:16px}
-  @media(max-width:1080px){.grid{grid-template-columns:1fr}}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:16px}
-  .card h2{margin:0 0 3px;font-size:13px;font-weight:650;letter-spacing:.02em}
-  .sub{color:var(--tx3);font-size:12px;margin:0 0 14px}
+  .card{background:var(--paper);border:1px solid var(--rule);border-radius:16px;
+    padding:22px 24px;margin-bottom:18px;box-shadow:0 1px 0 rgba(28,24,20,.03)}
+  .card h2{margin:0 0 4px;font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:-.02em}
+  .kicker{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--leaf);margin:0 0 6px}
+  .sub{color:var(--ink3);font-size:13px;margin:0 0 14px}
 
-  .banner{border-radius:9px;padding:12px 14px;font-size:13px;line-height:1.5;
-    display:flex;gap:10px;align-items:flex-start;margin-bottom:16px}
-  .banner.warn{background:rgba(245,179,66,.09);border:1px solid rgba(245,179,66,.3)}
-  .banner.info{background:rgba(90,169,247,.08);border:1px solid rgba(90,169,247,.26)}
-  .banner b{color:var(--tx)}
-  .dot{width:7px;height:7px;border-radius:50%;flex:none;margin-top:6px}
+  .banner{border-radius:10px;padding:12px 14px;font-size:13.5px;line-height:1.5;
+    display:flex;gap:10px;align-items:flex-start;margin-bottom:14px}
+  .banner.warn{background:#f8ead3;border:1px solid #e6c98a}
+  .banner.info{background:#e7eef4;border:1px solid #c5d4e0}
+  .banner b{color:var(--ink)}
+  .dot{width:8px;height:8px;border-radius:50%;flex:none;margin-top:6px}
 
-  .scorewrap{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
-  .bignum{font:650 46px/1 var(--mono);letter-spacing:-.02em}
-  .scorelab{font-size:12px;color:var(--tx3);margin-top:5px}
-  .abst{font:650 25px/1 var(--mono);color:var(--tx3);letter-spacing:.02em}
+  .scorewrap{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:8px}
+  .scorelab{font-size:12px;color:var(--ink3);margin-top:6px;text-align:center}
+  .abst{font:650 22px/1 var(--serif);color:var(--ink3)}
 
-  table{width:100%;border-collapse:collapse;font-size:12.5px}
-  th{text-align:left;color:var(--tx3);font-weight:600;font-size:10.5px;
-    text-transform:uppercase;letter-spacing:.07em;padding:7px 9px;border-bottom:1px solid var(--line)}
-  td{padding:9px;border-bottom:1px solid rgba(38,48,63,.5);vertical-align:top}
-  tbody tr:hover{background:rgba(255,255,255,.022)}
-  .mono{font-family:var(--mono);font-size:12px}
-  .src{color:var(--tx3);font-size:11px;font-family:var(--mono)}
-  .up{color:var(--red)} .down{color:var(--teal)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{text-align:left;color:var(--ink3);font-weight:700;font-size:10.5px;
+    text-transform:uppercase;letter-spacing:.08em;padding:8px 8px;border-bottom:1px solid var(--rule)}
+  td{padding:10px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+  tbody tr:hover{background:rgba(28,24,20,.025)}
+  .mono{font-family:var(--mono);font-size:12.5px}
+  .src{color:var(--ink3);font-size:11px;font-family:var(--mono)}
+  .up{color:var(--rust)} .down{color:var(--leaf)}
 
-  .bar{height:7px;background:var(--panel2);border-radius:4px;overflow:hidden}
-  .bar>i{display:block;height:100%;border-radius:4px}
-  .na{height:7px;border-radius:4px;background:repeating-linear-gradient(45deg,
-    #212838,#212838 5px,#1a202c 5px,#1a202c 10px)}
-  .srow{display:grid;grid-template-columns:150px 1fr 46px;gap:11px;align-items:center;
-    padding:8px 0;border-bottom:1px solid rgba(38,48,63,.4)}
+  .bar{height:8px;background:var(--paper2);border-radius:99px;overflow:hidden;border:1px solid var(--rule)}
+  .bar>i{display:block;height:100%;border-radius:99px}
+  .na{height:8px;border-radius:99px;background:repeating-linear-gradient(45deg,
+    #eee6d6,#eee6d6 5px,#e4dccb 5px,#e4dccb 10px)}
+  .srow{display:grid;grid-template-columns:160px 1fr 48px;gap:12px;align-items:center;
+    padding:10px 0;border-bottom:1px solid var(--rule)}
   .srow:last-child{border-bottom:0}
-  .sname{font-size:12.5px}
-  .sval{text-align:right;font-family:var(--mono);font-size:12.5px}
-  .why{color:var(--tx3);font-size:11px;margin-top:3px;line-height:1.4}
+  .sname{font-size:13.5px;font-weight:600}
+  .sval{text-align:right;font-family:var(--mono);font-size:13px}
+  .why{color:var(--ink3);font-size:12px;margin-top:3px;line-height:1.45}
 
-  .tabs{display:flex;gap:3px;border-bottom:1px solid var(--line);margin-bottom:16px;flex-wrap:wrap}
-  .tab{padding:9px 13px;cursor:pointer;color:var(--tx3);font-size:13px;
-    border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500}
-  .tab:hover{color:var(--tx2)}
-  .tab.on{color:var(--tx);border-bottom-color:var(--teal)}
+  .tabs{display:flex;gap:4px;border-bottom:1px solid var(--rule);margin-bottom:16px;flex-wrap:wrap}
+  .tab{padding:10px 14px;cursor:pointer;color:var(--ink3);font-size:13.5px;
+    border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:600}
+  .tab:hover{color:var(--ink)}
+  .tab.on{color:var(--ink);border-bottom-color:var(--leaf)}
 
-  .slider{width:100%;accent-color:var(--teal);margin:6px 0}
-  .yrs{display:flex;justify-content:space-between;font-family:var(--mono);
-    font-size:10.5px;color:var(--tx3)}
-  .toggle{display:inline-flex;background:var(--panel2);border-radius:7px;padding:2px;gap:2px}
-  .toggle button{background:none;border:0;color:var(--tx3);padding:5px 11px;
-    border-radius:5px;cursor:pointer;font-size:11.5px;font-family:inherit;font-weight:500}
-  .toggle button.on{background:var(--tx);color:#0b0e13;font-weight:600}
+  .toggle{display:inline-flex;background:var(--paper2);border:1px solid var(--rule);
+    border-radius:999px;padding:3px;gap:2px}
+  .toggle button{background:none;border:0;color:var(--ink3);padding:8px 16px;
+    border-radius:999px;cursor:pointer;font-size:13px;font-family:inherit;font-weight:650}
+  .toggle button.on{background:var(--ink);color:var(--bg)}
 
-  .lane{border-left:2px solid var(--line);padding-left:13px;margin:9px 0 14px}
-  .lane h4{margin:0 0 7px;font-size:10.5px;text-transform:uppercase;
-    letter-spacing:.08em;color:var(--tx3);font-weight:600}
-  .evt{background:var(--panel2);border-left:2px solid var(--amber);border-radius:0 7px 7px 0;
-    padding:8px 11px;margin-bottom:6px;font-size:12px;line-height:1.45}
-  .evt .k{font-family:var(--mono);font-size:10.5px;color:var(--amber);
-    text-transform:uppercase;letter-spacing:.05em}
-  .empty{color:var(--tx3);font-size:12.5px;font-style:italic;padding:10px 0}
-  select{background:var(--panel2);border:1px solid var(--line);color:var(--tx);
-    border-radius:7px;padding:6px 9px;font-size:12px;font-family:inherit;max-width:100%}
-  code{font-family:var(--mono);font-size:11.5px;background:var(--panel2);
-    padding:1px 5px;border-radius:4px;color:var(--tx2)}
-  .kv{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:12.5px}
-  .kv dt{color:var(--tx3)} .kv dd{margin:0;font-family:var(--mono)}
-  ul.tight{margin:7px 0 0;padding-left:17px;font-size:12.5px;line-height:1.65;color:var(--tx2)}
-  mark{color:inherit;border-radius:2px;padding:0 1px}
-  mark.hl-vague{background:rgba(242,96,76,.28)}
-  mark.hl-hedge{background:rgba(245,179,66,.32)}
-  mark.hl-verify{background:rgba(45,212,191,.28)}
-  mark.hl-positive{background:rgba(139,124,246,.28)}
-  mark.hl-qty,mark.hl-deadline,mark.hl-baseline{background:rgba(90,169,247,.24)}
-  .hl-legend{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--tx3);margin:6px 0 12px}
-  .claimcard{background:var(--panel2);border-radius:8px;padding:11px 13px;margin:0 0 10px}
-  .claimcard .meta{font-size:11px;color:var(--tx3);font-family:var(--mono);margin-bottom:6px}
-  .sinchip{display:inline-block;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;
-    border:1px solid rgba(242,96,76,.4);color:var(--red);padding:2px 6px;border-radius:4px;margin:6px 4px 0 0}
-  .paste-panel{display:none;border-bottom:1px solid var(--line);background:var(--panel);padding:12px 16px}
+  .empty{color:var(--ink3);font-size:13.5px;font-style:italic;padding:10px 0}
+  select{background:var(--paper);border:1px solid var(--rule2);color:var(--ink);
+    border-radius:8px;padding:8px 10px;font-size:13px;font-family:inherit;max-width:100%}
+  code{font-family:var(--mono);font-size:12px;background:var(--paper2);
+    padding:1px 5px;border-radius:4px;color:var(--ink2)}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:13.5px}
+  .kv dt{color:var(--ink3)} .kv dd{margin:0;font-family:var(--mono)}
+  ul.tight{margin:7px 0 0;padding-left:18px;font-size:13.5px;line-height:1.7;color:var(--ink2)}
+
+  mark{color:inherit;border-radius:2px;padding:0 2px}
+  mark.hl-vague{background:#f4c7bf}
+  mark.hl-hedge{background:#f3e0a8}
+  mark.hl-verify{background:#c9e4d4}
+  mark.hl-positive{background:#ddd0f0}
+  mark.hl-qty,mark.hl-deadline,mark.hl-baseline{background:#cfe0ef}
+  .hl-legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--ink3);margin:6px 0 14px}
+  .claimcard{background:var(--paper2);border:1px solid var(--rule);border-radius:12px;
+    padding:14px 16px;margin:0 0 12px}
+  .claimcard .meta{font-size:11px;color:var(--ink3);font-family:var(--mono);margin-bottom:8px}
+  .sinchip{display:inline-block;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+    border:1px solid #e0b2aa;color:var(--rust);background:#f8e8e4;padding:2px 7px;
+    border-radius:999px;margin:8px 4px 0 0}
+  .paste-panel{display:none}
   .paste-panel.on{display:block}
-  .paste input:disabled{opacity:.45;cursor:not-allowed}
+
+  /* ---- magazine pieces ---- */
+  .lead{display:grid;grid-template-columns:minmax(0,1.4fr) auto;gap:28px;align-items:center}
+  @media(max-width:860px){.lead{grid-template-columns:1fr}}
+  .display{font-family:var(--serif);font-size:clamp(36px,5vw,56px);line-height:.95;
+    letter-spacing:-.03em;margin:0 0 10px;font-weight:700}
+  .deck{font-size:17px;line-height:1.45;color:var(--ink2);margin:0;max-width:46rem}
+
+  .machine{position:relative;overflow:hidden}
+  .machine:before{content:"";position:absolute;inset:auto -8% -40% auto;width:280px;height:280px;
+    background:radial-gradient(circle,rgba(42,107,79,.08),transparent 70%);pointer-events:none}
+  .mhead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+  .year-rail{display:flex;align-items:center;gap:0;margin:18px 0 8px;overflow-x:auto;padding:4px 0}
+  .year-pill{appearance:none;border:1px solid var(--rule2);background:var(--paper);
+    color:var(--ink2);font:650 14px/1 var(--serif);padding:10px 16px;cursor:pointer;
+    border-radius:999px;transition:.2s;position:relative;z-index:1}
+  .year-pill:hover{border-color:var(--ink);color:var(--ink)}
+  .year-pill.on{background:var(--leaf);border-color:var(--leaf);color:#f4efe6;transform:translateY(-1px)}
+  .year-join{height:2px;flex:1;min-width:18px;background:var(--rule2);margin:0 4px}
+  .mode-cap{font-size:14px;color:var(--ink2);margin:10px 0 0;font-style:italic;font-family:var(--serif)}
+
+  .mspread{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(220px,0.65fr);gap:22px;margin-top:8px}
+  @media(max-width:960px){
+    .mspread{grid-template-columns:1fr}
+    .mspread>.gauge-col{flex-direction:row;gap:18px;text-align:left;justify-content:flex-start;
+      padding:12px 18px}
+    .mspread>.gauge-col .scorelab,.mspread>.gauge-col .why{text-align:left}
+  }
+  .chartbox{background:linear-gradient(#fffdf7,#f7f1e6);border:1px solid var(--rule);
+    border-radius:14px;padding:14px 12px 10px}
+  .gauge-col{display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:8px 4px}
+  .gnum{font-family:var(--serif);font-size:34px;font-weight:700;line-height:1;margin-top:-8px}
+
+  .saiddid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+  @media(max-width:800px){.saiddid{grid-template-columns:1fr}}
+  .pull{border-left:3px solid var(--leaf);padding:2px 0 2px 14px}
+  .pull h3{margin:0 0 6px;font-family:var(--serif);font-size:18px}
+  .claim-mini{font-size:14px;line-height:1.5;margin:0 0 10px;color:var(--ink)}
+
+  .evt{background:var(--paper2);border:1px solid var(--rule);border-left:3px solid var(--amber);
+    border-radius:0 12px 12px 0;padding:11px 13px;margin-bottom:8px;font-size:13px;line-height:1.45;
+    animation:rise .45s ease both}
+  .evt .k{font-family:var(--mono);font-size:10.5px;color:var(--amber);
+    text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:3px}
+  .evt:nth-child(2){animation-delay:.06s}
+  .evt:nth-child(3){animation-delay:.12s}
+  .evt:nth-child(4){animation-delay:.18s}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  .path-draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw .9s ease forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .dot-pop{transform-origin:center;animation:pop .4s ease both}
+  @keyframes pop{from{opacity:0;r:0}to{opacity:1}}
+
+  .ico{width:18px;height:18px;vertical-align:-3px;margin-right:6px}
+  .rule-orn{display:flex;align-items:center;gap:10px;color:var(--ink3);font-size:11px;
+    letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin:6px 0 16px}
+  .rule-orn:before,.rule-orn:after{content:"";flex:1;height:1px;background:var(--rule2)}
 </style>
 </head>
 <body>
 <header>
-  <div class="hrow">
-    <div class="brand">Greenwash Time Machine <span>· disclosure-integrity signal</span></div>
+  <div class="mast">
+    <div class="brand">Restated</div>
     <div class="pills" id="pills"></div>
-    <div class="paste">
-      <label for="pasteBox" class="tag" style="border:0;padding:0">Claim</label>
-      <input id="pasteBox" placeholder="Paste a claim…" aria-label="Paste a claim to analyse"
-        oninput="onPaste(this.value)" />
-      <span class="tag" id="pasteTag">live</span>
-    </div>
+    <button class="try-btn" id="tryBtn" type="button" onclick="openTry()">Try a claim</button>
   </div>
 </header>
-<div class="paste-panel" id="pastePanel"></div>
+
+<div class="try-layer" id="tryLayer" onclick="if(event.target===this) closeTry()">
+  <aside class="try-panel" id="tryDrawer" aria-hidden="true" aria-labelledby="tryTitle">
+    <div class="try-head">
+      <div>
+        <p class="kicker" id="tryTitle">Try a claim</p>
+        <h2>Paste a sentence</h2>
+      </div>
+      <button class="try-close" type="button" onclick="closeTry()" aria-label="Close">×</button>
+    </div>
+    <textarea id="pasteBox" placeholder="Paste a sentence from a sustainability report…"
+      aria-label="Paste a claim to analyse" oninput="onPaste(this.value)"></textarea>
+    <div id="pastePanel"></div>
+  </aside>
+</div>
 
 <div class="wrap">
   <div id="loaderr"></div>
-  <div class="grid">
-    <div id="main"></div>
-    <div id="side"></div>
-  </div>
+  <div id="machine"></div>
+  <div id="dossier"></div>
 </div>
 
 <script src="data.js" onerror="void 0"></script>
 <script>
+const ICO = {
+  leaf:`<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19c8-1 13-8 14-15-8 1-14 7-14 15z"/><path d="M5 19c3-6 8-10 14-12"/></svg>`,
+  clock:`<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>`,
+  quote:`<svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M7 17c-2 0-4-2-4-5 0-4 3-7 7-8l.5 2C8 7 7 9 7 11h3v6H7zm10 0c-2 0-4-2-4-5 0-4 3-7 7-8l.5 2c-2.5 1-3.5 3-3.5 5h3v6h-3z"/></svg>`,
+  warn:`<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4l9 16H3L12 4z"/><path d="M12 10v5M12 17.5v.5"/></svg>`,
+};
+
 const F = {
-  // risk colour ramp: low risk teal -> high risk red
-  col(v){ if(v==null) return 'var(--tx3)';
-    if(v<20) return 'var(--teal)'; if(v<40) return '#8fd14f';
-    if(v<60) return 'var(--amber)'; return 'var(--red)'; },
+  col(v){ if(v==null) return 'var(--ink3)';
+    if(v<20) return 'var(--leaf)'; if(v<40) return 'var(--leaf2)';
+    if(v<60) return 'var(--amber)'; return 'var(--rust)'; },
   num(v,d){ return v==null?'—':Number(v).toLocaleString(undefined,
     {minimumFractionDigits:d==null?0:d,maximumFractionDigits:d==null?2:d}); },
   esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>(
@@ -210,39 +304,78 @@ function analyzeClaim(text){
     baseline: baseline&&baseline[1], scope, verified, sins, spans, n};
 }
 
+function setTry(open){
+  const layer = document.getElementById('tryLayer');
+  const drawer = document.getElementById('tryDrawer');
+  layer.classList.toggle('on', open);
+  document.getElementById('tryBtn').classList.toggle('on', open);
+  drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+  document.body.style.overflowY = open ? 'hidden' : '';
+  if(open) setTimeout(()=>document.getElementById('pasteBox').focus(), 280);
+}
+function openTry(){ setTry(true); }
+function closeTry(){ setTry(false); }
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeTry(); });
+
 function onPaste(v){
   const panel = document.getElementById('pastePanel');
-  const tag = document.getElementById('pasteTag');
-  if(!v || v.trim().length<8){ panel.className='paste-panel'; panel.innerHTML=''; tag.textContent='live'; return; }
+  if(!v || v.trim().length<8){ panel.className='paste-panel'; panel.innerHTML=''; return; }
   if(!lex().vague){ panel.className='paste-panel on';
-    panel.innerHTML='<div class="wrap" style="padding:0">Lexicons not loaded — run <code>make score</code>.</div>';
+    panel.innerHTML='<p class="empty">Lexicons not loaded — open from the web/ folder after <code>make score</code>.</p>';
     return; }
   const a = analyzeClaim(v.trim());
-  tag.textContent = 'spec ' + a.spec.toFixed(2);
   panel.className='paste-panel on';
-  panel.innerHTML = `<div class="wrap" style="padding:0;max-width:1480px;margin:0 auto">
-    <div style="font-size:13px;line-height:1.55">${F.paint(a.text, a.spans)}</div>
+  panel.innerHTML = `<div class="try-out">
+    <div style="font-size:18px;line-height:1.5;font-family:var(--serif)">${F.paint(a.text, a.spans)}</div>
     <div class="hl-legend">
-      <span>specificity <b style="color:${a.spec>=0.4?'var(--teal)':a.spec>=0.2?'var(--amber)':'var(--red)'}">${a.spec.toFixed(2)}</b></span>
+      <span>specificity <b style="color:${a.spec>=0.4?'var(--leaf)':a.spec>=0.2?'var(--amber)':'var(--rust)'}">${a.spec.toFixed(2)}</b></span>
       <span>qty ${a.qty?a.qty:'—'}</span>
       <span>deadline ${a.deadline||'—'}</span>
       <span>baseline ${a.baseline||'—'}</span>
-      <span>verified ${a.verified?'yes':'no'}</span>
       ${a.sins.map(s=>`<span class="sinchip">${F.esc(s.sin)}</span>`).join('')}
     </div>
-    <div class="why">Same rules as the corpus scorer — lexicon hits only, no model. Vague / hedge / promo words are highlighted.</div>
   </div>`;
 }
 
 const SUBS = [
-  ['goalpost_drift','Goalpost drift','restatements & metric redefinitions across reports'],
-  ['say_do_gap','Say-do gap','target glidepath vs actual trajectory'],
-  ['vagueness','Vagueness','vague / hedged / future-oriented language density'],
-  ['unsupported_claims','Unsupported claims','claims with no corroborating verified evidence'],
-  ['sins_severity','Seven Sins severity','TerraChoice sin tags weighted by severity'],
+  ['goalpost_drift','Restatements','same figure, two reports'],
+  ['say_do_gap','Say–do','target vs actual path'],
+  ['vagueness','Vagueness','vague / hedged wording'],
+  ['unsupported_claims','No proof','no verifier named'],
+  ['sins_severity','Flags','classic greenwash patterns'],
+];
+const TABS = [
+  ['evidence','The figures'],
+  ['language','The words'],
+  ['claims','The claims'],
+  ['investor','Compare'],
 ];
 
-let DATA={}, CO=null, YR=null, MODE='hindsight', TAB='evidence', METRIC=null;
+let DATA={}, CO=null, YR=null, TAB='evidence', METRIC=null;
+
+function shortDeck(s){
+  const h = (s.headline||'').split(/\s+Language:/)[0].trim();
+  return h || s.display_name;
+}
+function apiish(t){
+  return /anthropic|api[_ ]?key|claude|llm|stage5|stage7|verified evidence quotes/i.test(t||'');
+}
+
+function gauge(val, label){
+  const v = val==null ? null : Math.max(0, Math.min(100, val));
+  const r=42, c=2*Math.PI*r, dash = v==null ? 0 : (v/100)*c;
+  const col = F.col(v);
+  return `<div class="gauge-col">
+    <svg width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+      <circle cx="60" cy="60" r="${r}" fill="none" stroke="var(--rule)" stroke-width="8"/>
+      <circle cx="60" cy="60" r="${r}" fill="none" stroke="${col}" stroke-width="8"
+        stroke-linecap="round" transform="rotate(-90 60 60)"
+        stroke-dasharray="${dash} ${c}" style="transition:stroke-dasharray .6s ease"/>
+    </svg>
+    <div class="gnum" style="color:${col}">${v==null?'n/a':F.num(v,0)}</div>
+    <div class="scorelab">${label}</div>
+  </div>`;
+}
 
 async function boot(){
   if(window.__GREENWASH_DATA__){ DATA = window.__GREENWASH_DATA__; }
@@ -255,16 +388,16 @@ async function boot(){
     }catch(e){
       document.getElementById('loaderr').innerHTML =
         `<div class="banner warn" style="margin-top:16px"><span class="dot" style="background:var(--amber)"></span>
-         <div><b>No data loaded.</b> Run <code>make all</code> to generate it, then
-         <code>make demo</code> to serve this page.</div></div>`;
+         <div><b>No data loaded.</b> From the <code>web/</code> folder run
+         <code>python3 -m http.server 8000</code>.</div></div>`;
       return;
     }
   }
   const [hCo, hTab] = location.hash.replace('#','').split('/');
-  if(hTab) TAB = hTab;
+  if(hTab && TABS.some(([k])=>k===hTab)) TAB = hTab;
   select(DATA[hCo] ? hCo : Object.keys(DATA).sort()[0]);
   window.addEventListener('hashchange', ()=>{
-    const c = location.hash.replace('#','');
+    const c = location.hash.replace('#','').split('/')[0];
     if(DATA[c] && c !== CO.summary.company) select(c);
   });
 }
@@ -272,23 +405,17 @@ async function boot(){
 function select(c){
   CO = DATA[c];
   history.replaceState(null,'','#'+c+(TAB!=='evidence'?'/'+TAB:''));
-  // Open on the year carrying the most drift rather than the latest year. The
-  // most recent year is usually the one NO later report has restated yet, so
-  // defaulting there lands the demo on an empty panel.
-  const tl = CO.timeline;
+  const tl = CO.timeline || [];
   const busiest = tl.slice().sort((a,b)=>b.drift_ids.length-a.drift_ids.length)[0];
   YR = busiest && busiest.drift_ids.length ? busiest.year
      : (tl.length ? tl[tl.length-1].year : null);
-  // Default to a metric that actually drifted, so the two report-lines visibly
-  // diverge on load. Falling back to scope 1 would often show two identical
-  // overlapping lines and bury the whole point of the chart.
   const ms = CO.coverage.did_metrics||[];
-  const drifted = CO.drift_events.map(e=>e.canonical_metric).filter(m=>ms.includes(m));
+  const drifted = (CO.drift_events||[]).map(e=>e.canonical_metric).filter(m=>ms.includes(m));
   METRIC = drifted[0] || ms.find(m=>/scope_1/.test(m)) || ms[0] || null;
   render();
 }
 
-function render(){ pills(); main(); side(); }
+function render(){ pills(); machine(); dossier(); }
 
 function pills(){
   document.getElementById('pills').innerHTML = Object.keys(DATA).sort().map(c=>
@@ -296,101 +423,179 @@ function pills(){
        ${F.esc(DATA[c].summary.display_name)}</div>`).join('');
 }
 
-/* ------------------------------ main panel ------------------------------ */
-function main(){
-  const s = CO.summary, cov = CO.coverage;
-  const drift = s.sub_scores.goalpost_drift;
+/* ------------------------------ time machine ------------------------------ */
+function machine(){
+  const s = CO.summary;
+  const tl = CO.timeline||[], yrs = tl.map(t=>t.year);
+  const cur = tl.find(t=>t.year===YR) || tl[tl.length-1];
+  const ev = (CO.drift_events||[]).filter(e=>e.year===YR && e.type!=='wording_softened');
 
-  const abstain = `
-    <div class="banner warn">
-      <span class="dot" style="background:var(--amber)"></span>
-      <div><b>Overall verdict withheld.</b> ${F.esc(s.abstain_reasons[0]||'')}
-      The measured component below is fully backed by source documents; the rest are
-      not estimated, because scoring an unmeasured component as zero would read as
-      &ldquo;clean&rdquo;.</div>
-    </div>`;
-
-  document.getElementById('main').innerHTML = `
-    ${s.abstain ? abstain : ''}
+  document.getElementById('machine').innerHTML = `
     <div class="card">
-      <h2>${F.esc(s.display_name)}</h2>
-      <p class="sub">${F.esc(s.headline||'')}</p>
-      <div class="scorewrap">
+      <div class="lead">
         <div>
-          <div class="bignum" style="color:${F.col(drift)}">${drift==null?'<span class="abst">N/A</span>':F.num(drift,1)}</div>
-          <div class="scorelab">Goalpost drift &nbsp;·&nbsp; 0–100, higher = riskier</div>
+          <p class="kicker">${ICO.leaf} ${F.esc(s.display_name)}</p>
+          <h1 class="display">${F.esc(s.display_name)}</h1>
+          <p class="deck">${F.esc(shortDeck(s))}</p>
         </div>
-        <div style="border-left:1px solid var(--line);padding-left:22px">
-          <div class="bignum" style="font-size:26px;color:${s.overall_score==null?'var(--tx3)':F.col(s.overall_score)}">
-            ${s.overall_score==null?'ABSTAIN':F.num(s.overall_score,1)}</div>
-          <div class="scorelab">Overall greenwashing likelihood${
-            s.overall_score==null?'':' · '+countLive()+'/5 components'}</div>
-        </div>
-        <div style="border-left:1px solid var(--line);padding-left:22px">
-          <div class="bignum" style="font-size:26px">${s.peer_percentile==null?'—':F.num(s.peer_percentile,0)+'<span style="font-size:15px;color:var(--tx3)">th</span>'}</div>
-          <div class="scorelab">Peer percentile ${s.peer_percentile!=null?'(n='+peerN()+', indicative)':''}</div>
+        <div class="scorewrap" style="justify-content:flex-end">
+          ${gauge(s.sub_scores.goalpost_drift, 'Restatements')}
+          ${gauge(s.overall_score, 'Risk')}
         </div>
       </div>
     </div>
 
-    <div class="card">
-      <h2>How confident are we, and why</h2>
-      <p class="sub">Confidence is capped by evidence available, never by how strong the number looks.</p>
-      <div class="banner info" style="margin:0">
-        <span class="dot" style="background:var(--blue)"></span>
-        <div><b style="text-transform:uppercase;font-size:11px;letter-spacing:.06em">${F.esc(s.confidence)}</b>
-        &nbsp;—&nbsp;${F.esc(s.confidence_rationale)}</div>
+    <div class="card machine">
+      <div class="mhead">
+        <div>
+          <p class="kicker">${ICO.clock} The numbers</p>
+          <h2>${cur?cur.year:'—'}</h2>
+          <p class="mode-cap">One chart. Each line is a report. If the lines split, the company changed the number.</p>
+        </div>
+        ${metricPicker()}
       </div>
-      <div style="margin-top:13px">${SUBS.map(([k,n,d])=>subRow(k,n,d)).join('')}</div>
-    </div>
 
-    <div class="card">
-      <div class="tabs">
-        ${[['evidence','Numeric drift'],['language','Language'],['claims','Claims'],
-           ['investor','Investor view'],['eval','Eval'],['method','Method']]
-          .map(([k,l])=>`<div class="tab ${TAB===k?'on':''}" onclick="setTab('${k}')">${l}</div>`).join('')}
+      ${yrs.length?`<div class="year-rail" role="tablist" aria-label="Report years">
+        ${yrs.map((y,i)=>`
+          ${i?'<span class="year-join"></span>':''}
+          <button class="year-pill ${y===YR?'on':''}" onclick="setYear(${y})">${y}</button>
+        `).join('')}
+      </div>`:'<p class="empty">No timeline data.</p>'}
+
+      <div class="chartbox">${chart()}</div>
+
+      <div class="saiddid">
+        <div class="pull">
+          <h3>${ICO.quote} Said</h3>
+          ${cur?saidLane(cur.year):'<p class="empty">—</p>'}
+        </div>
+        <div class="pull" style="border-left-color:var(--amber)">
+          <h3>${ICO.warn} Moved</h3>
+          ${ev.length?ev.slice(0,4).map(e=>`<div class="evt">
+              <div class="k">${e.type.replace(/_/g,' ')} · ${e.year}</div>
+              ${F.esc((e.canonical_metric||'')+(e.magnitude_pct!=null?'  '+(e.magnitude_pct>0?'+':'')+F.num(e.magnitude_pct,1)+'%':''))}</div>`).join('')
+            +(ev.length>4?`<div class="why">+${ev.length-4} more in The figures</div>`:'')
+            :'<p class="empty">None.</p>'}
+        </div>
       </div>
-      ${TAB==='evidence'?tabEvidence():TAB==='language'?tabLanguage():
-        TAB==='claims'?tabClaims():TAB==='investor'?tabInvestor():
-        TAB==='eval'?tabEval():tabMethod()}
     </div>`;
 }
-
-function countLive(){ const s=CO.summary.sub_scores;
-  return Object.values(s).filter(v=>v!=null).length; }
 
 function saidLane(year){
   const cs = (CO.claims||[]).filter(c=>c.publish_year===year);
-  if(!cs.length) return `<p class="empty">No claims extracted from the ${year} report.</p>`;
+  if(!cs.length) return `<p class="empty">No extracted claims for ${year}.</p>`;
   const top = cs.slice().sort((a,b)=>
-    (b.features?.specificity_score||0)-(a.features?.specificity_score||0)).slice(0,3);
-  return top.map(c=>`<div style="font-size:11.5px;line-height:1.5;margin-bottom:8px">
-      <span class="src">p.${c.page==null?'?':c.page} · ${F.esc(c.claim_type)} · spec
-      ${(c.features?.specificity_score??0).toFixed(2)}</span><br>
-      ${F.paint((c.claim_text||'').slice(0,180), (c.features||{}).highlights)}</div>`).join('')
-    + `<div class="why">${cs.length} claims from this report; see the Claims tab.</div>`;
+    (b.features?.specificity_score||0)-(a.features?.specificity_score||0)).slice(0,2);
+  return top.map(c=>`<p class="claim-mini">${F.paint((c.claim_text||'').slice(0,160), (c.features||{}).highlights)}</p>`).join('');
 }
 
-function peerN(){ return Object.values(DATA)
-  .filter(d=>d.summary.sub_scores.goalpost_drift!=null).length; }
+function setYear(y){ YR=y; machine(); }
+function setMetric(m){ METRIC=m; machine(); }
+
+function metricPicker(){
+  const ms = CO.coverage.did_metrics||[];
+  if(!ms.length) return '';
+  return `<select onchange="setMetric(this.value)">
+    ${ms.map(m=>`<option value="${F.esc(m)}" ${m===METRIC?'selected':''}>${F.esc(m)}</option>`).join('')}
+  </select>`;
+}
+
+function chart(){
+  const rows = (CO.did_points||[]).filter(p=>p.metric===METRIC);
+  if(!rows.length) return `<p class="empty">No series for this metric.</p>`;
+  const bySrc = {};
+  for(const r of rows) (bySrc[r.source] ||= []).push(r);
+  const srcs = Object.keys(bySrc).sort();
+  const W=720,H=230,P={l:52,r:16,t:16,b:32};
+  const xs=[...new Set(rows.map(r=>r.year))].sort((a,b)=>a-b);
+  const vals=rows.map(r=>r.value);
+  let lo=Math.min(...vals), hi=Math.max(...vals);
+  if(lo===hi){lo=lo*0.95;hi=hi*1.05||1;}
+  const pad=(hi-lo)*0.14; lo-=pad; hi+=pad;
+  const X=y=>P.l+(xs.length<2?0:(xs.indexOf(y)/(xs.length-1))*(W-P.l-P.r));
+  const Y=v=>P.t+(1-(v-lo)/(hi-lo))*(H-P.t-P.b);
+  const cols=['var(--leaf)','var(--amber)','var(--violet)'];
+  const unit=rows[0].unit;
+
+  const paths=srcs.map((s,i)=>{
+    const pts=bySrc[s].slice().sort((a,b)=>a.year-b.year);
+    const d=pts.map((p,j)=>`${j?'L':'M'}${X(p.year).toFixed(1)},${Y(p.value).toFixed(1)}`).join(' ');
+    return `<path class="path-draw" d="${d}" fill="none" stroke="${cols[i%3]}" stroke-width="2.4"
+       stroke-linejoin="round" stroke-linecap="round" style="animation-delay:${i*90}ms"/>
+      ${pts.map((p,j)=>`<circle class="dot-pop" style="animation-delay:${200+j*70}ms"
+        cx="${X(p.year).toFixed(1)}" cy="${Y(p.value).toFixed(1)}" r="4"
+        fill="${cols[i%3]}" stroke="var(--paper)" stroke-width="1.5">
+        <title>${p.year}: ${F.num(p.value,2)} ${F.esc(p.unit)}
+${F.esc(F.file(s))}</title></circle>`).join('')}`;
+  }).join('');
+
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">
+    ${[0,.5,1].map(f=>{const v=lo+(hi-lo)*f;return `
+      <line x1="${P.l}" x2="${W-P.r}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}"
+        stroke="var(--rule)" stroke-width="1"/>
+      <text x="${P.l-8}" y="${(Y(v)+4).toFixed(1)}" text-anchor="end" fill="var(--ink3)"
+        font-size="11" font-family="ui-monospace,monospace">${abbr(v)}</text>`}).join('')}
+    ${xs.map(y=>`<text x="${X(y).toFixed(1)}" y="${H-10}" text-anchor="middle"
+       fill="${y===YR?'var(--leaf)':'var(--ink3)'}" font-size="12"
+       font-weight="${y===YR?'700':'500'}" font-family="Iowan Old Style,Palatino,serif">${y}</text>`).join('')}
+    ${YR!=null?`<line x1="${X(YR).toFixed(1)}" x2="${X(YR).toFixed(1)}" y1="${P.t}" y2="${H-P.b}"
+      stroke="var(--leaf)" stroke-dasharray="3 4" stroke-width="1.2" opacity=".55"/>`:''}
+    ${paths}
+  </svg>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--ink3);margin-top:8px;padding:0 6px">
+    ${srcs.map((s,i)=>`<span><span style="display:inline-block;width:14px;height:3px;
+      background:${cols[i%3]};vertical-align:middle;margin-right:6px;border-radius:2px"></span>${F.esc(F.file(s))}</span>`).join('')}
+    <span style="margin-left:auto">${F.esc(unit)}</span>
+  </div>
+  ${srcs.length>1?`<div class="why" style="padding:0 6px 4px">Two reports, one metric. Where the
+    lines separate, the company restated its own history.</div>`:''}`;
+}
+
+function abbr(v){ const a=Math.abs(v);
+  if(a>=1e9) return (v/1e9).toFixed(1)+'B'; if(a>=1e6) return (v/1e6).toFixed(1)+'M';
+  if(a>=1e3) return (v/1e3).toFixed(0)+'k'; return (a<10?v.toFixed(1):v.toFixed(0)); }
+
+/* ------------------------------ dossier ------------------------------ */
+function dossier(){
+  const reasons = (CO.summary.abstain_reasons||[]).filter(r=>!apiish(r));
+  const abstain = CO.summary.abstain && reasons.length ? `
+    <div class="banner warn">
+      <span class="dot" style="background:var(--amber)"></span>
+      <div>${F.esc(reasons[0])}</div>
+    </div>` : '';
+
+  document.getElementById('dossier').innerHTML = `
+    ${abstain}
+    <div class="card">
+      <p class="kicker">Score breakdown</p>
+      ${SUBS.map(([k,n,d])=>subRow(k,n,d)).join('')}
+    </div>
+
+    <div class="card">
+      <div class="rule-orn">Inside this issue</div>
+      <div class="tabs">
+        ${TABS.map(([k,l])=>`<div class="tab ${TAB===k?'on':''}" onclick="setTab('${k}')">${l}</div>`).join('')}
+      </div>
+      ${TAB==='evidence'?tabEvidence():TAB==='language'?tabLanguage():
+        TAB==='claims'?tabClaims():tabInvestor()}
+    </div>`;
+}
 
 function subRow(k,name,desc){
   const v = CO.summary.sub_scores[k];
-  const reason = (CO.summary.abstain_reasons||[]).find(r=>r.startsWith(k+':'));
+  const reason = (CO.summary.abstain_reasons||[]).find(r=>r.startsWith(k+':') && !apiish(r));
   return `<div class="srow">
     <div><div class="sname">${name}</div><div class="why">${F.esc(desc)}</div></div>
     <div>${v==null?`<div class="na"></div><div class="why">${F.esc(reason?reason.split(': ').slice(1).join(': '):'not measurable')}</div>`
       :`<div class="bar"><i style="width:${v}%;background:${F.col(v)}"></i></div>`}</div>
-    <div class="sval" style="color:${v==null?'var(--tx3)':F.col(v)}">${v==null?'n/a':F.num(v,1)}</div>
+    <div class="sval" style="color:${v==null?'var(--ink3)':F.col(v)}">${v==null?'n/a':F.num(v,1)}</div>
   </div>`;
 }
 
 function tabEvidence(){
   const ev = CO.drift_events.filter(e=>e.type!=='wording_softened');
   if(!ev.length) return `<p class="empty">No drift events detected.</p>`;
-  return `<p class="sub">Every row below is a figure the company itself published twice, differently.
-    Sources and pages are cited so each can be checked against the PDF.</p>
-    <table><thead><tr><th>Data yr</th><th>Metric</th><th>First reported</th>
+  return `<table><thead><tr><th>Data yr</th><th>Metric</th><th>First reported</th>
       <th>Restated to</th><th>Δ</th><th>Source</th></tr></thead><tbody>
     ${ev.map(e=>{
       const m=e.magnitude_pct;
@@ -413,10 +618,7 @@ function tabClaims(){
     const sb = Math.max(0,...(b.sins||[]).map(x=>x.severity||0));
     return sb-sa || (a.features?.specificity_score||1)-(b.features?.specificity_score||1);
   });
-  return `<p class="sub">${cs.length} claims, riskiest first. Highlighted tokens are the exact
-    lexicon hits that produced the score — a judge can audit any card down to the word.
-    Every sentence is verbatim from the PDF.</p>
-    <div class="hl-legend">
+  return `<div class="hl-legend">
       <span><mark class="hl-vague">vague</mark></span>
       <span><mark class="hl-hedge">hedge</mark></span>
       <span><mark class="hl-verify">verify</mark></span>
@@ -429,15 +631,14 @@ function tabClaims(){
                    ['D',f.date_present],['S',f.scope_present],['V',f.verification_present]];
       return `<div class="claimcard">
         <div class="meta">${c.publish_year} · p.${c.page==null?'?':c.page} · ${F.esc(c.claim_type)}
-          · spec <b style="color:${sp>=0.4?'var(--teal)':sp>=0.2?'var(--amber)':'var(--red)'}">${sp==null?'—':sp.toFixed(2)}</b>
-          · ${slots.map(([k,v])=>`<span style="color:${v?'var(--teal)':'var(--tx3)'}">${k}</span>`).join(' ')}
+          · spec <b style="color:${sp>=0.4?'var(--leaf)':sp>=0.2?'var(--amber)':'var(--rust)'}">${sp==null?'—':sp.toFixed(2)}</b>
+          · ${slots.map(([k,v])=>`<span style="color:${v?'var(--leaf)':'var(--ink3)'}">${k}</span>`).join(' ')}
           ${c.canonical_metric?` · → ${F.esc(c.canonical_metric)}`:''}
           ${c.progress_status?` · ${F.esc(c.progress_status)}`:''}</div>
-        <div>${F.paint(c.claim_text, f.highlights)}</div>
+        <div style="font-family:var(--serif);font-size:16.5px;line-height:1.45">${F.paint(c.claim_text, f.highlights)}</div>
         ${(c.sins||[]).map(s=>`<span class="sinchip" title="${F.esc(s.rationale||'')}">${F.esc(s.sin)}</span>`).join('')}
       </div>`;}).join('')}
-    ${rows.length>40?`<p class="why">Showing 40 of ${rows.length}. Full set in
-      out/language/${CO.summary.company}_claim_features.csv</p>`:''}`;
+    ${rows.length>40?`<p class="why">Showing 40 of ${rows.length}.</p>`:''}`;
 }
 
 function tabLanguage(){
@@ -450,11 +651,7 @@ function tabLanguage(){
   const nv=(v,d)=>v==null?'—':Number(v).toFixed(d);
   const links = sd.links||[];
 
-  return `<p class="sub">Every number below is a counting rule over an editable lexicon
-    (<code>config/lexicons.yaml</code>) — no model, no API call, fully reproducible.
-    Paste any sentence in the header to run the same scorer live.</p>
-
-    <h2 style="margin-top:4px">Language profile by report year</h2>
+  return `<h2 style="font-size:20px;margin-top:4px">By report year</h2>
     <table><thead><tr><th>Year</th><th>Claims</th><th>Specificity</th><th>Quantified</th>
       <th>Verified</th><th>Firm</th><th>Hedged</th><th>Say&gt;prove</th><th>Assured</th></tr></thead><tbody>
     ${S.map(r=>`<tr><td class="mono">${r.year}</td><td class="mono">${r.n_claims}</td>
@@ -462,17 +659,16 @@ function tabLanguage(){
       <td class="mono">${pc(r.verified_share)}</td><td class="mono">${pc(r.firm_share)}</td>
       <td class="mono">${pc(r.hedged_share)}</td>
       <td class="mono">${nv(r.say_more_prove_less,2)}</td>
-      <td class="mono" style="color:${r.report_assured?'var(--teal)':'var(--tx3)'}">${r.report_assured?'yes':'no'}</td></tr>`).join('')}
+      <td class="mono" style="color:${r.report_assured?'var(--leaf)':'var(--ink3)'}">${r.report_assured?'yes':'no'}</td></tr>`).join('')}
     </tbody></table>
 
-    <h2 style="margin-top:22px">Say vs do — targets pinned to the verified series</h2>
-    <p class="sub">${sd.n_measurable||0} measurable links
-      (${sd.n_behind||0} behind glidepath). Score ${sd.say_do_gap==null?'unmeasurable':sd.say_do_gap}.
-      ${sd.reason?F.esc(sd.reason):"A % target is compared to the company's own published series, pro-rated by time elapsed. Absolute tonne targets are left unmatched — we will not invent a unit conversion."}</p>
+    <h2 style="font-size:20px;margin-top:26px">Say vs do</h2>
+    <p class="sub">${sd.n_measurable||0} links · ${sd.n_behind||0} behind
+      · score ${sd.say_do_gap==null?'n/a':sd.say_do_gap}</p>
     ${links.length?`<table><thead><tr><th>Status</th><th>Metric</th><th>Target</th><th>Required now</th>
       <th>Actual</th><th>Claim</th></tr></thead><tbody>
       ${links.slice(0,12).map(lk=>`<tr>
-        <td class="mono" style="color:${lk.status==='on_track'?'var(--teal)':'var(--red)'}">${F.esc(lk.status)}</td>
+        <td class="mono" style="color:${lk.status==='on_track'?'var(--leaf)':'var(--rust)'}">${F.esc(lk.status)}</td>
         <td class="mono">${F.esc(lk.canonical_metric||'')}</td>
         <td class="mono">${F.esc(lk.quantity||'')}${lk.deadline?' by '+lk.deadline:''}</td>
         <td class="mono">${lk.required==null?'—':Number(lk.required).toFixed(1)}</td>
@@ -480,213 +676,42 @@ function tabLanguage(){
         <td style="max-width:320px">${F.esc((lk.sentence||'').slice(0,160))}</td>
       </tr>`).join('')}</tbody></table>`:'<p class="empty">No target could be pinned to a verified series with comparable units.</p>'}
 
-    <h2 style="margin-top:22px">Commitment softening across reports</h2>
-    <p class="sub">${dc.substantive||0} substantive events
-      (${dc.boilerplate||0} recycled-boilerplate events excluded as weak signal).
-      Claims matched between consecutive years with TF-IDF character n-grams.</p>
-    ${soft.slice(0,6).map(e=>`<div class="evt" style="margin-bottom:10px">
+    <h2 style="font-size:20px;margin-top:26px">Softened wording</h2>
+    <p class="sub">${dc.substantive||0} changes</p>
+    ${soft.slice(0,6).map(e=>`<div class="evt">
         <div class="k">${F.esc(e.description.split(']')[0].replace('[',''))} · ${e.year}</div>
-        <div style="color:var(--tx3);font-size:11px;margin:3px 0 6px">${F.esc(e.description.split(']').slice(1).join(']').trim())}</div>
-        <div style="font-size:11.5px;line-height:1.5">
+        <div class="why">${F.esc(e.description.split(']').slice(1).join(']').trim())}</div>
+        <div style="font-size:14px;line-height:1.5;margin-top:6px;font-family:var(--serif)">
           <span class="src">WAS</span> ${F.esc((e.old||'').slice(0,190))}<br>
           <span class="src" style="color:var(--amber)">NOW</span> ${F.esc((e.new||'').slice(0,190))}
         </div></div>`).join('') || '<p class="empty">No substantive softening detected.</p>'}
 
-    <h2 style="margin-top:22px">Cross-signal: do the numbers and the words move together?</h2>
-    <table><thead><tr><th>Report year</th><th>Numeric restatements</th>
-      <th>Language softenings</th><th>Both</th></tr></thead><tbody>
+    <h2 style="font-size:20px;margin-top:26px">Numbers and words</h2>
+    <table><thead><tr><th>Year</th><th>Restatements</th>
+      <th>Softenings</th><th>Both</th></tr></thead><tbody>
     ${(cs.rows||[]).map(r=>`<tr><td class="mono">${r.report_year}</td>
       <td class="mono">${r.numeric_restatements}</td>
       <td class="mono">${r.language_softenings}</td>
-      <td class="mono" style="color:${r.both?'var(--amber)':'var(--tx3)'}">${r.both?'YES':'—'}</td>
-    </tr>`).join('')}</tbody></table>
-    <div class="banner warn" style="margin-top:12px"><span class="dot" style="background:var(--amber)"></span>
-      <div><b>Do not read this as co-occurrence yet.</b> The verified DiD CSV covers only two
-      reports, so ${(cs.rows||[]).length? (cs.rows[cs.rows.length-1]||{}).report_year : ''} is the
-      <i>only</i> year in which a numeric restatement can appear at all. The language side spans
-      five. Transcribing the earlier reports into the DiD CSV is what would make this testable.</div>
-    </div>`;
+      <td class="mono" style="color:${r.both?'var(--amber)':'var(--ink3)'}">${r.both?'YES':'—'}</td>
+    </tr>`).join('')}</tbody></table>`;
 }
 
 function tabInvestor(){
   const rows = Object.values(DATA).map(d=>({
     n:d.summary.display_name, g:d.summary.sub_scores.goalpost_drift,
-    p:d.summary.peer_percentile, e:d.drift_events.length, r:d.coverage.n_did_rows}))
+    e:d.drift_events.length}))
     .sort((a,b)=>(b.g==null?-1:b.g)-(a.g==null?-1:a.g));
-  return `<p class="sub">Disclosure integrity as a transition-risk overlay. This is a
-    <b>data-quality</b> signal, not an emissions forecast: it measures how stable a company's own
-    reported history is. Frequent, large restatements mean any model consuming that history is
-    fitting to a moving target — a reason to widen error bars on the issuer.</p>
-    <table><thead><tr><th>Company</th><th>Drift</th><th>Pctile</th>
-      <th>Events</th><th>DiD rows</th></tr></thead><tbody>
+  return `<table><thead><tr><th>Company</th><th>Restatements</th>
+      <th>Revisions</th></tr></thead><tbody>
     ${rows.map(r=>`<tr><td>${F.esc(r.n)}</td>
       <td class="mono" style="color:${F.col(r.g)}">${r.g==null?'n/a':F.num(r.g,1)}</td>
-      <td class="mono">${r.p==null?'—':F.num(r.p,0)}</td>
-      <td class="mono">${r.e}</td><td class="mono">${r.r}</td></tr>`).join('')}
-    </tbody></table>
-    <ul class="tight">
-      <li><b>Screen:</b> flag issuers whose restatement rate exceeds a peer threshold before
-      relying on their reported intensity series.</li>
-      <li><b>Litigation overlay:</b> restatements that move a <i>baseline</i> year are the ones
-      regulators cite, since they alter progress-against-target arithmetic retroactively.</li>
-      <li><b>Caveat:</b> n=${peerN()} scored peers. Percentiles are indicative only, and
-      no return claim is implied.</li>
-    </ul>`;
-}
-
-function tabEval(){
-  return `<div class="banner info" style="margin:0"><span class="dot" style="background:var(--blue)"></span>
-    <div>No LLM predictions exist yet, so agreement rate, per-sin precision/recall and Brier score
-    are not computable. The drift signal is deterministic arithmetic over the verified CSVs and is
-    checkable by hand rather than statistically.</div></div>
-    <p class="sub" style="margin-top:14px"><b>Held-out analyst prior.</b> A human hypothesis was
-    recorded in <code>eval/analyst_prior.md</code> <i>before</i> scoring and deliberately kept out of
-    all prompts, weights and config, so it can be used to check the pipeline rather than steer it.
-    See that file for the comparison.</p>`;
-}
-
-function tabMethod(){
-  const b = CO.coverage;
-  return `<dl class="kv">
-      <dt>Reports parsed</dt><dd>${b.n_documents}</dd>
-      <dt>Verified DiD rows</dt><dd>${b.n_did_rows}</dd>
-      <dt>Data years</dt><dd>${(b.did_years||[]).join(', ')||'—'}</dd>
-      <dt>Metrics</dt><dd>${(b.did_metrics||[]).length}</dd>
-      <dt>Stages run</dt><dd>${(b.stages_completed||[]).join(', ')}</dd>
-      <dt>Stages blocked</dt><dd>${Object.keys(b.stages_blocked||{}).join(', ')||'none'}</dd>
-    </dl>
-    <ul class="tight">
-      <li><b>Goalpost drift</b> = 0.45·(restatement rate) + 0.40·min(median |Δ%| / 30, 1)
-        + 0.15·min(25·redefinitions, 100). Rate needs a denominator, so a company that never
-        publishes the same metric-year twice returns <i>unmeasurable</i>, not zero.</li>
-      <li><b>Noise floor:</b> restatements under 0.5% are treated as rounding and dropped.</li>
-      <li><b>Source of truth:</b> hand-verified <code>data/did/{company}.csv</code>; every value
-        was checked as a literal substring of its cited page.</li>
-      <li><b>Language:</b> token-level lexicon highlights, report-level assurance detection,
-        and TF-IDF claim matching across years. Vague / hedge / promo words are the score.</li>
-      <li><b>Say-do:</b> target claims are pinned to the verified DiD series by metric family.
-        A % target is compared to a time-prorated glidepath. Absolute tonne targets are left
-        unmatched rather than unit-converted.</li>
-      <li><b>No company-specific configuration</b> exists anywhere in the pipeline.</li>
-    </ul>`;
+      <td class="mono">${r.e}</td></tr>`).join('')}
+    </tbody></table>`;
 }
 
 function setTab(t){ TAB=t;
   history.replaceState(null,'','#'+CO.summary.company+(t!=='evidence'?'/'+t:''));
-  main(); }
-
-/* ---------------------------- time machine ------------------------------ */
-function side(){
-  const tl = CO.timeline, yrs = tl.map(t=>t.year);
-  if(!yrs.length){ document.getElementById('side').innerHTML =
-    `<div class="card"><h2>Time machine</h2><p class="empty">No timeline data.</p></div>`; return; }
-  const cur = tl.find(t=>t.year===YR) || tl[tl.length-1];
-  const score = MODE==='as_of' ? cur.score_as_of : cur.score_hindsight;
-  const ev = CO.drift_events.filter(e=>cur.drift_ids.includes(e.drift_id))
-    .filter(e=>MODE==='hindsight' || pubYear(e.new_source)<=cur.year);
-
-  document.getElementById('side').innerHTML = `
-    <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
-        <div><h2>Time machine</h2><p class="sub" style="margin:0">Scrub to replay what was known when</p></div>
-        <div class="toggle">
-          <button class="${MODE==='as_of'?'on':''}" onclick="setMode('as_of')">As of then</button>
-          <button class="${MODE==='hindsight'?'on':''}" onclick="setMode('hindsight')">Hindsight</button>
-        </div>
-      </div>
-      <div style="margin-top:14px">
-        <input class="slider" type="range" min="0" max="${yrs.length-1}"
-          value="${Math.max(0,yrs.indexOf(cur.year))}" oninput="setYear(${JSON.stringify(yrs)}[this.value])" />
-        <div class="yrs">${yrs.map(y=>`<span style="${y===cur.year?'color:var(--teal);font-weight:700':''}">${y}</span>`).join('')}</div>
-      </div>
-      <div style="margin-top:16px;display:flex;align-items:baseline;gap:11px">
-        <div class="bignum" style="font-size:31px;color:${F.col(score)}">${score==null?'<span style="font-size:19px;color:var(--tx3)">no drift</span>':F.num(score,0)}</div>
-        <div class="scorelab">drift intensity in ${cur.year}${MODE==='as_of'?' · as known by '+cur.year:''}</div>
-      </div>
-      ${MODE==='as_of'&&cur.score_hindsight!=null&&cur.score_as_of==null?
-        `<div class="banner warn" style="margin-top:12px"><span class="dot" style="background:var(--amber)"></span>
-         <div>In ${cur.year} this year looked clean. The restatement that reveals it had
-         <b>not been published yet</b> — switch to Hindsight to see it.</div></div>`:''}
-    </div>
-
-    <div class="card">
-      <h2>SAID</h2><p class="sub">Pledges, targets and claims made that year</p>
-      <div class="lane"><h4>claims made in ${cur.year}</h4>
-        ${saidLane(cur.year)}</div>
-      <h2 style="margin-top:6px">DID</h2><p class="sub">What the data actually shows</p>
-      ${metricPicker()}
-      ${chart()}
-      <div class="lane" style="margin-top:12px"><h4>drift events · ${cur.year}</h4>
-        ${ev.length?ev.map(e=>`<div class="evt">
-            <div class="k">${e.type.replace(/_/g,' ')}</div>
-            ${F.esc(e.description)}</div>`).join(''):'<p class="empty">None.</p>'}
-      </div>
-    </div>`;
-}
-
-function pubYear(s){ const m=/(\d{4})_/.exec(F.file(s)||''); return m?+m[1]:9999; }
-function setMode(m){ MODE=m; side(); }
-function setYear(y){ YR=y; side(); }
-function setMetric(m){ METRIC=m; side(); }
-
-function metricPicker(){
-  const ms = CO.coverage.did_metrics||[];
-  if(!ms.length) return '';
-  return `<select onchange="setMetric(this.value)" style="margin:6px 0 10px">
-    ${ms.map(m=>`<option value="${F.esc(m)}" ${m===METRIC?'selected':''}>${F.esc(m)}</option>`).join('')}
-  </select>`;
-}
-
-/* Two lines: the series as told by each report that published it. Where they
-   diverge, that divergence IS the goalpost drift. */
-function chart(){
-  const rows = CO.did_points.filter(p=>p.metric===METRIC);
-  if(!rows.length) return `<p class="empty">No series for this metric.</p>`;
-  const bySrc = {};
-  for(const r of rows) (bySrc[r.source] ||= []).push(r);
-  const srcs = Object.keys(bySrc).sort();
-  const W=380,H=170,P={l:48,r:12,t:12,b:26};
-  const xs=[...new Set(rows.map(r=>r.year))].sort((a,b)=>a-b);
-  const vals=rows.map(r=>r.value);
-  let lo=Math.min(...vals), hi=Math.max(...vals);
-  if(lo===hi){lo=lo*0.95;hi=hi*1.05||1;}
-  const pad=(hi-lo)*0.12; lo-=pad; hi+=pad;
-  const X=y=>P.l+(xs.length<2?0:(xs.indexOf(y)/(xs.length-1))*(W-P.l-P.r));
-  const Y=v=>P.t+(1-(v-lo)/(hi-lo))*(H-P.t-P.b);
-  const cols=['var(--teal)','var(--amber)','var(--violet)'];
-  const unit=rows[0].unit;
-
-  const paths=srcs.map((s,i)=>{
-    const pts=bySrc[s].slice().sort((a,b)=>a.year-b.year);
-    const d=pts.map((p,j)=>`${j?'L':'M'}${X(p.year).toFixed(1)},${Y(p.value).toFixed(1)}`).join(' ');
-    return `<path d="${d}" fill="none" stroke="${cols[i%3]}" stroke-width="2"
-       stroke-linejoin="round" stroke-linecap="round"/>
-      ${pts.map(p=>`<circle cx="${X(p.year).toFixed(1)}" cy="${Y(p.value).toFixed(1)}" r="2.8"
-        fill="${cols[i%3]}"><title>${p.year}: ${F.num(p.value,2)} ${F.esc(p.unit)}\n${F.esc(F.file(s))}</title></circle>`).join('')}`;
-  }).join('');
-
-  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">
-    ${[0,.5,1].map(f=>{const v=lo+(hi-lo)*f;return `
-      <line x1="${P.l}" x2="${W-P.r}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}"
-        stroke="var(--line)" stroke-width="1"/>
-      <text x="${P.l-6}" y="${(Y(v)+3.5).toFixed(1)}" text-anchor="end" fill="var(--tx3)"
-        font-size="9" font-family="ui-monospace,monospace">${abbr(v)}</text>`}).join('')}
-    ${xs.map(y=>`<text x="${X(y).toFixed(1)}" y="${H-8}" text-anchor="middle"
-       fill="var(--tx3)" font-size="9" font-family="ui-monospace,monospace">${y}</text>`).join('')}
-    ${paths}
-  </svg>
-  <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:10.5px;color:var(--tx3);margin-top:5px">
-    ${srcs.map((s,i)=>`<span><span style="display:inline-block;width:9px;height:2px;
-      background:${cols[i%3]};vertical-align:middle;margin-right:5px"></span>${F.esc(F.file(s))}</span>`).join('')}
-    <span style="margin-left:auto">${F.esc(unit)}</span>
-  </div>
-  ${srcs.length>1?`<div class="why" style="margin-top:6px">Two reports, one metric. Where the
-    lines separate, the company restated its own history.</div>`:''}`;
-}
-
-function abbr(v){ const a=Math.abs(v);
-  if(a>=1e9) return (v/1e9).toFixed(1)+'B'; if(a>=1e6) return (v/1e6).toFixed(1)+'M';
-  if(a>=1e3) return (v/1e3).toFixed(0)+'k'; return (a<10?v.toFixed(1):v.toFixed(0)); }
+  dossier(); }
 
 boot();
 </script>
