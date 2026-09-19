@@ -2,8 +2,8 @@
   {
     "company": "amazon",
     "display_name": "Amazon",
-    "overall_score": null,
-    "abstain": true,
+    "overall_score": 54.6,
+    "abstain": false,
     "goalpost_drift": 15.7,
     "confidence": "low",
     "peer_percentile": 0.0
@@ -11,8 +11,8 @@
   {
     "company": "hm",
     "display_name": "H&M Group",
-    "overall_score": null,
-    "abstain": true,
+    "overall_score": 60.3,
+    "abstain": false,
     "goalpost_drift": 49.8,
     "confidence": "low",
     "peer_percentile": 100.0
@@ -20,8 +20,8 @@
   {
     "company": "microsoft",
     "display_name": "Microsoft",
-    "overall_score": null,
-    "abstain": true,
+    "overall_score": 65.4,
+    "abstain": false,
     "goalpost_drift": null,
     "confidence": "low",
     "peer_percentile": null

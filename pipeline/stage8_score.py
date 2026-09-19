@@ -29,6 +29,7 @@ from typing import Dict, List, Optional
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import language_merge as LM  # noqa: E402
 from models import (  # noqa: E402
     Claim, CompanyOutput, CompanySummary, Confidence, DataCoverage, DidPoint,
     DriftEvent, EvalSummary, SubScores, TimelinePoint, YearScore,
@@ -45,9 +46,7 @@ SUB_SCORE_FIELDS = ["vagueness", "unsupported_claims", "sins_severity", "say_do_
 
 # Stages that cannot run without an Anthropic API key, and what each one blocks.
 LLM_BLOCKED = {
-    "stage2_claims": "vagueness, unsupported_claims, say_do_gap (needs extracted targets)",
-    "stage4_sins": "sins_severity",
-    "stage5_evidence": "unsupported_claims, verified evidence quotes",
+    "stage5_evidence": "verified evidence quotes (and a non-proxy unsupported_claims)",
     "stage7_debate": "judge probability, confidence band",
 }
 
@@ -117,10 +116,18 @@ def build(company: str, cfg: dict) -> CompanyOutput:
     s6 = json.loads((OUT_DIR / f"{company}.stage6.json").read_text(encoding="utf-8"))
     events = s6["drift_events"]
 
+    lang = LM.load_language(company)
+    ld = LM.load_langdrift(company)
+    vagueness = unsupported = None
+    lang_basis: dict = {}
+    if lang:
+        vagueness, unsupported, lang_basis = LM.language_sub_scores(lang)
+
+    sins = LM.load_sins(company)
     subs = SubScores(
-        vagueness=None,
-        unsupported_claims=None,
-        sins_severity=None,
+        vagueness=vagueness,
+        unsupported_claims=unsupported,
+        sins_severity=(sins or {}).get("sins_severity"),
         say_do_gap=s6["say_do_gap"],
         goalpost_drift=s6["goalpost_drift"],
     )
@@ -206,20 +213,44 @@ def build(company: str, cfg: dict) -> CompanyOutput:
         sub_scores=subs,
     )
 
-    return CompanyOutput(
+    claims = [Claim(**c) for c in LM.to_schema_claims(company, LM.load_claim_rows(company))]
+    lang_events = [DriftEvent(**e) for e in LM.to_schema_drift(company, ld)] if ld else []
+    dcounts = LM.drift_counts(ld) if ld else {}
+    cross = LM.cross_signal(events, ld)
+
+    coverage.n_claims = len(claims)
+    coverage.stages_completed += ["stage2_claims", "stage3_language", "stage3b_langdrift"]
+
+    summary.headline = (summary.headline or "")
+    if dcounts:
+        summary.headline += (
+            f" Language: {dcounts['substantive']} substantive softening events "
+            f"across reports ({dcounts['boilerplate']} recycled boilerplate excluded)."
+        )
+
+    out = CompanyOutput(
         generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
         summary=summary,
         coverage=coverage,
         timeline=timeline,
         year_scores=year_scores,
-        claims=[],
         evidence=[],
-        drift_events=[DriftEvent(**e) for e in events],
+        drift_events=[DriftEvent(**e) for e in events] + lang_events,
         did_points=[DidPoint(**{k: r[k] for k in ("year", "metric", "value", "unit", "scope", "source", "page")})
                     for r in did_rows],
-        top_damaging_claim_ids=[],
+        claims=claims,
+        top_damaging_claim_ids=[c.claim_id for c in claims[:5]],
         eval=EvalSummary(n_gold=0, notes="Stage 4/7 blocked; no LLM predictions to score yet."),
     )
+    out.language = {
+        "series": (lang or {}).get("series", []),
+        "sub_score_basis": lang_basis,
+        "drift_counts": dcounts,
+        "sins": {k: v for k, v in (sins or {}).items() if k != "tagged"},
+        "sins_top": (sins or {}).get("tagged", [])[:25],
+        "cross_signal": cross,
+    }
+    return out
 
 
 def assign_peer_percentiles(outs: Dict[str, CompanyOutput]) -> None:

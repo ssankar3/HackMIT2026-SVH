@@ -1,0 +1,298 @@
+# Lexicons for Stage 2 v1 (regex/keyword claim extraction) and Stage 3
+# linguistic features. Deliberately generic: sector vocabulary only, no company
+# names and no terms chosen because a particular issuer uses them.
+# `make check-leakage` enforces that.
+
+# An environmental topic word. On its own this is NOT enough to make a claim --
+# it must co-occur with a number, % or year (see `attribute` for the exception).
+environmental:
+  - emission
+  - emissions
+  - carbon
+  - co2
+  - co2e
+  - ghg
+  - greenhouse gas
+  - climate
+  - scope 1
+  - scope 2
+  - scope 3
+  - energy
+  - electricity
+  - renewable
+  - solar
+  - wind
+  - fossil
+  - coal
+  - water
+  - waste
+  - recycl
+  - circular
+  - material
+  - packaging
+  - biodiversity
+  - deforestation
+  - supply chain
+  - sustainab
+  - environment
+  - decarbonis
+  - decarboniz
+  - offset
+  - removal
+  - sequestration
+  - intensity
+  - footprint
+
+# A specific environmental ATTRIBUTE asserted about a company or product.
+# These are checkable on their own, without a number -- "our conscious range is
+# sustainable" makes a claim even with nothing quantified. That is precisely the
+# vagueness case the Seven Sins work is meant to catch.
+attribute:
+  - recyclable
+  - recycled
+  - carbon neutral
+  - carbon-neutral
+  - climate neutral
+  - climate-neutral
+  - net zero
+  - net-zero
+  - carbon negative
+  - carbon free
+  - carbon-free
+  - zero emission
+  - zero-emission
+  - zero waste
+  - eco-friendly
+  - environmentally friendly
+  - green energy
+  - green electricity
+  - green product
+  - green hydrogen
+  - clean energy
+  - clean electricity
+  - clean technology
+  - conscious choice
+  - conscious collection
+  - responsibly sourced
+  - responsibly produced
+  - sustainably sourced
+  - sustainably produced
+  - sustainable material
+  - sustainable cotton
+  - sustainable fashion
+  - sustainable aviation fuel
+  - biodegradable
+  - compostable
+  - plastic free
+  - plastic-free
+  - organic cotton
+  - certified sustainable
+  - nature positive
+  - climate positive
+
+# Commitment strength. Ordered most -> least binding; first match wins.
+strength:
+  firm:
+    - will
+    - shall
+    - commit
+    - committed
+    - commitment
+    - is reducing
+    - are reducing
+    - we reduce
+    - must
+    - guarantee
+    - pledge
+    - have to
+  hedged:
+    - aim
+    - aims
+    - aiming
+    - strive
+    - striving
+    - hope
+    - work towards
+    - working towards
+    - working toward
+    - aspire
+    - ambition
+    - intend
+    - seek
+    - may
+    - could
+    - might
+    - should
+    - plan to
+    - explore
+    - consider
+    - help to
+    - contribute to
+    - support
+  achievement:
+    - stopped
+    - ceased
+    - ended
+    - eliminated
+    - phased out
+    - discontinued
+    - launched
+    - installed
+    - switched
+    - transitioned
+    - achieved
+    - reached
+    - delivered
+    - reduced
+    - cut
+    - completed
+    - avoided
+    - surpassed
+    - exceeded
+    - was
+    - were
+    - have been
+    - has been
+    - increased
+    - decreased
+    - fell
+    - rose
+
+# Vague / non-specific qualifiers (Stage 3 vagueness ratio).
+vague:
+  - significant
+  - significantly
+  - substantial
+  - substantially
+  - considerable
+  - meaningful
+  - leading
+  - world-class
+  - best-in-class
+  - ambitious
+  - robust
+  - strong
+  - strongly
+  - broadly
+  - largely
+  - various
+  - numerous
+  - many
+  - several
+  - appropriate
+  - relevant
+  - responsible
+  - better
+  - improved
+  - enhanced
+  - continued
+  - ongoing
+  - where possible
+  - as far as possible
+  - wherever feasible
+
+# Hedging / epistemic softeners (Stage 3 hedging ratio).
+hedging:
+  - may
+  - might
+  - could
+  - would
+  - potentially
+  - possibly
+  - likely
+  - expect
+  - expects
+  - expected
+  - anticipate
+  - believe
+  - believes
+  - estimate
+  - estimated
+  - approximately
+  - around
+  - about
+  - roughly
+  - up to
+  - as much as
+  - intend
+  - seek
+  - subject to
+  - where feasible
+
+# Third-party verification signals.
+verification:
+  - assured
+  - assurance
+  - audited
+  - verified
+  - verification
+  - third party
+  - third-party
+  - independent
+  - sbti
+  - science based targets
+  - science-based targets
+  - iso 14064
+  - iso 14001
+  - ghg protocol
+  - cdp
+  - gri
+  - accredited
+  - certified by
+  - limited assurance
+  - reasonable assurance
+
+# Scope / boundary markers.
+scope_markers:
+  scope 1: "Scope 1"
+  scope 2: "Scope 2"
+  scope 3: "Scope 3"
+  own operations: "own operations"
+  our operations: "own operations"
+  value chain: "value chain"
+  supply chain: "supply chain"
+  upstream: "upstream"
+  downstream: "downstream"
+  tier 1: "supply chain (tier 1)"
+  group-wide: "group-wide"
+  globally: "global"
+
+# Promotional / positive-affect vocabulary. Drives the "say more, prove less"
+# aggregate: tone words per QUANTIFIED claim. Rising = adding adjectives faster
+# than evidence.
+positive_tone:
+  - proud
+  - proudly
+  - excited
+  - exciting
+  - pleased
+  - delighted
+  - passionate
+  - committed
+  - leading
+  - leader
+  - pioneering
+  - innovative
+  - transformative
+  - groundbreaking
+  - ambitious
+  - bold
+  - remarkable
+  - outstanding
+  - excellent
+  - success
+  - successful
+  - achievement
+  - milestone
+  - progress
+  - advance
+  - strengthen
+  - accelerate
+  - empower
+  - inspire
+  - positive
+  - responsible
+  - thriving
+  - vibrant
+  - world-leading
+  - best-in-class

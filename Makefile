@@ -5,12 +5,15 @@ LIMIT   ?=
 
 LIMIT_FLAG := $(if $(LIMIT),--limit $(LIMIT),)
 
-.PHONY: help schema saydo score all demo eval check-leakage clean-out
+.PHONY: help schema saydo score claims lang all demo eval check-leakage clean-out
+
+COMPANIES := hm microsoft amazon
 
 help:
 	@echo "Greenwash Time Machine"
 	@echo ""
-	@echo "  make all            schema + say-do + score  (no API key needed)"
+	@echo "  make all            schema + say-do + language + score  (no API key needed)"
+	@echo "  make lang           Stage 2/3/3b only: claims, linguistics, language drift"
 	@echo "  make demo           build everything, then serve the dashboard"
 	@echo "  make schema         export schema/output.schema.json from Pydantic models"
 	@echo "  make saydo          Stage 6: goalpost drift from data/did/*.csv"
@@ -31,7 +34,19 @@ saydo:
 score:
 	$(PY) pipeline/stage8_score.py $(COMPANY) $(LIMIT_FLAG)
 
-all: schema saydo score
+# Stage 2/3/3b: claim extraction + linguistic features + cross-year language
+# drift. No API key needed. Slowest step (~30s per company).
+lang:
+	@for c in $(if $(COMPANY),$(COMPANY),$(COMPANIES)); do \
+		echo "--- $$c ---"; \
+		$(PY) pipeline/stage3_language.py --company $$c --max-pages 60 2>&1 | tail -3; \
+		$(PY) pipeline/stage3b_langdrift.py --company $$c 2>&1 | grep -E "events$$" || true; \
+	done
+
+claims:
+	$(PY) pipeline/stage2_claims_v1.py --pdf $(PDF) --max-pages $(or $(MAX_PAGES),50)
+
+all: schema saydo lang score
 	@echo ""
 	@echo "Built. Open the dashboard with:  make demo"
 

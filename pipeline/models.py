@@ -277,6 +277,11 @@ class CompanyOutput(BaseModel):
     drift_events: List[DriftEvent] = Field(default_factory=list)
     did_points: List[DidPoint] = Field(default_factory=list)
     top_damaging_claim_ids: List[str] = Field(default_factory=list)
+    language: Optional[Dict] = Field(
+        None,
+        description="Stage 3/3b output: per-year language series, sub-score basis, "
+                    "drift counts, and the numeric-vs-language cross signal",
+    )
     eval: Optional[EvalSummary] = None
 
 

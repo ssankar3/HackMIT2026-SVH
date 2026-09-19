@@ -1325,6 +1325,20 @@
       "title": "Top Damaging Claim Ids",
       "type": "array"
     },
+    "language": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Stage 3/3b output: per-year language series, sub-score basis, drift counts, and the numeric-vs-language cross signal",
+      "title": "Language"
+    },
     "eval": {
       "anyOf": [
         {

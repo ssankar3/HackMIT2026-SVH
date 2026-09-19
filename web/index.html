@@ -165,8 +165,9 @@ async function boot(){
       return;
     }
   }
-  const fromHash = location.hash.replace('#','');
-  select(DATA[fromHash] ? fromHash : Object.keys(DATA).sort()[0]);
+  const [hCo, hTab] = location.hash.replace('#','').split('/');
+  if(hTab) TAB = hTab;
+  select(DATA[hCo] ? hCo : Object.keys(DATA).sort()[0]);
   window.addEventListener('hashchange', ()=>{
     const c = location.hash.replace('#','');
     if(DATA[c] && c !== CO.summary.company) select(c);
@@ -175,7 +176,7 @@ async function boot(){
 
 function select(c){
   CO = DATA[c];
-  if(location.hash.replace('#','') !== c) history.replaceState(null,'','#'+c);
+  history.replaceState(null,'','#'+c+(TAB!=='evidence'?'/'+TAB:''));
   // Open on the year carrying the most drift rather than the latest year. The
   // most recent year is usually the one NO later report has restated yet, so
   // defaulting there lands the demo on an empty panel.
@@ -225,8 +226,10 @@ function main(){
           <div class="scorelab">Goalpost drift &nbsp;·&nbsp; 0–100, higher = riskier</div>
         </div>
         <div style="border-left:1px solid var(--line);padding-left:22px">
-          <div class="bignum" style="font-size:26px;color:var(--tx3)">ABSTAIN</div>
-          <div class="scorelab">Overall greenwashing likelihood</div>
+          <div class="bignum" style="font-size:26px;color:${s.overall_score==null?'var(--tx3)':F.col(s.overall_score)}">
+            ${s.overall_score==null?'ABSTAIN':F.num(s.overall_score,1)}</div>
+          <div class="scorelab">Overall greenwashing likelihood${
+            s.overall_score==null?'':' · '+countLive()+'/5 components'}</div>
         </div>
         <div style="border-left:1px solid var(--line);padding-left:22px">
           <div class="bignum" style="font-size:26px">${s.peer_percentile==null?'—':F.num(s.peer_percentile,0)+'<span style="font-size:15px;color:var(--tx3)">th</span>'}</div>
@@ -248,13 +251,29 @@ function main(){
 
     <div class="card">
       <div class="tabs">
-        ${[['evidence','Drift evidence'],['claims','Claims'],['investor','Investor view'],
-           ['eval','Eval'],['method','Method']]
+        ${[['evidence','Numeric drift'],['language','Language'],['claims','Claims'],
+           ['investor','Investor view'],['eval','Eval'],['method','Method']]
           .map(([k,l])=>`<div class="tab ${TAB===k?'on':''}" onclick="setTab('${k}')">${l}</div>`).join('')}
       </div>
-      ${TAB==='evidence'?tabEvidence():TAB==='claims'?tabClaims():
-        TAB==='investor'?tabInvestor():TAB==='eval'?tabEval():tabMethod()}
+      ${TAB==='evidence'?tabEvidence():TAB==='language'?tabLanguage():
+        TAB==='claims'?tabClaims():TAB==='investor'?tabInvestor():
+        TAB==='eval'?tabEval():tabMethod()}
     </div>`;
+}
+
+function countLive(){ const s=CO.summary.sub_scores;
+  return Object.values(s).filter(v=>v!=null).length; }
+
+function saidLane(year){
+  const cs = (CO.claims||[]).filter(c=>c.publish_year===year);
+  if(!cs.length) return `<p class="empty">No claims extracted from the ${year} report.</p>`;
+  const top = cs.slice().sort((a,b)=>
+    (b.features?.specificity_score||0)-(a.features?.specificity_score||0)).slice(0,3);
+  return top.map(c=>`<div style="font-size:11.5px;line-height:1.5;margin-bottom:8px">
+      <span class="src">p.${c.page==null?'?':c.page} · ${F.esc(c.claim_type)} · spec
+      ${(c.features?.specificity_score??0).toFixed(2)}</span><br>
+      ${F.esc(c.claim_text.slice(0,165))}</div>`).join('')
+    + `<div class="why">${cs.length} claims from this report; see the Claims tab.</div>`;
 }
 
 function peerN(){ return Object.values(DATA)
@@ -272,7 +291,7 @@ function subRow(k,name,desc){
 }
 
 function tabEvidence(){
-  const ev = CO.drift_events;
+  const ev = CO.drift_events.filter(e=>e.type!=='wording_softened');
   if(!ev.length) return `<p class="empty">No drift events detected.</p>`;
   return `<p class="sub">Every row below is a figure the company itself published twice, differently.
     Sources and pages are cited so each can be checked against the PDF.</p>
@@ -292,15 +311,79 @@ function tabEvidence(){
 }
 
 function tabClaims(){
-  return `<div class="banner warn" style="margin:0">
-    <span class="dot" style="background:var(--amber)"></span>
-    <div><b>No claims extracted.</b> Claim extraction (Stage 2), Seven Sins tagging (Stage 4),
-    evidence retrieval (Stage 5) and the debate court (Stage 7) all require an Anthropic API key,
-    which is not set in this environment. The pipeline code is in place; set
-    <code>ANTHROPIC_API_KEY</code> and run <code>make claims sins evidence debate</code>.</div></div>
-  <p class="sub" style="margin-top:14px">Once populated, this tab shows each claim with its
-  Seven Sins tags, severity, and a drawer containing the Prosecutor / Defense / Judge summary
-  plus verified evidence quotes with page numbers and supports/contradicts badges.</p>`;
+  const cs = CO.claims||[];
+  if(!cs.length) return `<p class="empty">No claims extracted.</p>`;
+  const rows = cs.slice().sort((a,b)=>
+    (b.features?.specificity_score||0)-(a.features?.specificity_score||0));
+  return `<p class="sub">${cs.length} claims, most specific first. Specificity counts how many
+    of five evidence slots the sentence pins down (quantity, baseline, deadline, scope,
+    verification) minus a vagueness/hedging penalty. Every sentence is verbatim from the PDF.</p>
+    <table><thead><tr><th>Yr</th><th>p.</th><th>Type</th><th>Claim</th>
+      <th>Spec</th><th>Slots</th></tr></thead><tbody>
+    ${rows.slice(0,60).map(c=>{
+      const f=c.features||{}, sp=f.specificity_score;
+      const slots=[['Q',f.quantification_present],['B',f.baseline_present],
+                   ['D',f.date_present],['S',f.scope_present],['V',f.verification_present]];
+      return `<tr>
+        <td class="mono">${c.publish_year}</td><td class="mono">${c.page==null?'':c.page}</td>
+        <td>${F.esc(c.claim_type)}</td>
+        <td style="max-width:460px">${F.esc(c.claim_text.slice(0,230))}</td>
+        <td class="mono" style="color:${sp>=0.4?'var(--teal)':sp>=0.2?'var(--amber)':'var(--red)'}">${sp==null?'—':sp.toFixed(2)}</td>
+        <td class="mono" style="font-size:11px">${slots.map(([k,v])=>
+          `<span style="color:${v?'var(--teal)':'var(--tx3)'}">${k}</span>`).join(' ')}</td>
+      </tr>`;}).join('')}
+    </tbody></table>
+    ${rows.length>60?`<p class="why" style="margin-top:8px">Showing 60 of ${rows.length};
+      full set in out/language/${CO.summary.company}_claim_features.csv</p>`:''}`;
+}
+
+function tabLanguage(){
+  const L = CO.language; if(!L) return `<p class="empty">No language analysis.</p>`;
+  const S = L.series||[], dc = L.drift_counts||{}, cs = L.cross_signal||{};
+  const soft = (CO.drift_events||[]).filter(e=>e.type==='wording_softened'
+    && !/boilerplate_recycled/.test(e.description));
+  const pc=v=>v==null?'—':(v*100).toFixed(0)+'%';
+  const nv=(v,d)=>v==null?'—':Number(v).toFixed(d);
+
+  return `<p class="sub">Every number below is a counting rule over an editable lexicon
+    (<code>config/lexicons.yaml</code>) — no model, no API call, fully reproducible.</p>
+
+    <h2 style="margin-top:4px">Language profile by report year</h2>
+    <table><thead><tr><th>Year</th><th>Claims</th><th>Specificity</th><th>Quantified</th>
+      <th>Verified</th><th>Firm</th><th>Hedged</th><th>Say&gt;prove</th></tr></thead><tbody>
+    ${S.map(r=>`<tr><td class="mono">${r.year}</td><td class="mono">${r.n_claims}</td>
+      <td class="mono">${nv(r.mean_specificity,3)}</td><td class="mono">${pc(r.quantified_share)}</td>
+      <td class="mono">${pc(r.verified_share)}</td><td class="mono">${pc(r.firm_share)}</td>
+      <td class="mono">${pc(r.hedged_share)}</td>
+      <td class="mono">${nv(r.say_more_prove_less,2)}</td></tr>`).join('')}
+    </tbody></table>
+
+    <h2 style="margin-top:22px">Commitment softening across reports</h2>
+    <p class="sub">${dc.substantive||0} substantive events
+      (${dc.boilerplate||0} recycled-boilerplate events excluded as weak signal).
+      Claims matched between consecutive years with TF-IDF character n-grams.</p>
+    ${soft.slice(0,6).map(e=>`<div class="evt" style="margin-bottom:10px">
+        <div class="k">${F.esc(e.description.split(']')[0].replace('[',''))} · ${e.year}</div>
+        <div style="color:var(--tx3);font-size:11px;margin:3px 0 6px">${F.esc(e.description.split(']').slice(1).join(']').trim())}</div>
+        <div style="font-size:11.5px;line-height:1.5">
+          <span class="src">WAS</span> ${F.esc((e.old||'').slice(0,190))}<br>
+          <span class="src" style="color:var(--amber)">NOW</span> ${F.esc((e.new||'').slice(0,190))}
+        </div></div>`).join('') || '<p class="empty">No substantive softening detected.</p>'}
+
+    <h2 style="margin-top:22px">Cross-signal: do the numbers and the words move together?</h2>
+    <table><thead><tr><th>Report year</th><th>Numeric restatements</th>
+      <th>Language softenings</th><th>Both</th></tr></thead><tbody>
+    ${(cs.rows||[]).map(r=>`<tr><td class="mono">${r.report_year}</td>
+      <td class="mono">${r.numeric_restatements}</td>
+      <td class="mono">${r.language_softenings}</td>
+      <td class="mono" style="color:${r.both?'var(--amber)':'var(--tx3)'}">${r.both?'YES':'—'}</td>
+    </tr>`).join('')}</tbody></table>
+    <div class="banner warn" style="margin-top:12px"><span class="dot" style="background:var(--amber)"></span>
+      <div><b>Do not read this as co-occurrence yet.</b> The verified DiD CSV covers only two
+      reports, so ${(cs.rows||[]).length? (cs.rows[cs.rows.length-1]||{}).report_year : ''} is the
+      <i>only</i> year in which a numeric restatement can appear at all. The language side spans
+      five. Transcribing the earlier reports into the DiD CSV is what would make this testable.</div>
+    </div>`;
 }
 
 function tabInvestor(){
@@ -361,7 +444,9 @@ function tabMethod(){
     </ul>`;
 }
 
-function setTab(t){ TAB=t; main(); }
+function setTab(t){ TAB=t;
+  history.replaceState(null,'','#'+CO.summary.company+(t!=='evidence'?'/'+t:''));
+  main(); }
 
 /* ---------------------------- time machine ------------------------------ */
 function side(){
@@ -399,8 +484,8 @@ function side(){
 
     <div class="card">
       <h2>SAID</h2><p class="sub">Pledges, targets and claims made that year</p>
-      <div class="lane"><h4>claims</h4>
-        <p class="empty">Awaiting Stage 2 (needs API key).</p></div>
+      <div class="lane"><h4>claims made in ${cur.year}</h4>
+        ${saidLane(cur.year)}</div>
       <h2 style="margin-top:6px">DID</h2><p class="sub">What the data actually shows</p>
       ${metricPicker()}
       ${chart()}
