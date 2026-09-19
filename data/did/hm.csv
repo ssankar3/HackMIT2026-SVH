@@ -1,0 +1,71 @@
+year,metric,value,unit,scope,source,page
+2025,scope_1_emissions,17039,tCO2e,gross,hm/2025_sustainability_report.pdf,41
+2024,scope_1_emissions,17002,tCO2e,gross,hm/2025_sustainability_report.pdf,41
+2023,scope_1_emissions,17050,tCO2e,gross,hm/2025_sustainability_report.pdf,41
+2019,scope_1_emissions,22738,tCO2e,gross,hm/2025_sustainability_report.pdf,41
+2025,scope_2_emissions_location_based,337786,tCO2e,"gross, location-based",hm/2025_sustainability_report.pdf,41
+2024,scope_2_emissions_location_based,372984,tCO2e,"gross, location-based",hm/2025_sustainability_report.pdf,41
+2023,scope_2_emissions_location_based,378730,tCO2e,"gross, location-based",hm/2025_sustainability_report.pdf,41
+2019,scope_2_emissions_location_based,658763,tCO2e,"gross, location-based",hm/2025_sustainability_report.pdf,41
+2025,scope_2_emissions_market_based,25131,tCO2e,"gross, market-based",hm/2025_sustainability_report.pdf,41
+2024,scope_2_emissions_market_based,28492,tCO2e,"gross, market-based",hm/2025_sustainability_report.pdf,41
+2023,scope_2_emissions_market_based,40554,tCO2e,"gross, market-based",hm/2025_sustainability_report.pdf,41
+2019,scope_2_emissions_market_based,48735,tCO2e,"gross, market-based",hm/2025_sustainability_report.pdf,41
+2025,scope_1_2_emissions,42170,tCO2e,scope 1 + scope 2; basis not stated in table,hm/2025_sustainability_report.pdf,41
+2024,scope_1_2_emissions,45493,tCO2e,scope 1 + scope 2; basis not stated in table,hm/2025_sustainability_report.pdf,41
+2023,scope_1_2_emissions,57604,tCO2e,scope 1 + scope 2; basis not stated in table,hm/2025_sustainability_report.pdf,41
+2019,scope_1_2_emissions,71473,tCO2e,scope 1 + scope 2; basis not stated in table,hm/2025_sustainability_report.pdf,41
+2025,scope_3_emissions_excl_use_phase,4865000,tCO2e,"excl. use-phase, science-based-target boundary",hm/2025_sustainability_report.pdf,41
+2024,scope_3_emissions_excl_use_phase,5628000,tCO2e,"excl. use-phase, science-based-target boundary",hm/2025_sustainability_report.pdf,41
+2023,scope_3_emissions_excl_use_phase,5438000,tCO2e,"excl. use-phase, science-based-target boundary",hm/2025_sustainability_report.pdf,41
+2019,scope_3_emissions_excl_use_phase,7442000,tCO2e,"excl. use-phase, science-based-target boundary",hm/2025_sustainability_report.pdf,41
+2025,scope_3_emissions_incl_use_phase,6813000,tCO2e,"gross indirect, incl. use-phase",hm/2025_sustainability_report.pdf,41
+2024,scope_3_emissions_incl_use_phase,7786000,tCO2e,"gross indirect, incl. use-phase",hm/2025_sustainability_report.pdf,41
+2023,scope_3_emissions_incl_use_phase,7491000,tCO2e,"gross indirect, incl. use-phase",hm/2025_sustainability_report.pdf,41
+2019,scope_3_emissions_incl_use_phase,10156000,tCO2e,"gross indirect, incl. use-phase",hm/2025_sustainability_report.pdf,41
+2025,total_emissions_location_based,7167000,tCO2e,location-based,hm/2025_sustainability_report.pdf,41
+2024,total_emissions_location_based,8176000,tCO2e,location-based,hm/2025_sustainability_report.pdf,41
+2023,total_emissions_location_based,7886000,tCO2e,location-based,hm/2025_sustainability_report.pdf,41
+2019,total_emissions_location_based,10837000,tCO2e,location-based,hm/2025_sustainability_report.pdf,41
+2025,total_emissions_market_based,6855000,tCO2e,market-based,hm/2025_sustainability_report.pdf,41
+2024,total_emissions_market_based,7831000,tCO2e,market-based,hm/2025_sustainability_report.pdf,41
+2023,total_emissions_market_based,7548000,tCO2e,market-based,hm/2025_sustainability_report.pdf,41
+2019,total_emissions_market_based,10227000,tCO2e,market-based,hm/2025_sustainability_report.pdf,41
+2025,renewable_electricity_share,95,%,own operations,hm/2025_sustainability_report.pdf,41
+2024,renewable_electricity_share,96,%,own operations,hm/2025_sustainability_report.pdf,41
+2023,renewable_electricity_share,94,%,own operations,hm/2025_sustainability_report.pdf,41
+2019,renewable_electricity_share,96,%,own operations,hm/2025_sustainability_report.pdf,41
+2025,recycled_materials_share,32,%,commercial products,hm/2025_sustainability_report.pdf,47
+2024,recycled_materials_share,30,%,commercial products,hm/2025_sustainability_report.pdf,47
+2025,recycled_materials_share_incl_packaging,35,%,commercial products and packaging,hm/2025_sustainability_report.pdf,47
+2024,recycled_materials_share_incl_packaging,33,%,commercial products and packaging,hm/2025_sustainability_report.pdf,47
+2025,recycled_or_sustainably_sourced_materials_share,91,%,commercial products,hm/2025_sustainability_report.pdf,47
+2024,recycled_or_sustainably_sourced_materials_share,90,%,commercial products,hm/2025_sustainability_report.pdf,47
+2024,scope_1_emissions,15102,tonnes CO2e,total,hm/2024_sustainability_report.pdf,34
+2023,scope_1_emissions,15754,tonnes CO2e,total,hm/2024_sustainability_report.pdf,34
+2022,scope_1_emissions,18048,tonnes CO2e,total,hm/2024_sustainability_report.pdf,34
+2019,scope_1_emissions,21564,tonnes CO2e,total; 2019 baseline column,hm/2024_sustainability_report.pdf,34
+2024,scope_2_emissions_location_based,364693,tonnes CO2e,location-based,hm/2024_sustainability_report.pdf,34
+2023,scope_2_emissions_location_based,377573,tonnes CO2e,location-based,hm/2024_sustainability_report.pdf,34
+2022,scope_2_emissions_location_based,443099,tonnes CO2e,location-based,hm/2024_sustainability_report.pdf,34
+2019,scope_2_emissions_location_based,658646,tonnes CO2e,location-based; 2019 baseline column,hm/2024_sustainability_report.pdf,34
+2024,scope_2_emissions_market_based,26553,tonnes CO2e,market-based,hm/2024_sustainability_report.pdf,34
+2023,scope_2_emissions_market_based,39508,tonnes CO2e,market-based,hm/2024_sustainability_report.pdf,34
+2022,scope_2_emissions_market_based,46806,tonnes CO2e,market-based,hm/2024_sustainability_report.pdf,34
+2019,scope_2_emissions_market_based,48735,tonnes CO2e,market-based; 2019 baseline column,hm/2024_sustainability_report.pdf,34
+2024,scope_1_2_emissions,41655,tonnes CO2e,scope 1 + scope 2; market-based,hm/2024_sustainability_report.pdf,34
+2023,scope_1_2_emissions,55262,tonnes CO2e,scope 1 + scope 2; market-based,hm/2024_sustainability_report.pdf,34
+2022,scope_1_2_emissions,64854,tonnes CO2e,scope 1 + scope 2; market-based,hm/2024_sustainability_report.pdf,34
+2019,scope_1_2_emissions,70299,tonnes CO2e,scope 1 + scope 2; market-based; 2019 baseline column,hm/2024_sustainability_report.pdf,34
+2024,scope_3_emissions_excl_use_phase,6955000,tonnes CO2e,"excl. use-phase, science-based-target boundary",hm/2024_sustainability_report.pdf,34
+2023,scope_3_emissions_excl_use_phase,6754000,tonnes CO2e,"excl. use-phase, science-based-target boundary",hm/2024_sustainability_report.pdf,34
+2022,scope_3_emissions_excl_use_phase,7591000,tonnes CO2e,"excl. use-phase, science-based-target boundary",hm/2024_sustainability_report.pdf,34
+2019,scope_3_emissions_excl_use_phase,9115000,tonnes CO2e,"excl. use-phase, science-based-target boundary; 2019 baseline column",hm/2024_sustainability_report.pdf,34
+2024,scope_3_emissions_incl_use_phase,8729000,tonnes CO2e,incl. use-phase,hm/2024_sustainability_report.pdf,34
+2023,scope_3_emissions_incl_use_phase,8413000,tonnes CO2e,incl. use-phase,hm/2024_sustainability_report.pdf,34
+2022,scope_3_emissions_incl_use_phase,9442000,tonnes CO2e,incl. use-phase,hm/2024_sustainability_report.pdf,34
+2019,scope_3_emissions_incl_use_phase,11613000,tonnes CO2e,incl. use-phase; 2019 baseline column,hm/2024_sustainability_report.pdf,34
+2024,total_emissions,8770000,tonnes CO2e,basis not stated in table,hm/2024_sustainability_report.pdf,34
+2023,total_emissions,8469000,tonnes CO2e,basis not stated in table,hm/2024_sustainability_report.pdf,34
+2022,total_emissions,9507000,tonnes CO2e,basis not stated in table,hm/2024_sustainability_report.pdf,34
+2019,total_emissions,11684000,tonnes CO2e,basis not stated in table; 2019 baseline column,hm/2024_sustainability_report.pdf,34

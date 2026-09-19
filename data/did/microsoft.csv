@@ -1,0 +1,19 @@
+year,metric,value,unit,scope,source,page
+2020,total_emissions,12881000,metric tons CO2e,FY20 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
+2021,total_emissions,13772000,metric tons CO2e,FY21 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
+2022,total_emissions,13635000,metric tons CO2e,FY22 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
+2023,total_emissions,16112000,metric tons CO2e,FY23 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
+2024,total_emissions,16215000,metric tons CO2e,FY24 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
+2025,total_emissions,20290000,metric tons CO2e,FY25 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart,microsoft/2025_sustainability_report.pdf,30
+2025,emissions_share_scope_1,0.84,%,FY25; share of total emissions,microsoft/2025_sustainability_report.pdf,54
+2025,emissions_share_scope_2,13.34,%,FY25; share of total emissions; market-based,microsoft/2025_sustainability_report.pdf,54
+2025,emissions_share_scope_3,85.82,%,FY25; share of total emissions; market-based; management's criteria values,microsoft/2025_sustainability_report.pdf,54
+2024,emissions_share_scope_1,0.97,%,FY24; share of total emissions,microsoft/2024_sustainability_report.pdf,13
+2024,emissions_share_scope_2,1.74,%,FY24; share of total emissions; market-based,microsoft/2024_sustainability_report.pdf,13
+2024,emissions_share_scope_3,97.29,%,FY24; share of total emissions; market-based; management's criteria values,microsoft/2024_sustainability_report.pdf,13
+2024,carbon_removal_contracted,21927370,metric tons CO2e,FY24; total contracted in year; delivery over 15+ years,microsoft/2024_sustainability_report.pdf,21
+2024,carbon_removal_contracted_2031_plus,17432374,metric tons CO2e,FY24; 2031+ carbon negative and historic emissions,microsoft/2024_sustainability_report.pdf,21
+2024,carbon_removal_contracted_2030,2804056,metric tons CO2e,FY24; 2030 carbon negative goal year,microsoft/2024_sustainability_report.pdf,21
+2024,carbon_removal_contracted_in_year,1690940,metric tons CO2e,FY24; in-year neutrality,microsoft/2024_sustainability_report.pdf,21
+2025,carbon_removal_contributed,45000000,metric tons CO2e,"FY25; reported as ""more than 45 million"" so this is a LOWER BOUND, not exact; wording is ""contributed"" not ""contracted"" so not directly comparable to FY24",microsoft/2025_sustainability_report.pdf,62
+2025,renewable_electricity_share,100,%,FY25; annual global electricity consumption matched with renewable energy,microsoft/2025_sustainability_report.pdf,62

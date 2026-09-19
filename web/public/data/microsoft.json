@@ -1,0 +1,598 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-19T18:25:17+00:00",
+  "summary": {
+    "company": "microsoft",
+    "display_name": "Microsoft",
+    "overall_score": null,
+    "confidence": "low",
+    "confidence_rationale": "capped at low: only 0 of 5 sub-scores measurable; 0 verified evidence quotes (need 2+ for medium)",
+    "peer_percentile": null,
+    "abstain": true,
+    "abstain_reasons": [
+      "only 0 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+      "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+      "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+      "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+      "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+      "goalpost_drift: not measurable from available data"
+    ],
+    "headline": "No metric-year was published by more than one report, so restatement behaviour cannot be assessed from the available documents.",
+    "sub_scores": {
+      "vagueness": null,
+      "unsupported_claims": null,
+      "sins_severity": null,
+      "say_do_gap": null,
+      "goalpost_drift": null
+    }
+  },
+  "coverage": {
+    "n_documents": 2,
+    "n_pages": 0,
+    "n_chunks": 0,
+    "n_claims": 0,
+    "n_evidence_verified": 0,
+    "n_did_rows": 18,
+    "did_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "did_metrics": [
+      "carbon_removal_contracted",
+      "carbon_removal_contracted_2030",
+      "carbon_removal_contracted_2031_plus",
+      "carbon_removal_contracted_in_year",
+      "carbon_removal_contributed",
+      "emissions_share_scope_1",
+      "emissions_share_scope_2",
+      "emissions_share_scope_3",
+      "renewable_electricity_share",
+      "total_emissions"
+    ],
+    "stages_completed": [
+      "stage6_saydo",
+      "stage8_score"
+    ],
+    "stages_blocked": {
+      "stage2_claims": "no ANTHROPIC_API_KEY in environment",
+      "stage4_sins": "no ANTHROPIC_API_KEY in environment",
+      "stage5_evidence": "no ANTHROPIC_API_KEY in environment",
+      "stage7_debate": "no ANTHROPIC_API_KEY in environment"
+    }
+  },
+  "timeline": [
+    {
+      "year": 2020,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2020,
+          "metric": "total_emissions",
+          "value": 12881000.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY20 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 30
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2021,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2021,
+          "metric": "total_emissions",
+          "value": 13772000.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY21 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 30
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2022,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2022,
+          "metric": "total_emissions",
+          "value": 13635000.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY22 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 30
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2023,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2023,
+          "metric": "total_emissions",
+          "value": 16112000.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY23 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 30
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2024,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2024,
+          "metric": "carbon_removal_contracted",
+          "value": 21927370.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY24; total contracted in year; delivery over 15+ years",
+          "source": "microsoft/2024_sustainability_report.pdf",
+          "page": 21
+        },
+        {
+          "year": 2024,
+          "metric": "carbon_removal_contracted_2030",
+          "value": 2804056.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY24; 2030 carbon negative goal year",
+          "source": "microsoft/2024_sustainability_report.pdf",
+          "page": 21
+        },
+        {
+          "year": 2024,
+          "metric": "carbon_removal_contracted_2031_plus",
+          "value": 17432374.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY24; 2031+ carbon negative and historic emissions",
+          "source": "microsoft/2024_sustainability_report.pdf",
+          "page": 21
+        },
+        {
+          "year": 2024,
+          "metric": "carbon_removal_contracted_in_year",
+          "value": 1690940.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY24; in-year neutrality",
+          "source": "microsoft/2024_sustainability_report.pdf",
+          "page": 21
+        },
+        {
+          "year": 2024,
+          "metric": "total_emissions",
+          "value": 16215000.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY24 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 30
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2025,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2025,
+          "metric": "carbon_removal_contributed",
+          "value": 45000000.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY25; reported as \"more than 45 million\" so this is a LOWER BOUND, not exact; wording is \"contributed\" not \"contracted\" so not directly comparable to FY24",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 62
+        },
+        {
+          "year": 2025,
+          "metric": "emissions_share_scope_1",
+          "value": 0.84,
+          "unit": "%",
+          "scope": "FY25; share of total emissions",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 54
+        },
+        {
+          "year": 2025,
+          "metric": "emissions_share_scope_2",
+          "value": 13.34,
+          "unit": "%",
+          "scope": "FY25; share of total emissions; market-based",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 54
+        },
+        {
+          "year": 2025,
+          "metric": "emissions_share_scope_3",
+          "value": 85.82,
+          "unit": "%",
+          "scope": "FY25; share of total emissions; market-based; management's criteria values",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 54
+        },
+        {
+          "year": 2025,
+          "metric": "renewable_electricity_share",
+          "value": 100.0,
+          "unit": "%",
+          "scope": "FY25; annual global electricity consumption matched with renewable energy",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 62
+        },
+        {
+          "year": 2025,
+          "metric": "total_emissions",
+          "value": 20290000.0,
+          "unit": "metric tons CO2e",
+          "scope": "FY25 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+          "source": "microsoft/2025_sustainability_report.pdf",
+          "page": 30
+        }
+      ],
+      "drift_ids": [
+        "microsoft-drift-000"
+      ],
+      "score_as_of": 25.0,
+      "score_hindsight": 25.0
+    }
+  ],
+  "year_scores": [
+    {
+      "year": 2020,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 0 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "goalpost_drift: not measurable from available data"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2021,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 0 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "goalpost_drift: not measurable from available data"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2022,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 0 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "goalpost_drift: not measurable from available data"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2023,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 0 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "goalpost_drift: not measurable from available data"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2024,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 0 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "goalpost_drift: not measurable from available data"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2025,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": 25.0
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 0 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "goalpost_drift: not measurable from available data"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 1
+    }
+  ],
+  "claims": [],
+  "evidence": [],
+  "drift_events": [
+    {
+      "drift_id": "microsoft-drift-000",
+      "year": 2025,
+      "type": "metric_redefined",
+      "canonical_metric": "carbon_removal_contributed",
+      "old": "carbon_removal_contracted",
+      "new": "carbon_removal_contributed",
+      "magnitude_pct": null,
+      "description": "metric 'carbon_removal_contracted' reported through the 2024 report was replaced by 'carbon_removal_contributed' in the 2025 report; the two are not directly comparable",
+      "evidence_chunk_ids": [],
+      "old_source": "microsoft/2024_sustainability_report.pdf",
+      "new_source": "microsoft/2025_sustainability_report.pdf",
+      "page": null
+    }
+  ],
+  "did_points": [
+    {
+      "year": 2020,
+      "metric": "total_emissions",
+      "value": 12881000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY20 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2021,
+      "metric": "total_emissions",
+      "value": 13772000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY21 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2022,
+      "metric": "total_emissions",
+      "value": 13635000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY22 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2023,
+      "metric": "total_emissions",
+      "value": 16112000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY23 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2024,
+      "metric": "total_emissions",
+      "value": 16215000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2025,
+      "metric": "total_emissions",
+      "value": 20290000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY25 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2025,
+      "metric": "emissions_share_scope_1",
+      "value": 0.84,
+      "unit": "%",
+      "scope": "FY25; share of total emissions",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 54
+    },
+    {
+      "year": 2025,
+      "metric": "emissions_share_scope_2",
+      "value": 13.34,
+      "unit": "%",
+      "scope": "FY25; share of total emissions; market-based",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 54
+    },
+    {
+      "year": 2025,
+      "metric": "emissions_share_scope_3",
+      "value": 85.82,
+      "unit": "%",
+      "scope": "FY25; share of total emissions; market-based; management's criteria values",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 54
+    },
+    {
+      "year": 2024,
+      "metric": "emissions_share_scope_1",
+      "value": 0.97,
+      "unit": "%",
+      "scope": "FY24; share of total emissions",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 13
+    },
+    {
+      "year": 2024,
+      "metric": "emissions_share_scope_2",
+      "value": 1.74,
+      "unit": "%",
+      "scope": "FY24; share of total emissions; market-based",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 13
+    },
+    {
+      "year": 2024,
+      "metric": "emissions_share_scope_3",
+      "value": 97.29,
+      "unit": "%",
+      "scope": "FY24; share of total emissions; market-based; management's criteria values",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 13
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted",
+      "value": 21927370.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; total contracted in year; delivery over 15+ years",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted_2031_plus",
+      "value": 17432374.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; 2031+ carbon negative and historic emissions",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted_2030",
+      "value": 2804056.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; 2030 carbon negative goal year",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted_in_year",
+      "value": 1690940.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; in-year neutrality",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2025,
+      "metric": "carbon_removal_contributed",
+      "value": 45000000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY25; reported as \"more than 45 million\" so this is a LOWER BOUND, not exact; wording is \"contributed\" not \"contracted\" so not directly comparable to FY24",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 62
+    },
+    {
+      "year": 2025,
+      "metric": "renewable_electricity_share",
+      "value": 100.0,
+      "unit": "%",
+      "scope": "FY25; annual global electricity consumption matched with renewable energy",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 62
+    }
+  ],
+  "top_damaging_claim_ids": [],
+  "eval": {
+    "agreement_rate": null,
+    "per_sin_precision": {},
+    "per_sin_recall": {},
+    "brier_score": null,
+    "calibration_table": [],
+    "n_gold": 0,
+    "notes": "Stage 4/7 blocked; no LLM predictions to score yet."
+  }
+}

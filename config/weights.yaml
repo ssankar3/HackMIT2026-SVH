@@ -1,0 +1,41 @@
+# Sub-score weights for the blended overall score (Stage 8).
+# Higher sub-score = riskier. Weights are renormalized over whichever
+# sub-scores are actually measurable for a company, and `min_components`
+# governs whether an overall score is emitted at all.
+#
+# NOTHING company-specific belongs in this file. No per-company overrides,
+# no expected rankings. If you find yourself wanting to add one, the fix is
+# upstream in the evidence, not here.
+
+weights:
+  vagueness: 0.15
+  unsupported_claims: 0.20
+  sins_severity: 0.25
+  say_do_gap: 0.25
+  goalpost_drift: 0.15
+
+# Blend of (weighted sub-scores) vs (mean judge probability * 100).
+judge_blend:
+  sub_scores: 0.6
+  judge_probability: 0.4
+
+# An overall score is suppressed (abstain) unless at least this many of the
+# five sub-scores could actually be measured.
+min_components: 3
+
+# Confidence caps. These are hard ceilings applied after scoring.
+confidence:
+  # fewer than this many verified evidence quotes -> confidence capped at "low"
+  min_verified_quotes_for_medium: 2
+  min_verified_quotes_for_high: 5
+  # fewer than this many measurable sub-scores -> capped at "low"
+  min_components_for_medium: 3
+  min_components_for_high: 4
+
+# Goalpost-drift scoring internals (Stage 6). Company-agnostic.
+drift:
+  restatement_noise_floor_pct: 0.5
+  magnitude_saturation_pct: 30.0
+  rate_weight: 0.45
+  magnitude_weight: 0.40
+  redefinition_weight: 0.15

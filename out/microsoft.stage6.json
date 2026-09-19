@@ -1,0 +1,355 @@
+{
+  "company": "microsoft",
+  "drift_events": [
+    {
+      "year": 2025,
+      "type": "metric_redefined",
+      "canonical_metric": "carbon_removal_contributed",
+      "old": "carbon_removal_contracted",
+      "new": "carbon_removal_contributed",
+      "magnitude_pct": null,
+      "old_source": "microsoft/2024_sustainability_report.pdf",
+      "new_source": "microsoft/2025_sustainability_report.pdf",
+      "page": null,
+      "description": "metric 'carbon_removal_contracted' reported through the 2024 report was replaced by 'carbon_removal_contributed' in the 2025 report; the two are not directly comparable",
+      "drift_id": "microsoft-drift-000"
+    }
+  ],
+  "goalpost_drift": null,
+  "goalpost_drift_basis": {
+    "reason": "no metric-year was published by more than one report, so restatement cannot be measured",
+    "n_comparable_pairs": 0
+  },
+  "say_do_gap": null,
+  "say_do_gap_basis": {
+    "reason": "target-vs-actual glidepath requires Stage 2 claims (targets with baseline and target year); no claims available"
+  },
+  "series": {
+    "carbon_removal_contracted": [
+      {
+        "year": 2024,
+        "value": 21927370.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY24; total contracted in year; delivery over 15+ years",
+        "source": "microsoft/2024_sustainability_report.pdf",
+        "page": 21
+      }
+    ],
+    "carbon_removal_contracted_2030": [
+      {
+        "year": 2024,
+        "value": 2804056.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY24; 2030 carbon negative goal year",
+        "source": "microsoft/2024_sustainability_report.pdf",
+        "page": 21
+      }
+    ],
+    "carbon_removal_contracted_2031_plus": [
+      {
+        "year": 2024,
+        "value": 17432374.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY24; 2031+ carbon negative and historic emissions",
+        "source": "microsoft/2024_sustainability_report.pdf",
+        "page": 21
+      }
+    ],
+    "carbon_removal_contracted_in_year": [
+      {
+        "year": 2024,
+        "value": 1690940.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY24; in-year neutrality",
+        "source": "microsoft/2024_sustainability_report.pdf",
+        "page": 21
+      }
+    ],
+    "carbon_removal_contributed": [
+      {
+        "year": 2025,
+        "value": 45000000.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY25; reported as \"more than 45 million\" so this is a LOWER BOUND, not exact; wording is \"contributed\" not \"contracted\" so not directly comparable to FY24",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 62
+      }
+    ],
+    "emissions_share_scope_1": [
+      {
+        "year": 2025,
+        "value": 0.84,
+        "unit": "%",
+        "scope": "FY25; share of total emissions",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 54
+      }
+    ],
+    "emissions_share_scope_2": [
+      {
+        "year": 2025,
+        "value": 13.34,
+        "unit": "%",
+        "scope": "FY25; share of total emissions; market-based",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 54
+      }
+    ],
+    "emissions_share_scope_3": [
+      {
+        "year": 2025,
+        "value": 85.82,
+        "unit": "%",
+        "scope": "FY25; share of total emissions; market-based; management's criteria values",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 54
+      }
+    ],
+    "renewable_electricity_share": [
+      {
+        "year": 2025,
+        "value": 100.0,
+        "unit": "%",
+        "scope": "FY25; annual global electricity consumption matched with renewable energy",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 62
+      }
+    ],
+    "total_emissions": [
+      {
+        "year": 2020,
+        "value": 12881000.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY20 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 30
+      },
+      {
+        "year": 2021,
+        "value": 13772000.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY21 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 30
+      },
+      {
+        "year": 2022,
+        "value": 13635000.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY22 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 30
+      },
+      {
+        "year": 2023,
+        "value": 16112000.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY23 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 30
+      },
+      {
+        "year": 2024,
+        "value": 16215000.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY24 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 30
+      },
+      {
+        "year": 2025,
+        "value": 20290000.0,
+        "unit": "metric tons CO2e",
+        "scope": "FY25 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+        "source": "microsoft/2025_sustainability_report.pdf",
+        "page": 30
+      }
+    ]
+  },
+  "did_rows": [
+    {
+      "year": 2020,
+      "metric": "total_emissions",
+      "value": 12881000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY20 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2021,
+      "metric": "total_emissions",
+      "value": 13772000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY21 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2022,
+      "metric": "total_emissions",
+      "value": 13635000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY22 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2023,
+      "metric": "total_emissions",
+      "value": 16112000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY23 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2024,
+      "metric": "total_emissions",
+      "value": 16215000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2025,
+      "metric": "total_emissions",
+      "value": 20290000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY25 (fiscal year ends June 30); Scopes 1+2+3; Scope 2 and 3 market-based; read from chart",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 30
+    },
+    {
+      "year": 2025,
+      "metric": "emissions_share_scope_1",
+      "value": 0.84,
+      "unit": "%",
+      "scope": "FY25; share of total emissions",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 54
+    },
+    {
+      "year": 2025,
+      "metric": "emissions_share_scope_2",
+      "value": 13.34,
+      "unit": "%",
+      "scope": "FY25; share of total emissions; market-based",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 54
+    },
+    {
+      "year": 2025,
+      "metric": "emissions_share_scope_3",
+      "value": 85.82,
+      "unit": "%",
+      "scope": "FY25; share of total emissions; market-based; management's criteria values",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 54
+    },
+    {
+      "year": 2024,
+      "metric": "emissions_share_scope_1",
+      "value": 0.97,
+      "unit": "%",
+      "scope": "FY24; share of total emissions",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 13
+    },
+    {
+      "year": 2024,
+      "metric": "emissions_share_scope_2",
+      "value": 1.74,
+      "unit": "%",
+      "scope": "FY24; share of total emissions; market-based",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 13
+    },
+    {
+      "year": 2024,
+      "metric": "emissions_share_scope_3",
+      "value": 97.29,
+      "unit": "%",
+      "scope": "FY24; share of total emissions; market-based; management's criteria values",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 13
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted",
+      "value": 21927370.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; total contracted in year; delivery over 15+ years",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted_2031_plus",
+      "value": 17432374.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; 2031+ carbon negative and historic emissions",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted_2030",
+      "value": 2804056.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; 2030 carbon negative goal year",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_removal_contracted_in_year",
+      "value": 1690940.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY24; in-year neutrality",
+      "source": "microsoft/2024_sustainability_report.pdf",
+      "page": 21
+    },
+    {
+      "year": 2025,
+      "metric": "carbon_removal_contributed",
+      "value": 45000000.0,
+      "unit": "metric tons CO2e",
+      "scope": "FY25; reported as \"more than 45 million\" so this is a LOWER BOUND, not exact; wording is \"contributed\" not \"contracted\" so not directly comparable to FY24",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 62
+    },
+    {
+      "year": 2025,
+      "metric": "renewable_electricity_share",
+      "value": 100.0,
+      "unit": "%",
+      "scope": "FY25; annual global electricity consumption matched with renewable energy",
+      "source": "microsoft/2025_sustainability_report.pdf",
+      "page": 62
+    }
+  ],
+  "n_did_rows": 18,
+  "did_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "did_metrics": [
+    "carbon_removal_contracted",
+    "carbon_removal_contracted_2030",
+    "carbon_removal_contracted_2031_plus",
+    "carbon_removal_contracted_in_year",
+    "carbon_removal_contributed",
+    "emissions_share_scope_1",
+    "emissions_share_scope_2",
+    "emissions_share_scope_3",
+    "renewable_electricity_share",
+    "total_emissions"
+  ],
+  "n_reports": 2
+}

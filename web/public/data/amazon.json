@@ -1,0 +1,1355 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-19T18:25:17+00:00",
+  "summary": {
+    "company": "amazon",
+    "display_name": "Amazon",
+    "overall_score": null,
+    "confidence": "low",
+    "confidence_rationale": "capped at low: only 1 of 5 sub-scores measurable; 0 verified evidence quotes (need 2+ for medium)",
+    "peer_percentile": 0.0,
+    "abstain": true,
+    "abstain_reasons": [
+      "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+      "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+      "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+      "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+      "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+    ],
+    "headline": "5 of 24 republished figures were restated between reports (median move 1.9%, max 2.58%).",
+    "sub_scores": {
+      "vagueness": null,
+      "unsupported_claims": null,
+      "sins_severity": null,
+      "say_do_gap": null,
+      "goalpost_drift": 15.7
+    }
+  },
+  "coverage": {
+    "n_documents": 2,
+    "n_pages": 0,
+    "n_chunks": 0,
+    "n_claims": 0,
+    "n_evidence_verified": 0,
+    "n_did_rows": 65,
+    "did_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "did_metrics": [
+      "carbon_intensity_per_gms",
+      "carbon_intensity_per_revenue",
+      "scope_1_emissions",
+      "scope_2_emissions_market_based",
+      "scope_3_emissions",
+      "total_emissions"
+    ],
+    "stages_completed": [
+      "stage6_saydo",
+      "stage8_score"
+    ],
+    "stages_blocked": {
+      "stage2_claims": "no ANTHROPIC_API_KEY in environment",
+      "stage4_sins": "no ANTHROPIC_API_KEY in environment",
+      "stage5_evidence": "no ANTHROPIC_API_KEY in environment",
+      "stage7_debate": "no ANTHROPIC_API_KEY in environment"
+    }
+  },
+  "timeline": [
+    {
+      "year": 2019,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2019,
+          "metric": "carbon_intensity_per_gms",
+          "value": 122.8,
+          "unit": "g CO2e per $ of gross merchandise sales",
+          "scope": "superseded by per-revenue intensity in 2025 report",
+          "source": "amazon/2024_sustainability_report.pdf",
+          "page": 50
+        },
+        {
+          "year": 2019,
+          "metric": "carbon_intensity_per_revenue",
+          "value": 182.4,
+          "unit": "g CO2e per $ of revenue",
+          "scope": "denominator changed to revenue in 2025 report",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2019,
+          "metric": "scope_1_emissions",
+          "value": 5.76,
+          "unit": "MMT CO2e",
+          "scope": "direct operations",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2019,
+          "metric": "scope_2_emissions_market_based",
+          "value": 5.5,
+          "unit": "MMT CO2e",
+          "scope": "purchased electricity; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2019,
+          "metric": "scope_3_emissions",
+          "value": 39.91,
+          "unit": "MMT CO2e",
+          "scope": "indirect sources; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2019,
+          "metric": "total_emissions",
+          "value": 51.17,
+          "unit": "MMT CO2e",
+          "scope": "total carbon footprint",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2020,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2020,
+          "metric": "carbon_intensity_per_gms",
+          "value": 102.7,
+          "unit": "g CO2e per $ of gross merchandise sales",
+          "scope": "superseded by per-revenue intensity in 2025 report",
+          "source": "amazon/2024_sustainability_report.pdf",
+          "page": 50
+        },
+        {
+          "year": 2020,
+          "metric": "carbon_intensity_per_revenue",
+          "value": 157.1,
+          "unit": "g CO2e per $ of revenue",
+          "scope": "denominator changed to revenue in 2025 report",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2020,
+          "metric": "scope_1_emissions",
+          "value": 9.62,
+          "unit": "MMT CO2e",
+          "scope": "direct operations",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2020,
+          "metric": "scope_2_emissions_market_based",
+          "value": 5.27,
+          "unit": "MMT CO2e",
+          "scope": "purchased electricity; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2020,
+          "metric": "scope_3_emissions",
+          "value": 45.75,
+          "unit": "MMT CO2e",
+          "scope": "indirect sources; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2020,
+          "metric": "total_emissions",
+          "value": 60.64,
+          "unit": "MMT CO2e",
+          "scope": "total carbon footprint",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2021,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2021,
+          "metric": "carbon_intensity_per_gms",
+          "value": 100.8,
+          "unit": "g CO2e per $ of gross merchandise sales",
+          "scope": "superseded by per-revenue intensity in 2025 report",
+          "source": "amazon/2024_sustainability_report.pdf",
+          "page": 50
+        },
+        {
+          "year": 2021,
+          "metric": "carbon_intensity_per_revenue",
+          "value": 152.3,
+          "unit": "g CO2e per $ of revenue",
+          "scope": "denominator changed to revenue in 2025 report",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2021,
+          "metric": "scope_1_emissions",
+          "value": 12.11,
+          "unit": "MMT CO2e",
+          "scope": "direct operations",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2021,
+          "metric": "scope_2_emissions_market_based",
+          "value": 4.07,
+          "unit": "MMT CO2e",
+          "scope": "purchased electricity; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2021,
+          "metric": "scope_3_emissions",
+          "value": 55.36,
+          "unit": "MMT CO2e",
+          "scope": "indirect sources; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2021,
+          "metric": "total_emissions",
+          "value": 71.54,
+          "unit": "MMT CO2e",
+          "scope": "total carbon footprint",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        }
+      ],
+      "drift_ids": [],
+      "score_as_of": null,
+      "score_hindsight": null
+    },
+    {
+      "year": 2022,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2022,
+          "metric": "carbon_intensity_per_gms",
+          "value": 85.7,
+          "unit": "g CO2e per $ of gross merchandise sales",
+          "scope": "superseded by per-revenue intensity in 2025 report",
+          "source": "amazon/2024_sustainability_report.pdf",
+          "page": 50
+        },
+        {
+          "year": 2022,
+          "metric": "carbon_intensity_per_revenue",
+          "value": 127.2,
+          "unit": "g CO2e per $ of revenue",
+          "scope": "denominator changed to revenue in 2025 report",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2022,
+          "metric": "scope_1_emissions",
+          "value": 13.02,
+          "unit": "MMT CO2e",
+          "scope": "direct operations",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2022,
+          "metric": "scope_2_emissions_market_based",
+          "value": 3.06,
+          "unit": "MMT CO2e",
+          "scope": "purchased electricity; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2022,
+          "metric": "scope_3_emissions",
+          "value": 49.29,
+          "unit": "MMT CO2e",
+          "scope": "indirect sources; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2022,
+          "metric": "total_emissions",
+          "value": 65.37,
+          "unit": "MMT CO2e",
+          "scope": "total carbon footprint",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        }
+      ],
+      "drift_ids": [
+        "amazon-drift-000"
+      ],
+      "score_as_of": null,
+      "score_hindsight": 0.9
+    },
+    {
+      "year": 2023,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2023,
+          "metric": "carbon_intensity_per_gms",
+          "value": 75.6,
+          "unit": "g CO2e per $ of gross merchandise sales",
+          "scope": "superseded by per-revenue intensity in 2025 report",
+          "source": "amazon/2024_sustainability_report.pdf",
+          "page": 50
+        },
+        {
+          "year": 2023,
+          "metric": "carbon_intensity_per_revenue",
+          "value": 113.6,
+          "unit": "g CO2e per $ of revenue",
+          "scope": "denominator changed to revenue in 2025 report",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2023,
+          "metric": "scope_1_emissions",
+          "value": 14.22,
+          "unit": "MMT CO2e",
+          "scope": "direct operations",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2023,
+          "metric": "scope_2_emissions_market_based",
+          "value": 2.76,
+          "unit": "MMT CO2e",
+          "scope": "purchased electricity; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2023,
+          "metric": "scope_3_emissions",
+          "value": 48.3,
+          "unit": "MMT CO2e",
+          "scope": "indirect sources; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2023,
+          "metric": "total_emissions",
+          "value": 65.28,
+          "unit": "MMT CO2e",
+          "scope": "total carbon footprint",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        }
+      ],
+      "drift_ids": [
+        "amazon-drift-001",
+        "amazon-drift-002"
+      ],
+      "score_as_of": null,
+      "score_hindsight": 5.5
+    },
+    {
+      "year": 2024,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2024,
+          "metric": "carbon_intensity_per_gms",
+          "value": 72.6,
+          "unit": "g CO2e per $ of gross merchandise sales",
+          "scope": "superseded by per-revenue intensity in 2025 report",
+          "source": "amazon/2024_sustainability_report.pdf",
+          "page": 50
+        },
+        {
+          "year": 2024,
+          "metric": "carbon_intensity_per_revenue",
+          "value": 109.0,
+          "unit": "g CO2e per $ of revenue",
+          "scope": "denominator changed to revenue in 2025 report",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2024,
+          "metric": "scope_1_emissions",
+          "value": 15.13,
+          "unit": "MMT CO2e",
+          "scope": "direct operations",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2024,
+          "metric": "scope_2_emissions_market_based",
+          "value": 2.8,
+          "unit": "MMT CO2e",
+          "scope": "purchased electricity; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2024,
+          "metric": "scope_3_emissions",
+          "value": 51.62,
+          "unit": "MMT CO2e",
+          "scope": "indirect sources; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2024,
+          "metric": "total_emissions",
+          "value": 69.55,
+          "unit": "MMT CO2e",
+          "scope": "total carbon footprint",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        }
+      ],
+      "drift_ids": [
+        "amazon-drift-003",
+        "amazon-drift-004"
+      ],
+      "score_as_of": null,
+      "score_hindsight": 7.5
+    },
+    {
+      "year": 2025,
+      "said_claim_ids": [],
+      "did_points": [
+        {
+          "year": 2025,
+          "metric": "carbon_intensity_per_revenue",
+          "value": 112.8,
+          "unit": "g CO2e per $ of revenue",
+          "scope": "denominator changed to revenue in 2025 report",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2025,
+          "metric": "scope_1_emissions",
+          "value": 15.37,
+          "unit": "MMT CO2e",
+          "scope": "direct operations",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2025,
+          "metric": "scope_2_emissions_market_based",
+          "value": 3.74,
+          "unit": "MMT CO2e",
+          "scope": "purchased electricity; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2025,
+          "metric": "scope_3_emissions",
+          "value": 61.74,
+          "unit": "MMT CO2e",
+          "scope": "indirect sources; market-based",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        },
+        {
+          "year": 2025,
+          "metric": "total_emissions",
+          "value": 80.85,
+          "unit": "MMT CO2e",
+          "scope": "total carbon footprint",
+          "source": "amazon/2025_sustainability_report.pdf",
+          "page": 46
+        }
+      ],
+      "drift_ids": [
+        "amazon-drift-005"
+      ],
+      "score_as_of": 25.0,
+      "score_hindsight": 25.0
+    }
+  ],
+  "year_scores": [
+    {
+      "year": 2019,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2020,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2021,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": null
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 0
+    },
+    {
+      "year": 2022,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": 0.9
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 1
+    },
+    {
+      "year": 2023,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": 5.5
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 2
+    },
+    {
+      "year": 2024,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": 7.5
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 2
+    },
+    {
+      "year": 2025,
+      "sub_scores": {
+        "vagueness": null,
+        "unsupported_claims": null,
+        "sins_severity": null,
+        "say_do_gap": null,
+        "goalpost_drift": 25.0
+      },
+      "overall": null,
+      "confidence": "low",
+      "abstain": true,
+      "abstain_reasons": [
+        "only 1 of 5 sub-scores could be measured; config requires at least 3 before an overall score is emitted",
+        "vagueness: requires stage2_claims (no ANTHROPIC_API_KEY set)",
+        "unsupported_claims: requires stage2_claims, stage5_evidence (no ANTHROPIC_API_KEY set)",
+        "sins_severity: requires stage4_sins (no ANTHROPIC_API_KEY set)",
+        "say_do_gap: requires stage2_claims (no ANTHROPIC_API_KEY set)"
+      ],
+      "n_claims": 0,
+      "n_verified_quotes": 0,
+      "n_drift_events": 1
+    }
+  ],
+  "claims": [],
+  "evidence": [],
+  "drift_events": [
+    {
+      "drift_id": "amazon-drift-000",
+      "year": 2022,
+      "type": "metric_restated",
+      "canonical_metric": "scope_3_emissions",
+      "old": "49.02",
+      "new": "49.29",
+      "magnitude_pct": 0.55,
+      "description": "scope_3_emissions for 2022 was published as 49.02 MMT CO2e in 2024_sustainability_report.pdf, then restated to 49.29 MMT CO2e in 2025_sustainability_report.pdf (+0.6%)",
+      "evidence_chunk_ids": [],
+      "old_source": "amazon/2024_sustainability_report.pdf",
+      "new_source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "drift_id": "amazon-drift-001",
+      "year": 2023,
+      "type": "metric_restated",
+      "canonical_metric": "scope_3_emissions",
+      "old": "47.4",
+      "new": "48.3",
+      "magnitude_pct": 1.9,
+      "description": "scope_3_emissions for 2023 was published as 47.4 MMT CO2e in 2024_sustainability_report.pdf, then restated to 48.3 MMT CO2e in 2025_sustainability_report.pdf (+1.9%)",
+      "evidence_chunk_ids": [],
+      "old_source": "amazon/2024_sustainability_report.pdf",
+      "new_source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "drift_id": "amazon-drift-002",
+      "year": 2023,
+      "type": "metric_restated",
+      "canonical_metric": "total_emissions",
+      "old": "64.38",
+      "new": "65.28",
+      "magnitude_pct": 1.4,
+      "description": "total_emissions for 2023 was published as 64.38 MMT CO2e in 2024_sustainability_report.pdf, then restated to 65.28 MMT CO2e in 2025_sustainability_report.pdf (+1.4%)",
+      "evidence_chunk_ids": [],
+      "old_source": "amazon/2024_sustainability_report.pdf",
+      "new_source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "drift_id": "amazon-drift-003",
+      "year": 2024,
+      "type": "metric_restated",
+      "canonical_metric": "scope_3_emissions",
+      "old": "50.32",
+      "new": "51.62",
+      "magnitude_pct": 2.58,
+      "description": "scope_3_emissions for 2024 was published as 50.32 MMT CO2e in 2024_sustainability_report.pdf, then restated to 51.62 MMT CO2e in 2025_sustainability_report.pdf (+2.6%)",
+      "evidence_chunk_ids": [],
+      "old_source": "amazon/2024_sustainability_report.pdf",
+      "new_source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "drift_id": "amazon-drift-004",
+      "year": 2024,
+      "type": "metric_restated",
+      "canonical_metric": "total_emissions",
+      "old": "68.25",
+      "new": "69.55",
+      "magnitude_pct": 1.9,
+      "description": "total_emissions for 2024 was published as 68.25 MMT CO2e in 2024_sustainability_report.pdf, then restated to 69.55 MMT CO2e in 2025_sustainability_report.pdf (+1.9%)",
+      "evidence_chunk_ids": [],
+      "old_source": "amazon/2024_sustainability_report.pdf",
+      "new_source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "drift_id": "amazon-drift-005",
+      "year": 2025,
+      "type": "metric_redefined",
+      "canonical_metric": "carbon_intensity_per_revenue",
+      "old": "carbon_intensity_per_gms",
+      "new": "carbon_intensity_per_revenue",
+      "magnitude_pct": null,
+      "description": "metric 'carbon_intensity_per_gms' reported through the 2024 report was replaced by 'carbon_intensity_per_revenue' in the 2025 report; the two are not directly comparable",
+      "evidence_chunk_ids": [],
+      "old_source": "amazon/2024_sustainability_report.pdf",
+      "new_source": "amazon/2025_sustainability_report.pdf",
+      "page": null
+    }
+  ],
+  "did_points": [
+    {
+      "year": 2019,
+      "metric": "scope_1_emissions",
+      "value": 5.76,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2020,
+      "metric": "scope_1_emissions",
+      "value": 9.62,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2021,
+      "metric": "scope_1_emissions",
+      "value": 12.11,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2022,
+      "metric": "scope_1_emissions",
+      "value": 13.02,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2023,
+      "metric": "scope_1_emissions",
+      "value": 14.22,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2024,
+      "metric": "scope_1_emissions",
+      "value": 15.13,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2025,
+      "metric": "scope_1_emissions",
+      "value": 15.37,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2019,
+      "metric": "scope_2_emissions_market_based",
+      "value": 5.5,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2020,
+      "metric": "scope_2_emissions_market_based",
+      "value": 5.27,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2021,
+      "metric": "scope_2_emissions_market_based",
+      "value": 4.07,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2022,
+      "metric": "scope_2_emissions_market_based",
+      "value": 3.06,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2023,
+      "metric": "scope_2_emissions_market_based",
+      "value": 2.76,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2024,
+      "metric": "scope_2_emissions_market_based",
+      "value": 2.8,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2025,
+      "metric": "scope_2_emissions_market_based",
+      "value": 3.74,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2019,
+      "metric": "scope_3_emissions",
+      "value": 39.91,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2020,
+      "metric": "scope_3_emissions",
+      "value": 45.75,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2021,
+      "metric": "scope_3_emissions",
+      "value": 55.36,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2022,
+      "metric": "scope_3_emissions",
+      "value": 49.29,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2023,
+      "metric": "scope_3_emissions",
+      "value": 48.3,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2024,
+      "metric": "scope_3_emissions",
+      "value": 51.62,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2025,
+      "metric": "scope_3_emissions",
+      "value": 61.74,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2019,
+      "metric": "total_emissions",
+      "value": 51.17,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2020,
+      "metric": "total_emissions",
+      "value": 60.64,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2021,
+      "metric": "total_emissions",
+      "value": 71.54,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2022,
+      "metric": "total_emissions",
+      "value": 65.37,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2023,
+      "metric": "total_emissions",
+      "value": 65.28,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2024,
+      "metric": "total_emissions",
+      "value": 69.55,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2025,
+      "metric": "total_emissions",
+      "value": 80.85,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2019,
+      "metric": "carbon_intensity_per_revenue",
+      "value": 182.4,
+      "unit": "g CO2e per $ of revenue",
+      "scope": "denominator changed to revenue in 2025 report",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2020,
+      "metric": "carbon_intensity_per_revenue",
+      "value": 157.1,
+      "unit": "g CO2e per $ of revenue",
+      "scope": "denominator changed to revenue in 2025 report",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2021,
+      "metric": "carbon_intensity_per_revenue",
+      "value": 152.3,
+      "unit": "g CO2e per $ of revenue",
+      "scope": "denominator changed to revenue in 2025 report",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2022,
+      "metric": "carbon_intensity_per_revenue",
+      "value": 127.2,
+      "unit": "g CO2e per $ of revenue",
+      "scope": "denominator changed to revenue in 2025 report",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2023,
+      "metric": "carbon_intensity_per_revenue",
+      "value": 113.6,
+      "unit": "g CO2e per $ of revenue",
+      "scope": "denominator changed to revenue in 2025 report",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_intensity_per_revenue",
+      "value": 109.0,
+      "unit": "g CO2e per $ of revenue",
+      "scope": "denominator changed to revenue in 2025 report",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2025,
+      "metric": "carbon_intensity_per_revenue",
+      "value": 112.8,
+      "unit": "g CO2e per $ of revenue",
+      "scope": "denominator changed to revenue in 2025 report",
+      "source": "amazon/2025_sustainability_report.pdf",
+      "page": 46
+    },
+    {
+      "year": 2019,
+      "metric": "scope_1_emissions",
+      "value": 5.76,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2020,
+      "metric": "scope_1_emissions",
+      "value": 9.62,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2021,
+      "metric": "scope_1_emissions",
+      "value": 12.11,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2022,
+      "metric": "scope_1_emissions",
+      "value": 13.02,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2023,
+      "metric": "scope_1_emissions",
+      "value": 14.22,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2024,
+      "metric": "scope_1_emissions",
+      "value": 15.13,
+      "unit": "MMT CO2e",
+      "scope": "direct operations",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2019,
+      "metric": "scope_2_emissions_market_based",
+      "value": 5.5,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2020,
+      "metric": "scope_2_emissions_market_based",
+      "value": 5.27,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2021,
+      "metric": "scope_2_emissions_market_based",
+      "value": 4.07,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2022,
+      "metric": "scope_2_emissions_market_based",
+      "value": 3.06,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2023,
+      "metric": "scope_2_emissions_market_based",
+      "value": 2.76,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2024,
+      "metric": "scope_2_emissions_market_based",
+      "value": 2.8,
+      "unit": "MMT CO2e",
+      "scope": "purchased electricity; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2019,
+      "metric": "scope_3_emissions",
+      "value": 39.91,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2020,
+      "metric": "scope_3_emissions",
+      "value": 45.75,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2021,
+      "metric": "scope_3_emissions",
+      "value": 55.36,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2022,
+      "metric": "scope_3_emissions",
+      "value": 49.02,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2023,
+      "metric": "scope_3_emissions",
+      "value": 47.4,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2024,
+      "metric": "scope_3_emissions",
+      "value": 50.32,
+      "unit": "MMT CO2e",
+      "scope": "indirect sources; market-based",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2019,
+      "metric": "total_emissions",
+      "value": 51.17,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2020,
+      "metric": "total_emissions",
+      "value": 60.64,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2021,
+      "metric": "total_emissions",
+      "value": 71.54,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2022,
+      "metric": "total_emissions",
+      "value": 65.1,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2023,
+      "metric": "total_emissions",
+      "value": 64.38,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2024,
+      "metric": "total_emissions",
+      "value": 68.25,
+      "unit": "MMT CO2e",
+      "scope": "total carbon footprint",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2019,
+      "metric": "carbon_intensity_per_gms",
+      "value": 122.8,
+      "unit": "g CO2e per $ of gross merchandise sales",
+      "scope": "superseded by per-revenue intensity in 2025 report",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2020,
+      "metric": "carbon_intensity_per_gms",
+      "value": 102.7,
+      "unit": "g CO2e per $ of gross merchandise sales",
+      "scope": "superseded by per-revenue intensity in 2025 report",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2021,
+      "metric": "carbon_intensity_per_gms",
+      "value": 100.8,
+      "unit": "g CO2e per $ of gross merchandise sales",
+      "scope": "superseded by per-revenue intensity in 2025 report",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2022,
+      "metric": "carbon_intensity_per_gms",
+      "value": 85.7,
+      "unit": "g CO2e per $ of gross merchandise sales",
+      "scope": "superseded by per-revenue intensity in 2025 report",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2023,
+      "metric": "carbon_intensity_per_gms",
+      "value": 75.6,
+      "unit": "g CO2e per $ of gross merchandise sales",
+      "scope": "superseded by per-revenue intensity in 2025 report",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    },
+    {
+      "year": 2024,
+      "metric": "carbon_intensity_per_gms",
+      "value": 72.6,
+      "unit": "g CO2e per $ of gross merchandise sales",
+      "scope": "superseded by per-revenue intensity in 2025 report",
+      "source": "amazon/2024_sustainability_report.pdf",
+      "page": 50
+    }
+  ],
+  "top_damaging_claim_ids": [],
+  "eval": {
+    "agreement_rate": null,
+    "per_sin_precision": {},
+    "per_sin_recall": {},
+    "brier_score": null,
+    "calibration_table": [],
+    "n_gold": 0,
+    "notes": "Stage 4/7 blocked; no LLM predictions to score yet."
+  }
+}

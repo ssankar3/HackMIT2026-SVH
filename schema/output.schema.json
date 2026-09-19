@@ -1,0 +1,1347 @@
+{
+  "$defs": {
+    "Claim": {
+      "properties": {
+        "claim_id": {
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "claim_text": {
+          "description": "verbatim; substring of its chunk",
+          "title": "Claim Text",
+          "type": "string"
+        },
+        "claim_type": {
+          "$ref": "#/$defs/ClaimType"
+        },
+        "metric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Metric"
+        },
+        "canonical_metric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Canonical Metric"
+        },
+        "target_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "baseline_year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Baseline Year"
+        },
+        "target_year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target Year"
+        },
+        "scope": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope"
+        },
+        "has_third_party_verification": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Has Third Party Verification"
+        },
+        "verifier_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verifier Name"
+        },
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "doc_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Doc Name"
+        },
+        "publish_year": {
+          "title": "Publish Year",
+          "type": "integer"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "features": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LinguisticFeatures"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sins": {
+          "items": {
+            "$ref": "#/$defs/SinTag"
+          },
+          "title": "Sins",
+          "type": "array"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "progress_status": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProgressStatus"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "debate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/DebateResult"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "claim_id",
+        "claim_text",
+        "claim_type",
+        "chunk_id",
+        "publish_year"
+      ],
+      "title": "Claim",
+      "type": "object"
+    },
+    "ClaimType": {
+      "enum": [
+        "target",
+        "achievement",
+        "product_label",
+        "policy",
+        "general"
+      ],
+      "title": "ClaimType",
+      "type": "string"
+    },
+    "CompanySummary": {
+      "properties": {
+        "company": {
+          "title": "Company",
+          "type": "string"
+        },
+        "display_name": {
+          "title": "Display Name",
+          "type": "string"
+        },
+        "overall_score": {
+          "anyOf": [
+            {
+              "maximum": 100.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overall Score"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "confidence_rationale": {
+          "title": "Confidence Rationale",
+          "type": "string"
+        },
+        "peer_percentile": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Peer Percentile"
+        },
+        "abstain": {
+          "default": false,
+          "title": "Abstain",
+          "type": "boolean"
+        },
+        "abstain_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Abstain Reasons",
+          "type": "array"
+        },
+        "headline": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Headline"
+        },
+        "sub_scores": {
+          "$ref": "#/$defs/SubScores"
+        }
+      },
+      "required": [
+        "company",
+        "display_name",
+        "confidence",
+        "confidence_rationale"
+      ],
+      "title": "CompanySummary",
+      "type": "object"
+    },
+    "Confidence": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "title": "Confidence",
+      "type": "string"
+    },
+    "DataCoverage": {
+      "description": "Front-and-centre honesty: what actually backs this company's score.",
+      "properties": {
+        "n_documents": {
+          "default": 0,
+          "title": "N Documents",
+          "type": "integer"
+        },
+        "n_pages": {
+          "default": 0,
+          "title": "N Pages",
+          "type": "integer"
+        },
+        "n_chunks": {
+          "default": 0,
+          "title": "N Chunks",
+          "type": "integer"
+        },
+        "n_claims": {
+          "default": 0,
+          "title": "N Claims",
+          "type": "integer"
+        },
+        "n_evidence_verified": {
+          "default": 0,
+          "title": "N Evidence Verified",
+          "type": "integer"
+        },
+        "n_did_rows": {
+          "default": 0,
+          "title": "N Did Rows",
+          "type": "integer"
+        },
+        "did_years": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Did Years",
+          "type": "array"
+        },
+        "did_metrics": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Did Metrics",
+          "type": "array"
+        },
+        "stages_completed": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Stages Completed",
+          "type": "array"
+        },
+        "stages_blocked": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "stage -> why it could not run",
+          "title": "Stages Blocked",
+          "type": "object"
+        }
+      },
+      "title": "DataCoverage",
+      "type": "object"
+    },
+    "DebateResult": {
+      "properties": {
+        "prosecutor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Prosecutor"
+        },
+        "defense": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Defense"
+        },
+        "verdict": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Verdict"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "probability": {
+          "anyOf": [
+            {
+              "maximum": 1.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Probability"
+        },
+        "probability_spread": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "max-min across judge runs; the confidence band",
+          "title": "Probability Spread"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Confidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "key_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Key Reasons",
+          "type": "array"
+        },
+        "cited_chunk_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Cited Chunk Ids",
+          "type": "array"
+        },
+        "missing_evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Missing Evidence",
+          "type": "array"
+        },
+        "confidence_capped_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence Capped Reason"
+        }
+      },
+      "title": "DebateResult",
+      "type": "object"
+    },
+    "DidPoint": {
+      "description": "One row of /data/did/{company}.csv -- what the company actually DID.",
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "metric": {
+          "title": "Metric",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "scope": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        }
+      },
+      "required": [
+        "year",
+        "metric",
+        "value",
+        "unit",
+        "source"
+      ],
+      "title": "DidPoint",
+      "type": "object"
+    },
+    "DriftEvent": {
+      "description": "A goalpost move. `metric_restated` covers the case where a company\nrepublishes a prior year's actual at a different value.",
+      "properties": {
+        "drift_id": {
+          "title": "Drift Id",
+          "type": "string"
+        },
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "type": {
+          "$ref": "#/$defs/DriftType"
+        },
+        "canonical_metric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Canonical Metric"
+        },
+        "old": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Old"
+        },
+        "new": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "New"
+        },
+        "magnitude_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "signed % change from old to new, where both are numeric",
+          "title": "Magnitude Pct"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "evidence_chunk_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Chunk Ids",
+          "type": "array"
+        },
+        "old_source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Old Source"
+        },
+        "new_source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "New Source"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        }
+      },
+      "required": [
+        "drift_id",
+        "year",
+        "type",
+        "description"
+      ],
+      "title": "DriftEvent",
+      "type": "object"
+    },
+    "DriftType": {
+      "enum": [
+        "target_value_changed",
+        "target_year_moved",
+        "baseline_moved",
+        "scope_narrowed",
+        "wording_softened",
+        "commitment_dropped",
+        "metric_restated",
+        "metric_redefined"
+      ],
+      "title": "DriftType",
+      "type": "string"
+    },
+    "EvalSummary": {
+      "properties": {
+        "agreement_rate": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Agreement Rate"
+        },
+        "per_sin_precision": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Per Sin Precision",
+          "type": "object"
+        },
+        "per_sin_recall": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Per Sin Recall",
+          "type": "object"
+        },
+        "brier_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Brier Score"
+        },
+        "calibration_table": {
+          "items": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object"
+          },
+          "title": "Calibration Table",
+          "type": "array"
+        },
+        "n_gold": {
+          "default": 0,
+          "title": "N Gold",
+          "type": "integer"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "title": "EvalSummary",
+      "type": "object"
+    },
+    "Evidence": {
+      "description": "A retrieved passage. `quote` MUST be a verified substring of the source\nchunk after whitespace normalization; unverified quotes are dropped upstream\nand never reach this model.",
+      "properties": {
+        "evidence_id": {
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "stance": {
+          "$ref": "#/$defs/EvidenceStance"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        },
+        "source_type": {
+          "$ref": "#/$defs/SourceType"
+        },
+        "doc_name": {
+          "title": "Doc Name",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        },
+        "doc_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "ISO date; drives as-of vs hindsight",
+          "title": "Doc Date"
+        },
+        "year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Year"
+        },
+        "quote_verified": {
+          "default": true,
+          "title": "Quote Verified",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "chunk_id",
+        "stance",
+        "quote",
+        "source_type",
+        "doc_name"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "EvidenceStance": {
+      "enum": [
+        "supports",
+        "contradicts",
+        "irrelevant",
+        "context"
+      ],
+      "title": "EvidenceStance",
+      "type": "string"
+    },
+    "LinguisticFeatures": {
+      "properties": {
+        "vague_word_ratio": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Vague Word Ratio"
+        },
+        "hedging_ratio": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hedging Ratio"
+        },
+        "future_orientation_ratio": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Future Orientation Ratio"
+        },
+        "quantification_present": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantification Present"
+        },
+        "baseline_present": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Baseline Present"
+        },
+        "date_present": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Present"
+        },
+        "scope_present": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope Present"
+        },
+        "verification_present": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verification Present"
+        },
+        "specificity_score": {
+          "anyOf": [
+            {
+              "maximum": 1.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Specificity Score"
+        },
+        "readability": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Readability"
+        },
+        "sentiment": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sentiment"
+        }
+      },
+      "title": "LinguisticFeatures",
+      "type": "object"
+    },
+    "ProgressStatus": {
+      "enum": [
+        "on_track",
+        "behind",
+        "reversed",
+        "unmeasurable"
+      ],
+      "title": "ProgressStatus",
+      "type": "string"
+    },
+    "Sin": {
+      "enum": [
+        "hidden_trade_off",
+        "no_proof",
+        "vagueness",
+        "irrelevance",
+        "lesser_of_two_evils",
+        "fibbing",
+        "false_labels"
+      ],
+      "title": "Sin",
+      "type": "string"
+    },
+    "SinTag": {
+      "properties": {
+        "sin": {
+          "$ref": "#/$defs/Sin"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "severity": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Severity",
+          "type": "number"
+        },
+        "evidence_needed": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Evidence Needed"
+        }
+      },
+      "required": [
+        "sin",
+        "rationale",
+        "severity"
+      ],
+      "title": "SinTag",
+      "type": "object"
+    },
+    "SourceType": {
+      "enum": [
+        "company",
+        "external"
+      ],
+      "title": "SourceType",
+      "type": "string"
+    },
+    "SubScores": {
+      "description": "0-100, higher = riskier. None means the pipeline could not measure it;\nthe paired `*_basis` string says why.",
+      "properties": {
+        "vagueness": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Vagueness"
+        },
+        "unsupported_claims": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unsupported Claims"
+        },
+        "sins_severity": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sins Severity"
+        },
+        "say_do_gap": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Say Do Gap"
+        },
+        "goalpost_drift": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Goalpost Drift"
+        }
+      },
+      "title": "SubScores",
+      "type": "object"
+    },
+    "TimelinePoint": {
+      "description": "One tick of the time machine: what was SAID and what was DID that year.",
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "said_claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Said Claim Ids",
+          "type": "array"
+        },
+        "did_points": {
+          "items": {
+            "$ref": "#/$defs/DidPoint"
+          },
+          "title": "Did Points",
+          "type": "array"
+        },
+        "drift_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Drift Ids",
+          "type": "array"
+        },
+        "score_as_of": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Score As Of"
+        },
+        "score_hindsight": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Score Hindsight"
+        }
+      },
+      "required": [
+        "year"
+      ],
+      "title": "TimelinePoint",
+      "type": "object"
+    },
+    "Verdict": {
+      "enum": [
+        "likely_greenwashing",
+        "mixed",
+        "likely_credible"
+      ],
+      "title": "Verdict",
+      "type": "string"
+    },
+    "YearScore": {
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "sub_scores": {
+          "$ref": "#/$defs/SubScores"
+        },
+        "overall": {
+          "anyOf": [
+            {
+              "maximum": 100.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overall"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "abstain": {
+          "default": false,
+          "title": "Abstain",
+          "type": "boolean"
+        },
+        "abstain_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Abstain Reasons",
+          "type": "array"
+        },
+        "n_claims": {
+          "default": 0,
+          "title": "N Claims",
+          "type": "integer"
+        },
+        "n_verified_quotes": {
+          "default": 0,
+          "title": "N Verified Quotes",
+          "type": "integer"
+        },
+        "n_drift_events": {
+          "default": 0,
+          "title": "N Drift Events",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "year",
+        "sub_scores",
+        "confidence"
+      ],
+      "title": "YearScore",
+      "type": "object"
+    }
+  },
+  "description": "The frozen contract: /out/{company}.json and web/public/data/{company}.json.",
+  "properties": {
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "generated_at": {
+      "title": "Generated At",
+      "type": "string"
+    },
+    "summary": {
+      "$ref": "#/$defs/CompanySummary"
+    },
+    "coverage": {
+      "$ref": "#/$defs/DataCoverage"
+    },
+    "timeline": {
+      "items": {
+        "$ref": "#/$defs/TimelinePoint"
+      },
+      "title": "Timeline",
+      "type": "array"
+    },
+    "year_scores": {
+      "items": {
+        "$ref": "#/$defs/YearScore"
+      },
+      "title": "Year Scores",
+      "type": "array"
+    },
+    "claims": {
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "title": "Claims",
+      "type": "array"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "drift_events": {
+      "items": {
+        "$ref": "#/$defs/DriftEvent"
+      },
+      "title": "Drift Events",
+      "type": "array"
+    },
+    "did_points": {
+      "items": {
+        "$ref": "#/$defs/DidPoint"
+      },
+      "title": "Did Points",
+      "type": "array"
+    },
+    "top_damaging_claim_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Top Damaging Claim Ids",
+      "type": "array"
+    },
+    "eval": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/EvalSummary"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "generated_at",
+    "summary",
+    "coverage"
+  ],
+  "title": "CompanyOutput",
+  "type": "object"
+}
