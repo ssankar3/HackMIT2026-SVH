@@ -118,17 +118,21 @@ def build(company: str, cfg: dict) -> CompanyOutput:
 
     lang = LM.load_language(company)
     ld = LM.load_langdrift(company)
+    claim_rows = LM.load_claim_rows(company)
     vagueness = unsupported = None
     lang_basis: dict = {}
     if lang:
-        vagueness, unsupported, lang_basis = LM.language_sub_scores(lang)
+        vagueness, unsupported, lang_basis = LM.language_sub_scores(lang, claim_rows)
 
     sins = LM.load_sins(company)
+    say_do = LM.compute_say_do(company, s6["did_rows"]) if claim_rows else {
+        "say_do_gap": None, "reason": "no claims extracted", "links": [],
+    }
     subs = SubScores(
         vagueness=vagueness,
         unsupported_claims=unsupported,
         sins_severity=(sins or {}).get("sins_severity"),
-        say_do_gap=s6["say_do_gap"],
+        say_do_gap=say_do.get("say_do_gap"),
         goalpost_drift=s6["goalpost_drift"],
     )
     overall, n_measured, reasons = blend_overall(subs.model_dump(), cfg)
@@ -159,7 +163,7 @@ def build(company: str, cfg: dict) -> CompanyOutput:
                         if (py := publish_year_of(e.get("new_source") or "")) and py <= y]
         timeline.append(TimelinePoint(
             year=y,
-            said_claim_ids=[],
+            said_claim_ids=[],  # filled after claims are built
             did_points=series_years.get(y, []),
             drift_ids=[e["drift_id"] for e in for_year],
             score_as_of=drift_intensity(as_of_events),
@@ -213,13 +217,30 @@ def build(company: str, cfg: dict) -> CompanyOutput:
         sub_scores=subs,
     )
 
-    claims = [Claim(**c) for c in LM.to_schema_claims(company, LM.load_claim_rows(company))]
+    claims = [Claim(**c) for c in LM.to_schema_claims(company, claim_rows, sins, say_do)]
+    by_pub: Dict[int, List[str]] = {}
+    for c in claims:
+        by_pub.setdefault(c.publish_year, []).append(c.claim_id)
+    for tp in timeline:
+        tp.said_claim_ids = by_pub.get(tp.year, [])[:12]
+    damaging = sorted(
+        claims,
+        key=lambda c: (
+            -(max((s.severity for s in c.sins), default=0)),
+            (c.features.specificity_score if c.features and c.features.specificity_score is not None else 1),
+        ),
+    )
+
     lang_events = [DriftEvent(**e) for e in LM.to_schema_drift(company, ld)] if ld else []
     dcounts = LM.drift_counts(ld) if ld else {}
     cross = LM.cross_signal(events, ld)
 
     coverage.n_claims = len(claims)
     coverage.stages_completed += ["stage2_claims", "stage3_language", "stage3b_langdrift"]
+    if sins:
+        coverage.stages_completed.append("stage4_sins")
+    if say_do.get("say_do_gap") is not None:
+        coverage.stages_completed.append("stage6b_claim_link")
 
     summary.headline = (summary.headline or "")
     if dcounts:
@@ -239,7 +260,7 @@ def build(company: str, cfg: dict) -> CompanyOutput:
         did_points=[DidPoint(**{k: r[k] for k in ("year", "metric", "value", "unit", "scope", "source", "page")})
                     for r in did_rows],
         claims=claims,
-        top_damaging_claim_ids=[c.claim_id for c in claims[:5]],
+        top_damaging_claim_ids=[c.claim_id for c in damaging[:5]],
         eval=EvalSummary(n_gold=0, notes="Stage 4/7 blocked; no LLM predictions to score yet."),
     )
     out.language = {
@@ -249,6 +270,10 @@ def build(company: str, cfg: dict) -> CompanyOutput:
         "sins": {k: v for k, v in (sins or {}).items() if k != "tagged"},
         "sins_top": (sins or {}).get("tagged", [])[:25],
         "cross_signal": cross,
+        "assurance": (lang or {}).get("assurance", {}),
+        "say_do": {k: v for k, v in say_do.items() if k != "links"} | {
+            "links": (say_do.get("links") or [])[:20],
+        },
     }
     return out
 
@@ -309,8 +334,11 @@ def main(argv: List[str]) -> None:
     # from disk (file:// blocks fetch). Serving over HTTP still picks up the
     # JSON files, so this is a fallback, not the source of truth.
     bundle = {c: json.loads(o.model_dump_json()) for c, o in outs.items()}
+    lex = yaml.safe_load((ROOT / "config" / "lexicons.yaml").read_text(encoding="utf-8"))
+    (WEB_DATA / "lexicons.json").write_text(json.dumps(lex, indent=2), encoding="utf-8")
     (ROOT / "web" / "data.js").write_text(
-        "window.__GREENWASH_DATA__ = " + json.dumps(bundle, indent=1) + ";\n",
+        "window.__GREENWASH_DATA__ = " + json.dumps(bundle, indent=1) + ";\n"
+        "window.__GREENWASH_LEX__ = " + json.dumps(lex) + ";\n",
         encoding="utf-8",
     )
     print(f"\nwrote {len(outs)} company files to {OUT_DIR} and {WEB_DATA}", file=sys.stderr)

@@ -2,7 +2,7 @@
   {
     "company": "amazon",
     "display_name": "Amazon",
-    "overall_score": 54.6,
+    "overall_score": 55.4,
     "abstain": false,
     "goalpost_drift": 15.7,
     "confidence": "low",
@@ -11,7 +11,7 @@
   {
     "company": "hm",
     "display_name": "H&M Group",
-    "overall_score": 60.3,
+    "overall_score": 46.3,
     "abstain": false,
     "goalpost_drift": 49.8,
     "confidence": "low",
@@ -20,7 +20,7 @@
   {
     "company": "microsoft",
     "display_name": "Microsoft",
-    "overall_score": 65.4,
+    "overall_score": 65.8,
     "abstain": false,
     "goalpost_drift": null,
     "confidence": "low",

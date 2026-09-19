@@ -171,6 +171,7 @@ class Stats:
     dropped_small_font: int = 0
     dropped_fragment: int = 0
     dropped_navigational: int = 0
+    dropped_immaterial: int = 0
     sentences: int = 0
     candidates: int = 0
     claims: int = 0
@@ -321,24 +322,83 @@ def has_term(low: str, terms: List[str]) -> bool:
     return any(re.search(rf"\b{re.escape(t)}", low) for t in terms)
 
 
+def _env_core(lex: Lex) -> List[str]:
+    return [t for t in lex.environmental if t not in WEAK_ENV]
+
+
 def is_candidate(s: str, lex: Lex) -> bool:
+    """An environmental ATTRIBUTE is enough. Otherwise we need a real
+    environmental topic (not just 'sustainability') plus a number or percent.
+    A year alone + a weak topic word is how CEO letters used to flood the book."""
     low = s.lower()
     if has_term(low, lex.attribute):
         return True
-    has_num = bool(RE_NUMBER.search(s)) or bool(RE_PCT.search(s)) or bool(RE_YEAR.search(s))
-    return has_num and has_term(low, lex.environmental)
+    has_core = has_term(low, _env_core(lex))
+    has_weak = has_term(low, [t for t in lex.environmental if t in WEAK_ENV])
+    has_unit_qty = bool(RE_QUANTITY.search(s)) or bool(RE_PCT.search(s))
+    has_year = bool(RE_YEAR.search(s))
+    if has_core and (has_unit_qty or has_year or bool(RE_NUMBER.search(s))):
+        return True
+    if has_weak and has_unit_qty:
+        return True
+    return False
+
+
+def is_material(sentence: str, claim_type: str, quantity: str, lex: Lex) -> bool:
+    """Keep targets, achievements, attributes, and 'other' only when they
+    carry a unit-bearing quantity plus a core environmental term."""
+    if RE_NONCLAIM.search(sentence) and claim_type == "other":
+        return False
+    if claim_type in ("target", "achievement", "attribute"):
+        return True
+    if quantity and RE_QUANTITY.search(sentence) and has_term(sentence.lower(), _env_core(lex)):
+        return True
+    return False
 
 
 # --------------------------------------------------------------------------
 # 4. slots
 # --------------------------------------------------------------------------
 
+# A 4-digit year is a DATE, not a quantity. Treating "In 2021 the group was
+# included in the Dow Jones Index" as quantified is what made language-drift
+# report "quantity '2021' no longer stated" as a greenwashing event.
+RE_YEAR_TOKEN = re.compile(r"^(?:19|20)\d{2}$")
+RE_SCOPE_NUM = re.compile(r"\bscope\s*[123]\b", re.I)
+
+# Brand / index / sales prose that happens to contain "sustainab" + a year.
+# These are not environmental claims; they poison every downstream ratio.
+RE_NONCLAIM = re.compile(
+    r"\b(?:sales|revenue|profit|profitability|shareholder|dividend|pandemic|"
+    r"dow jones|fashion transparency index|customer focus|cash flow|"
+    r"stores? per segment)\b",
+    re.I,
+)
+
+# Topic words that are too broad to make a claim on their own + a year.
+# "sustainability" in a CEO letter is branding; "scope 3 emissions" is a claim.
+WEAK_ENV = {
+    "sustainab", "environment", "supply chain", "material", "packaging",
+}
+
+
 def find_quantity(s: str) -> str:
-    m = RE_QUANTITY.search(s)
-    if m:
+    """A quantity is a number with a unit, a percent, or a non-year bare number
+    that is not a Scope index. Years are dates; they are handled by deadline /
+    baseline extractors, not here."""
+    for m in RE_QUANTITY.finditer(s):
+        num = (m.group(1) or "").replace(",", "")
+        if RE_YEAR_TOKEN.match(num):
+            continue
         return norm(m.group(0))
-    m2 = re.search(r"(?<![\w.])\d[\d,]*(?:\.\d+)?(?![\w.])", s)
-    return m2.group(0) if m2 else ""
+    for m in re.finditer(r"(?<![\w.])(\d[\d,]*(?:\.\d+)?)(?![\w.])", s):
+        raw = m.group(1)
+        if RE_YEAR_TOKEN.match(raw):
+            continue
+        if raw.replace(",", "") in {"1", "2", "3"} and RE_SCOPE_NUM.search(s):
+            continue
+        return raw
+    return ""
 
 
 def find_baseline(s: str) -> str:
@@ -446,6 +506,9 @@ def run(pdf: Path, max_pages: int, out_dir: Path) -> Tuple[List[dict], Stats, st
             scope = find_scope(body, lex)
             strength = find_strength(body, lex)
             ctype = classify(body, lex, deadline, strength, quantity)
+            if not is_material(body, ctype, quantity, lex):
+                st.dropped_immaterial += 1
+                continue
             slots = {"quantity": quantity, "baseline": baseline,
                      "deadline": deadline, "scope": scope}
             rows.append({
@@ -482,6 +545,7 @@ def report(rows: List[dict], st: Stats, out_csv: str, elapsed: float, seed: int)
     p(f"    headings consumed      {st.headings}")
     p(f"  dropped, not a sentence  {st.dropped_fragment}  (clipped mid-thought by column layout)")
     p(f"  dropped, navigational    {st.dropped_navigational}  (cross-refs: 'see pages 80-81', URLs)")
+    p(f"  dropped, not a claim     {st.dropped_immaterial}  (sales/index/CEO-letter fluff)")
     p(f"  sentences                {st.sentences}")
     pct = lambda a, b: f"{(a / b * 100):5.1f}%" if b else "    -"  # noqa: E731
     p(f"  candidates               {st.candidates}  ({pct(st.candidates, st.sentences)} of sentences)")

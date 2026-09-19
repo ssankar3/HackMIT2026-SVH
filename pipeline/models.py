@@ -110,6 +110,13 @@ class SinTag(BaseModel):
     evidence_needed: Optional[str] = None
 
 
+class HighlightSpan(BaseModel):
+    start: int
+    end: int
+    kind: str
+    term: str
+
+
 class LinguisticFeatures(BaseModel):
     vague_word_ratio: Optional[float] = None
     hedging_ratio: Optional[float] = None
@@ -122,6 +129,8 @@ class LinguisticFeatures(BaseModel):
     specificity_score: Optional[float] = Field(None, ge=0.0, le=1.0)
     readability: Optional[float] = None
     sentiment: Optional[float] = None
+    highlights: List[HighlightSpan] = Field(default_factory=list)
+    report_assured: Optional[bool] = None
 
 
 class DebateResult(BaseModel):

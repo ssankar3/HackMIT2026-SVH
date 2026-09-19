@@ -149,14 +149,8 @@ strength:
     - avoided
     - surpassed
     - exceeded
-    - was
-    - were
-    - have been
-    - has been
-    - increased
-    - decreased
-    - fell
-    - rose
+    # Deliberately NOT "was/were/have been": those fire on every narrative
+    # sentence and flood the book with fake achievements.
 
 # Vague / non-specific qualifiers (Stage 3 vagueness ratio).
 vague:
@@ -296,3 +290,37 @@ positive_tone:
   - vibrant
   - world-leading
   - best-in-class
+
+# Map claim language onto the DiD metric names used in data/did/*.csv.
+# First matching family wins; Stage 6b then picks the company's actual
+# column that belongs to that family. No company names here.
+metric_families:
+  total_emissions:
+    - scope 1, 2 and 3
+    - scope 1, 2 & 3
+    - absolute emissions
+    - total emissions
+    - total ghg
+    # Deliberately NOT "carbon footprint" / "greenhouse gas emissions":
+    # those fire on a concrete mix or a food-waste goal and pin the
+    # wrong number to the company-wide series.
+  scope_3:
+    - scope 3
+  scope_2:
+    - scope 2
+  scope_1:
+    - scope 1
+  recycled_share:
+    - recycled material
+    - recycled materials
+    - recycled content
+    - recycled polyester
+    - recycled cotton
+  renewable_share:
+    - renewable electricity
+    - renewable energy
+    - renewable power
+  carbon_intensity:
+    - carbon intensity
+    - emissions intensity
+    - carbon-intensity

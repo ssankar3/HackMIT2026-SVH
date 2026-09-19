@@ -31,10 +31,11 @@ import csv
 import json
 import re
 import statistics
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 import yaml
 
@@ -58,6 +59,19 @@ RE_PASSIVE = re.compile(
 RE_MODAL_FIRM = re.compile(r"\b(?:will|shall|must)\b", re.I)
 RE_MODAL_SOFT = re.compile(r"\b(?:may|might|could|should|would)\b", re.I)
 RE_FUTURE_YEAR = re.compile(r"\bby\s+(?:19|20)\d{2}\b", re.I)
+# Report-level assurance language. A sentence on p.41 is not proven by
+# "limited assurance" on p.80, but the report is also not naked.
+RE_ASSURANCE = re.compile(
+    r"\b((?:limited|reasonable)\s+assurance|independently\s+assured|"
+    r"independent\s+(?:assurance|audit|verification)|"
+    r"third-party\s+(?:assurance|verification|audit))\b",
+    re.I,
+)
+RE_AUDITOR = re.compile(
+    r"\b(Deloitte|EY|Ernst\s*&\s*Young|KPMG|PwC|Pricewaterhouse|"
+    r"Bureau Veritas|SGS|DNV|T[UÜ]V|Intertek|ERM)\b",
+    re.I,
+)
 
 
 def words(t: str) -> List[str]:
@@ -98,6 +112,79 @@ class Lexicons:
         self.positive = low("positive_tone")
         self.future = ["will", "aim", "target", "goal", "ambition", "plan",
                        "by 2030", "by 2040", "by 2050", "future", "intend", "commit"]
+
+
+def highlight_spans(text: str, lx: Lexicons, quantity: str = "",
+                    baseline: str = "", deadline: str = "") -> List[dict]:
+    """Token-level audit trail: every span that contributed to a score.
+    The dashboard paints these; a judge can click through to the exact word."""
+    spans: List[dict] = []
+    low = text.lower()
+
+    def add(kind: str, start: int, end: int) -> None:
+        if start < 0 or end <= start or end > len(text):
+            return
+        spans.append({
+            "start": start, "end": end, "kind": kind,
+            "term": text[start:end],
+        })
+
+    for kind, terms in (
+        ("vague", lx.vague),
+        ("hedge", lx.hedging),
+        ("verify", lx.verification),
+        ("positive", lx.positive),
+    ):
+        for t in terms:
+            for m in re.finditer(rf"\b{re.escape(t)}\b", low):
+                add(kind, m.start(), m.end())
+    for kind, val in (("qty", quantity), ("baseline", baseline), ("deadline", deadline)):
+        if not val:
+            continue
+        i = low.find(str(val).lower())
+        if i >= 0:
+            add(kind, i, i + len(str(val)))
+
+    # resolve overlaps: keep earlier, longer
+    spans.sort(key=lambda s: (s["start"], -(s["end"] - s["start"])))
+    out, cursor = [], -1
+    for s in spans:
+        if s["start"] >= cursor:
+            out.append(s)
+            cursor = s["end"]
+    return out
+
+
+def detect_assurance(pdf: Path, max_pages: int = 60) -> dict:
+    """Scan the PDF for an assurance statement. Returns whether the report
+    carries third-party assurance, a short quote, and the page it sat on.
+    Capped to max_pages: some reports crash PyMuPDF on later image-heavy pages."""
+    try:
+        import fitz
+    except ImportError:
+        return {"assured": False, "quote": None, "page": None, "auditor": None}
+    if not pdf.exists():
+        return {"assured": False, "quote": None, "page": None, "auditor": None}
+    quote = page = auditor = None
+    try:
+        doc = fitz.open(pdf)
+        n = min(max_pages, doc.page_count)
+        for i in range(n):
+            text = doc[i].get_text("text") or ""
+            m = RE_ASSURANCE.search(text)
+            if not m:
+                continue
+            a = RE_AUDITOR.search(text)
+            start = max(0, m.start() - 40)
+            end = min(len(text), m.end() + 80)
+            snippet = re.sub(r"\s+", " ", text[start:end]).strip()
+            quote, page = snippet, i + 1
+            auditor = a.group(0) if a else None
+            break
+        doc.close()
+    except Exception:  # noqa: BLE001
+        return {"assured": False, "quote": None, "page": None, "auditor": None}
+    return {"assured": bool(quote), "quote": quote, "page": page, "auditor": auditor}
 
 
 def claim_features(row: dict, lx: Lexicons) -> dict:
@@ -142,6 +229,11 @@ def claim_features(row: dict, lx: Lexicons) -> dict:
         "modal_firm": bool(RE_MODAL_FIRM.search(s)),
         "modal_soft": bool(RE_MODAL_SOFT.search(s)),
         "positive_tone_words": sum(len(re.findall(rf"\b{re.escape(t)}", low)) for t in lx.positive),
+        "highlights_json": json.dumps(
+            highlight_spans(s, lx, row.get("quantity") or "",
+                            row.get("baseline") or "", row.get("deadline") or ""),
+            ensure_ascii=False,
+        ),
     }
 
 
@@ -176,6 +268,56 @@ def aggregate(year: int, rows: List[dict]) -> dict:
     }
 
 
+class _St:
+    sentences = 0
+
+
+def detect_assurance_safe(pdf: Path, max_pages: int) -> dict:
+    """Assurance scan in a child process — same crash isolation as extract."""
+    cmd = [sys.executable, "-c",
+           ("import json,sys; sys.path.insert(0,%r); "
+            "from stage3_language import detect_assurance; "
+            "print(json.dumps(detect_assurance(__import__('pathlib').Path(%r), %d)))"
+            % (str(Path(__file__).resolve().parent), str(pdf), max_pages))]
+    empty = {"assured": False, "quote": None, "page": None, "auditor": None}
+    try:
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+    except subprocess.TimeoutExpired:
+        return empty
+    if proc.returncode != 0 or not (proc.stdout or "").strip():
+        return empty
+    try:
+        return json.loads(proc.stdout.strip().splitlines()[-1])
+    except json.JSONDecodeError:
+        return empty
+
+
+def extract_pdf_safe(pdf: Path, max_pages: int):
+    """Run Stage 2 in a child process. PyMuPDF can SIGSEGV on a single
+    malformed page; that must not take down the rest of the company."""
+    out_dir = OUT_DIR / "_claims"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    cmd = [sys.executable, str(ROOT / "pipeline" / "stage2_claims_v1.py"),
+           "--pdf", str(pdf), "--max-pages", str(max_pages), "--out", str(out_dir)]
+    try:
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+    except subprocess.TimeoutExpired:
+        return None, _St()
+    if proc.returncode != 0:
+        return None, _St()
+    csv_path = out_dir / f"{pdf.stem}__{pdf.parent.name}.csv"
+    if not csv_path.exists():
+        return None, _St()
+    with csv_path.open(newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    st = _St()
+    m = re.search(r"sentences\s+(\d+)", proc.stderr or "")
+    if not m:
+        m = re.search(r"sentences\s+(\d+)", proc.stdout or "")
+    st.sentences = int(m.group(1)) if m else len(rows)
+    return rows, st
+
+
 def run_company(company: str, max_pages: int, limit: Optional[int]) -> dict:
     pdfs = sorted((RAW / company).glob("*.pdf"))
     if limit:
@@ -185,17 +327,31 @@ def run_company(company: str, max_pages: int, limit: Optional[int]) -> dict:
 
     all_rows: List[dict] = []
     per_year: Dict[int, List[dict]] = {}
+    assurance: Dict[int, dict] = {}
     for pdf in pdfs:
         year = int(pdf.name.split("_", 1)[0])
-        rows, st, _ = extract_claims(pdf, max_pages, OUT_DIR / "_claims")
-        feats = [claim_features({**r, "company": company, "publish_year": year}, lx)
+        rows, st = extract_pdf_safe(pdf, max_pages)
+        if rows is None:
+            print(f"  {pdf.name:<36} SKIPPED (extractor crashed on this PDF)",
+                  file=sys.stderr)
+            continue
+        assured = detect_assurance_safe(pdf, max_pages)
+        assurance[year] = {**assured, "source": str(pdf.relative_to(ROOT))}
+        feats = [claim_features({**r, "company": company, "publish_year": year,
+                                 "report_assured": assured["assured"]}, lx)
                  for r in rows]
         per_year[year] = feats
         all_rows.extend(feats)
         print(f"  {pdf.name:<36} {len(feats):>4} claims  "
-              f"({st.sentences} sentences scanned)", file=sys.stderr)
+              f"({st.sentences} sentences scanned)"
+              f"{'  [assured]' if assured['assured'] else ''}", file=sys.stderr)
 
     series = [aggregate(y, per_year[y]) for y in sorted(per_year)]
+    for s in series:
+        a = assurance.get(s["year"]) or {}
+        s["report_assured"] = bool(a.get("assured"))
+        s["assurance_auditor"] = a.get("auditor")
+        s["assurance_page"] = a.get("page")
 
     out_csv = OUT_DIR / f"{company}_claim_features.csv"
     if all_rows:
@@ -205,7 +361,12 @@ def run_company(company: str, max_pages: int, limit: Optional[int]) -> dict:
             w.writeheader()
             w.writerows(all_rows)
 
-    result = {"company": company, "series": series, "n_claims": len(all_rows)}
+    result = {
+        "company": company,
+        "series": series,
+        "n_claims": len(all_rows),
+        "assurance": {str(y): a for y, a in sorted(assurance.items())},
+    }
     (OUT_DIR / f"{company}_language.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
     return result
 

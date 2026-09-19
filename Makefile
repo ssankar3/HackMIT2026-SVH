@@ -41,6 +41,7 @@ lang:
 		echo "--- $$c ---"; \
 		$(PY) pipeline/stage3_language.py --company $$c --max-pages 60 2>&1 | tail -3; \
 		$(PY) pipeline/stage3b_langdrift.py --company $$c 2>&1 | grep -E "events$$" || true; \
+		$(PY) pipeline/stage4_sins_rules.py --company $$c 2>&1 | tail -2; \
 	done
 
 claims:

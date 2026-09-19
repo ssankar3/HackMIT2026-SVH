@@ -854,6 +854,34 @@
       "title": "EvidenceStance",
       "type": "string"
     },
+    "HighlightSpan": {
+      "properties": {
+        "start": {
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "title": "End",
+          "type": "integer"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "term": {
+          "title": "Term",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "kind",
+        "term"
+      ],
+      "title": "HighlightSpan",
+      "type": "object"
+    },
     "LinguisticFeatures": {
       "properties": {
         "vague_word_ratio": {
@@ -989,6 +1017,25 @@
           ],
           "default": null,
           "title": "Sentiment"
+        },
+        "highlights": {
+          "items": {
+            "$ref": "#/$defs/HighlightSpan"
+          },
+          "title": "Highlights",
+          "type": "array"
+        },
+        "report_assured": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Report Assured"
         }
       },
       "title": "LinguisticFeatures",

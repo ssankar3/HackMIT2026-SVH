@@ -104,6 +104,20 @@
   .kv{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:12.5px}
   .kv dt{color:var(--tx3)} .kv dd{margin:0;font-family:var(--mono)}
   ul.tight{margin:7px 0 0;padding-left:17px;font-size:12.5px;line-height:1.65;color:var(--tx2)}
+  mark{color:inherit;border-radius:2px;padding:0 1px}
+  mark.hl-vague{background:rgba(242,96,76,.28)}
+  mark.hl-hedge{background:rgba(245,179,66,.32)}
+  mark.hl-verify{background:rgba(45,212,191,.28)}
+  mark.hl-positive{background:rgba(139,124,246,.28)}
+  mark.hl-qty,mark.hl-deadline,mark.hl-baseline{background:rgba(90,169,247,.24)}
+  .hl-legend{display:flex;gap:10px;flex-wrap:wrap;font-size:11px;color:var(--tx3);margin:6px 0 12px}
+  .claimcard{background:var(--panel2);border-radius:8px;padding:11px 13px;margin:0 0 10px}
+  .claimcard .meta{font-size:11px;color:var(--tx3);font-family:var(--mono);margin-bottom:6px}
+  .sinchip{display:inline-block;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;
+    border:1px solid rgba(242,96,76,.4);color:var(--red);padding:2px 6px;border-radius:4px;margin:6px 4px 0 0}
+  .paste-panel{display:none;border-bottom:1px solid var(--line);background:var(--panel);padding:12px 16px}
+  .paste-panel.on{display:block}
+  .paste input:disabled{opacity:.45;cursor:not-allowed}
 </style>
 </head>
 <body>
@@ -113,11 +127,13 @@
     <div class="pills" id="pills"></div>
     <div class="paste">
       <label for="pasteBox" class="tag" style="border:0;padding:0">Claim</label>
-      <input id="pasteBox" placeholder="Paste a claim…" aria-label="Paste a claim to analyse" disabled />
-      <span class="tag">live mode off</span>
+      <input id="pasteBox" placeholder="Paste a claim…" aria-label="Paste a claim to analyse"
+        oninput="onPaste(this.value)" />
+      <span class="tag" id="pasteTag">live</span>
     </div>
   </div>
 </header>
+<div class="paste-panel" id="pastePanel"></div>
 
 <div class="wrap">
   <div id="loaderr"></div>
@@ -139,7 +155,84 @@ const F = {
   esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>(
     {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); },
   file(p){ return String(p||'').split('/').pop(); },
+  paint(text, spans){
+    if(!text) return '';
+    if(!spans||!spans.length) return F.esc(text);
+    const ordered = spans.slice().sort((a,b)=>a.start-b.start);
+    let out='', i=0;
+    for(const s of ordered){
+      const a=Math.max(0,s.start), b=Math.min(text.length,s.end);
+      if(b<=a || a<i) continue;
+      out += F.esc(text.slice(i,a));
+      out += `<mark class="hl-${F.esc(s.kind)}">${F.esc(text.slice(a,b))}</mark>`;
+      i=b;
+    }
+    return out + F.esc(text.slice(i));
+  },
 };
+
+function lex(){ return window.__GREENWASH_LEX__ || {}; }
+
+function analyzeClaim(text){
+  const L = lex();
+  const low = text.toLowerCase();
+  const words = text.match(/[A-Za-z][A-Za-z'-]*/g) || [];
+  const n = words.length;
+  const hits = (arr)=> (arr||[]).reduce((a,t)=>a+(low.match(new RegExp('\\b'+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','g'))||[]).length,0);
+  const spans = [];
+  const addKind = (kind, arr)=>{
+    (arr||[]).forEach(t=>{
+      const re = new RegExp('\\b'+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','gi');
+      let m; while((m=re.exec(text))) spans.push({start:m.index,end:m.index+m[0].length,kind,term:m[0]});
+    });
+  };
+  addKind('vague', L.vague); addKind('hedge', L.hedging);
+  addKind('verify', L.verification); addKind('positive', L.positive_tone);
+  const qty = text.match(/(\d[\d,]*(?:\.\d+)?)\s*(%|per ?cent|tCO2e|tonnes?|metric tons?|MMT)/i);
+  const deadline = text.match(/\b(?:by|before|until)\s+(?:the\s+end\s+of\s+)?((?:19|20)\d{2})/i);
+  const baseline = text.match(/(?:versus|vs\.?|compared (?:with|to)|from)\s+((?:19|20)\d{2})/i)
+    || text.match(/((?:19|20)\d{2})\s+base\s?(?:line|year)/i);
+  const scope = /scope\s*[123]|own operations|value chain|supply chain/i.test(text);
+  const verified = hits(L.verification)>0;
+  const present = [!!qty, !!baseline, !!deadline, scope, verified].filter(Boolean).length;
+  let spec = present/5;
+  const vague = n? hits(L.vague)/n : 0, hedge = n? hits(L.hedging)/n : 0;
+  spec = Math.max(0, Math.min(1, spec - Math.min(0.3, (vague+hedge)*4)));
+  const sins = [];
+  if(spec<=0.25 && (vague+hedge)>0 && !qty)
+    sins.push({sin:'vagueness', rationale:'unquantified and leans on vague/hedging vocabulary'});
+  if(qty && !verified && spec>=0.2)
+    sins.push({sin:'no_proof', rationale:'measurable assertion with no verifier named in the sentence'});
+  if(/\b(certifi\w*|accredit\w*|standard|verified|approved|compliant|label|seal)\b/i.test(text)
+     && !/\b(SBTi|GOTS|FSC|ISO\s?\d|GHG Protocol|CDP|GRI|Deloitte|EY|KPMG|PwC|SGS|DNV)\b/i.test(text))
+    sins.push({sin:'false_labels', rationale:'certification language without a named body'});
+  return {text, spec, vague, hedge, qty: qty&&qty[0], deadline: deadline&&deadline[1],
+    baseline: baseline&&baseline[1], scope, verified, sins, spans, n};
+}
+
+function onPaste(v){
+  const panel = document.getElementById('pastePanel');
+  const tag = document.getElementById('pasteTag');
+  if(!v || v.trim().length<8){ panel.className='paste-panel'; panel.innerHTML=''; tag.textContent='live'; return; }
+  if(!lex().vague){ panel.className='paste-panel on';
+    panel.innerHTML='<div class="wrap" style="padding:0">Lexicons not loaded — run <code>make score</code>.</div>';
+    return; }
+  const a = analyzeClaim(v.trim());
+  tag.textContent = 'spec ' + a.spec.toFixed(2);
+  panel.className='paste-panel on';
+  panel.innerHTML = `<div class="wrap" style="padding:0;max-width:1480px;margin:0 auto">
+    <div style="font-size:13px;line-height:1.55">${F.paint(a.text, a.spans)}</div>
+    <div class="hl-legend">
+      <span>specificity <b style="color:${a.spec>=0.4?'var(--teal)':a.spec>=0.2?'var(--amber)':'var(--red)'}">${a.spec.toFixed(2)}</b></span>
+      <span>qty ${a.qty?a.qty:'—'}</span>
+      <span>deadline ${a.deadline||'—'}</span>
+      <span>baseline ${a.baseline||'—'}</span>
+      <span>verified ${a.verified?'yes':'no'}</span>
+      ${a.sins.map(s=>`<span class="sinchip">${F.esc(s.sin)}</span>`).join('')}
+    </div>
+    <div class="why">Same rules as the corpus scorer — lexicon hits only, no model. Vague / hedge / promo words are highlighted.</div>
+  </div>`;
+}
 
 const SUBS = [
   ['goalpost_drift','Goalpost drift','restatements & metric redefinitions across reports'],
@@ -157,6 +250,8 @@ async function boot(){
     try{
       const idx = await (await fetch('public/data/index.json')).json();
       for(const r of idx) DATA[r.company] = await (await fetch(`public/data/${r.company}.json`)).json();
+      if(!window.__GREENWASH_LEX__)
+        window.__GREENWASH_LEX__ = await (await fetch('public/data/lexicons.json')).json();
     }catch(e){
       document.getElementById('loaderr').innerHTML =
         `<div class="banner warn" style="margin-top:16px"><span class="dot" style="background:var(--amber)"></span>
@@ -272,7 +367,7 @@ function saidLane(year){
   return top.map(c=>`<div style="font-size:11.5px;line-height:1.5;margin-bottom:8px">
       <span class="src">p.${c.page==null?'?':c.page} · ${F.esc(c.claim_type)} · spec
       ${(c.features?.specificity_score??0).toFixed(2)}</span><br>
-      ${F.esc(c.claim_text.slice(0,165))}</div>`).join('')
+      ${F.paint((c.claim_text||'').slice(0,180), (c.features||{}).highlights)}</div>`).join('')
     + `<div class="why">${cs.length} claims from this report; see the Claims tab.</div>`;
 }
 
@@ -313,50 +408,77 @@ function tabEvidence(){
 function tabClaims(){
   const cs = CO.claims||[];
   if(!cs.length) return `<p class="empty">No claims extracted.</p>`;
-  const rows = cs.slice().sort((a,b)=>
-    (b.features?.specificity_score||0)-(a.features?.specificity_score||0));
-  return `<p class="sub">${cs.length} claims, most specific first. Specificity counts how many
-    of five evidence slots the sentence pins down (quantity, baseline, deadline, scope,
-    verification) minus a vagueness/hedging penalty. Every sentence is verbatim from the PDF.</p>
-    <table><thead><tr><th>Yr</th><th>p.</th><th>Type</th><th>Claim</th>
-      <th>Spec</th><th>Slots</th></tr></thead><tbody>
-    ${rows.slice(0,60).map(c=>{
+  const rows = cs.slice().sort((a,b)=>{
+    const sa = Math.max(0,...(a.sins||[]).map(x=>x.severity||0));
+    const sb = Math.max(0,...(b.sins||[]).map(x=>x.severity||0));
+    return sb-sa || (a.features?.specificity_score||1)-(b.features?.specificity_score||1);
+  });
+  return `<p class="sub">${cs.length} claims, riskiest first. Highlighted tokens are the exact
+    lexicon hits that produced the score — a judge can audit any card down to the word.
+    Every sentence is verbatim from the PDF.</p>
+    <div class="hl-legend">
+      <span><mark class="hl-vague">vague</mark></span>
+      <span><mark class="hl-hedge">hedge</mark></span>
+      <span><mark class="hl-verify">verify</mark></span>
+      <span><mark class="hl-positive">promo</mark></span>
+      <span><mark class="hl-qty">number / date</mark></span>
+    </div>
+    ${rows.slice(0,40).map(c=>{
       const f=c.features||{}, sp=f.specificity_score;
       const slots=[['Q',f.quantification_present],['B',f.baseline_present],
                    ['D',f.date_present],['S',f.scope_present],['V',f.verification_present]];
-      return `<tr>
-        <td class="mono">${c.publish_year}</td><td class="mono">${c.page==null?'':c.page}</td>
-        <td>${F.esc(c.claim_type)}</td>
-        <td style="max-width:460px">${F.esc(c.claim_text.slice(0,230))}</td>
-        <td class="mono" style="color:${sp>=0.4?'var(--teal)':sp>=0.2?'var(--amber)':'var(--red)'}">${sp==null?'—':sp.toFixed(2)}</td>
-        <td class="mono" style="font-size:11px">${slots.map(([k,v])=>
-          `<span style="color:${v?'var(--teal)':'var(--tx3)'}">${k}</span>`).join(' ')}</td>
-      </tr>`;}).join('')}
-    </tbody></table>
-    ${rows.length>60?`<p class="why" style="margin-top:8px">Showing 60 of ${rows.length};
-      full set in out/language/${CO.summary.company}_claim_features.csv</p>`:''}`;
+      return `<div class="claimcard">
+        <div class="meta">${c.publish_year} · p.${c.page==null?'?':c.page} · ${F.esc(c.claim_type)}
+          · spec <b style="color:${sp>=0.4?'var(--teal)':sp>=0.2?'var(--amber)':'var(--red)'}">${sp==null?'—':sp.toFixed(2)}</b>
+          · ${slots.map(([k,v])=>`<span style="color:${v?'var(--teal)':'var(--tx3)'}">${k}</span>`).join(' ')}
+          ${c.canonical_metric?` · → ${F.esc(c.canonical_metric)}`:''}
+          ${c.progress_status?` · ${F.esc(c.progress_status)}`:''}</div>
+        <div>${F.paint(c.claim_text, f.highlights)}</div>
+        ${(c.sins||[]).map(s=>`<span class="sinchip" title="${F.esc(s.rationale||'')}">${F.esc(s.sin)}</span>`).join('')}
+      </div>`;}).join('')}
+    ${rows.length>40?`<p class="why">Showing 40 of ${rows.length}. Full set in
+      out/language/${CO.summary.company}_claim_features.csv</p>`:''}`;
 }
 
 function tabLanguage(){
   const L = CO.language; if(!L) return `<p class="empty">No language analysis.</p>`;
   const S = L.series||[], dc = L.drift_counts||{}, cs = L.cross_signal||{};
+  const sd = L.say_do||{};
   const soft = (CO.drift_events||[]).filter(e=>e.type==='wording_softened'
     && !/boilerplate_recycled/.test(e.description));
   const pc=v=>v==null?'—':(v*100).toFixed(0)+'%';
   const nv=(v,d)=>v==null?'—':Number(v).toFixed(d);
+  const links = sd.links||[];
 
   return `<p class="sub">Every number below is a counting rule over an editable lexicon
-    (<code>config/lexicons.yaml</code>) — no model, no API call, fully reproducible.</p>
+    (<code>config/lexicons.yaml</code>) — no model, no API call, fully reproducible.
+    Paste any sentence in the header to run the same scorer live.</p>
 
     <h2 style="margin-top:4px">Language profile by report year</h2>
     <table><thead><tr><th>Year</th><th>Claims</th><th>Specificity</th><th>Quantified</th>
-      <th>Verified</th><th>Firm</th><th>Hedged</th><th>Say&gt;prove</th></tr></thead><tbody>
+      <th>Verified</th><th>Firm</th><th>Hedged</th><th>Say&gt;prove</th><th>Assured</th></tr></thead><tbody>
     ${S.map(r=>`<tr><td class="mono">${r.year}</td><td class="mono">${r.n_claims}</td>
       <td class="mono">${nv(r.mean_specificity,3)}</td><td class="mono">${pc(r.quantified_share)}</td>
       <td class="mono">${pc(r.verified_share)}</td><td class="mono">${pc(r.firm_share)}</td>
       <td class="mono">${pc(r.hedged_share)}</td>
-      <td class="mono">${nv(r.say_more_prove_less,2)}</td></tr>`).join('')}
+      <td class="mono">${nv(r.say_more_prove_less,2)}</td>
+      <td class="mono" style="color:${r.report_assured?'var(--teal)':'var(--tx3)'}">${r.report_assured?'yes':'no'}</td></tr>`).join('')}
     </tbody></table>
+
+    <h2 style="margin-top:22px">Say vs do — targets pinned to the verified series</h2>
+    <p class="sub">${sd.n_measurable||0} measurable links
+      (${sd.n_behind||0} behind glidepath). Score ${sd.say_do_gap==null?'unmeasurable':sd.say_do_gap}.
+      ${sd.reason?F.esc(sd.reason):"A % target is compared to the company's own published series, pro-rated by time elapsed. Absolute tonne targets are left unmatched — we will not invent a unit conversion."}</p>
+    ${links.length?`<table><thead><tr><th>Status</th><th>Metric</th><th>Target</th><th>Required now</th>
+      <th>Actual</th><th>Claim</th></tr></thead><tbody>
+      ${links.slice(0,12).map(lk=>`<tr>
+        <td class="mono" style="color:${lk.status==='on_track'?'var(--teal)':'var(--red)'}">${F.esc(lk.status)}</td>
+        <td class="mono">${F.esc(lk.canonical_metric||'')}</td>
+        <td class="mono">${F.esc(lk.quantity||'')}${lk.deadline?' by '+lk.deadline:''}</td>
+        <td class="mono">${lk.required==null?'—':Number(lk.required).toFixed(1)}</td>
+        <td class="mono">${lk.actual==null?'—':Number(lk.actual).toFixed(1)} <span class="src">${lk.actual_year||''}</span></td>
+        <td style="max-width:320px">${F.esc((lk.sentence||'').slice(0,160))}</td>
+      </tr>`).join('')}</tbody></table>`:'<p class="empty">No target could be pinned to a verified series with comparable units.</p>'}
 
     <h2 style="margin-top:22px">Commitment softening across reports</h2>
     <p class="sub">${dc.substantive||0} substantive events
@@ -440,6 +562,11 @@ function tabMethod(){
       <li><b>Noise floor:</b> restatements under 0.5% are treated as rounding and dropped.</li>
       <li><b>Source of truth:</b> hand-verified <code>data/did/{company}.csv</code>; every value
         was checked as a literal substring of its cited page.</li>
+      <li><b>Language:</b> token-level lexicon highlights, report-level assurance detection,
+        and TF-IDF claim matching across years. Vague / hedge / promo words are the score.</li>
+      <li><b>Say-do:</b> target claims are pinned to the verified DiD series by metric family.
+        A % target is compared to a time-prorated glidepath. Absolute tonne targets are left
+        unmatched rather than unit-converted.</li>
       <li><b>No company-specific configuration</b> exists anywhere in the pipeline.</li>
     </ul>`;
 }
