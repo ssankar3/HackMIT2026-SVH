@@ -6,11 +6,18 @@ the UI submit a company name + a handful of report-year -> PDF-URL pairs and
 get a brand-new company dashboard built on demand.
 
 Design constraints (see the "Try a company" plan for the full rationale):
-  - No web search/scraping: the caller supplies the PDF URLs directly. This
-    process never guesses or discovers a URL on its own.
+  - No web search/scraping: the caller supplies the PDF URLs directly, or
+    uploads the PDF itself (some sites bot-gate direct downloads -- Akamai
+    and similar CDNs will silently serve an HTML failover page to a non-
+    browser client, which the %PDF-magic-byte check below catches and
+    rejects rather than trusting). This process never guesses or discovers
+    a URL on its own.
   - No pip dependencies beyond the stdlib -- this project has no
     requirements.txt and no other backend code; adding Flask/requests here
-    would be the first dependency in the whole repo.
+    would be the first dependency in the whole repo. File uploads are parsed
+    with the stdlib `cgi` module (deprecated for removal in 3.13+; fine on
+    the 3.9 interpreter this project runs on today -- worth revisiting if
+    this project ever upgrades its Python version).
   - The numeric drift score (`data/did/{company}.csv`) is treated elsewhere
     in this pipeline as hand-verified ground truth. A company added here
     gets an EMPTY did csv (header only, zero rows) so stage6/stage8 abstain
@@ -22,6 +29,7 @@ Usage:
 """
 from __future__ import annotations
 
+import cgi
 import json
 import re
 import subprocess
@@ -55,12 +63,14 @@ def slugify(name: str) -> str:
     return re.sub(r"[^a-z0-9]", "", (name or "").lower())
 
 
-def validate_reports(reports) -> tuple[list[tuple[int, str]], list[str]]:
+def validate_reports(reports) -> tuple[list[dict], list[str]]:
+    """Each valid entry: {"year": int, "url": str|None, "file_bytes": bytes|None}
+    -- exactly one of url/file_bytes is set (file_bytes wins if both given)."""
     if not isinstance(reports, list) or not reports:
-        return [], ["at least one report (year + url) is required"]
+        return [], ["at least one report (year + url or file) is required"]
     if len(reports) > MAX_REPORTS:
         return [], [f"at most {MAX_REPORTS} reports per request"]
-    valid: list[tuple[int, str]] = []
+    valid: list[dict] = []
     errors: list[str] = []
     for r in reports:
         if not isinstance(r, dict):
@@ -74,15 +84,34 @@ def validate_reports(reports) -> tuple[list[tuple[int, str]], list[str]]:
         if not (2000 <= year <= CURRENT_YEAR + 1):
             errors.append(f"year out of range: {year}")
             continue
+        file_bytes = r.get("file_bytes")
+        if file_bytes:
+            valid.append({"year": year, "url": None, "file_bytes": file_bytes})
+            continue
         url = str(r.get("url") or "").strip()
+        if not url:
+            errors.append(f"{year}: no URL or file provided")
+            continue
         # http(s)-only, enforced before this ever reaches urlopen: urllib
         # happily follows file:// and would otherwise let a crafted request
         # read an arbitrary local file back into "data/raw/".
         if urlparse(url).scheme.lower() not in ("http", "https"):
             errors.append(f"{year}: URL must be http(s), rejected {url!r}")
             continue
-        valid.append((year, url))
+        valid.append({"year": year, "url": url, "file_bytes": None})
     return valid, errors
+
+
+def save_pdf_bytes(data: bytes, dest: Path) -> Optional[str]:
+    """Validate and persist PDF bytes already in hand. Returns an error
+    string, or None on success."""
+    if len(data) > MAX_PDF_BYTES:
+        return "file too large (over 50MB)"
+    if not data.startswith(b"%PDF"):
+        return "not a PDF (missing %PDF header)"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(data)
+    return None
 
 
 def download_pdf(url: str, dest: Path) -> Optional[str]:
@@ -93,13 +122,7 @@ def download_pdf(url: str, dest: Path) -> Optional[str]:
             data = resp.read(MAX_PDF_BYTES + 1)
     except Exception as exc:  # noqa: BLE001 -- one bad URL must not abort the batch
         return f"download failed: {exc}"
-    if len(data) > MAX_PDF_BYTES:
-        return "file too large (over 50MB)"
-    if not data.startswith(b"%PDF"):
-        return "not a PDF (missing %PDF header)"
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(data)
-    return None
+    return save_pdf_bytes(data, dest)
 
 
 def ensure_empty_did_csv(slug: str) -> None:
@@ -145,9 +168,10 @@ def add_company(payload: dict) -> dict:
     raw_dir = RAW_DIR / slug
     downloaded: list[int] = []
     failed: list[dict] = [{"year": None, "error": e} for e in errors]
-    for year, url in reports:
+    for report in reports:
+        year, url, file_bytes = report["year"], report["url"], report["file_bytes"]
         dest = raw_dir / f"{year}_sustainability_report.pdf"
-        err = download_pdf(url, dest)
+        err = save_pdf_bytes(file_bytes, dest) if file_bytes is not None else download_pdf(url, dest)
         if err:
             failed.append({"year": year, "error": err})
         else:
@@ -201,22 +225,70 @@ class Handler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
-    def do_POST(self) -> None:
-        if self.path != "/api/add-company":
-            self.send_error(404, "not found")
-            return
+    def _parse_json_body(self) -> dict:
         try:
             length = int(self.headers.get("Content-Length", 0))
         except ValueError:
             length = 0
         if not (0 < length <= 1_000_000):
-            self._json(400, {"ok": False, "error": "invalid or oversized request body"})
-            return
+            raise ValueError("invalid or oversized request body")
         raw = self.rfile.read(length)
         try:
-            payload = json.loads(raw.decode("utf-8"))
-        except (json.JSONDecodeError, UnicodeDecodeError):
-            self._json(400, {"ok": False, "error": "invalid JSON body"})
+            return json.loads(raw.decode("utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+            raise ValueError("invalid JSON body") from exc
+
+    def _parse_multipart_body(self) -> dict:
+        """Uploaded PDFs arrive here (application/x-www-form-urlencoded
+        FormData). Fields are indexed (year_0/url_0/file_0, year_1/... ) so
+        each row's year/url/file stay unambiguously paired."""
+        try:
+            length = int(self.headers.get("Content-Length", 0))
+        except ValueError:
+            length = 0
+        max_body = MAX_PDF_BYTES * MAX_REPORTS + 1_000_000
+        if not (0 < length <= max_body):
+            raise ValueError("invalid or oversized request body")
+        form = cgi.FieldStorage(
+            fp=self.rfile, headers=self.headers,
+            environ={"REQUEST_METHOD": "POST", "CONTENT_TYPE": self.headers["Content-Type"]},
+        )
+        company = form.getvalue("company", "")
+        reports = []
+        i = 0
+        while form.getvalue(f"year_{i}") is not None:
+            reports.append({
+                "year": form.getvalue(f"year_{i}", ""),
+                "url": form.getvalue(f"url_{i}", "") or "",
+                "file_bytes": self._multipart_file_bytes(form, f"file_{i}"),
+            })
+            i += 1
+        return {"company": company, "reports": reports}
+
+    @staticmethod
+    def _multipart_file_bytes(form: "cgi.FieldStorage", key: str) -> Optional[bytes]:
+        if key not in form.keys():
+            return None
+        item = form[key]
+        if isinstance(item, list):
+            item = item[0]
+        if not getattr(item, "filename", None):
+            return None
+        data = item.file.read()
+        return data or None
+
+    def do_POST(self) -> None:
+        if self.path != "/api/add-company":
+            self.send_error(404, "not found")
+            return
+        content_type = self.headers.get("Content-Type", "")
+        try:
+            if content_type.startswith("multipart/form-data"):
+                payload = self._parse_multipart_body()
+            else:
+                payload = self._parse_json_body()
+        except ValueError as exc:
+            self._json(400, {"ok": False, "error": str(exc)})
             return
         try:
             result = add_company(payload)

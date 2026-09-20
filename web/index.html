@@ -75,8 +75,11 @@
   .try-panel input:focus{outline:2px solid rgba(42,107,79,.25);border-color:var(--leaf)}
   .yr-range{display:flex;gap:10px;align-items:center}
   .yr-range input{width:90px}
-  .yr-row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
-  .yr-row .yr-label{width:44px;flex:none;font:650 13px/1 var(--mono);color:var(--ink2)}
+  .yr-row{display:flex;gap:8px;align-items:flex-start;margin-bottom:10px}
+  .yr-row .yr-label{width:44px;flex:none;padding-top:10px;font:650 13px/1 var(--mono);color:var(--ink2)}
+  .yr-upload{display:inline-block;margin-top:5px;font-size:12px;color:var(--blue);
+    cursor:pointer;text-decoration:underline}
+  .yr-filename{margin-left:6px;font-size:12px;color:var(--ink2)}
   .add-co-submit{margin-top:18px;width:100%;background:var(--ink);color:var(--bg);
     border:none;border-radius:999px;padding:12px 14px;cursor:pointer;font:650 14px/1 var(--sans)}
   .add-co-submit:disabled{opacity:.5;cursor:default}
@@ -434,14 +437,26 @@ function renderYearInputs(){
     return;
   }
   const existing = {};
-  box.querySelectorAll('input[data-year]').forEach(inp => { existing[inp.dataset.year] = inp.value; });
+  box.querySelectorAll('.yr-row').forEach(row => {
+    const u = row.querySelector('input[type=url]');
+    if(u) existing[row.dataset.year] = u.value;
+  });
   const years = [];
   for(let y = from; y <= to; y++) years.push(y);
   box.innerHTML = years.map(y => `
-    <div class="yr-row">
+    <div class="yr-row" data-year="${y}">
       <span class="yr-label">${y}</span>
-      <input type="url" data-year="${y}" placeholder="https://…/${y}-sustainability-report.pdf"
-        value="${F.esc(existing[y] || '')}" />
+      <div style="flex:1">
+        <input type="url" placeholder="https://…/${y}-sustainability-report.pdf"
+          value="${F.esc(existing[y] || '')}" />
+        <div>
+          <label class="yr-upload">or upload a PDF
+            <input type="file" accept="application/pdf" style="display:none"
+              onchange="this.closest('.yr-row').querySelector('.yr-filename').textContent=this.files[0]?this.files[0].name:''" />
+          </label>
+          <span class="yr-filename"></span>
+        </div>
+      </div>
     </div>`).join('');
 }
 
@@ -450,25 +465,33 @@ async function submitAddCo(){
   const status = document.getElementById('addCoStatus');
   const submitBtn = document.getElementById('addCoSubmit');
   const name = nameInput.value.trim();
-  const urlInputs = [...document.querySelectorAll('#addCoYears input[data-year]')];
-  const reports = urlInputs
-    .map(inp => ({ year: parseInt(inp.dataset.year, 10), url: inp.value.trim() }))
-    .filter(r => r.url);
+  const rows = [...document.querySelectorAll('#addCoYears .yr-row')];
+  const fd = new FormData();
+  fd.append('company', name);
+  let n = 0;
+  for(const row of rows){
+    const url = row.querySelector('input[type=url]').value.trim();
+    const file = row.querySelector('input[type=file]').files[0];
+    if(!url && !file) continue;
+    fd.append(`year_${n}`, row.dataset.year);
+    fd.append(`url_${n}`, url);
+    if(file) fd.append(`file_${n}`, file, file.name);
+    n++;
+  }
 
   status.innerHTML = '';
   if(!name){ status.innerHTML = '<p class="err">Enter a company name.</p>'; return; }
-  if(!reports.length){ status.innerHTML = '<p class="err">Enter at least one report URL.</p>'; return; }
+  if(!n){ status.innerHTML = '<p class="err">Enter at least one report URL or upload a PDF.</p>'; return; }
 
   submitBtn.disabled = true;
-  status.innerHTML = `<p>Downloading ${reports.length} report${reports.length>1?'s':''} and running analysis&hellip; this can take a minute.</p>`;
+  status.innerHTML = `<p>Fetching ${n} report${n>1?'s':''} and running analysis&hellip; this can take a minute.</p>`;
   try{
-    const res = await fetch('/api/add-company', {
-      method: 'POST', headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ company: name, reports }),
-    });
+    const res = await fetch('/api/add-company', { method: 'POST', body: fd });
     const j = await res.json();
     if(!j.ok){
-      status.innerHTML = `<p class="err">${F.esc(j.error || 'Something went wrong.')}</p>`;
+      const details = (j.failed || []).map(f =>
+        `<p class="err">${f.year ? f.year+': ' : ''}${F.esc(f.error)}</p>`);
+      status.innerHTML = `<p class="err">${F.esc(j.error || 'Something went wrong.')}</p>` + details.join('');
       submitBtn.disabled = false;
       return;
     }
