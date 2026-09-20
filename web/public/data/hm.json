@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-19T23:19:51+00:00",
+  "generated_at": "2026-09-20T03:08:24+00:00",
   "summary": {
     "company": "hm",
     "display_name": "H&M Group",
@@ -12370,8 +12370,8 @@
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
-      "old": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
-      "new": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
+      "old": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
+      "new": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
       "magnitude_pct": null,
       "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
       "evidence_chunk_ids": [],
@@ -12384,8 +12384,8 @@
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
-      "old": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
-      "new": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
+      "old": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
+      "new": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
       "magnitude_pct": null,
       "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
       "evidence_chunk_ids": [],
@@ -13242,8 +13242,8 @@
       "by_type": {
         "boilerplate_recycled": 8,
         "specificity_fell": 3,
-        "achievement_reverted_to_aspiration": 1,
-        "quantity_dropped": 1
+        "quantity_dropped": 1,
+        "achievement_reverted_to_aspiration": 1
       }
     },
     "sins": {

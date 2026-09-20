@@ -11,8 +11,8 @@
   "counts": {
     "boilerplate_recycled": 8,
     "specificity_fell": 3,
-    "achievement_reverted_to_aspiration": 1,
-    "quantity_dropped": 1
+    "quantity_dropped": 1,
+    "achievement_reverted_to_aspiration": 1
   },
   "events": [
     {
@@ -91,8 +91,8 @@
       "from_year": 2023,
       "to_year": 2024,
       "similarity": 1.0,
-      "old_text": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
-      "new_text": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
+      "old_text": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
+      "new_text": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
       "old_page": "40",
       "new_page": "46",
       "old_source": "data/raw/hm/2023_sustainability_report.pdf",
@@ -105,8 +105,8 @@
       "from_year": 2023,
       "to_year": 2024,
       "similarity": 1.0,
-      "old_text": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
-      "new_text": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
+      "old_text": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
+      "new_text": "Furthermore, the company focuses on innovative solutions aimed at increasing use of recycled materials.",
       "old_page": "40",
       "new_page": "46",
       "old_source": "data/raw/hm/2023_sustainability_report.pdf",

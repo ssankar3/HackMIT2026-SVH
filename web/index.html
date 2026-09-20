@@ -24,11 +24,11 @@
     font:16px/1.55 var(--sans);
     -webkit-font-smoothing:antialiased}
   a{color:var(--blue)}
-  .wrap{max-width:1180px;margin:0 auto;padding:22px 22px 64px}
+  .wrap{max-width:1280px;margin:0 auto;padding:22px 22px 64px}
 
   header{border-bottom:1px solid var(--rule);background:rgba(243,238,228,.92);
     backdrop-filter:blur(10px);position:sticky;top:0;z-index:20}
-  .mast{max-width:1180px;margin:0 auto;padding:14px 22px 12px;
+  .mast{max-width:1280px;margin:0 auto;padding:14px 22px 12px;
     display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap}
   .brand{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1}
   .brand small{display:block;font-family:var(--sans);font-size:10px;font-weight:600;
@@ -80,8 +80,8 @@
   .banner b{color:var(--ink)}
   .dot{width:8px;height:8px;border-radius:50%;flex:none;margin-top:6px}
 
-  .scorewrap{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:8px}
-  .scorelab{font-size:12px;color:var(--ink3);margin-top:6px;text-align:center}
+  .scorewrap{display:flex;gap:48px;align-items:flex-start;justify-content:center;flex-wrap:wrap;margin:28px 0 8px}
+  .scorelab{font-size:13px;color:var(--ink2);margin-top:10px;text-align:center;font-weight:650}
   .abst{font:650 22px/1 var(--serif);color:var(--ink3)}
 
   table{width:100%;border-collapse:collapse;font-size:13px}
@@ -98,7 +98,7 @@
   .na{height:8px;border-radius:99px;background:repeating-linear-gradient(45deg,
     #eee6d6,#eee6d6 5px,#e4dccb 5px,#e4dccb 10px)}
   .srow{display:grid;grid-template-columns:160px 1fr 48px;gap:12px;align-items:center;
-    padding:10px 0;border-bottom:1px solid var(--rule)}
+    padding:10px 0;border-bottom:1px solid var(--rule);position:relative}
   .srow:last-child{border-bottom:0}
   .sname{font-size:13.5px;font-weight:600}
   .sval{text-align:right;font-family:var(--mono);font-size:13px}
@@ -142,13 +142,12 @@
   .paste-panel.on{display:block}
 
   /* ---- magazine pieces ---- */
-  .lead{display:grid;grid-template-columns:minmax(0,1.4fr) auto;gap:28px;align-items:center}
-  @media(max-width:860px){.lead{grid-template-columns:1fr}}
+  .lead{display:flex;flex-direction:column;align-items:center;text-align:center}
   .display{font-family:var(--serif);font-size:clamp(36px,5vw,56px);line-height:.95;
     letter-spacing:-.03em;margin:0 0 10px;font-weight:700}
-  .deck{font-size:17px;line-height:1.45;color:var(--ink2);margin:0;max-width:46rem}
+  .deck{font-size:17px;line-height:1.45;color:var(--ink2);margin:0 auto;max-width:42rem}
 
-  .machine{position:relative;overflow:hidden}
+  .machine{position:relative;overflow:visible}
   .machine:before{content:"";position:absolute;inset:auto -8% -40% auto;width:280px;height:280px;
     background:radial-gradient(circle,rgba(42,107,79,.08),transparent 70%);pointer-events:none}
   .mhead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
@@ -161,18 +160,36 @@
   .year-join{height:2px;flex:1;min-width:18px;background:var(--rule2);margin:0 4px}
   .mode-cap{font-size:14px;color:var(--ink2);margin:10px 0 0;font-style:italic;font-family:var(--serif)}
 
-  .mspread{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(220px,0.65fr);gap:22px;margin-top:8px}
-  @media(max-width:960px){
-    .mspread{grid-template-columns:1fr}
-    .mspread>.gauge-col{flex-direction:row;gap:18px;text-align:left;justify-content:flex-start;
-      padding:12px 18px}
-    .mspread>.gauge-col .scorelab,.mspread>.gauge-col .why{text-align:left}
-  }
-  .chartbox{background:linear-gradient(#fffdf7,#f7f1e6);border:1px solid var(--rule);
-    border-radius:14px;padding:14px 12px 10px}
+  .chartbox{position:relative;background:linear-gradient(#fffdf7,#f7f1e6);border:1px solid var(--rule);
+    border-radius:16px;padding:22px 18px 16px;margin:8px auto 0;max-width:1100px}
   .gauge-col{display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:8px 4px}
-  .gnum{font-family:var(--serif);font-size:34px;font-weight:700;line-height:1;margin-top:-8px}
+    text-align:center;padding:8px 12px;position:relative;min-width:200px}
+  .gnum{font-family:var(--serif);font-size:28px;font-weight:700;line-height:1;margin-top:4px}
+  .pie-svg{width:200px;height:200px;display:block;filter:drop-shadow(0 8px 18px rgba(28,24,20,.06))}
+  .pieslice{cursor:help;transition:opacity .15s}
+  .pie-svg:hover .pieslice{opacity:.55}
+  .pie-svg .pieslice:hover{opacity:1}
+  .tipwrap{position:relative}
+  .popup{position:absolute;left:50%;top:calc(100% + 8px);transform:translateX(-50%) translateY(-6px);
+    width:260px;background:var(--ink);color:#f4efe6;padding:12px 14px;border-radius:12px;
+    font-size:13px;line-height:1.45;text-align:left;opacity:0;visibility:hidden;pointer-events:none;
+    transition:opacity .15s,transform .15s,visibility .15s;z-index:8;
+    box-shadow:0 12px 32px rgba(28,24,20,.22)}
+  .popup b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+    margin-bottom:6px;color:#e6d7b8}
+  .popup p{margin:0}
+  .tipwrap:hover .popup,.tipwrap:focus-within .popup{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+  .srow .popup{left:160px;top:auto;bottom:calc(100% + 6px);transform:none;width:280px}
+  .srow:hover .popup,.srow:focus-within .popup{transform:none}
+  .chart-tip{position:absolute;z-index:9;min-width:220px;max-width:320px;background:var(--ink);color:#f4efe6;
+    padding:12px 14px;border-radius:12px;font-size:13px;line-height:1.45;pointer-events:none;
+    box-shadow:0 12px 32px rgba(28,24,20,.22);opacity:0;visibility:hidden;transform:translateY(4px);
+    transition:opacity .12s,visibility .12s}
+  .chart-tip.on{opacity:1;visibility:visible;transform:none}
+  .chart-tip .k{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#e6d7b8;
+    font-weight:700;margin-bottom:4px}
+  .chart-tip .delta{font-family:var(--mono);font-size:14px;margin-top:6px}
+  .metric-select{font-size:14px;padding:10px 12px;max-width:min(420px,100%);font-weight:600}
 
   .saiddid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
   @media(max-width:800px){.saiddid{grid-template-columns:1fr}}
@@ -361,20 +378,180 @@ function apiish(t){
   return /anthropic|api[_ ]?key|claude|llm|stage5|stage7|verified evidence quotes/i.test(t||'');
 }
 
-function gauge(val, label){
-  const v = val==null ? null : Math.max(0, Math.min(100, val));
-  const r=42, c=2*Math.PI*r, dash = v==null ? 0 : (v/100)*c;
-  const col = F.col(v);
-  return `<div class="gauge-col">
-    <svg width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
-      <circle cx="60" cy="60" r="${r}" fill="none" stroke="var(--rule)" stroke-width="8"/>
-      <circle cx="60" cy="60" r="${r}" fill="none" stroke="${col}" stroke-width="8"
-        stroke-linecap="round" transform="rotate(-90 60 60)"
-        stroke-dasharray="${dash} ${c}" style="transition:stroke-dasharray .6s ease"/>
+const METRIC_TITLES = {
+  scope_1_emissions: 'Scope 1 emissions',
+  scope_2_emissions_market_based: 'Scope 2 emissions (market-based)',
+  scope_2_emissions_location_based: 'Scope 2 emissions (location-based)',
+  scope_1_2_emissions: 'Scope 1 and 2 emissions',
+  scope_3_emissions: 'Scope 3 emissions',
+  scope_3_emissions_excl_use_phase: 'Scope 3 emissions (excluding use-phase)',
+  scope_3_emissions_incl_use_phase: 'Scope 3 emissions (including use-phase)',
+  total_emissions: 'Total emissions',
+  total_emissions_location_based: 'Total emissions (location-based)',
+  total_emissions_market_based: 'Total emissions (market-based)',
+  renewable_electricity_share: 'Renewable electricity share',
+  recycled_materials_share: 'Recycled materials share',
+  recycled_materials_share_incl_packaging: 'Recycled materials share (including packaging)',
+  recycled_or_sustainably_sourced_materials_share: 'Recycled or sustainably sourced materials share',
+  carbon_intensity_per_gms: 'Carbon intensity (per GMS)',
+  carbon_intensity_per_revenue: 'Carbon intensity (per revenue)',
+  carbon_removal_contracted: 'Carbon removal contracted',
+  carbon_removal_contributed: 'Carbon removal contributed',
+  carbon_removal_contracted_2030: 'Carbon removal contracted (through 2030)',
+  carbon_removal_contracted_2031_plus: 'Carbon removal contracted (2031+)',
+  carbon_removal_contracted_in_year: 'Carbon removal contracted (in year)',
+  emissions_share_scope_1: 'Emissions share, Scope 1',
+  emissions_share_scope_2: 'Emissions share, Scope 2',
+  emissions_share_scope_3: 'Emissions share, Scope 3',
+};
+
+function metricTitle(id){
+  if(!id) return '';
+  if(METRIC_TITLES[id]) return METRIC_TITLES[id];
+  return String(id).replace(/_/g,' ')
+    .replace(/\bgms\b/ig,'GMS')
+    .replace(/\bsaf\b/ig,'SAF')
+    .replace(/\bco2e\b/ig,'CO2e')
+    .replace(/\b\w/g, ch => ch.toUpperCase());
+}
+
+const PIE_MEANING = {
+  restatements: 'Share of republished figures that later came out as a different number. Same year, same metric, two reports.',
+  redefinitions: 'Share of metrics that were dropped and replaced by a new definition, so the old series is no longer comparable.',
+  risk: 'Overall greenwashing-risk blend. Higher is riskier. Hover a slice to see which ingredient it is.',
+  goalpost_drift: 'How often and how far previously published numbers were rewritten in a later report.',
+  say_do_gap: 'Share of linked targets that are behind or reversed versus the verified number path.',
+  vagueness: 'How little specificity the latest material claims have — missing numbers, dates, scope, or proof.',
+  unsupported_claims: 'Share of quantified targets or achievements that never name a verifier.',
+  sins_severity: 'How much of the claim book trips a classic greenwash pattern, weighted by severity.',
+};
+
+let TIPS = {};
+let tipSeq = 0;
+function tipStore(html){
+  const id = 't'+(++tipSeq);
+  TIPS[id] = html;
+  return id;
+}
+
+function polar(cx, cy, r, a){ return [cx + r*Math.cos(a), cy + r*Math.sin(a)]; }
+function slicePath(cx, cy, r, a0, a1){
+  const large = (a1-a0) > Math.PI ? 1 : 0;
+  const [x0,y0] = polar(cx,cy,r,a0);
+  const [x1,y1] = polar(cx,cy,r,a1);
+  if(Math.abs(a1-a0) >= 2*Math.PI - 1e-6)
+    return `M ${cx} ${cy-r} A ${r} ${r} 0 1 1 ${cx} ${cy+r} A ${r} ${r} 0 1 1 ${cx} ${cy-r} Z`;
+  return `M ${cx} ${cy} L ${x0} ${y0} A ${r} ${r} 0 ${large} 1 ${x1} ${y1} Z`;
+}
+
+function pieChart(slices, label, meaning, centerLabel){
+  const total = slices.reduce((a,s)=>a+s.value, 0);
+  const cx=100, cy=100, r=78;
+  let a = -Math.PI/2;
+  const parts = (total<=0 ? [{value:1, color:'var(--rule)', name:'None', desc:meaning, empty:true}] : slices)
+    .filter(s=>s.value>0 || s.empty);
+  const paths = parts.map(s=>{
+    const sweep = total<=0 ? 2*Math.PI : (s.value/total)*2*Math.PI;
+    const a1 = a + sweep;
+    const d = slicePath(cx,cy,r,a,a1);
+    a = a1;
+    const id = tipStore(`<b>${F.esc(s.name)}</b><p>${F.esc(s.desc)}</p>`);
+    return `<path class="pieslice" d="${d}" fill="${s.color}" stroke="var(--paper)" stroke-width="2"
+      onmouseenter="pieTip(event,'${id}')" onmouseleave="pieTipOff(event)"></path>`;
+  }).join('');
+  const summaryId = tipStore(`<b>${F.esc(label)}</b><p>${F.esc(meaning)}</p>`);
+  return `<div class="gauge-col tipwrap" tabindex="0" data-default-tip="${summaryId}">
+    <svg class="pie-svg" viewBox="0 0 200 200" role="img" aria-label="${F.esc(label)}">
+      ${paths}
+      <circle cx="100" cy="100" r="46" fill="var(--paper)" pointer-events="none"/>
     </svg>
-    <div class="gnum" style="color:${col}">${v==null?'n/a':F.num(v,0)}</div>
-    <div class="scorelab">${label}</div>
+    <div class="gnum">${F.esc(centerLabel)}</div>
+    <div class="scorelab">${F.esc(label)}</div>
+    <div class="popup">${TIPS[summaryId]}</div>
   </div>`;
+}
+
+function pieTip(ev, id){
+  const wrap = ev.target.closest('.tipwrap');
+  const pop = wrap && wrap.querySelector('.popup');
+  if(pop) pop.innerHTML = TIPS[id] || '';
+}
+function pieTipOff(ev){
+  const wrap = ev.target.closest('.tipwrap');
+  if(!wrap) return;
+  const pop = wrap.querySelector('.popup');
+  const def = wrap.getAttribute('data-default-tip');
+  if(pop && def) pop.innerHTML = TIPS[def] || '';
+}
+
+function restatStats(){
+  const restated = (CO.drift_events||[]).filter(e=>e.type==='metric_restated');
+  const redefined = (CO.drift_events||[]).filter(e=>e.type==='metric_redefined');
+  const pts = CO.did_points||[];
+  const pubs = {};
+  for(const p of pts){
+    const k = p.year+'|'+p.metric;
+    (pubs[k] ||= new Set()).add(p.source);
+  }
+  let comparable = 0;
+  for(const s of Object.values(pubs)) if(s.size>=2) comparable++;
+  return {
+    restated: restated.length,
+    unchanged: Math.max(0, comparable - restated.length),
+    comparable,
+    redefined: redefined.length,
+    metrics: (CO.coverage.did_metrics||[]).length,
+    restatedEvents: restated,
+    redefinedEvents: redefined,
+  };
+}
+
+function restatementPie(st){
+  const slices = [
+    {value: st.restated, color:'var(--rust)', name:'Restated',
+      desc: st.restated+' of '+st.comparable+' republished figures later appeared as a different number. Same year and metric, two reports.'},
+    {value: st.unchanged, color:'var(--leaf)', name:'Unchanged',
+      desc: st.unchanged+' republished figures kept the same number the second time they were printed.'},
+  ];
+  const center = st.comparable ? Math.round(100*st.restated/st.comparable)+'%' : 'n/a';
+  return pieChart(slices, 'Restatements', PIE_MEANING.restatements, center);
+}
+
+function redefinitionPie(){
+  const ev = (CO.drift_events||[]).filter(e=>e.type==='metric_redefined');
+  const n = (CO.coverage.did_metrics||[]).length;
+  const involved = new Set();
+  ev.forEach(e=>{ if(e.old) involved.add(e.old); if(e.new) involved.add(e.new); if(e.canonical_metric) involved.add(e.canonical_metric); });
+  const pairs = ev.map(e=>metricTitle(e.old)+' → '+metricTitle(e.new)).join('; ')
+    || 'No metric was swapped for a new definition.';
+  const slices = [
+    {value: ev.length, color:'var(--amber)', name:'Redefined',
+      desc: ev.length? ('The company replaced a metric with a new definition: '+pairs+' Those series are not comparable.')
+        : 'No metric name was swapped between reports.'},
+    {value: Math.max(0, n - involved.size), color:'var(--leaf2)', name:'Same definition',
+      desc: 'Metrics that kept the same name and definition across reports.'},
+  ];
+  return pieChart(slices, 'Redefinitions', PIE_MEANING.redefinitions, String(ev.length));
+}
+
+function riskPie(){
+  const subs = CO.summary.sub_scores||{};
+  const weights = {vagueness:0.15, unsupported_claims:0.20, sins_severity:0.25, say_do_gap:0.25, goalpost_drift:0.15};
+  const colors = {vagueness:'#6b4c9a', unsupported_claims:'#2f6f9a', sins_severity:'#b4412e',
+    say_do_gap:'#c4841d', goalpost_drift:'#2a6b4f'};
+  const labels = Object.fromEntries(SUBS.map(([k,n])=>[k,n]));
+  const slices = SUBS.map(([k])=>{
+    const v = subs[k];
+    return {
+      value: v==null ? 0 : v * (weights[k]||0),
+      color: colors[k],
+      name: labels[k],
+      desc: PIE_MEANING[k]+(v==null?' This piece could not be measured, so it is left out of Risk.'
+        : ' Score '+Number(v).toFixed(1)+' of 100.'),
+    };
+  });
+  const overall = CO.summary.overall_score;
+  return pieChart(slices, 'Risk', PIE_MEANING.risk, overall==null?'n/a':F.num(overall,0));
 }
 
 async function boot(){
@@ -428,55 +605,45 @@ function machine(){
   const s = CO.summary;
   const tl = CO.timeline||[], yrs = tl.map(t=>t.year);
   const cur = tl.find(t=>t.year===YR) || tl[tl.length-1];
-  const ev = (CO.drift_events||[]).filter(e=>e.year===YR && e.type!=='wording_softened');
+  const st = restatStats();
+  TIPS = {}; tipSeq = 0;
 
   document.getElementById('machine').innerHTML = `
     <div class="card">
       <div class="lead">
-        <div>
-          <p class="kicker">${ICO.leaf} ${F.esc(s.display_name)}</p>
-          <h1 class="display">${F.esc(s.display_name)}</h1>
-          <p class="deck">${F.esc(shortDeck(s))}</p>
-        </div>
-        <div class="scorewrap" style="justify-content:flex-end">
-          ${gauge(s.sub_scores.goalpost_drift, 'Restatements')}
-          ${gauge(s.overall_score, 'Risk')}
+        <p class="kicker">${ICO.leaf} ${F.esc(s.display_name)}</p>
+        <h1 class="display">${F.esc(s.display_name)}</h1>
+        <p class="deck">${F.esc(shortDeck(s))}</p>
+        <div class="scorewrap">
+          ${restatementPie(st)}
+          ${redefinitionPie()}
+          ${riskPie()}
         </div>
       </div>
     </div>
 
     <div class="card machine">
-      <div class="mhead">
+      <div class="mhead" style="justify-content:center;text-align:center">
         <div>
           <p class="kicker">${ICO.clock} The numbers</p>
-          <h2>${cur?cur.year:'—'}</h2>
-          <p class="mode-cap">One chart. Each line is a report. If the lines split, the company changed the number.</p>
+          <h2>${metricTitle(METRIC) || (cur?cur.year:'—')}</h2>
+          <p class="mode-cap">Each line is a report. Hover a split to see what moved. If a metric was redefined, both definitions are drawn.</p>
         </div>
-        ${metricPicker()}
       </div>
+      <div style="display:flex;justify-content:center;margin:8px 0 4px">${metricPicker()}</div>
 
-      ${yrs.length?`<div class="year-rail" role="tablist" aria-label="Report years">
+      ${yrs.length?`<div class="year-rail" role="tablist" aria-label="Report years" style="justify-content:center">
         ${yrs.map((y,i)=>`
           ${i?'<span class="year-join"></span>':''}
           <button class="year-pill ${y===YR?'on':''}" onclick="setYear(${y})">${y}</button>
         `).join('')}
       </div>`:'<p class="empty">No timeline data.</p>'}
 
-      <div class="chartbox">${chart()}</div>
+      <div class="chartbox" id="chartbox">${chart()}<div class="chart-tip" id="chartTip"></div></div>
 
-      <div class="saiddid">
-        <div class="pull">
-          <h3>${ICO.quote} Said</h3>
-          ${cur?saidLane(cur.year):'<p class="empty">—</p>'}
-        </div>
-        <div class="pull" style="border-left-color:var(--amber)">
-          <h3>${ICO.warn} Moved</h3>
-          ${ev.length?ev.slice(0,4).map(e=>`<div class="evt">
-              <div class="k">${e.type.replace(/_/g,' ')} · ${e.year}</div>
-              ${F.esc((e.canonical_metric||'')+(e.magnitude_pct!=null?'  '+(e.magnitude_pct>0?'+':'')+F.num(e.magnitude_pct,1)+'%':''))}</div>`).join('')
-            +(ev.length>4?`<div class="why">+${ev.length-4} more in The figures</div>`:'')
-            :'<p class="empty">None.</p>'}
-        </div>
+      <div class="pull" style="max-width:720px;margin:22px auto 0;text-align:left">
+        <h3>${ICO.quote} Said</h3>
+        ${cur?saidLane(cur.year):'<p class="empty">—</p>'}
       </div>
     </div>`;
 }
@@ -495,18 +662,49 @@ function setMetric(m){ METRIC=m; machine(); }
 function metricPicker(){
   const ms = CO.coverage.did_metrics||[];
   if(!ms.length) return '';
-  return `<select onchange="setMetric(this.value)">
-    ${ms.map(m=>`<option value="${F.esc(m)}" ${m===METRIC?'selected':''}>${F.esc(m)}</option>`).join('')}
+  return `<select class="metric-select" onchange="setMetric(this.value)" aria-label="Metric">
+    ${ms.map(m=>`<option value="${F.esc(m)}" ${m===METRIC?'selected':''}>${F.esc(metricTitle(m))}</option>`).join('')}
   </select>`;
 }
 
+function redefPartner(metric){
+  for(const e of (CO.drift_events||[])){
+    if(e.type!=='metric_redefined') continue;
+    if(e.old===metric) return {peer:e.new, role:'old', e};
+    if(e.new===metric || e.canonical_metric===metric) return {peer:e.old, role:'new', e};
+  }
+  return null;
+}
+
+function chartTipOn(ev, id){
+  const box = document.getElementById('chartbox');
+  const tip = document.getElementById('chartTip');
+  if(!box || !tip) return;
+  tip.innerHTML = TIPS[id] || '';
+  tip.classList.add('on');
+  const r = box.getBoundingClientRect();
+  const x = Math.min(ev.clientX - r.left + 14, r.width - 280);
+  const y = Math.min(ev.clientY - r.top + 14, r.height - 80);
+  tip.style.left = Math.max(8, x)+'px';
+  tip.style.top = Math.max(8, y)+'px';
+}
+function chartTipOff(){
+  const tip = document.getElementById('chartTip');
+  if(tip) tip.classList.remove('on');
+}
+
 function chart(){
-  const rows = (CO.did_points||[]).filter(p=>p.metric===METRIC);
+  const partner = redefPartner(METRIC);
+  const metrics = partner ? [METRIC, partner.peer].filter(Boolean) : [METRIC];
+  const rows = (CO.did_points||[]).filter(p=>metrics.includes(p.metric));
   if(!rows.length) return `<p class="empty">No series for this metric.</p>`;
-  const bySrc = {};
-  for(const r of rows) (bySrc[r.source] ||= []).push(r);
-  const srcs = Object.keys(bySrc).sort();
-  const W=720,H=230,P={l:52,r:16,t:16,b:32};
+  const byKey = {};
+  for(const r of rows){
+    const k = r.metric+'|'+r.source;
+    (byKey[k] ||= []).push(r);
+  }
+  const keys = Object.keys(byKey).sort();
+  const W=900,H=380,P={l:64,r:24,t:28,b:40};
   const xs=[...new Set(rows.map(r=>r.year))].sort((a,b)=>a-b);
   const vals=rows.map(r=>r.value);
   let lo=Math.min(...vals), hi=Math.max(...vals);
@@ -514,41 +712,96 @@ function chart(){
   const pad=(hi-lo)*0.14; lo-=pad; hi+=pad;
   const X=y=>P.l+(xs.length<2?0:(xs.indexOf(y)/(xs.length-1))*(W-P.l-P.r));
   const Y=v=>P.t+(1-(v-lo)/(hi-lo))*(H-P.t-P.b);
-  const cols=['var(--leaf)','var(--amber)','var(--violet)'];
-  const unit=rows[0].unit;
+  const cols=['var(--leaf)','var(--amber)','var(--violet)','var(--rust)'];
 
-  const paths=srcs.map((s,i)=>{
-    const pts=bySrc[s].slice().sort((a,b)=>a.year-b.year);
+  const restates = (CO.drift_events||[]).filter(e=>e.type==='metric_restated' && e.canonical_metric===METRIC);
+  const moves = restates.map(e=>{
+    const yearPts = rows.filter(r=>r.year===e.year && r.metric===METRIC);
+    if(yearPts.length<2) return null;
+    const sorted = yearPts.slice().sort((a,b)=>String(a.source).localeCompare(String(b.source)));
+    const id = tipStore(`<div class="k">Moved · ${e.year}</div>
+      <div><b>${F.esc(metricTitle(METRIC))}</b></div>
+      <div>${F.esc(F.file(e.old_source))}: ${F.esc(e.old)}</div>
+      <div>${F.esc(F.file(e.new_source))}: ${F.esc(e.new)}</div>
+      <div class="delta ${e.magnitude_pct>0?'up':'down'}" style="color:${e.magnitude_pct>0?'#f0b4aa':'#b7e0c8'}">${e.magnitude_pct==null?'':((e.magnitude_pct>0?'+':'')+F.num(e.magnitude_pct,1)+'%')}</div>`);
+    const ya = Y(sorted[0].value), yb = Y(sorted[sorted.length-1].value);
+    return `<line x1="${X(e.year).toFixed(1)}" x2="${X(e.year).toFixed(1)}"
+        y1="${ya.toFixed(1)}" y2="${yb.toFixed(1)}" stroke="var(--amber)" stroke-width="10"
+        stroke-opacity=".08" stroke-linecap="round"
+        onmouseenter="chartTipOn(event,'${id}')" onmouseleave="chartTipOff()"/>
+      <line x1="${X(e.year).toFixed(1)}" x2="${X(e.year).toFixed(1)}"
+        y1="${ya.toFixed(1)}" y2="${yb.toFixed(1)}" stroke="var(--amber)" stroke-width="1.8"
+        stroke-dasharray="4 4"
+        onmouseenter="chartTipOn(event,'${id}')" onmouseleave="chartTipOff()"/>`;
+  }).filter(Boolean).join('');
+
+  const redefMarks = partner ? (()=>{
+    const e = partner.e;
+    const id = tipStore(`<div class="k">Redefined</div>
+      <div><b>${F.esc(metricTitle(e.old))}</b> was replaced by <b>${F.esc(metricTitle(e.new))}</b>.</div>
+      <div style="margin-top:6px">The two series use different definitions, so a drop or jump here is not a like-for-like change.</div>`);
+    const x = xs.includes(e.year) ? X(e.year) : (P.l + (W-P.l-P.r)*0.55);
+    return `<circle cx="${x.toFixed(1)}" cy="${P.t+8}" r="7" fill="var(--amber)"
+        onmouseenter="chartTipOn(event,'${id}')" onmouseleave="chartTipOff()"/>
+      <text x="${(x+12).toFixed(1)}" y="${P.t+12}" fill="var(--amber)" font-size="12"
+        font-family="Iowan Old Style,Palatino,serif" font-style="italic"
+        onmouseenter="chartTipOn(event,'${id}')" onmouseleave="chartTipOff()">redefined — hover</text>`;
+  })() : '';
+
+  const paths=keys.map((k,i)=>{
+    const pts=byKey[k].slice().sort((a,b)=>a.year-b.year);
+    const metric=k.split('|')[0], src=k.slice(k.indexOf('|')+1);
+    const dashed = partner && metric!==METRIC;
     const d=pts.map((p,j)=>`${j?'L':'M'}${X(p.year).toFixed(1)},${Y(p.value).toFixed(1)}`).join(' ');
-    return `<path class="path-draw" d="${d}" fill="none" stroke="${cols[i%3]}" stroke-width="2.4"
+    return `<path class="path-draw" d="${d}" fill="none" stroke="${cols[i%4]}" stroke-width="${dashed?2:2.8}"
+       stroke-dasharray="${dashed?'7 5':'none'}"
        stroke-linejoin="round" stroke-linecap="round" style="animation-delay:${i*90}ms"/>
-      ${pts.map((p,j)=>`<circle class="dot-pop" style="animation-delay:${200+j*70}ms"
-        cx="${X(p.year).toFixed(1)}" cy="${Y(p.value).toFixed(1)}" r="4"
-        fill="${cols[i%3]}" stroke="var(--paper)" stroke-width="1.5">
-        <title>${p.year}: ${F.num(p.value,2)} ${F.esc(p.unit)}
-${F.esc(F.file(s))}</title></circle>`).join('')}`;
+      ${pts.map((p,j)=>{
+        const move = restates.find(e=>e.year===p.year && p.metric===METRIC);
+        const id = tipStore(move
+          ? `<div class="k">Moved · ${p.year}</div>
+             <div><b>${F.esc(metricTitle(p.metric))}</b></div>
+             <div>${F.esc(F.file(move.old_source))}: ${F.esc(move.old)}</div>
+             <div>${F.esc(F.file(move.new_source))}: ${F.esc(move.new)}</div>
+             <div class="delta">${move.magnitude_pct==null?'':((move.magnitude_pct>0?'+':'')+F.num(move.magnitude_pct,1)+'%')}</div>`
+          : `<div class="k">${p.year}</div>
+             <div><b>${F.esc(metricTitle(p.metric))}</b></div>
+             <div>${F.num(p.value,2)} ${F.esc(p.unit||'')}</div>
+             <div>${F.esc(F.file(src))}</div>`);
+        return `<circle class="dot-pop" style="animation-delay:${200+j*70}ms"
+        cx="${X(p.year).toFixed(1)}" cy="${Y(p.value).toFixed(1)}" r="${move?6:4.5}"
+        fill="${cols[i%4]}" stroke="var(--paper)" stroke-width="1.5"
+        onmouseenter="chartTipOn(event,'${id}')" onmouseleave="chartTipOff()"></circle>`;
+      }).join('')}`;
   }).join('');
 
-  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">
+  const unitNote = partner
+    ? 'Two definitions on one axis — not comparable'
+    : F.esc(rows.find(r=>r.metric===METRIC)?.unit || rows[0].unit || '');
+
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;min-height:340px;display:block">
     ${[0,.5,1].map(f=>{const v=lo+(hi-lo)*f;return `
       <line x1="${P.l}" x2="${W-P.r}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}"
         stroke="var(--rule)" stroke-width="1"/>
       <text x="${P.l-8}" y="${(Y(v)+4).toFixed(1)}" text-anchor="end" fill="var(--ink3)"
         font-size="11" font-family="ui-monospace,monospace">${abbr(v)}</text>`}).join('')}
     ${xs.map(y=>`<text x="${X(y).toFixed(1)}" y="${H-10}" text-anchor="middle"
-       fill="${y===YR?'var(--leaf)':'var(--ink3)'}" font-size="12"
+       fill="${y===YR?'var(--leaf)':'var(--ink3)'}" font-size="13"
        font-weight="${y===YR?'700':'500'}" font-family="Iowan Old Style,Palatino,serif">${y}</text>`).join('')}
-    ${YR!=null?`<line x1="${X(YR).toFixed(1)}" x2="${X(YR).toFixed(1)}" y1="${P.t}" y2="${H-P.b}"
+    ${YR!=null && xs.includes(YR)?`<line x1="${X(YR).toFixed(1)}" x2="${X(YR).toFixed(1)}" y1="${P.t}" y2="${H-P.b}"
       stroke="var(--leaf)" stroke-dasharray="3 4" stroke-width="1.2" opacity=".55"/>`:''}
     ${paths}
+    ${moves}
+    ${redefMarks}
   </svg>
-  <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--ink3);margin-top:8px;padding:0 6px">
-    ${srcs.map((s,i)=>`<span><span style="display:inline-block;width:14px;height:3px;
-      background:${cols[i%3]};vertical-align:middle;margin-right:6px;border-radius:2px"></span>${F.esc(F.file(s))}</span>`).join('')}
-    <span style="margin-left:auto">${F.esc(unit)}</span>
-  </div>
-  ${srcs.length>1?`<div class="why" style="padding:0 6px 4px">Two reports, one metric. Where the
-    lines separate, the company restated its own history.</div>`:''}`;
+  <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink3);margin-top:10px;padding:0 6px;justify-content:center">
+    ${keys.map((k,i)=>{
+      const metric=k.split('|')[0], src=k.slice(k.indexOf('|')+1);
+      return `<span><span style="display:inline-block;width:14px;height:3px;
+      background:${cols[i%4]};vertical-align:middle;margin-right:6px;border-radius:2px"></span>${F.esc(metricTitle(metric))} · ${F.esc(F.file(src))}</span>`;
+    }).join('')}
+    <span style="margin-left:auto">${unitNote}</span>
+  </div>`;
 }
 
 function abbr(v){ const a=Math.abs(v);
@@ -584,11 +837,13 @@ function dossier(){
 function subRow(k,name,desc){
   const v = CO.summary.sub_scores[k];
   const reason = (CO.summary.abstain_reasons||[]).find(r=>r.startsWith(k+':') && !apiish(r));
-  return `<div class="srow">
+  const meaning = PIE_MEANING[k] || desc;
+  return `<div class="srow tipwrap" tabindex="0">
     <div><div class="sname">${name}</div><div class="why">${F.esc(desc)}</div></div>
     <div>${v==null?`<div class="na"></div><div class="why">${F.esc(reason?reason.split(': ').slice(1).join(': '):'not measurable')}</div>`
       :`<div class="bar"><i style="width:${v}%;background:${F.col(v)}"></i></div>`}</div>
     <div class="sval" style="color:${v==null?'var(--ink3)':F.col(v)}">${v==null?'n/a':F.num(v,1)}</div>
+    <div class="popup"><b>${F.esc(name)}</b><p>${F.esc(meaning)}</p></div>
   </div>`;
 }
 
@@ -599,11 +854,13 @@ function tabEvidence(){
       <th>Restated to</th><th>Δ</th><th>Source</th></tr></thead><tbody>
     ${ev.map(e=>{
       const m=e.magnitude_pct;
+      const oldDisp = e.type==='metric_redefined' ? metricTitle(e.old) : e.old;
+      const newDisp = e.type==='metric_redefined' ? metricTitle(e.new) : e.new;
       return `<tr>
         <td class="mono">${e.year}</td>
-        <td>${F.esc(e.canonical_metric||'')}<div class="src">${e.type.replace(/_/g,' ')}</div></td>
-        <td class="mono">${F.esc(e.old)}</td>
-        <td class="mono">${F.esc(e.new)}</td>
+        <td>${F.esc(metricTitle(e.canonical_metric||''))}<div class="src">${e.type==='metric_redefined'?'redefined':(e.type||'').replace(/_/g,' ')}</div></td>
+        <td class="mono">${F.esc(oldDisp)}</td>
+        <td class="mono">${F.esc(newDisp)}</td>
         <td class="mono ${m==null?'':m>0?'up':'down'}">${m==null?'—':(m>0?'+':'')+F.num(m,1)+'%'}</td>
         <td class="src">${F.esc(F.file(e.old_source))} →<br>${F.esc(F.file(e.new_source))}${e.page?' p.'+e.page:''}</td>
       </tr>`;}).join('')}
@@ -633,7 +890,7 @@ function tabClaims(){
         <div class="meta">${c.publish_year} · p.${c.page==null?'?':c.page} · ${F.esc(c.claim_type)}
           · spec <b style="color:${sp>=0.4?'var(--leaf)':sp>=0.2?'var(--amber)':'var(--rust)'}">${sp==null?'—':sp.toFixed(2)}</b>
           · ${slots.map(([k,v])=>`<span style="color:${v?'var(--leaf)':'var(--ink3)'}">${k}</span>`).join(' ')}
-          ${c.canonical_metric?` · → ${F.esc(c.canonical_metric)}`:''}
+          ${c.canonical_metric?` · → ${F.esc(metricTitle(c.canonical_metric))}`:''}
           ${c.progress_status?` · ${F.esc(c.progress_status)}`:''}</div>
         <div style="font-family:var(--serif);font-size:16.5px;line-height:1.45">${F.paint(c.claim_text, f.highlights)}</div>
         ${(c.sins||[]).map(s=>`<span class="sinchip" title="${F.esc(s.rationale||'')}">${F.esc(s.sin)}</span>`).join('')}
@@ -669,7 +926,7 @@ function tabLanguage(){
       <th>Actual</th><th>Claim</th></tr></thead><tbody>
       ${links.slice(0,12).map(lk=>`<tr>
         <td class="mono" style="color:${lk.status==='on_track'?'var(--leaf)':'var(--rust)'}">${F.esc(lk.status)}</td>
-        <td class="mono">${F.esc(lk.canonical_metric||'')}</td>
+        <td>${F.esc(metricTitle(lk.canonical_metric||''))}</td>
         <td class="mono">${F.esc(lk.quantity||'')}${lk.deadline?' by '+lk.deadline:''}</td>
         <td class="mono">${lk.required==null?'—':Number(lk.required).toFixed(1)}</td>
         <td class="mono">${lk.actual==null?'—':Number(lk.actual).toFixed(1)} <span class="src">${lk.actual_year||''}</span></td>
