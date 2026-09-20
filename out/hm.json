@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
     "company": "hm",
     "display_name": "H&M Group",
-    "overall_score": 43.7,
+    "overall_score": 50.5,
     "confidence": "low",
     "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
     "peer_percentile": 33.3,
@@ -13,7 +13,7 @@
     "headline": "15 of 18 republished figures were restated between reports (median move 9.21%, max 19.48%). Language: 23 substantive softening events across reports (8 recycled boilerplate excluded).",
     "sub_scores": {
       "vagueness": 79.1,
-      "unsupported_claims": 53.3,
+      "unsupported_claims": 87.3,
       "sins_severity": 30.6,
       "say_do_gap": 34.8,
       "goalpost_drift": 32.4
@@ -14044,7 +14044,8 @@
         "commitment_ratio": 0.5,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       },
       {
         "year": 2022,
@@ -14067,7 +14068,8 @@
         "commitment_ratio": 0.25,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       },
       {
         "year": 2023,
@@ -14090,7 +14092,8 @@
         "commitment_ratio": 0.57,
         "report_assured": true,
         "assurance_auditor": "Deloitte",
-        "assurance_page": 29
+        "assurance_page": 29,
+        "assurance_level": "limited"
       },
       {
         "year": 2024,
@@ -14113,7 +14116,8 @@
         "commitment_ratio": 0.5,
         "report_assured": true,
         "assurance_auditor": "Deloitte",
-        "assurance_page": 22
+        "assurance_page": 22,
+        "assurance_level": "limited"
       },
       {
         "year": 2025,
@@ -14136,7 +14140,8 @@
         "commitment_ratio": 0.14,
         "report_assured": true,
         "assurance_auditor": null,
-        "assurance_page": 3
+        "assurance_page": 3,
+        "assurance_level": "limited"
       }
     ],
     "sub_score_basis": {
@@ -14152,8 +14157,9 @@
       "say_more_prove_less": 0.19,
       "report_assured": true,
       "assurance_auditor": null,
-      "assurance_discount_applied": 0.55,
-      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+      "assurance_level": "limited",
+      "assurance_credit_applied": 0.9,
+      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
     },
     "drift_counts": {
       "substantive": 23,
@@ -14163,8 +14169,8 @@
         "boilerplate_recycled": 8,
         "commitment_softened": 5,
         "quantity_dropped": 4,
-        "scope_narrowed": 1,
-        "achievement_reverted_to_aspiration": 1
+        "achievement_reverted_to_aspiration": 1,
+        "scope_narrowed": 1
       }
     },
     "sins": {
@@ -14660,6 +14666,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/hm/2021_sustainability_report.pdf"
       },
       "2022": {
@@ -14667,6 +14674,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/hm/2022_sustainability_report.pdf"
       },
       "2023": {
@@ -14674,6 +14682,7 @@
         "quote": "e has provided other services, such as limited assurance of the Sustainability Disclosure and consulting work, primarily tax advice. D",
         "page": 29,
         "auditor": "Deloitte",
+        "level": "limited",
         "source": "data/raw/hm/2023_sustainability_report.pdf"
       },
       "2024": {
@@ -14681,6 +14690,7 @@
         "quote": "e has provided other services, such as limited assurance of the sustainability progress report and consulting work, primarily tax advic",
         "page": 22,
         "auditor": "Deloitte",
+        "level": "limited",
         "source": "data/raw/hm/2024_sustainability_report.pdf"
       },
       "2025": {
@@ -14688,6 +14698,7 @@
         "quote": "port 175 Auditor’s report 176 Auditor’s limited assurance report on the sustainability statement 180 Definitions of key financial per",
         "page": 3,
         "auditor": null,
+        "level": "limited",
         "source": "data/raw/hm/2025_sustainability_report.pdf"
       }
     },

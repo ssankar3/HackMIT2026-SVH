@@ -1,14 +1,17 @@
 {
   "company": "bp",
   "n_claims": 575,
-  "n_tagged": 339,
+  "n_tagged": 341,
   "counts": {
     "no_proof": 259,
     "vagueness": 70,
+    "hidden_trade_off": 20,
     "false_labels": 11
   },
-  "sins_severity": 29.9,
-  "worsening_years": [],
+  "sins_severity": 30.4,
+  "worsening_years": [
+    2025
+  ],
   "not_implemented": [
     "irrelevance",
     "lesser_of_two_evils",
@@ -2142,6 +2145,12 @@
           "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
           "severity": 0.55,
           "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
         }
       ],
       "max_severity": 0.55
@@ -2244,6 +2253,12 @@
           "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
           "severity": 0.55,
           "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reducing') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
         }
       ],
       "max_severity": 0.55
@@ -3077,6 +3092,12 @@
           "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
           "severity": 0.5,
           "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduced') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
         }
       ],
       "max_severity": 0.5
@@ -3094,6 +3115,35 @@
           "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
           "severity": 0.5,
           "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 496,
+      "sentence": "Biodiversity \u2013 We achieved all three targets for 2025, with all new in-scope projects implementing net positive impact plans; biodiversity enhancement plans in place at 100% of our major operating sites in sensitive areas; and funding provided for eight restoration projects in the UK, Trinidad and Tobago, Brazil, Azerbaijan, Georgia, T\u00fcrkiye and the US.",
+      "page": "3",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
         }
       ],
       "max_severity": 0.5
@@ -3111,6 +3161,81 @@
           "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
           "severity": 0.5,
           "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 510,
+      "sentence": "We also achieved our 2025 target for methane intensity of 0.20%.",
+      "page": "14",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 513,
+      "sentence": "The total to 2025 includes 18MtCO2e attributable to divestments and 5.7MtCO2e in emissions reduction activities.",
+      "page": "14",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 519,
+      "sentence": "Emissions reduction projects and actions implemented by our businesses in 2025 totalled 0.27MtCO2e.",
+      "page": "15",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
         }
       ],
       "max_severity": 0.5
@@ -3128,6 +3253,121 @@
           "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
           "severity": 0.5,
           "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 528,
+      "sentence": "We have exceeded our 2025 target to reduce carbon intensity by 5%.",
+      "page": "17",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduce') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 537,
+      "sentence": "We improved biogas supply volumes\u00ab by around 5% year on year reflecting the growth from Archaea Energy.",
+      "page": "19",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('improved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 544,
+      "sentence": "Our 2023-25 long-term incentive plan scorecard was linked to emissions reductions against our 2019 baseline (15%).",
+      "page": "23",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reductions') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 549,
+      "sentence": "Since 2020 we have reduced freshwater withdrawals (excluding once through cooling water) by 15% and freshwater consumption by 15% against the baselineb.",
+      "page": "32",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduced') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 551,
+      "sentence": "From 2018-24 the plant achieved a 69% reduction in freshwater use, thanks to several key actions, including the installation of digital water meters, reuse of treated wastewater for on-site irrigation, installation of a rooftop rainwater harvesting system, and awareness campaigns to engage employees.",
+      "page": "32",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.302,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
         }
       ],
       "max_severity": 0.5
@@ -3150,6 +3390,46 @@
       "max_severity": 0.5
     },
     {
+      "claim_index": 553,
+      "sentence": "Update In 2025 we achieved 26% towards water positive, primarily with contributions from catchment collaboration projects (10.95Mm\u00b3) and operational water efficiency initiatives (4.48Mm\u00b3).",
+      "page": "32",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 556,
+      "sentence": "Using this approach, we have recycled 20,000 barrels of drilling fluids since 2023, achieved cost savings of around $3 million and reduced the time vessels wait in dock while fluids are being tested.",
+      "page": "34",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.067,
+      "sins": [
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
       "claim_index": 559,
       "sentence": "Update We made progress towards this target and, by the end of 2025, over half of in-scope packaging was recyclable.",
       "page": "34",
@@ -3162,6 +3442,58 @@
           "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
           "severity": 0.5,
           "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 561,
+      "sentence": "We disposed of 323kt of hazardous and nonhazardous waste from our operated businesses in 2025, a 17% increase from 2024 (2024 276kt) and we recycled or recovered 213kt of waste, a 14% decrease from 2024 (2024 247kt).",
+      "page": "35",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 570,
+      "sentence": "References to global net zero in the phrase, \u2018to help the world get to net zero\u2019, means achieving \u2018...a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases...on the basis of equity, and in the context of sustainable development and efforts to eradicate poverty\u2019, as set out in Article 4(1) of the Paris Agreement.",
+      "page": "44",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieving') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
         }
       ],
       "max_severity": 0.5
@@ -5343,23 +5675,6 @@
       "max_severity": 0.35
     },
     {
-      "claim_index": 496,
-      "sentence": "Biodiversity \u2013 We achieved all three targets for 2025, with all new in-scope projects implementing net positive impact plans; biodiversity enhancement plans in place at 100% of our major operating sites in sensitive areas; and funding provided for eight restoration projects in the UK, Trinidad and Tobago, Brazil, Azerbaijan, Georgia, T\u00fcrkiye and the US.",
-      "page": "3",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
       "claim_index": 505,
       "sentence": "This change has a less than 1% impact on reported operational emissions.",
       "page": "13",
@@ -5394,42 +5709,8 @@
       "max_severity": 0.35
     },
     {
-      "claim_index": 510,
-      "sentence": "We also achieved our 2025 target for methane intensity of 0.20%.",
-      "page": "14",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
       "claim_index": 511,
       "sentence": "Our methane intensity for 2025 was 0.04%, compared with 0.07% in 2024.",
-      "page": "14",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
-      "claim_index": 513,
-      "sentence": "The total to 2025 includes 18MtCO2e attributable to divestments and 5.7MtCO2e in emissions reduction activities.",
       "page": "14",
       "publish_year": 2025,
       "source_file": "data/raw/bp/2025_sustainability_report.pdf",
@@ -5448,40 +5729,6 @@
       "claim_index": 518,
       "sentence": "This change has a less than 1% impact on reported operational emissions.",
       "page": "14",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
-      "claim_index": 519,
-      "sentence": "Emissions reduction projects and actions implemented by our businesses in 2025 totalled 0.27MtCO2e.",
-      "page": "15",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
-      "claim_index": 528,
-      "sentence": "We have exceeded our 2025 target to reduce carbon intensity by 5%.",
-      "page": "17",
       "publish_year": 2025,
       "source_file": "data/raw/bp/2025_sustainability_report.pdf",
       "specificity_score": 0.2,
@@ -5564,23 +5811,6 @@
       "max_severity": 0.35
     },
     {
-      "claim_index": 544,
-      "sentence": "Our 2023-25 long-term incentive plan scorecard was linked to emissions reductions against our 2019 baseline (15%).",
-      "page": "23",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.4,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
       "claim_index": 548,
       "sentence": "Target description \u2022 All new in-scope bp projects have NPI plans in place prior to final project approval. \u2022 100% of major operating sites (MOS) in sensitive areas have developed or started to implement biodiversity enhancement plans. \u2022 Five biodiversity restoration projects supported to deliver measurable benefits for biodiversity and people.",
       "page": "31",
@@ -5598,59 +5828,8 @@
       "max_severity": 0.35
     },
     {
-      "claim_index": 549,
-      "sentence": "Since 2020 we have reduced freshwater withdrawals (excluding once through cooling water) by 15% and freshwater consumption by 15% against the baselineb.",
-      "page": "32",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
       "claim_index": 550,
       "sentence": "At our major operating sites, 13% (2024 11%) of our total freshwater withdrawals and 22% (2024 20%) of freshwater consumption, were from regions with high or extremely high water stress in 2025.",
-      "page": "32",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
-      "claim_index": 551,
-      "sentence": "From 2018-24 the plant achieved a 69% reduction in freshwater use, thanks to several key actions, including the installation of digital water meters, reuse of treated wastewater for on-site irrigation, installation of a rooftop rainwater harvesting system, and awareness campaigns to engage employees.",
-      "page": "32",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.302,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
-      "claim_index": 553,
-      "sentence": "Update In 2025 we achieved 26% towards water positive, primarily with contributions from catchment collaboration projects (10.95Mm\u00b3) and operational water efficiency initiatives (4.48Mm\u00b3).",
       "page": "32",
       "publish_year": 2025,
       "source_file": "data/raw/bp/2025_sustainability_report.pdf",
@@ -5717,23 +5896,6 @@
       "max_severity": 0.35
     },
     {
-      "claim_index": 561,
-      "sentence": "We disposed of 323kt of hazardous and nonhazardous waste from our operated businesses in 2025, a 17% increase from 2024 (2024 276kt) and we recycled or recovered 213kt of waste, a 14% decrease from 2024 (2024 247kt).",
-      "page": "35",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.4,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
       "claim_index": 562,
       "sentence": "Our recycling and recovery ratea was 40%.",
       "page": "35",
@@ -5754,23 +5916,6 @@
       "claim_index": 567,
       "sentence": "In the latest Climate Action 100+ net zero company benchmarkb, published October 2025, we were assessed to be aligned on four indicators covering our ambition, long-term goals, climate governance and TCFD disclosures.",
       "page": "43",
-      "publish_year": 2025,
-      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
-      "specificity_score": 0.2,
-      "sins": [
-        {
-          "sin": "no_proof",
-          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-          "severity": 0.35,
-          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-        }
-      ],
-      "max_severity": 0.35
-    },
-    {
-      "claim_index": 570,
-      "sentence": "References to global net zero in the phrase, \u2018to help the world get to net zero\u2019, means achieving \u2018...a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases...on the basis of equity, and in the context of sustainable development and efforts to eradicate poverty\u2019, as set out in Article 4(1) of the Paris Agreement.",
-      "page": "44",
       "publish_year": 2025,
       "source_file": "data/raw/bp/2025_sustainability_report.pdf",
       "specificity_score": 0.2,

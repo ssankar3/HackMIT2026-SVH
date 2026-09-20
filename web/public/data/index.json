@@ -11,7 +11,7 @@
   {
     "company": "bp",
     "display_name": "bp",
-    "overall_score": 50.1,
+    "overall_score": 57.2,
     "abstain": false,
     "goalpost_drift": 42.9,
     "confidence": "low",
@@ -20,7 +20,7 @@
   {
     "company": "hm",
     "display_name": "H&M Group",
-    "overall_score": 43.7,
+    "overall_score": 50.5,
     "abstain": false,
     "goalpost_drift": 32.4,
     "confidence": "low",

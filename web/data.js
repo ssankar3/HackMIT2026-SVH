@@ -1,7 +1,7 @@
 window.__GREENWASH_DATA__ = {
  "amazon": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
    "company": "amazon",
    "display_name": "Amazon",
@@ -15758,7 +15758,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 6.25,
      "report_assured": true,
      "assurance_auditor": null,
-     "assurance_page": 33
+     "assurance_page": 33,
+     "assurance_level": "unspecified"
     },
     {
      "year": 2022,
@@ -15781,7 +15782,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 5.22,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2023,
@@ -15804,7 +15806,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 3.62,
      "report_assured": true,
      "assurance_auditor": null,
-     "assurance_page": 51
+     "assurance_page": 51,
+     "assurance_level": "unspecified"
     },
     {
      "year": 2024,
@@ -15827,7 +15830,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 2.07,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2025,
@@ -15850,7 +15854,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 3.1,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     }
    ],
    "sub_score_basis": {
@@ -15866,8 +15871,9 @@ window.__GREENWASH_DATA__ = {
     "say_more_prove_less": 0.18,
     "report_assured": false,
     "assurance_auditor": null,
-    "assurance_discount_applied": 0,
-    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+    "assurance_level": null,
+    "assurance_credit_applied": 1.0,
+    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
    },
    "drift_counts": {
     "substantive": 64,
@@ -16378,6 +16384,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "s traceable to the source, and requires third-party verification of water quality and dozens of other quality standards. See Whole Foods Market",
      "page": 33,
      "auditor": null,
+     "level": "unspecified",
      "source": "data/raw/amazon/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -16385,6 +16392,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/amazon/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -16392,6 +16400,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "We accept audits completed by qualified independent audit firms based on our own standards and those of industry associations, including",
      "page": 51,
      "auditor": null,
+     "level": "unspecified",
      "source": "data/raw/amazon/2023_sustainability_report.pdf"
     },
     "2024": {
@@ -16399,6 +16408,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/amazon/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -16406,6 +16416,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/amazon/2025_sustainability_report.pdf"
     }
    },
@@ -16431,11 +16442,11 @@ window.__GREENWASH_DATA__ = {
  },
  "bp": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
    "company": "bp",
    "display_name": "bp",
-   "overall_score": 50.1,
+   "overall_score": 57.2,
    "confidence": "low",
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
    "peer_percentile": 66.7,
@@ -16444,8 +16455,8 @@ window.__GREENWASH_DATA__ = {
    "headline": "5 of 14 republished figures were restated between reports (median move 5.19%, max 6.33%). Language: 32 substantive softening events across reports (54 recycled boilerplate excluded).",
    "sub_scores": {
     "vagueness": 84.5,
-    "unsupported_claims": 55.0,
-    "sins_severity": 29.9,
+    "unsupported_claims": 90.0,
+    "sins_severity": 30.4,
     "say_do_gap": 50.0,
     "goalpost_drift": 42.9
    }
@@ -18701,6 +18712,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.5,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('reduced') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -18766,6 +18783,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.5,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -18890,6 +18913,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.5,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -21475,6 +21504,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.5,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -21599,6 +21634,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.5,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -21658,6 +21699,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -21976,6 +22023,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -27575,6 +27628,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -27798,6 +27857,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -27936,6 +28001,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('reduce') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -28344,6 +28415,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('reduced') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -28403,6 +28480,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('achieved') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -28661,6 +28744,12 @@ window.__GREENWASH_DATA__ = {
       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
       "severity": 0.35,
       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "hidden_trade_off",
+      "rationale": "advertises an improvement ('achieving') in a report year when the company's own verified data shows TOTAL emissions rose",
+      "severity": 0.5,
+      "evidence_needed": "total-footprint context presented alongside the highlighted metric"
      }
     ],
     "evidence_ids": [],
@@ -31480,7 +31569,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.18,
      "report_assured": true,
      "assurance_auditor": "Deloitte",
-     "assurance_page": 2
+     "assurance_page": 2,
+     "assurance_level": "limited"
     },
     {
      "year": 2022,
@@ -31503,7 +31593,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.19,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2023,
@@ -31526,7 +31617,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.17,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2024,
@@ -31549,7 +31641,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.14,
      "report_assured": true,
      "assurance_auditor": "Deloitte",
-     "assurance_page": 2
+     "assurance_page": 2,
+     "assurance_level": "limited"
     },
     {
      "year": 2025,
@@ -31572,7 +31665,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.18,
      "report_assured": true,
      "assurance_auditor": "Deloitte",
-     "assurance_page": 2
+     "assurance_page": 2,
+     "assurance_level": "limited"
     }
    ],
    "sub_score_basis": {
@@ -31588,8 +31682,9 @@ window.__GREENWASH_DATA__ = {
     "say_more_prove_less": 0.22,
     "report_assured": true,
     "assurance_auditor": "Deloitte",
-    "assurance_discount_applied": 0.55,
-    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+    "assurance_level": "limited",
+    "assurance_credit_applied": 0.9,
+    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
    },
    "drift_counts": {
     "substantive": 32,
@@ -31607,14 +31702,17 @@ window.__GREENWASH_DATA__ = {
    "sins": {
     "company": "bp",
     "n_claims": 575,
-    "n_tagged": 339,
+    "n_tagged": 341,
     "counts": {
      "no_proof": 259,
      "vagueness": 70,
+     "hidden_trade_off": 20,
      "false_labels": 11
     },
-    "sins_severity": 29.9,
-    "worsening_years": [],
+    "sins_severity": 30.4,
+    "worsening_years": [
+     2025
+    ],
     "not_implemented": [
      "irrelevance",
      "lesser_of_two_evils",
@@ -32089,6 +32187,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "iality 55 Standards and frameworks 56 Independent assurance statement 57 Cautionary statement 58 About bp We deliver energy products and",
      "page": 2,
      "auditor": "Deloitte",
+     "level": "limited",
      "source": "data/raw/bp/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -32096,6 +32195,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/bp/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -32103,6 +32203,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/bp/2023_sustainability_report.pdf"
     },
     "2024": {
@@ -32110,6 +32211,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "reporting 45 Glossary 46 Deloitte\u2019s limited assurance report 48 Cautionary statement 50 Our sustainability frame Our purpose is to",
      "page": 2,
      "auditor": "Deloitte",
+     "level": "limited",
      "source": "data/raw/bp/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -32117,6 +32219,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "ur reporting 41 Glossary 42 Deloitte\u2019s limited assurance report 44 Cautionary statement 46 About our 2025 reporting Since launching our",
      "page": 2,
      "auditor": "Deloitte",
+     "level": "limited",
      "source": "data/raw/bp/2025_sustainability_report.pdf"
     }
    },
@@ -32221,11 +32324,11 @@ window.__GREENWASH_DATA__ = {
  },
  "hm": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
    "company": "hm",
    "display_name": "H&M Group",
-   "overall_score": 43.7,
+   "overall_score": 50.5,
    "confidence": "low",
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
    "peer_percentile": 33.3,
@@ -32234,7 +32337,7 @@ window.__GREENWASH_DATA__ = {
    "headline": "15 of 18 republished figures were restated between reports (median move 9.21%, max 19.48%). Language: 23 substantive softening events across reports (8 recycled boilerplate excluded).",
    "sub_scores": {
     "vagueness": 79.1,
-    "unsupported_claims": 53.3,
+    "unsupported_claims": 87.3,
     "sins_severity": 30.6,
     "say_do_gap": 34.8,
     "goalpost_drift": 32.4
@@ -46265,7 +46368,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.5,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2022,
@@ -46288,7 +46392,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.25,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2023,
@@ -46311,7 +46416,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.57,
      "report_assured": true,
      "assurance_auditor": "Deloitte",
-     "assurance_page": 29
+     "assurance_page": 29,
+     "assurance_level": "limited"
     },
     {
      "year": 2024,
@@ -46334,7 +46440,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.5,
      "report_assured": true,
      "assurance_auditor": "Deloitte",
-     "assurance_page": 22
+     "assurance_page": 22,
+     "assurance_level": "limited"
     },
     {
      "year": 2025,
@@ -46357,7 +46464,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.14,
      "report_assured": true,
      "assurance_auditor": null,
-     "assurance_page": 3
+     "assurance_page": 3,
+     "assurance_level": "limited"
     }
    ],
    "sub_score_basis": {
@@ -46373,8 +46481,9 @@ window.__GREENWASH_DATA__ = {
     "say_more_prove_less": 0.19,
     "report_assured": true,
     "assurance_auditor": null,
-    "assurance_discount_applied": 0.55,
-    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+    "assurance_level": "limited",
+    "assurance_credit_applied": 0.9,
+    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
    },
    "drift_counts": {
     "substantive": 23,
@@ -46384,8 +46493,8 @@ window.__GREENWASH_DATA__ = {
      "boilerplate_recycled": 8,
      "commitment_softened": 5,
      "quantity_dropped": 4,
-     "scope_narrowed": 1,
-     "achievement_reverted_to_aspiration": 1
+     "achievement_reverted_to_aspiration": 1,
+     "scope_narrowed": 1
     }
    },
    "sins": {
@@ -46881,6 +46990,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/hm/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -46888,6 +46998,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/hm/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -46895,6 +47006,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "e has provided other services, such as limited assurance of the Sustainability Disclosure and consulting work, primarily tax advice. D",
      "page": 29,
      "auditor": "Deloitte",
+     "level": "limited",
      "source": "data/raw/hm/2023_sustainability_report.pdf"
     },
     "2024": {
@@ -46902,6 +47014,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "e has provided other services, such as limited assurance of the sustainability progress report and consulting work, primarily tax advic",
      "page": 22,
      "auditor": "Deloitte",
+     "level": "limited",
      "source": "data/raw/hm/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -46909,6 +47022,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "port 175 Auditor\u2019s report 176 Auditor\u2019s limited assurance report on the sustainability statement 180 Definitions of key financial per",
      "page": 3,
      "auditor": null,
+     "level": "limited",
      "source": "data/raw/hm/2025_sustainability_report.pdf"
     }
    },
@@ -47317,7 +47431,7 @@ window.__GREENWASH_DATA__ = {
  },
  "microsoft": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
    "company": "microsoft",
    "display_name": "Microsoft",
@@ -62442,7 +62556,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 9.71,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2022,
@@ -62465,7 +62580,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 7.8,
      "report_assured": true,
      "assurance_auditor": null,
-     "assurance_page": 17
+     "assurance_page": 17,
+     "assurance_level": "unspecified"
     },
     {
      "year": 2023,
@@ -62488,7 +62604,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 2.17,
      "report_assured": true,
      "assurance_auditor": null,
-     "assurance_page": 42
+     "assurance_page": 42,
+     "assurance_level": "unspecified"
     },
     {
      "year": 2024,
@@ -62511,7 +62628,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 3.78,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     },
     {
      "year": 2025,
@@ -62534,7 +62652,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.57,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     }
    ],
    "sub_score_basis": {
@@ -62550,8 +62669,9 @@ window.__GREENWASH_DATA__ = {
     "say_more_prove_less": 0.31,
     "report_assured": false,
     "assurance_auditor": null,
-    "assurance_discount_applied": 0,
-    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+    "assurance_level": null,
+    "assurance_credit_applied": 1.0,
+    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
    },
    "drift_counts": {
     "substantive": 44,
@@ -63080,6 +63200,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/microsoft/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -63087,6 +63208,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "ty requirements to include independent third-party assurance of emissions data and to deliver a minimum 55 percent greenhouse gas (GHG) re",
      "page": 17,
      "auditor": null,
+     "level": "unspecified",
      "source": "data/raw/microsoft/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -63094,6 +63216,7 @@ window.__GREENWASH_DATA__ = {
      "quote": "stics percentages were included in our third-party assurance.",
      "page": 42,
      "auditor": null,
+     "level": "unspecified",
      "source": "data/raw/microsoft/2023_sustainablity_report.pdf"
     },
     "2024": {
@@ -63101,6 +63224,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/microsoft/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -63108,6 +63232,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/microsoft/2025_sustainability_report.pdf"
     }
    },
@@ -63210,7 +63335,7 @@ window.__GREENWASH_DATA__ = {
  },
  "patagonia": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
    "company": "patagonia",
    "display_name": "patagonia",
@@ -63982,7 +64107,8 @@ window.__GREENWASH_DATA__ = {
      "commitment_ratio": 0.75,
      "report_assured": false,
      "assurance_auditor": null,
-     "assurance_page": null
+     "assurance_page": null,
+     "assurance_level": null
     }
    ],
    "sub_score_basis": {
@@ -63998,8 +64124,9 @@ window.__GREENWASH_DATA__ = {
     "say_more_prove_less": 0.17,
     "report_assured": false,
     "assurance_auditor": null,
-    "assurance_discount_applied": 0,
-    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+    "assurance_level": null,
+    "assurance_credit_applied": 1.0,
+    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
    },
    "drift_counts": {
     "substantive": 0,
@@ -64224,6 +64351,7 @@ window.__GREENWASH_DATA__ = {
      "quote": null,
      "page": null,
      "auditor": null,
+     "level": null,
      "source": "data/raw/patagonia/2025_sustainability_report.pdf"
     }
    },

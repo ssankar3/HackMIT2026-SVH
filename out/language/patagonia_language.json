@@ -22,7 +22,8 @@
       "commitment_ratio": 0.75,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     }
   ],
   "n_claims": 18,
@@ -32,6 +33,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/patagonia/2025_sustainability_report.pdf"
     }
   }

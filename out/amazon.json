@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
     "company": "amazon",
     "display_name": "Amazon",
@@ -15757,7 +15757,8 @@
         "commitment_ratio": 6.25,
         "report_assured": true,
         "assurance_auditor": null,
-        "assurance_page": 33
+        "assurance_page": 33,
+        "assurance_level": "unspecified"
       },
       {
         "year": 2022,
@@ -15780,7 +15781,8 @@
         "commitment_ratio": 5.22,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       },
       {
         "year": 2023,
@@ -15803,7 +15805,8 @@
         "commitment_ratio": 3.62,
         "report_assured": true,
         "assurance_auditor": null,
-        "assurance_page": 51
+        "assurance_page": 51,
+        "assurance_level": "unspecified"
       },
       {
         "year": 2024,
@@ -15826,7 +15829,8 @@
         "commitment_ratio": 2.07,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       },
       {
         "year": 2025,
@@ -15849,7 +15853,8 @@
         "commitment_ratio": 3.1,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       }
     ],
     "sub_score_basis": {
@@ -15865,8 +15870,9 @@
       "say_more_prove_less": 0.18,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_discount_applied": 0,
-      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+      "assurance_level": null,
+      "assurance_credit_applied": 1.0,
+      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
     },
     "drift_counts": {
       "substantive": 64,
@@ -16377,6 +16383,7 @@
         "quote": "s traceable to the source, and requires third-party verification of water quality and dozens of other quality standards. See Whole Foods Market",
         "page": 33,
         "auditor": null,
+        "level": "unspecified",
         "source": "data/raw/amazon/2021_sustainability_report.pdf"
       },
       "2022": {
@@ -16384,6 +16391,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/amazon/2022_sustainability_report.pdf"
       },
       "2023": {
@@ -16391,6 +16399,7 @@
         "quote": "We accept audits completed by qualified independent audit firms based on our own standards and those of industry associations, including",
         "page": 51,
         "auditor": null,
+        "level": "unspecified",
         "source": "data/raw/amazon/2023_sustainability_report.pdf"
       },
       "2024": {
@@ -16398,6 +16407,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/amazon/2024_sustainability_report.pdf"
       },
       "2025": {
@@ -16405,6 +16415,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/amazon/2025_sustainability_report.pdf"
       }
     },

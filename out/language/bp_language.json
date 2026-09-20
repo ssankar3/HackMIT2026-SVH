@@ -22,7 +22,8 @@
       "commitment_ratio": 0.18,
       "report_assured": true,
       "assurance_auditor": "Deloitte",
-      "assurance_page": 2
+      "assurance_page": 2,
+      "assurance_level": "limited"
     },
     {
       "year": 2022,
@@ -45,7 +46,8 @@
       "commitment_ratio": 0.19,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2023,
@@ -68,7 +70,8 @@
       "commitment_ratio": 0.17,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2024,
@@ -91,7 +94,8 @@
       "commitment_ratio": 0.14,
       "report_assured": true,
       "assurance_auditor": "Deloitte",
-      "assurance_page": 2
+      "assurance_page": 2,
+      "assurance_level": "limited"
     },
     {
       "year": 2025,
@@ -114,7 +118,8 @@
       "commitment_ratio": 0.18,
       "report_assured": true,
       "assurance_auditor": "Deloitte",
-      "assurance_page": 2
+      "assurance_page": 2,
+      "assurance_level": "limited"
     }
   ],
   "n_claims": 575,
@@ -124,6 +129,7 @@
       "quote": "iality 55 Standards and frameworks 56 Independent assurance statement 57 Cautionary statement 58 About bp We deliver energy products and",
       "page": 2,
       "auditor": "Deloitte",
+      "level": "limited",
       "source": "data/raw/bp/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -131,6 +137,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/bp/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -138,6 +145,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/bp/2023_sustainability_report.pdf"
     },
     "2024": {
@@ -145,6 +153,7 @@
       "quote": "reporting 45 Glossary 46 Deloitte\u2019s limited assurance report 48 Cautionary statement 50 Our sustainability frame Our purpose is to",
       "page": 2,
       "auditor": "Deloitte",
+      "level": "limited",
       "source": "data/raw/bp/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -152,6 +161,7 @@
       "quote": "ur reporting 41 Glossary 42 Deloitte\u2019s limited assurance report 44 Cautionary statement 46 About our 2025 reporting Since launching our",
       "page": 2,
       "auditor": "Deloitte",
+      "level": "limited",
       "source": "data/raw/bp/2025_sustainability_report.pdf"
     }
   }

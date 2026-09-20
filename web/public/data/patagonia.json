@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
     "company": "patagonia",
     "display_name": "patagonia",
@@ -772,7 +772,8 @@
         "commitment_ratio": 0.75,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       }
     ],
     "sub_score_basis": {
@@ -788,8 +789,9 @@
       "say_more_prove_less": 0.17,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_discount_applied": 0,
-      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+      "assurance_level": null,
+      "assurance_credit_applied": 1.0,
+      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
     },
     "drift_counts": {
       "substantive": 0,
@@ -1014,6 +1016,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/patagonia/2025_sustainability_report.pdf"
       }
     },

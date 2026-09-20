@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T14:56:30+00:00",
+  "generated_at": "2026-09-20T15:01:22+00:00",
   "summary": {
     "company": "microsoft",
     "display_name": "Microsoft",
@@ -15125,7 +15125,8 @@
         "commitment_ratio": 9.71,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       },
       {
         "year": 2022,
@@ -15148,7 +15149,8 @@
         "commitment_ratio": 7.8,
         "report_assured": true,
         "assurance_auditor": null,
-        "assurance_page": 17
+        "assurance_page": 17,
+        "assurance_level": "unspecified"
       },
       {
         "year": 2023,
@@ -15171,7 +15173,8 @@
         "commitment_ratio": 2.17,
         "report_assured": true,
         "assurance_auditor": null,
-        "assurance_page": 42
+        "assurance_page": 42,
+        "assurance_level": "unspecified"
       },
       {
         "year": 2024,
@@ -15194,7 +15197,8 @@
         "commitment_ratio": 3.78,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       },
       {
         "year": 2025,
@@ -15217,7 +15221,8 @@
         "commitment_ratio": 0.57,
         "report_assured": false,
         "assurance_auditor": null,
-        "assurance_page": null
+        "assurance_page": null,
+        "assurance_level": null
       }
     ],
     "sub_score_basis": {
@@ -15233,8 +15238,9 @@
       "say_more_prove_less": 0.31,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_discount_applied": 0,
-      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+      "assurance_level": null,
+      "assurance_credit_applied": 1.0,
+      "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
     },
     "drift_counts": {
       "substantive": 44,
@@ -15763,6 +15769,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/microsoft/2021_sustainability_report.pdf"
       },
       "2022": {
@@ -15770,6 +15777,7 @@
         "quote": "ty requirements to include independent third-party assurance of emissions data and to deliver a minimum 55 percent greenhouse gas (GHG) re",
         "page": 17,
         "auditor": null,
+        "level": "unspecified",
         "source": "data/raw/microsoft/2022_sustainability_report.pdf"
       },
       "2023": {
@@ -15777,6 +15785,7 @@
         "quote": "stics percentages were included in our third-party assurance.",
         "page": 42,
         "auditor": null,
+        "level": "unspecified",
         "source": "data/raw/microsoft/2023_sustainablity_report.pdf"
       },
       "2024": {
@@ -15784,6 +15793,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/microsoft/2024_sustainability_report.pdf"
       },
       "2025": {
@@ -15791,6 +15801,7 @@
         "quote": null,
         "page": null,
         "auditor": null,
+        "level": null,
         "source": "data/raw/microsoft/2025_sustainability_report.pdf"
       }
     },
