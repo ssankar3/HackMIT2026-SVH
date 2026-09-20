@@ -22,7 +22,8 @@
       "commitment_ratio": 9.71,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2022,
@@ -45,7 +46,8 @@
       "commitment_ratio": 7.8,
       "report_assured": true,
       "assurance_auditor": null,
-      "assurance_page": 17
+      "assurance_page": 17,
+      "assurance_level": "unspecified"
     },
     {
       "year": 2023,
@@ -68,7 +70,8 @@
       "commitment_ratio": 2.17,
       "report_assured": true,
       "assurance_auditor": null,
-      "assurance_page": 42
+      "assurance_page": 42,
+      "assurance_level": "unspecified"
     },
     {
       "year": 2024,
@@ -91,7 +94,8 @@
       "commitment_ratio": 3.78,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2025,
@@ -114,7 +118,8 @@
       "commitment_ratio": 0.57,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     }
   ],
   "n_claims": 846,
@@ -124,6 +129,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/microsoft/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -131,6 +137,7 @@
       "quote": "ty requirements to include independent third-party assurance of emissions data and to deliver a minimum 55 percent greenhouse gas (GHG) re",
       "page": 17,
       "auditor": null,
+      "level": "unspecified",
       "source": "data/raw/microsoft/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -138,6 +145,7 @@
       "quote": "stics percentages were included in our third-party assurance.",
       "page": 42,
       "auditor": null,
+      "level": "unspecified",
       "source": "data/raw/microsoft/2023_sustainablity_report.pdf"
     },
     "2024": {
@@ -145,6 +153,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/microsoft/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -152,6 +161,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/microsoft/2025_sustainability_report.pdf"
     }
   }
