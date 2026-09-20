@@ -19,6 +19,20 @@ judge_blend:
   sub_scores: 0.6
   judge_probability: 0.4
 
+# Multiplier applied to `unsupported_claims` when the report carries a
+# third-party assurance statement. 1.0 == no credit at all.
+#
+# Scaled to the ISAE 3000 engagement level rather than granted flat, because
+# an assurance page typically covers a handful of named KPIs and says nothing
+# about the rest of the report's claims. Limited assurance is a negative-form
+# conclusion ("nothing has come to our attention") that the standard itself
+# calls substantially lower than reasonable assurance, so it earns little.
+assurance_credit:
+  reasonable: 0.70    # 30% reduction
+  limited: 0.90       # 10% reduction
+  unspecified: 0.95   # assurance language present but level not stated
+  none: 1.00
+
 # An overall score is suppressed (abstain) unless at least this many of the
 # five sub-scores could actually be measured.
 min_components: 3

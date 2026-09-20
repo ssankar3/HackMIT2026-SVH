@@ -79,9 +79,36 @@ def _f(v, default=None):
 
 
 MATERIAL = {"target", "achievement", "attribute"}
+
 # A report-level assurance statement is evidence, but it does not sit on the
-# claim sentence. We discount unsupported_claims rather than zeroing it.
-ASSURANCE_DISCOUNT = 0.55
+# claim sentence, and it rarely covers more than a handful of KPIs: bp's
+# Deloitte engagement assures 8 selected indicators and explicitly disclaims
+# supplier-provided data. So the credit is scaled to the ENGAGEMENT LEVEL
+# rather than granted flat to any report carrying an assurance page. Limited
+# assurance is a negative-form conclusion ("nothing has come to our
+# attention") that ISAE 3000 itself describes as substantially lower than
+# reasonable assurance, so it earns correspondingly little.
+ASSURANCE_CREDIT_DEFAULTS = {
+    "reasonable": 0.70,
+    "limited": 0.90,
+    "unspecified": 0.95,
+    "none": 1.00,
+}
+
+
+def assurance_credit(level: Optional[str], assured: bool) -> float:
+    """Multiplier applied to unsupported_claims. 1.0 == no credit."""
+    if not assured:
+        return ASSURANCE_CREDIT_DEFAULTS["none"]
+    cfg = dict(ASSURANCE_CREDIT_DEFAULTS)
+    try:
+        import yaml
+        blob = yaml.safe_load((ROOT / "config" / "weights.yaml").read_text(encoding="utf-8")) or {}
+        cfg.update({k: float(v) for k, v in (blob.get("assurance_credit") or {}).items()
+                    if k in ASSURANCE_CREDIT_DEFAULTS})
+    except Exception:  # noqa: BLE001 -- config is optional, defaults stand
+        pass
+    return cfg.get(level or "unspecified", cfg["unspecified"])
 
 
 def _truthy(v) -> bool:
@@ -112,13 +139,12 @@ def language_sub_scores(lang: dict, rows: Optional[List[dict]] = None) -> tuple:
     checkable = [r for r in material
                  if _truthy(r.get("quantification_present"))
                  and (r.get("claim_type") or "") in {"target", "achievement"}]
+    assured = bool(latest.get("report_assured"))
+    level = latest.get("assurance_level")
+    credit = assurance_credit(level, assured)
     if checkable:
         naked = sum(1 for r in checkable if not _truthy(r.get("verification_present")))
-        unsupported = naked / len(checkable)
-        assured = bool(latest.get("report_assured"))
-        if assured:
-            unsupported *= ASSURANCE_DISCOUNT
-        unsupported = round(unsupported * 100, 1)
+        unsupported = round((naked / len(checkable)) * credit * 100, 1)
     else:
         unsupported = None
 
@@ -133,14 +159,16 @@ def language_sub_scores(lang: dict, rows: Optional[List[dict]] = None) -> tuple:
         "hedged_share": latest.get("hedged_share"),
         "firm_share": latest.get("firm_share"),
         "say_more_prove_less": latest.get("say_more_prove_less"),
-        "report_assured": bool(latest.get("report_assured")),
+        "report_assured": assured,
         "assurance_auditor": latest.get("assurance_auditor"),
-        "assurance_discount_applied": ASSURANCE_DISCOUNT if latest.get("report_assured") else 0,
+        "assurance_level": level,
+        "assurance_credit_applied": credit,
         "caveat": (
             "vagueness is lexical specificity over material claims; "
             "unsupported_claims is the naked-assertion rate among quantified "
-            "targets/achievements, discounted if the report carries a third-party "
-            "assurance statement"
+            "targets/achievements, credited according to the ENGAGEMENT LEVEL of "
+            "any third-party assurance in the report (limited assurance over a "
+            "handful of KPIs earns little; no assurance earns none)"
         ),
     }
 
