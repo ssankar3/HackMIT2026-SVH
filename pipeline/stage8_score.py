@@ -42,7 +42,7 @@ CONFIG = ROOT / "config" / "weights.yaml"
 
 DISPLAY = {"hm": "H&M Group", "microsoft": "Microsoft", "amazon": "Amazon", "delta": "Delta Air Lines", "bp": "bp"}
 
-SUB_SCORE_FIELDS = ["vagueness", "unsupported_claims", "sins_severity", "say_do_gap", "goalpost_drift"]
+SUB_SCORE_FIELDS = ["vagueness", "unsupported_claims", "sins_severity", "goalpost_drift"]
 
 # Stages that cannot run without an Anthropic API key, and what each one blocks.
 LLM_BLOCKED = {
@@ -132,7 +132,6 @@ def build(company: str, cfg: dict) -> CompanyOutput:
         vagueness=vagueness,
         unsupported_claims=unsupported,
         sins_severity=(sins or {}).get("sins_severity"),
-        say_do_gap=say_do.get("say_do_gap"),
         goalpost_drift=s6["goalpost_drift"],
     )
     overall, n_measured, reasons = blend_overall(subs.model_dump(), cfg)

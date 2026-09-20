@@ -214,7 +214,6 @@ class SubScores(BaseModel):
     vagueness: Optional[float] = None
     unsupported_claims: Optional[float] = None
     sins_severity: Optional[float] = None
-    say_do_gap: Optional[float] = None
     goalpost_drift: Optional[float] = None
 
 

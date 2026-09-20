@@ -1193,18 +1193,6 @@
           "default": null,
           "title": "Sins Severity"
         },
-        "say_do_gap": {
-          "anyOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Say Do Gap"
-        },
         "goalpost_drift": {
           "anyOf": [
             {

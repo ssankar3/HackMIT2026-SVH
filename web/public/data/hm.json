@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
     "company": "hm",
     "display_name": "H&M Group",
-    "overall_score": 50.5,
+    "overall_score": 55.8,
     "confidence": "low",
     "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
     "peer_percentile": 33.3,
@@ -15,7 +15,6 @@
       "vagueness": 79.1,
       "unsupported_claims": 87.3,
       "sins_severity": 30.6,
-      "say_do_gap": 34.8,
       "goalpost_drift": 32.4
     }
   },
@@ -600,7 +599,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 63.4
       },
       "overall": null,
@@ -617,7 +615,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
@@ -634,7 +631,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 75.9
       },
       "overall": null,
@@ -651,7 +647,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 100.0
       },
       "overall": null,
@@ -668,7 +663,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,

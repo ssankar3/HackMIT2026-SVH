@@ -514,7 +514,6 @@ async function submitAddCo(){
 
 const SUBS = [
   ['goalpost_drift','Restatements','same figure, two reports'],
-  ['say_do_gap','Say–do','target vs actual path'],
   ['vagueness','Vagueness','vague / hedged wording'],
   ['unsupported_claims','No proof','no verifier named'],
   ['sins_severity','Flags','classic greenwash patterns'],
@@ -578,7 +577,6 @@ const PIE_MEANING = {
   redefinitions: 'Share of metrics that were dropped and replaced by a new definition, so the old series is no longer comparable.',
   risk: 'Overall greenwashing-risk blend. Higher is riskier. Hover a slice to see which ingredient it is.',
   goalpost_drift: 'How often and how far previously published numbers were rewritten in a later report.',
-  say_do_gap: 'Share of linked targets that are behind or reversed versus the verified number path.',
   vagueness: 'How little specificity the latest material claims have — missing numbers, dates, scope, or proof.',
   unsupported_claims: 'Share of quantified targets or achievements that never name a verifier.',
   sins_severity: 'How much of the claim book trips a classic greenwash pattern, weighted by severity.',
@@ -694,9 +692,9 @@ function redefinitionPie(){
 
 function riskPie(){
   const subs = CO.summary.sub_scores||{};
-  const weights = {vagueness:0.15, unsupported_claims:0.20, sins_severity:0.25, say_do_gap:0.25, goalpost_drift:0.15};
+  const weights = {vagueness:0.15, unsupported_claims:0.20, sins_severity:0.25, goalpost_drift:0.15};
   const colors = {vagueness:'#6b4c9a', unsupported_claims:'#2f6f9a', sins_severity:'#b4412e',
-    say_do_gap:'#c4841d', goalpost_drift:'#2a6b4f'};
+    goalpost_drift:'#2a6b4f'};
   const labels = Object.fromEntries(SUBS.map(([k,n])=>[k,n]));
   const slices = SUBS.map(([k])=>{
     const v = subs[k];
@@ -1064,12 +1062,10 @@ function tabClaims(){
 function tabLanguage(){
   const L = CO.language; if(!L) return `<p class="empty">No language analysis.</p>`;
   const S = L.series||[], dc = L.drift_counts||{}, cs = L.cross_signal||{};
-  const sd = L.say_do||{};
   const soft = (CO.drift_events||[]).filter(e=>e.type==='wording_softened'
     && !/boilerplate_recycled/.test(e.description));
   const pc=v=>v==null?'—':(v*100).toFixed(0)+'%';
   const nv=(v,d)=>v==null?'—':Number(v).toFixed(d);
-  const links = sd.links||[];
 
   return `<h2 style="font-size:20px;margin-top:4px">By report year</h2>
     <table><thead><tr><th>Year</th><th>Claims</th><th>Specificity</th><th>Quantified</th>
@@ -1081,20 +1077,6 @@ function tabLanguage(){
       <td class="mono">${nv(r.say_more_prove_less,2)}</td>
       <td class="mono" style="color:${r.report_assured?'var(--leaf)':'var(--ink3)'}">${r.report_assured?'yes':'no'}</td></tr>`).join('')}
     </tbody></table>
-
-    <h2 style="font-size:20px;margin-top:26px">Say vs do</h2>
-    <p class="sub">${sd.n_measurable||0} links · ${sd.n_behind||0} behind
-      · score ${sd.say_do_gap==null?'n/a':sd.say_do_gap}</p>
-    ${links.length?`<table><thead><tr><th>Status</th><th>Metric</th><th>Target</th><th>Required now</th>
-      <th>Actual</th><th>Claim</th></tr></thead><tbody>
-      ${links.slice(0,12).map(lk=>`<tr>
-        <td class="mono" style="color:${lk.status==='on_track'?'var(--leaf)':'var(--rust)'}">${F.esc(lk.status)}</td>
-        <td>${F.esc(metricTitle(lk.canonical_metric||''))}</td>
-        <td class="mono">${F.esc(lk.quantity||'')}${lk.deadline?' by '+lk.deadline:''}</td>
-        <td class="mono">${lk.required==null?'—':Number(lk.required).toFixed(1)}</td>
-        <td class="mono">${lk.actual==null?'—':Number(lk.actual).toFixed(1)} <span class="src">${lk.actual_year||''}</span></td>
-        <td style="max-width:320px">${F.esc((lk.sentence||'').slice(0,160))}</td>
-      </tr>`).join('')}</tbody></table>`:'<p class="empty">No target could be pinned to a verified series with comparable units.</p>'}
 
     <h2 style="font-size:20px;margin-top:26px">Softened wording</h2>
     <p class="sub">${dc.substantive||0} changes</p>

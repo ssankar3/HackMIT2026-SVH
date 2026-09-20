@@ -1,7 +1,7 @@
 window.__GREENWASH_DATA__ = {
  "amazon": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
    "company": "amazon",
    "display_name": "Amazon",
@@ -10,15 +10,12 @@ window.__GREENWASH_DATA__ = {
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
    "peer_percentile": 0.0,
    "abstain": false,
-   "abstain_reasons": [
-    "say_do_gap: not measurable from available data"
-   ],
+   "abstain_reasons": [],
    "headline": "5 of 24 republished figures were restated between reports (median move 1.9%, max 2.58%). Language: 64 substantive softening events across reports (35 recycled boilerplate excluded).",
    "sub_scores": {
     "vagueness": 83.3,
     "unsupported_claims": 95.3,
     "sins_severity": 30.6,
-    "say_do_gap": null,
     "goalpost_drift": 15.7
    }
   },
@@ -575,15 +572,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -594,15 +588,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -613,15 +604,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -632,15 +620,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 0.9
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 1
@@ -651,15 +636,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 5.5
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 2
@@ -670,15 +652,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 7.5
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 2
@@ -689,15 +668,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 25.0
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 1
@@ -16442,11 +16418,11 @@ window.__GREENWASH_DATA__ = {
  },
  "bp": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
    "company": "bp",
    "display_name": "bp",
-   "overall_score": 57.2,
+   "overall_score": 59.6,
    "confidence": "low",
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
    "peer_percentile": 66.7,
@@ -16457,7 +16433,6 @@ window.__GREENWASH_DATA__ = {
     "vagueness": 84.5,
     "unsupported_claims": 90.0,
     "sins_severity": 30.4,
-    "say_do_gap": 50.0,
     "goalpost_drift": 42.9
    }
   },
@@ -16839,7 +16814,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 10.5
     },
     "overall": null,
@@ -16856,7 +16830,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 8.7
     },
     "overall": null,
@@ -16873,7 +16846,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 6.4
     },
     "overall": null,
@@ -16890,7 +16862,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 8.7
     },
     "overall": null,
@@ -16907,7 +16878,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 6.5
     },
     "overall": null,
@@ -16924,7 +16894,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
@@ -16941,7 +16910,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 100.0
     },
     "overall": null,
@@ -32324,11 +32292,11 @@ window.__GREENWASH_DATA__ = {
  },
  "hm": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
    "company": "hm",
    "display_name": "H&M Group",
-   "overall_score": 50.5,
+   "overall_score": 55.8,
    "confidence": "low",
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
    "peer_percentile": 33.3,
@@ -32339,7 +32307,6 @@ window.__GREENWASH_DATA__ = {
     "vagueness": 79.1,
     "unsupported_claims": 87.3,
     "sins_severity": 30.6,
-    "say_do_gap": 34.8,
     "goalpost_drift": 32.4
    }
   },
@@ -32924,7 +32891,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 63.4
     },
     "overall": null,
@@ -32941,7 +32907,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
@@ -32958,7 +32923,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 75.9
     },
     "overall": null,
@@ -32975,7 +32939,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 100.0
     },
     "overall": null,
@@ -32992,7 +32955,6 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
@@ -47431,7 +47393,7 @@ window.__GREENWASH_DATA__ = {
  },
  "microsoft": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
    "company": "microsoft",
    "display_name": "Microsoft",
@@ -47440,15 +47402,12 @@ window.__GREENWASH_DATA__ = {
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
    "peer_percentile": 100.0,
    "abstain": false,
-   "abstain_reasons": [
-    "say_do_gap: not measurable from available data"
-   ],
+   "abstain_reasons": [],
    "headline": "2 of 2 republished figures were restated between reports (median move 6.67%, max 11.19%). Language: 44 substantive softening events across reports (25 recycled boilerplate excluded).",
    "sub_scores": {
     "vagueness": 84.2,
     "unsupported_claims": 95.7,
     "sins_severity": 30.8,
-    "say_do_gap": null,
     "goalpost_drift": 57.6
    }
   },
@@ -47783,15 +47742,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -47802,15 +47758,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -47821,15 +47774,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -47840,15 +47790,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 18.6
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 1
@@ -47859,15 +47806,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 3.6
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 1
@@ -47878,15 +47822,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -47897,15 +47838,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -47916,15 +47854,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": null
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 0
@@ -47935,15 +47870,12 @@ window.__GREENWASH_DATA__ = {
      "vagueness": null,
      "unsupported_claims": null,
      "sins_severity": null,
-     "say_do_gap": null,
      "goalpost_drift": 25.0
     },
     "overall": null,
     "confidence": "low",
     "abstain": true,
-    "abstain_reasons": [
-     "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "n_claims": 0,
     "n_verified_quotes": 0,
     "n_drift_events": 1
@@ -63321,1048 +63253,6 @@ window.__GREENWASH_DATA__ = {
       "direction": "up"
      }
     ]
-   }
-  },
-  "eval": {
-   "agreement_rate": null,
-   "per_sin_precision": {},
-   "per_sin_recall": {},
-   "brier_score": null,
-   "calibration_table": [],
-   "n_gold": 0,
-   "notes": "Stage 4/7 blocked; no LLM predictions to score yet."
-  }
- },
- "patagonia": {
-  "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
-  "summary": {
-   "company": "patagonia",
-   "display_name": "patagonia",
-   "overall_score": 55.3,
-   "confidence": "low",
-   "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
-   "peer_percentile": null,
-   "abstain": false,
-   "abstain_reasons": [
-    "say_do_gap: not measurable from available data",
-    "goalpost_drift: not measurable from available data"
-   ],
-   "headline": "No metric-year was published by more than one report, so restatement behaviour cannot be assessed from the available documents. Language: 0 substantive softening events across reports (0 recycled boilerplate excluded).",
-   "sub_scores": {
-    "vagueness": 73.8,
-    "unsupported_claims": 71.4,
-    "sins_severity": 31.4,
-    "say_do_gap": null,
-    "goalpost_drift": null
-   }
-  },
-  "coverage": {
-   "n_documents": 0,
-   "n_pages": 0,
-   "n_chunks": 0,
-   "n_claims": 13,
-   "n_evidence_verified": 0,
-   "n_did_rows": 0,
-   "did_years": [],
-   "did_metrics": [],
-   "stages_completed": [
-    "stage6_saydo",
-    "stage8_score",
-    "stage2_claims",
-    "stage3_language",
-    "stage3b_langdrift",
-    "stage4_sins"
-   ],
-   "stages_blocked": {
-    "stage5_evidence": "no ANTHROPIC_API_KEY in environment",
-    "stage7_debate": "no ANTHROPIC_API_KEY in environment"
-   }
-  },
-  "timeline": [],
-  "year_scores": [],
-  "claims": [
-   {
-    "claim_id": "patagonia-claim-0000",
-    "claim_text": "One of Patagonia\u2019s strategic commitments is to reach Net Zero emissions by 2040, which is 10 years earlier than the Science-Based Targets Initiative (SBTi) requires.",
-    "claim_type": "target",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": 2040.0,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": 2040,
-    "scope": null,
-    "has_third_party_verification": true,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p2",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 2,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.145,
-     "quantification_present": true,
-     "baseline_present": false,
-     "date_present": true,
-     "scope_present": false,
-     "verification_present": true,
-     "specificity_score": 0.6,
-     "readability": 27.4,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 75,
-       "end": 80,
-       "kind": "qty",
-       "term": "2040,"
-      },
-      {
-       "start": 116,
-       "end": 137,
-       "kind": "verify",
-       "term": "Science-Based Targets"
-      },
-      {
-       "start": 150,
-       "end": 154,
-       "kind": "verify",
-       "term": "SBTi"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0001",
-    "claim_text": "In 2021, Patagonia aligned its greenhouse gas emission reduction targets with the Science Based Targets Initiative (SBTi), setting the ambition to reach Net Zero, as defined by SBTi, by 2040.",
-    "claim_type": "target",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": 2021.0,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": 2040,
-    "scope": null,
-    "has_third_party_verification": true,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p9",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 9,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.1629,
-     "quantification_present": true,
-     "baseline_present": false,
-     "date_present": true,
-     "scope_present": false,
-     "verification_present": true,
-     "specificity_score": 0.6,
-     "readability": 27.3,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 3,
-       "end": 8,
-       "kind": "qty",
-       "term": "2021,"
-      },
-      {
-       "start": 82,
-       "end": 103,
-       "kind": "verify",
-       "term": "Science Based Targets"
-      },
-      {
-       "start": 116,
-       "end": 120,
-       "kind": "verify",
-       "term": "SBTi"
-      },
-      {
-       "start": 177,
-       "end": 181,
-       "kind": "verify",
-       "term": "SBTi"
-      },
-      {
-       "start": 186,
-       "end": 190,
-       "kind": "deadline",
-       "term": "2040"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0002",
-    "claim_text": "FY2030 \u2013 Near Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1 and 2 GHG emissions 80% by FY2030 from a FY2017 base year.",
-    "claim_type": "target",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": 80.0,
-    "unit": null,
-    "baseline_year": 2017,
-    "target_year": null,
-    "scope": "Scope 1",
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p9",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 9,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.1364,
-     "quantification_present": true,
-     "baseline_present": true,
-     "date_present": false,
-     "scope_present": true,
-     "verification_present": false,
-     "specificity_score": 0.6,
-     "readability": 53.8,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 108,
-       "end": 111,
-       "kind": "qty",
-       "term": "80%"
-      },
-      {
-       "start": 131,
-       "end": 135,
-       "kind": "baseline",
-       "term": "2017"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [
-     {
-      "sin": "no_proof",
-      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-      "severity": 0.55,
-      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-     }
-    ],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0003",
-    "claim_text": "FY20240 \u2013 Long-Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1, 2, and 3 GHG emissions 90% by FY2040 from a FY2017 base year.",
-    "claim_type": "target",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": 90.0,
-    "unit": null,
-    "baseline_year": 2017,
-    "target_year": null,
-    "scope": "Scope 1",
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p9",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 9,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.1429,
-     "quantification_present": true,
-     "baseline_present": true,
-     "date_present": false,
-     "scope_present": true,
-     "verification_present": false,
-     "specificity_score": 0.6,
-     "readability": 48.5,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 113,
-       "end": 116,
-       "kind": "qty",
-       "term": "90%"
-      },
-      {
-       "start": 136,
-       "end": 140,
-       "kind": "baseline",
-       "term": "2017"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [
-     {
-      "sin": "no_proof",
-      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-      "severity": 0.55,
-      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-     }
-    ],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0004",
-    "claim_text": "While this target isn't validated by SBTi, progress towards this goal will help Patagonia accomplish its 2030 Scope 1 and 2 target.",
-    "claim_type": "target",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": null,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": "Scope 1",
-    "has_third_party_verification": true,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p10",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 10,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.2105,
-     "quantification_present": false,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": true,
-     "verification_present": true,
-     "specificity_score": 0.4,
-     "readability": 49.5,
-     "sentiment": 0.0526,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 37,
-       "end": 41,
-       "kind": "verify",
-       "term": "SBTi"
-      },
-      {
-       "start": 43,
-       "end": 51,
-       "kind": "positive",
-       "term": "progress"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0005",
-    "claim_text": "The climate risk assessment systematically evaluated physical and transition risks across each scenario to test the resilience of Patagonia\u2019s business strategy across a range of plausible global transition pathways, from rapid decarbonization consistent with the ambition of the Paris Agreement\u2019s 1.5\u00b0C to a business-as-usual, high emissions trajectory.",
-    "claim_type": "target",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": 1.5,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p4",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 4,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.0204,
-     "quantification_present": true,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.2,
-     "readability": 0.7,
-     "sentiment": -0.0612,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 12,
-       "end": 16,
-       "kind": "negative",
-       "term": "risk"
-      },
-      {
-       "start": 77,
-       "end": 82,
-       "kind": "negative",
-       "term": "risks"
-      },
-      {
-       "start": 297,
-       "end": 300,
-       "kind": "qty",
-       "term": "1.5"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [
-     {
-      "sin": "no_proof",
-      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-      "severity": 0.35,
-      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-     }
-    ],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0006",
-    "claim_text": "As detailed above, in 2025, Patagonia also completed its first formal climate risk scenario analysis.",
-    "claim_type": "achievement",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": 2025.0,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p7",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 7,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.0,
-     "quantification_present": true,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.2,
-     "readability": 11.3,
-     "sentiment": -0.0714,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 22,
-       "end": 27,
-       "kind": "qty",
-       "term": "2025,"
-      },
-      {
-       "start": 78,
-       "end": 82,
-       "kind": "negative",
-       "term": "risk"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [
-     {
-      "sin": "no_proof",
-      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-      "severity": 0.35,
-      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-     }
-    ],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0007",
-    "claim_text": "As of FY24, Patagonia has achieved 98% renewable electricity adoption across its global operations and maintained this level of adoption in FY25.",
-    "claim_type": "achievement",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": 98.0,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p10",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 10,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.0,
-     "quantification_present": true,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.2,
-     "readability": 8.3,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 35,
-       "end": 38,
-       "kind": "qty",
-       "term": "98%"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [
-     {
-      "sin": "no_proof",
-      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-      "severity": 0.35,
-      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-     }
-    ],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0008",
-    "claim_text": "Disclaimer on Forward-Looking Statements This report contains forward-looking statements and estimates regarding future performance, climate risks, and targets (e.g., Net-Zero 2040 commitment, potential climate impacts).",
-    "claim_type": "product_label",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": null,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p2",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 2,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.04,
-     "future_orientation_ratio": 0.12,
-     "quantification_present": false,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.0,
-     "readability": 5.5,
-     "sentiment": -0.08,
-     "negated": false,
-     "conditional": false,
-     "highlights": [
-      {
-       "start": 141,
-       "end": 146,
-       "kind": "negative",
-       "term": "risks"
-      }
-     ],
-     "report_assured": false
-    },
-    "sins": [
-     {
-      "sin": "vagueness",
-      "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.040)",
-      "severity": 0.75,
-      "evidence_needed": "a number, a boundary/scope, and a baseline year"
-     }
-    ],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0009",
-    "claim_text": "Product innovation to meet anticipated regulatory requirements for recycled inputs and circularity.",
-    "claim_type": "product_label",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": null,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p5",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 5,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0833,
-     "future_orientation_ratio": 0.0,
-     "quantification_present": false,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.0,
-     "readability": -45.0,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [],
-     "report_assured": false
-    },
-    "sins": [
-     {
-      "sin": "vagueness",
-      "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.083)",
-      "severity": 0.95,
-      "evidence_needed": "a number, a boundary/scope, and a baseline year"
-     }
-    ],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0010",
-    "claim_text": "Market Increased consumer and retailer demand for durable products that use recycled inputs and other preferred materials and are built for repair and recycling.",
-    "claim_type": "product_label",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": null,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p5",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 5,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.0,
-     "quantification_present": false,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.0,
-     "readability": 23.9,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [],
-     "report_assured": false
-    },
-    "sins": [],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0011",
-    "claim_text": "Price volatility or supply constraints of key material inputs, including preferred versions (i.e. recycled synthetics vs virgin synthetics).",
-    "claim_type": "product_label",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": null,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p5",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 5,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.0,
-     "quantification_present": false,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.0,
-     "readability": 22.3,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [],
-     "report_assured": false
-    },
-    "sins": [],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   },
-   {
-    "claim_id": "patagonia-claim-0012",
-    "claim_text": "Increased consumer and retailer demand for durable products that use recycled inputs and are built for repair and recycling to align with consumer and regulatory demand.",
-    "claim_type": "product_label",
-    "metric": null,
-    "canonical_metric": null,
-    "target_value": null,
-    "unit": null,
-    "baseline_year": null,
-    "target_year": null,
-    "scope": null,
-    "has_third_party_verification": false,
-    "verifier_name": null,
-    "chunk_id": "2025_sustainability_report.pdf#p5",
-    "doc_name": "2025_sustainability_report.pdf",
-    "publish_year": 2025,
-    "page": 5,
-    "features": {
-     "vague_word_ratio": 0.0,
-     "hedging_ratio": 0.0,
-     "future_orientation_ratio": 0.0,
-     "quantification_present": false,
-     "baseline_present": false,
-     "date_present": false,
-     "scope_present": false,
-     "verification_present": false,
-     "specificity_score": 0.0,
-     "readability": 21.0,
-     "sentiment": 0.0,
-     "negated": false,
-     "conditional": false,
-     "highlights": [],
-     "report_assured": false
-    },
-    "sins": [],
-    "evidence_ids": [],
-    "progress_status": null,
-    "debate": null
-   }
-  ],
-  "evidence": [],
-  "drift_events": [],
-  "did_points": [],
-  "top_damaging_claim_ids": [
-   "patagonia-claim-0009",
-   "patagonia-claim-0008",
-   "patagonia-claim-0002",
-   "patagonia-claim-0003",
-   "patagonia-claim-0005"
-  ],
-  "language": {
-   "series": [
-    {
-     "year": 2025,
-     "n_claims": 18,
-     "mean_specificity": 0.2889,
-     "vague_ratio": 0.0,
-     "hedging_ratio": 0.0069,
-     "future_ratio": 0.0564,
-     "quantified_share": 0.667,
-     "verified_share": 0.222,
-     "scope_share": 0.333,
-     "passive_share": 0.0,
-     "negated_share": 0.0,
-     "conditional_share": 0.0,
-     "readability": 20.6,
-     "mean_sentiment": -0.0046,
-     "say_more_prove_less": 0.17,
-     "firm_share": 0.167,
-     "hedged_share": 0.222,
-     "commitment_ratio": 0.75,
-     "report_assured": false,
-     "assurance_auditor": null,
-     "assurance_page": null,
-     "assurance_level": null
-    }
-   ],
-   "sub_score_basis": {
-    "year": 2025,
-    "n_claims": 18,
-    "n_material": 13,
-    "n_checkable": 7,
-    "mean_specificity": 0.2615,
-    "quantified_share": 0.667,
-    "verified_share": 0.222,
-    "hedged_share": 0.222,
-    "firm_share": 0.167,
-    "say_more_prove_less": 0.17,
-    "report_assured": false,
-    "assurance_auditor": null,
-    "assurance_level": null,
-    "assurance_credit_applied": 1.0,
-    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, credited according to the ENGAGEMENT LEVEL of any third-party assurance in the report (limited assurance over a handful of KPIs earns little; no assurance earns none)"
-   },
-   "drift_counts": {
-    "substantive": 0,
-    "boilerplate": 0,
-    "by_type": {}
-   },
-   "sins": {
-    "company": "patagonia",
-    "n_claims": 18,
-    "n_tagged": 11,
-    "counts": {
-     "no_proof": 9,
-     "vagueness": 2
-    },
-    "sins_severity": 31.4,
-    "worsening_years": [],
-    "not_implemented": [
-     "irrelevance",
-     "lesser_of_two_evils",
-     "fibbing"
-    ]
-   },
-   "sins_top": [
-    {
-     "claim_index": 4,
-     "sentence": "Product innovation to meet anticipated regulatory requirements for recycled inputs and circularity.",
-     "page": "5",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.0,
-     "sins": [
-      {
-       "sin": "vagueness",
-       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.083)",
-       "severity": 0.95,
-       "evidence_needed": "a number, a boundary/scope, and a baseline year"
-      }
-     ],
-     "max_severity": 0.95
-    },
-    {
-     "claim_index": 2,
-     "sentence": "Disclaimer on Forward-Looking Statements This report contains forward-looking statements and estimates regarding future performance, climate risks, and targets (e.g., Net-Zero 2040 commitment, potential climate impacts).",
-     "page": "2",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.0,
-     "sins": [
-      {
-       "sin": "vagueness",
-       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.040)",
-       "severity": 0.75,
-       "evidence_needed": "a number, a boundary/scope, and a baseline year"
-      }
-     ],
-     "max_severity": 0.75
-    },
-    {
-     "claim_index": 10,
-     "sentence": "Scope 3 emissions account for nearly 99% of Patagonia\u2019s annual GHG emissions.",
-     "page": "8",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.4,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.55,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.55
-    },
-    {
-     "claim_index": 11,
-     "sentence": "Within Scope 3, on average 86% of Patagonia\u2019s emissions come from the manufacturing of textiles, including the origin of the textile raw material, processing and spinning of the fiber (yarn formation), fabric formation, and preparing, dyeing and finishing the fabric.",
-     "page": "8",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.4,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.55,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.55
-    },
-    {
-     "claim_index": 13,
-     "sentence": "FY2030 \u2013 Near Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1 and 2 GHG emissions 80% by FY2030 from a FY2017 base year.",
-     "page": "9",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.6,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.55,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.55
-    },
-    {
-     "claim_index": 14,
-     "sentence": "FY20240 \u2013 Long-Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1, 2, and 3 GHG emissions 90% by FY2040 from a FY2017 base year.",
-     "page": "9",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.6,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.55,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.55
-    },
-    {
-     "claim_index": 3,
-     "sentence": "The climate risk assessment systematically evaluated physical and transition risks across each scenario to test the resilience of Patagonia\u2019s business strategy across a range of plausible global transition pathways, from rapid decarbonization consistent with the ambition of the Paris Agreement\u2019s 1.5\u00b0C to a business-as-usual, high emissions trajectory.",
-     "page": "4",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.2,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.35,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.35
-    },
-    {
-     "claim_index": 8,
-     "sentence": "As detailed above, in 2025, Patagonia also completed its first formal climate risk scenario analysis.",
-     "page": "7",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.2,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.35,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.35
-    },
-    {
-     "claim_index": 9,
-     "sentence": "For FY25, they made up less than 1% of total emissions.",
-     "page": "8",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.2,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.35,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.35
-    },
-    {
-     "claim_index": 15,
-     "sentence": "Patagonia has also committed to achieve 100% renewable electricity adoption for its global operations.",
-     "page": "10",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.2,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.35,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.35
-    },
-    {
-     "claim_index": 17,
-     "sentence": "As of FY24, Patagonia has achieved 98% renewable electricity adoption across its global operations and maintained this level of adoption in FY25.",
-     "page": "10",
-     "publish_year": 2025,
-     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
-     "specificity_score": 0.2,
-     "sins": [
-      {
-       "sin": "no_proof",
-       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
-       "severity": 0.35,
-       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
-      }
-     ],
-     "max_severity": 0.35
-    }
-   ],
-   "cross_signal": {
-    "rows": [],
-    "n_years": 0,
-    "n_concurrent": 0,
-    "concurrent_years": [],
-    "interpretation": "Report-years where the company both restated prior figures and softened claim wording. Co-occurrence is suggestive, not causal, and with this few report-years it is not statistically testable."
-   },
-   "assurance": {
-    "2025": {
-     "assured": false,
-     "quote": null,
-     "page": null,
-     "auditor": null,
-     "level": null,
-     "source": "data/raw/patagonia/2025_sustainability_report.pdf"
-    }
-   },
-   "say_do": {
-    "say_do_gap": null,
-    "n_linked": 0,
-    "n_measurable": 0,
-    "n_behind": 0,
-    "n_excluded_negated_or_conditional": 0,
-    "reason": "only 0 target(s) could be pinned to a verified series with comparable units; need 3+ to score",
-    "links": []
    }
   },
   "eval": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
     "company": "microsoft",
     "display_name": "Microsoft",
@@ -9,15 +9,12 @@
     "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
     "peer_percentile": 100.0,
     "abstain": false,
-    "abstain_reasons": [
-      "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "headline": "2 of 2 republished figures were restated between reports (median move 6.67%, max 11.19%). Language: 44 substantive softening events across reports (25 recycled boilerplate excluded).",
     "sub_scores": {
       "vagueness": 84.2,
       "unsupported_claims": 95.7,
       "sins_severity": 30.8,
-      "say_do_gap": null,
       "goalpost_drift": 57.6
     }
   },
@@ -352,15 +349,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -371,15 +365,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -390,15 +381,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -409,15 +397,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 18.6
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 1
@@ -428,15 +413,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 3.6
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 1
@@ -447,15 +429,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -466,15 +445,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -485,15 +461,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -504,15 +477,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 25.0
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 1

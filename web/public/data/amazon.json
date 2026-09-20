@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
     "company": "amazon",
     "display_name": "Amazon",
@@ -9,15 +9,12 @@
     "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
     "peer_percentile": 0.0,
     "abstain": false,
-    "abstain_reasons": [
-      "say_do_gap: not measurable from available data"
-    ],
+    "abstain_reasons": [],
     "headline": "5 of 24 republished figures were restated between reports (median move 1.9%, max 2.58%). Language: 64 substantive softening events across reports (35 recycled boilerplate excluded).",
     "sub_scores": {
       "vagueness": 83.3,
       "unsupported_claims": 95.3,
       "sins_severity": 30.6,
-      "say_do_gap": null,
       "goalpost_drift": 15.7
     }
   },
@@ -574,15 +571,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -593,15 +587,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -612,15 +603,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 0
@@ -631,15 +619,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 0.9
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 1
@@ -650,15 +635,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 5.5
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 2
@@ -669,15 +651,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 7.5
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 2
@@ -688,15 +667,12 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 25.0
       },
       "overall": null,
       "confidence": "low",
       "abstain": true,
-      "abstain_reasons": [
-        "say_do_gap: not measurable from available data"
-      ],
+      "abstain_reasons": [],
       "n_claims": 0,
       "n_verified_quotes": 0,
       "n_drift_events": 1

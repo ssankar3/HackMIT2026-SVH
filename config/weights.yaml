@@ -11,7 +11,6 @@ weights:
   vagueness: 0.15
   unsupported_claims: 0.20
   sins_severity: 0.25
-  say_do_gap: 0.25
   goalpost_drift: 0.15
 
 # Blend of (weighted sub-scores) vs (mean judge probability * 100).

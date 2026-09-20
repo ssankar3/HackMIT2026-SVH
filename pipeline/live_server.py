@@ -217,6 +217,16 @@ class Handler(SimpleHTTPRequestHandler):
     def log_message(self, fmt: str, *args) -> None:  # quieter default logging
         sys.stderr.write(f"{self.address_string()} - {fmt % args}\n")
 
+    def end_headers(self) -> None:
+        """Never let a browser cache this. The dashboard and its data are
+        rebuilt in place by the pipeline, so a cached index.html or data.js
+        silently shows a stale scoreboard -- which looks exactly like a bug
+        that has already been fixed."""
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
+        super().end_headers()
+
     def _json(self, status: int, body: dict) -> None:
         data = json.dumps(body).encode("utf-8")
         self.send_response(status)

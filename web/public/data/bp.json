@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T15:01:22+00:00",
+  "generated_at": "2026-09-20T15:05:21+00:00",
   "summary": {
     "company": "bp",
     "display_name": "bp",
-    "overall_score": 57.2,
+    "overall_score": 59.6,
     "confidence": "low",
     "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
     "peer_percentile": 66.7,
@@ -15,7 +15,6 @@
       "vagueness": 84.5,
       "unsupported_claims": 90.0,
       "sins_severity": 30.4,
-      "say_do_gap": 50.0,
       "goalpost_drift": 42.9
     }
   },
@@ -397,7 +396,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 10.5
       },
       "overall": null,
@@ -414,7 +412,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 8.7
       },
       "overall": null,
@@ -431,7 +428,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 6.4
       },
       "overall": null,
@@ -448,7 +444,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 8.7
       },
       "overall": null,
@@ -465,7 +460,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 6.5
       },
       "overall": null,
@@ -482,7 +476,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": null
       },
       "overall": null,
@@ -499,7 +492,6 @@
         "vagueness": null,
         "unsupported_claims": null,
         "sins_severity": null,
-        "say_do_gap": null,
         "goalpost_drift": 100.0
       },
       "overall": null,
