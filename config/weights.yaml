@@ -33,9 +33,33 @@ confidence:
   min_components_for_high: 4
 
 # Goalpost-drift scoring internals (Stage 6). Company-agnostic.
+#
+# Two blocks are scored separately and blended over whichever are measurable:
+#   ACTUALS  a prior year's published figure was restated, or a metric was
+#            redefined mid-series.
+#   TARGETS  a published forward commitment was cut, or abandoned while its
+#            deadline was still in the future.
+#
+# The target block carries the heavier per-unit weight because it is the more
+# literal reading of "goalpost drift": a restatement moves the MEASUREMENT and
+# is frequently a disclosed methodology change, whereas cutting a 2030 target
+# moves the GOAL and is a deliberate decision to promise less. Retiring a live
+# target is treated as the limit case of cutting it (-100%).
+#
+# These weights were fixed on that reasoning BEFORE any company was re-scored
+# against them, and must not be revisited to make a particular ranking come
+# out. If a ranking looks wrong, the fix is more verified evidence upstream.
 drift:
   restatement_noise_floor_pct: 0.5
   magnitude_saturation_pct: 30.0
   rate_weight: 0.45
   magnitude_weight: 0.40
   redefinition_weight: 0.15
+  # target block
+  target_cut_saturation_pct: 50.0   # halving a target is already extreme
+  target_rate_weight: 0.60
+  target_magnitude_weight: 0.40
+  # blend across blocks; renormalized when only one block is measurable, so a
+  # company with no target data scores exactly its actuals-only score
+  actuals_block_weight: 0.65
+  targets_block_weight: 0.35

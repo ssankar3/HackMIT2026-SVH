@@ -9,13 +9,22 @@
     "peer_percentile": 0.0
   },
   {
+    "company": "bp",
+    "display_name": "bp",
+    "overall_score": 50.1,
+    "abstain": false,
+    "goalpost_drift": 42.9,
+    "confidence": "low",
+    "peer_percentile": 66.7
+  },
+  {
     "company": "hm",
     "display_name": "H&M Group",
-    "overall_score": 46.3,
+    "overall_score": 43.7,
     "abstain": false,
-    "goalpost_drift": 49.8,
+    "goalpost_drift": 32.4,
     "confidence": "low",
-    "peer_percentile": 50.0
+    "peer_percentile": 33.3
   },
   {
     "company": "microsoft",
@@ -25,5 +34,14 @@
     "goalpost_drift": 57.6,
     "confidence": "low",
     "peer_percentile": 100.0
+  },
+  {
+    "company": "patagonia",
+    "display_name": "patagonia",
+    "overall_score": 55.3,
+    "abstain": false,
+    "goalpost_drift": null,
+    "confidence": "low",
+    "peer_percentile": null
   }
 ]

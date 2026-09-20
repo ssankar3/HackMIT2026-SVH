@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T05:49:27+00:00",
+  "generated_at": "2026-09-20T14:56:30+00:00",
   "summary": {
     "company": "hm",
     "display_name": "H&M Group",
-    "overall_score": 46.3,
+    "overall_score": 43.7,
     "confidence": "low",
     "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
-    "peer_percentile": 50.0,
+    "peer_percentile": 33.3,
     "abstain": false,
     "abstain_reasons": [],
     "headline": "15 of 18 republished figures were restated between reports (median move 9.21%, max 19.48%). Language: 23 substantive softening events across reports (8 recycled boilerplate excluded).",
@@ -16,11 +16,11 @@
       "unsupported_claims": 53.3,
       "sins_severity": 30.6,
       "say_do_gap": 34.8,
-      "goalpost_drift": 49.8
+      "goalpost_drift": 32.4
     }
   },
   "coverage": {
-    "n_documents": 2,
+    "n_documents": 3,
     "n_pages": 0,
     "n_chunks": 0,
     "n_claims": 220,

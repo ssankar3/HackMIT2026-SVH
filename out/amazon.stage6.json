@@ -84,11 +84,16 @@
   "goalpost_drift_basis": {
     "n_comparable_pairs": 24,
     "n_restatements": 5,
+    "n_redefinitions": 1,
+    "n_comparable_targets": 0,
+    "n_targets_weakened": 0,
+    "n_targets_dropped": 0,
+    "n_targets_strengthened": 0,
     "restatement_rate": 0.208,
     "median_abs_restatement_pct": 1.9,
     "max_abs_restatement_pct": 2.58,
-    "n_redefinitions": 1,
-    "formula": "0.45*rate + 0.40*min(median_mag/30,1) + 0.15*min(25*n_redef,100)"
+    "actuals_component": 15.7,
+    "formula": "actuals = 0.45*rate + 0.40*min(median_mag/30,1) + 0.15*min(25*n_redef,100); targets = 0.60*weakening_rate + 0.40*min(median_cut/50,1); blended 0.65/0.35 over whichever blocks are measurable"
   },
   "say_do_gap": null,
   "say_do_gap_basis": {
@@ -436,6 +441,7 @@
       }
     ]
   },
+  "targets": {},
   "did_rows": [
     {
       "year": 2019,
@@ -1041,5 +1047,7 @@
     "scope_3_emissions",
     "total_emissions"
   ],
+  "n_target_rows": 0,
+  "target_metrics": [],
   "n_reports": 2
 }

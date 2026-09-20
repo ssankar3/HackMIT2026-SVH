@@ -157,36 +157,68 @@ def highlight_spans(text: str, lx: Lexicons, quantity: str = "",
     return out
 
 
+RE_LIMITED = re.compile(r"\blimited\s+assurance\b", re.I)
+RE_REASONABLE = re.compile(r"\breasonable\s+assurance\b", re.I)
+
+EMPTY_ASSURANCE = {"assured": False, "quote": None, "page": None,
+                   "auditor": None, "level": None}
+
+
+def assurance_level(saw_limited: bool, saw_reasonable: bool) -> Optional[str]:
+    """Which ISAE 3000 engagement level the report actually carries.
+
+    'limited' wins whenever it appears, even alongside 'reasonable'. That is
+    not a tie-break, it is how these documents read: a limited-assurance
+    report explains itself by CONTRASTING with the other level ("...are less
+    in extent than for, a reasonable assurance engagement"), so the stronger
+    phrase routinely shows up inside the weaker engagement. The reverse does
+    not happen, so treating any mention of 'limited' as decisive is the safe
+    direction to be wrong in.
+    """
+    if saw_limited:
+        return "limited"
+    if saw_reasonable:
+        return "reasonable"
+    return "unspecified"
+
+
 def detect_assurance(pdf: Path, max_pages: int = 60) -> dict:
     """Scan the PDF for an assurance statement. Returns whether the report
-    carries third-party assurance, a short quote, and the page it sat on.
+    carries third-party assurance, a short quote, the page it sat on, and the
+    engagement level, which governs how much credit the claim scoring gives it.
     Capped to max_pages: some reports crash PyMuPDF on later image-heavy pages."""
     try:
         import fitz
     except ImportError:
-        return {"assured": False, "quote": None, "page": None, "auditor": None}
+        return dict(EMPTY_ASSURANCE)
     if not pdf.exists():
-        return {"assured": False, "quote": None, "page": None, "auditor": None}
+        return dict(EMPTY_ASSURANCE)
     quote = page = auditor = None
+    saw_limited = saw_reasonable = False
     try:
         doc = fitz.open(pdf)
         n = min(max_pages, doc.page_count)
         for i in range(n):
             text = doc[i].get_text("text") or ""
+            if RE_LIMITED.search(text):
+                saw_limited = True
+            if RE_REASONABLE.search(text):
+                saw_reasonable = True
             m = RE_ASSURANCE.search(text)
-            if not m:
-                continue
-            a = RE_AUDITOR.search(text)
-            start = max(0, m.start() - 40)
-            end = min(len(text), m.end() + 80)
-            snippet = re.sub(r"\s+", " ", text[start:end]).strip()
-            quote, page = snippet, i + 1
-            auditor = a.group(0) if a else None
-            break
+            if m and quote is None:
+                a = RE_AUDITOR.search(text)
+                start = max(0, m.start() - 40)
+                end = min(len(text), m.end() + 80)
+                quote = re.sub(r"\s+", " ", text[start:end]).strip()
+                page = i + 1
+                auditor = a.group(0) if a else None
         doc.close()
     except Exception:  # noqa: BLE001
-        return {"assured": False, "quote": None, "page": None, "auditor": None}
-    return {"assured": bool(quote), "quote": quote, "page": page, "auditor": auditor}
+        return dict(EMPTY_ASSURANCE)
+    if not quote:
+        return dict(EMPTY_ASSURANCE)
+    return {"assured": True, "quote": quote, "page": page, "auditor": auditor,
+            "level": assurance_level(saw_limited, saw_reasonable)}
 
 
 def _truthy(v) -> bool:
@@ -371,6 +403,7 @@ def run_company(company: str, max_pages: int, limit: Optional[int]) -> dict:
         s["report_assured"] = bool(a.get("assured"))
         s["assurance_auditor"] = a.get("auditor")
         s["assurance_page"] = a.get("page")
+        s["assurance_level"] = a.get("level")
 
     out_csv = OUT_DIR / f"{company}_claim_features.csv"
     if all_rows:

@@ -1,0 +1,63 @@
+year,metric,value,unit,scope,source,page
+2023,total_emissions,32.1,MtCO2e,Scope 1+2 operational control basis; comparison cited in 2024 report,bp/2024_sustainability_report.pdf,18
+2024,total_emissions,33.6,MtCO2e,Scope 1+2 operational control basis,bp/2024_sustainability_report.pdf,18
+2023,scope_1_emissions,31.1,MtCO2e,Scope 1 direct; operational control,bp/2024_sustainability_report.pdf,18
+2024,scope_1_emissions,32.8,MtCO2e,Scope 1 direct; operational control,bp/2024_sustainability_report.pdf,18
+2024,scope_2_emissions,0.8,MtCO2e,Scope 2 indirect market-based; operational control,bp/2024_sustainability_report.pdf,18
+2023,methane_pct_of_gas_marketed,0.05,%,upstream operated oil & gas methane intensity,bp/2024_sustainability_report.pdf,18
+2024,methane_pct_of_gas_marketed,0.07,%,upstream operated oil & gas methane intensity,bp/2024_sustainability_report.pdf,18
+2023,methane_emissions,31,kt,absolute upstream methane emissions used for intensity calc,bp/2024_sustainability_report.pdf,19
+2024,methane_emissions,46,kt,absolute upstream methane emissions used for intensity calc,bp/2024_sustainability_report.pdf,19
+2023,process_safety_events_total,39,number,Tier 1 + Tier 2 combined,bp/2024_sustainability_report.pdf,7
+2024,process_safety_events_total,38,number,Tier 1 + Tier 2 combined,bp/2024_sustainability_report.pdf,7
+2023,process_safety_events_tier1,9,number,Tier 1: highest-consequence process safety event (API RP 754),bp/2024_sustainability_report.pdf,7
+2024,process_safety_events_tier1,3,number,Tier 1: highest-consequence process safety event (API RP 754),bp/2024_sustainability_report.pdf,7
+2023,process_safety_events_tier2,30,number,Tier 2: lesser-consequence process safety event (API RP 754),bp/2024_sustainability_report.pdf,7
+2024,process_safety_events_tier2,35,number,Tier 2: lesser-consequence process safety event (API RP 754),bp/2024_sustainability_report.pdf,7
+2019,avg_carbon_intensity_sold_energy,84,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2024_sustainability_report.pdf,22
+2020,avg_carbon_intensity_sold_energy,81,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2024_sustainability_report.pdf,22
+2021,avg_carbon_intensity_sold_energy,81,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2024_sustainability_report.pdf,22
+2022,avg_carbon_intensity_sold_energy,81,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2024_sustainability_report.pdf,22
+2023,avg_carbon_intensity_sold_energy,80,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2024_sustainability_report.pdf,22
+2024,avg_carbon_intensity_sold_energy,79,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2024_sustainability_report.pdf,22
+2024,total_emissions,33.6,MtCO2e,Scope 1+2 operational control basis; comparison cited in 2025 report,bp/2025_sustainability_report.pdf,12
+2025,total_emissions,34.3,MtCO2e,Scope 1+2 operational control basis,bp/2025_sustainability_report.pdf,12
+2024,scope_1_emissions,32.8,MtCO2e,Scope 1 direct; operational control,bp/2025_sustainability_report.pdf,12
+2025,scope_1_emissions,33.7,MtCO2e,Scope 1 direct; operational control,bp/2025_sustainability_report.pdf,12
+2025,scope_2_emissions,0.7,MtCO2e,Scope 2 indirect market-based; operational control,bp/2025_sustainability_report.pdf,12
+2024,methane_pct_of_gas_marketed,0.07,%,upstream operated oil & gas methane intensity,bp/2025_sustainability_report.pdf,14
+2025,methane_pct_of_gas_marketed,0.04,%,upstream operated oil & gas methane intensity,bp/2025_sustainability_report.pdf,14
+2024,methane_emissions,46,kt,absolute upstream methane emissions used for intensity calc,bp/2025_sustainability_report.pdf,14
+2025,methane_emissions,25,kt,absolute upstream methane emissions used for intensity calc,bp/2025_sustainability_report.pdf,14
+2024,process_safety_events_total,38,number,Tier 1 + Tier 2 combined,bp/2025_sustainability_report.pdf,5
+2025,process_safety_events_total,27,number,Tier 1 + Tier 2 combined,bp/2025_sustainability_report.pdf,5
+2024,process_safety_events_tier1,3,number,Tier 1: highest-consequence process safety event (API RP 754),bp/2025_sustainability_report.pdf,5
+2025,process_safety_events_tier1,5,number,Tier 1: highest-consequence process safety event (API RP 754),bp/2025_sustainability_report.pdf,5
+2024,process_safety_events_tier2,35,number,Tier 2: lesser-consequence process safety event (API RP 754),bp/2025_sustainability_report.pdf,5
+2025,process_safety_events_tier2,22,number,Tier 2: lesser-consequence process safety event (API RP 754),bp/2025_sustainability_report.pdf,5
+2019,avg_carbon_intensity_sold_energy,84,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2025_sustainability_report.pdf,16
+2021,avg_carbon_intensity_sold_energy,81,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2025_sustainability_report.pdf,16
+2022,avg_carbon_intensity_sold_energy,81,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2025_sustainability_report.pdf,16
+2023,avg_carbon_intensity_sold_energy,80,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2025_sustainability_report.pdf,16
+2024,avg_carbon_intensity_sold_energy,79,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2025_sustainability_report.pdf,16
+2025,avg_carbon_intensity_sold_energy,79,gCO2e/MJ,lifecycle basis vs 2019 baseline,bp/2025_sustainability_report.pdf,16
+2023,total_emissions,32.1,MtCO2e,Scope 1+2 operational control basis,bp/2023_sustainability_report.pdf,22
+2019,avg_carbon_intensity_sold_energy,79,gCO2e/MJ,lifecycle basis vs 2019 baseline; pre-2024 methodology,bp/2023_sustainability_report.pdf,25
+2020,avg_carbon_intensity_sold_energy,77,gCO2e/MJ,lifecycle basis vs 2019 baseline; pre-2024 methodology,bp/2023_sustainability_report.pdf,25
+2021,avg_carbon_intensity_sold_energy,78,gCO2e/MJ,lifecycle basis vs 2019 baseline; pre-2024 methodology,bp/2023_sustainability_report.pdf,25
+2022,avg_carbon_intensity_sold_energy,77,gCO2e/MJ,lifecycle basis vs 2019 baseline; pre-2024 methodology,bp/2023_sustainability_report.pdf,25
+2023,avg_carbon_intensity_sold_energy,77,gCO2e/MJ,lifecycle basis vs 2019 baseline; pre-2024 methodology,bp/2023_sustainability_report.pdf,25
+2025,target_scope_1_2_reduction,20,%,aim 1 interim target vs 2019 baseline,bp/2023_sustainability_report.pdf,21
+2030,target_scope_1_2_reduction,50,%,aim 1 2030 aim vs 2019 baseline,bp/2023_sustainability_report.pdf,21
+2025,target_scope_3_reduction,10,%,aim 2 interim target; stated range 10-15% vs 2019 baseline,bp/2023_sustainability_report.pdf,21
+2030,target_scope_3_reduction,20,%,aim 2 2030 aim; stated range 20-30% vs 2019 baseline,bp/2023_sustainability_report.pdf,21
+2025,target_carbon_intensity_reduction,5,%,aim 3 interim target vs 2019 baseline,bp/2023_sustainability_report.pdf,21
+2030,target_carbon_intensity_reduction,15,%,aim 3 2030 aim; stated range 15-20% vs 2019 baseline,bp/2023_sustainability_report.pdf,21
+2025,target_scope_1_2_reduction,20,%,net zero operations interim target vs 2019 baseline,bp/2024_sustainability_report.pdf,27
+2030,target_scope_1_2_reduction,45,%,net zero operations 2030 aim; stated range 45-50%,bp/2024_sustainability_report.pdf,27
+2025,target_carbon_intensity_reduction,5,%,net zero sales interim target vs 2019 baseline,bp/2024_sustainability_report.pdf,27
+2030,target_carbon_intensity_reduction,8,%,net zero sales 2030 aim; stated range 8-10%,bp/2024_sustainability_report.pdf,27
+2025,target_scope_1_2_reduction,20,%,net zero operations interim target vs 2019 baseline,bp/2025_sustainability_report.pdf,11
+2030,target_scope_1_2_reduction,45,%,net zero operations 2030 aim; stated range 45-50%,bp/2025_sustainability_report.pdf,11
+2025,target_carbon_intensity_reduction,5,%,net zero sales interim target vs 2019 baseline,bp/2025_sustainability_report.pdf,11
+2030,target_carbon_intensity_reduction,8,%,net zero sales 2030 aim; stated range 8-10%,bp/2025_sustainability_report.pdf,11

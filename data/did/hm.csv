@@ -69,3 +69,13 @@ year,metric,value,unit,scope,source,page
 2023,total_emissions,8469000,tonnes CO2e,basis not stated in table,hm/2024_sustainability_report.pdf,34
 2022,total_emissions,9507000,tonnes CO2e,basis not stated in table,hm/2024_sustainability_report.pdf,34
 2019,total_emissions,11684000,tonnes CO2e,basis not stated in table; 2019 baseline column,hm/2024_sustainability_report.pdf,34
+2030,target_scope_1_2_reduction,56,%,absolute reduction vs 2019 baseline; stated as -56% by 2030,hm/2023_sustainability_report.pdf,42
+2030,target_scope_3_reduction,56,%,absolute reduction vs 2019 baseline; stated as -56% by 2030,hm/2023_sustainability_report.pdf,42
+2030,target_renewable_electricity_share,100,%,renewable electricity in own operations,hm/2023_sustainability_report.pdf,42
+2030,target_recycled_or_sustainable_materials_share,100,%,recycled or sustainably sourced materials in commercial goods,hm/2023_sustainability_report.pdf,7
+2025,target_recycled_materials_share,30,%,recycled materials share,hm/2023_sustainability_report.pdf,7
+2030,target_scope_1_2_reduction,56,%,absolute reduction vs 2019 baseline; stated as -56% by 2030,hm/2025_sustainability_report.pdf,5
+2030,target_scope_3_reduction,56,%,absolute reduction vs 2019 baseline; stated as -56% by 2030,hm/2025_sustainability_report.pdf,5
+2030,target_renewable_electricity_share,100,%,renewable electricity in own operations,hm/2025_sustainability_report.pdf,5
+2030,target_recycled_or_sustainable_materials_share,100,%,recycled or sustainably sourced materials in commercial products,hm/2025_sustainability_report.pdf,5
+2025,target_recycled_materials_share,30,%,recycled materials share,hm/2025_sustainability_report.pdf,5

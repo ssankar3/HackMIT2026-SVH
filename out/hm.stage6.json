@@ -197,15 +197,23 @@
       "drift_id": "hm-drift-014"
     }
   ],
-  "goalpost_drift": 49.8,
+  "goalpost_drift": 32.4,
   "goalpost_drift_basis": {
     "n_comparable_pairs": 18,
     "n_restatements": 15,
+    "n_redefinitions": 0,
+    "n_comparable_targets": 5,
+    "n_targets_weakened": 0,
+    "n_targets_dropped": 0,
+    "n_targets_strengthened": 0,
     "restatement_rate": 0.833,
     "median_abs_restatement_pct": 9.21,
     "max_abs_restatement_pct": 19.48,
-    "n_redefinitions": 0,
-    "formula": "0.45*rate + 0.40*min(median_mag/30,1) + 0.15*min(25*n_redef,100)"
+    "actuals_component": 49.8,
+    "target_weakening_rate": 0.0,
+    "median_target_cut_pct": 0.0,
+    "target_component": 0.0,
+    "formula": "actuals = 0.45*rate + 0.40*min(median_mag/30,1) + 0.15*min(25*n_redef,100); targets = 0.60*weakening_rate + 0.40*min(median_cut/50,1); blended 0.65/0.35 over whichever blocks are measurable"
   },
   "say_do_gap": null,
   "say_do_gap_basis": {
@@ -604,6 +612,58 @@
         "scope": "market-based",
         "source": "hm/2025_sustainability_report.pdf",
         "page": 41
+      }
+    ]
+  },
+  "targets": {
+    "target_recycled_materials_share": [
+      {
+        "year": 2025,
+        "value": 30.0,
+        "unit": "%",
+        "scope": "recycled materials share",
+        "source": "hm/2025_sustainability_report.pdf",
+        "page": 5
+      }
+    ],
+    "target_recycled_or_sustainable_materials_share": [
+      {
+        "year": 2030,
+        "value": 100.0,
+        "unit": "%",
+        "scope": "recycled or sustainably sourced materials in commercial products",
+        "source": "hm/2025_sustainability_report.pdf",
+        "page": 5
+      }
+    ],
+    "target_renewable_electricity_share": [
+      {
+        "year": 2030,
+        "value": 100.0,
+        "unit": "%",
+        "scope": "renewable electricity in own operations",
+        "source": "hm/2025_sustainability_report.pdf",
+        "page": 5
+      }
+    ],
+    "target_scope_1_2_reduction": [
+      {
+        "year": 2030,
+        "value": 56.0,
+        "unit": "%",
+        "scope": "absolute reduction vs 2019 baseline; stated as -56% by 2030",
+        "source": "hm/2025_sustainability_report.pdf",
+        "page": 5
+      }
+    ],
+    "target_scope_3_reduction": [
+      {
+        "year": 2030,
+        "value": 56.0,
+        "unit": "%",
+        "scope": "absolute reduction vs 2019 baseline; stated as -56% by 2030",
+        "source": "hm/2025_sustainability_report.pdf",
+        "page": 5
       }
     ]
   },
@@ -1262,5 +1322,13 @@
     "total_emissions_location_based",
     "total_emissions_market_based"
   ],
-  "n_reports": 2
+  "n_target_rows": 10,
+  "target_metrics": [
+    "target_recycled_materials_share",
+    "target_recycled_or_sustainable_materials_share",
+    "target_renewable_electricity_share",
+    "target_scope_1_2_reduction",
+    "target_scope_3_reduction"
+  ],
+  "n_reports": 3
 }

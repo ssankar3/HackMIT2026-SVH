@@ -1,0 +1,854 @@
+{
+  "company": "bp",
+  "drift_events": [
+    {
+      "year": 2019,
+      "type": "metric_restated",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "old": "79",
+      "new": "84",
+      "magnitude_pct": 6.33,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2024_sustainability_report.pdf",
+      "page": 22,
+      "description": "avg_carbon_intensity_sold_energy for 2019 was published as 79 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 84 gCO2e/MJ in 2024_sustainability_report.pdf (+6.3%)",
+      "drift_id": "bp-drift-000"
+    },
+    {
+      "year": 2020,
+      "type": "metric_restated",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "old": "77",
+      "new": "81",
+      "magnitude_pct": 5.19,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2024_sustainability_report.pdf",
+      "page": 22,
+      "description": "avg_carbon_intensity_sold_energy for 2020 was published as 77 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 81 gCO2e/MJ in 2024_sustainability_report.pdf (+5.2%)",
+      "drift_id": "bp-drift-001"
+    },
+    {
+      "year": 2021,
+      "type": "metric_restated",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "old": "78",
+      "new": "81",
+      "magnitude_pct": 3.85,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2024_sustainability_report.pdf",
+      "page": 22,
+      "description": "avg_carbon_intensity_sold_energy for 2021 was published as 78 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 81 gCO2e/MJ in 2024_sustainability_report.pdf (+3.8%)",
+      "drift_id": "bp-drift-002"
+    },
+    {
+      "year": 2022,
+      "type": "metric_restated",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "old": "77",
+      "new": "81",
+      "magnitude_pct": 5.19,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2024_sustainability_report.pdf",
+      "page": 22,
+      "description": "avg_carbon_intensity_sold_energy for 2022 was published as 77 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 81 gCO2e/MJ in 2024_sustainability_report.pdf (+5.2%)",
+      "drift_id": "bp-drift-003"
+    },
+    {
+      "year": 2023,
+      "type": "metric_restated",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "old": "77",
+      "new": "80",
+      "magnitude_pct": 3.9,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2024_sustainability_report.pdf",
+      "page": 22,
+      "description": "avg_carbon_intensity_sold_energy for 2023 was published as 77 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 80 gCO2e/MJ in 2024_sustainability_report.pdf (+3.9%)",
+      "drift_id": "bp-drift-004"
+    },
+    {
+      "year": 2025,
+      "type": "commitment_dropped",
+      "canonical_metric": "target_scope_3_reduction",
+      "old": "10",
+      "new": null,
+      "magnitude_pct": -100.0,
+      "weakened": true,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2025_sustainability_report.pdf",
+      "page": null,
+      "description": "the 2025 target for scope_3_reduction (10%) was last published in 2023_sustainability_report.pdf and no longer appears as of the 2025 report, with its deadline still in the future",
+      "drift_id": "bp-drift-005"
+    },
+    {
+      "year": 2030,
+      "type": "commitment_dropped",
+      "canonical_metric": "target_scope_3_reduction",
+      "old": "20",
+      "new": null,
+      "magnitude_pct": -100.0,
+      "weakened": true,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2025_sustainability_report.pdf",
+      "page": null,
+      "description": "the 2030 target for scope_3_reduction (20%) was last published in 2023_sustainability_report.pdf and no longer appears as of the 2025 report, with its deadline still in the future",
+      "drift_id": "bp-drift-006"
+    },
+    {
+      "year": 2030,
+      "type": "target_value_changed",
+      "canonical_metric": "target_carbon_intensity_reduction",
+      "old": "15",
+      "new": "8",
+      "magnitude_pct": -46.67,
+      "weakened": true,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2024_sustainability_report.pdf",
+      "page": 27,
+      "description": "the 2030 target for carbon_intensity_reduction was published as 15% in 2023_sustainability_report.pdf, then cut to 8% in 2024_sustainability_report.pdf (-46.7%)",
+      "drift_id": "bp-drift-007"
+    },
+    {
+      "year": 2030,
+      "type": "target_value_changed",
+      "canonical_metric": "target_scope_1_2_reduction",
+      "old": "50",
+      "new": "45",
+      "magnitude_pct": -10.0,
+      "weakened": true,
+      "old_source": "bp/2023_sustainability_report.pdf",
+      "new_source": "bp/2024_sustainability_report.pdf",
+      "page": 27,
+      "description": "the 2030 target for scope_1_2_reduction was published as 50% in 2023_sustainability_report.pdf, then cut to 45% in 2024_sustainability_report.pdf (-10.0%)",
+      "drift_id": "bp-drift-008"
+    }
+  ],
+  "goalpost_drift": 42.9,
+  "goalpost_drift_basis": {
+    "n_comparable_pairs": 14,
+    "n_restatements": 5,
+    "n_redefinitions": 0,
+    "n_comparable_targets": 6,
+    "n_targets_weakened": 4,
+    "n_targets_dropped": 2,
+    "n_targets_strengthened": 0,
+    "restatement_rate": 0.357,
+    "median_abs_restatement_pct": 5.19,
+    "max_abs_restatement_pct": 6.33,
+    "actuals_component": 23.0,
+    "target_weakening_rate": 0.667,
+    "median_target_cut_pct": 73.34,
+    "target_component": 80.0,
+    "formula": "actuals = 0.45*rate + 0.40*min(median_mag/30,1) + 0.15*min(25*n_redef,100); targets = 0.60*weakening_rate + 0.40*min(median_cut/50,1); blended 0.65/0.35 over whichever blocks are measurable"
+  },
+  "say_do_gap": null,
+  "say_do_gap_basis": {
+    "reason": "target-vs-actual glidepath requires Stage 2 claims (targets with baseline and target year); no claims available"
+  },
+  "series": {
+    "avg_carbon_intensity_sold_energy": [
+      {
+        "year": 2019,
+        "value": 84.0,
+        "unit": "gCO2e/MJ",
+        "scope": "lifecycle basis vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 16
+      },
+      {
+        "year": 2021,
+        "value": 81.0,
+        "unit": "gCO2e/MJ",
+        "scope": "lifecycle basis vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 16
+      },
+      {
+        "year": 2022,
+        "value": 81.0,
+        "unit": "gCO2e/MJ",
+        "scope": "lifecycle basis vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 16
+      },
+      {
+        "year": 2023,
+        "value": 80.0,
+        "unit": "gCO2e/MJ",
+        "scope": "lifecycle basis vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 16
+      },
+      {
+        "year": 2024,
+        "value": 79.0,
+        "unit": "gCO2e/MJ",
+        "scope": "lifecycle basis vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 16
+      },
+      {
+        "year": 2025,
+        "value": 79.0,
+        "unit": "gCO2e/MJ",
+        "scope": "lifecycle basis vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 16
+      }
+    ],
+    "methane_emissions": [
+      {
+        "year": 2024,
+        "value": 46.0,
+        "unit": "kt",
+        "scope": "absolute upstream methane emissions used for intensity calc",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 14
+      },
+      {
+        "year": 2025,
+        "value": 25.0,
+        "unit": "kt",
+        "scope": "absolute upstream methane emissions used for intensity calc",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 14
+      }
+    ],
+    "methane_pct_of_gas_marketed": [
+      {
+        "year": 2024,
+        "value": 0.07,
+        "unit": "%",
+        "scope": "upstream operated oil & gas methane intensity",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 14
+      },
+      {
+        "year": 2025,
+        "value": 0.04,
+        "unit": "%",
+        "scope": "upstream operated oil & gas methane intensity",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 14
+      }
+    ],
+    "process_safety_events_tier1": [
+      {
+        "year": 2024,
+        "value": 3.0,
+        "unit": "number",
+        "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 5
+      },
+      {
+        "year": 2025,
+        "value": 5.0,
+        "unit": "number",
+        "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 5
+      }
+    ],
+    "process_safety_events_tier2": [
+      {
+        "year": 2024,
+        "value": 35.0,
+        "unit": "number",
+        "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 5
+      },
+      {
+        "year": 2025,
+        "value": 22.0,
+        "unit": "number",
+        "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 5
+      }
+    ],
+    "process_safety_events_total": [
+      {
+        "year": 2024,
+        "value": 38.0,
+        "unit": "number",
+        "scope": "Tier 1 + Tier 2 combined",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 5
+      },
+      {
+        "year": 2025,
+        "value": 27.0,
+        "unit": "number",
+        "scope": "Tier 1 + Tier 2 combined",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 5
+      }
+    ],
+    "scope_1_emissions": [
+      {
+        "year": 2024,
+        "value": 32.8,
+        "unit": "MtCO2e",
+        "scope": "Scope 1 direct; operational control",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 12
+      },
+      {
+        "year": 2025,
+        "value": 33.7,
+        "unit": "MtCO2e",
+        "scope": "Scope 1 direct; operational control",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 12
+      }
+    ],
+    "scope_2_emissions": [
+      {
+        "year": 2025,
+        "value": 0.7,
+        "unit": "MtCO2e",
+        "scope": "Scope 2 indirect market-based; operational control",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 12
+      }
+    ],
+    "total_emissions": [
+      {
+        "year": 2024,
+        "value": 33.6,
+        "unit": "MtCO2e",
+        "scope": "Scope 1+2 operational control basis; comparison cited in 2025 report",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 12
+      },
+      {
+        "year": 2025,
+        "value": 34.3,
+        "unit": "MtCO2e",
+        "scope": "Scope 1+2 operational control basis",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 12
+      }
+    ]
+  },
+  "targets": {
+    "target_carbon_intensity_reduction": [
+      {
+        "year": 2025,
+        "value": 5.0,
+        "unit": "%",
+        "scope": "net zero sales interim target vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 11
+      },
+      {
+        "year": 2030,
+        "value": 8.0,
+        "unit": "%",
+        "scope": "net zero sales 2030 aim; stated range 8-10%",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 11
+      }
+    ],
+    "target_scope_1_2_reduction": [
+      {
+        "year": 2025,
+        "value": 20.0,
+        "unit": "%",
+        "scope": "net zero operations interim target vs 2019 baseline",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 11
+      },
+      {
+        "year": 2030,
+        "value": 45.0,
+        "unit": "%",
+        "scope": "net zero operations 2030 aim; stated range 45-50%",
+        "source": "bp/2025_sustainability_report.pdf",
+        "page": 11
+      }
+    ],
+    "target_scope_3_reduction": [
+      {
+        "year": 2025,
+        "value": 10.0,
+        "unit": "%",
+        "scope": "aim 2 interim target; stated range 10-15% vs 2019 baseline",
+        "source": "bp/2023_sustainability_report.pdf",
+        "page": 21
+      },
+      {
+        "year": 2030,
+        "value": 20.0,
+        "unit": "%",
+        "scope": "aim 2 2030 aim; stated range 20-30% vs 2019 baseline",
+        "source": "bp/2023_sustainability_report.pdf",
+        "page": 21
+      }
+    ]
+  },
+  "did_rows": [
+    {
+      "year": 2023,
+      "metric": "total_emissions",
+      "value": 32.1,
+      "unit": "MtCO2e",
+      "scope": "Scope 1+2 operational control basis; comparison cited in 2024 report",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 18
+    },
+    {
+      "year": 2024,
+      "metric": "total_emissions",
+      "value": 33.6,
+      "unit": "MtCO2e",
+      "scope": "Scope 1+2 operational control basis",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 18
+    },
+    {
+      "year": 2023,
+      "metric": "scope_1_emissions",
+      "value": 31.1,
+      "unit": "MtCO2e",
+      "scope": "Scope 1 direct; operational control",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 18
+    },
+    {
+      "year": 2024,
+      "metric": "scope_1_emissions",
+      "value": 32.8,
+      "unit": "MtCO2e",
+      "scope": "Scope 1 direct; operational control",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 18
+    },
+    {
+      "year": 2024,
+      "metric": "scope_2_emissions",
+      "value": 0.8,
+      "unit": "MtCO2e",
+      "scope": "Scope 2 indirect market-based; operational control",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 18
+    },
+    {
+      "year": 2023,
+      "metric": "methane_pct_of_gas_marketed",
+      "value": 0.05,
+      "unit": "%",
+      "scope": "upstream operated oil & gas methane intensity",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 18
+    },
+    {
+      "year": 2024,
+      "metric": "methane_pct_of_gas_marketed",
+      "value": 0.07,
+      "unit": "%",
+      "scope": "upstream operated oil & gas methane intensity",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 18
+    },
+    {
+      "year": 2023,
+      "metric": "methane_emissions",
+      "value": 31.0,
+      "unit": "kt",
+      "scope": "absolute upstream methane emissions used for intensity calc",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 19
+    },
+    {
+      "year": 2024,
+      "metric": "methane_emissions",
+      "value": 46.0,
+      "unit": "kt",
+      "scope": "absolute upstream methane emissions used for intensity calc",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 19
+    },
+    {
+      "year": 2023,
+      "metric": "process_safety_events_total",
+      "value": 39.0,
+      "unit": "number",
+      "scope": "Tier 1 + Tier 2 combined",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 7
+    },
+    {
+      "year": 2024,
+      "metric": "process_safety_events_total",
+      "value": 38.0,
+      "unit": "number",
+      "scope": "Tier 1 + Tier 2 combined",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 7
+    },
+    {
+      "year": 2023,
+      "metric": "process_safety_events_tier1",
+      "value": 9.0,
+      "unit": "number",
+      "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 7
+    },
+    {
+      "year": 2024,
+      "metric": "process_safety_events_tier1",
+      "value": 3.0,
+      "unit": "number",
+      "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 7
+    },
+    {
+      "year": 2023,
+      "metric": "process_safety_events_tier2",
+      "value": 30.0,
+      "unit": "number",
+      "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 7
+    },
+    {
+      "year": 2024,
+      "metric": "process_safety_events_tier2",
+      "value": 35.0,
+      "unit": "number",
+      "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 7
+    },
+    {
+      "year": 2019,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 84.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 22
+    },
+    {
+      "year": 2020,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 81.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 22
+    },
+    {
+      "year": 2021,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 81.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 22
+    },
+    {
+      "year": 2022,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 81.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 22
+    },
+    {
+      "year": 2023,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 80.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 22
+    },
+    {
+      "year": 2024,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 79.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2024_sustainability_report.pdf",
+      "page": 22
+    },
+    {
+      "year": 2024,
+      "metric": "total_emissions",
+      "value": 33.6,
+      "unit": "MtCO2e",
+      "scope": "Scope 1+2 operational control basis; comparison cited in 2025 report",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+    },
+    {
+      "year": 2025,
+      "metric": "total_emissions",
+      "value": 34.3,
+      "unit": "MtCO2e",
+      "scope": "Scope 1+2 operational control basis",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+    },
+    {
+      "year": 2024,
+      "metric": "scope_1_emissions",
+      "value": 32.8,
+      "unit": "MtCO2e",
+      "scope": "Scope 1 direct; operational control",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+    },
+    {
+      "year": 2025,
+      "metric": "scope_1_emissions",
+      "value": 33.7,
+      "unit": "MtCO2e",
+      "scope": "Scope 1 direct; operational control",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+    },
+    {
+      "year": 2025,
+      "metric": "scope_2_emissions",
+      "value": 0.7,
+      "unit": "MtCO2e",
+      "scope": "Scope 2 indirect market-based; operational control",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+    },
+    {
+      "year": 2024,
+      "metric": "methane_pct_of_gas_marketed",
+      "value": 0.07,
+      "unit": "%",
+      "scope": "upstream operated oil & gas methane intensity",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+    },
+    {
+      "year": 2025,
+      "metric": "methane_pct_of_gas_marketed",
+      "value": 0.04,
+      "unit": "%",
+      "scope": "upstream operated oil & gas methane intensity",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+    },
+    {
+      "year": 2024,
+      "metric": "methane_emissions",
+      "value": 46.0,
+      "unit": "kt",
+      "scope": "absolute upstream methane emissions used for intensity calc",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+    },
+    {
+      "year": 2025,
+      "metric": "methane_emissions",
+      "value": 25.0,
+      "unit": "kt",
+      "scope": "absolute upstream methane emissions used for intensity calc",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+    },
+    {
+      "year": 2024,
+      "metric": "process_safety_events_total",
+      "value": 38.0,
+      "unit": "number",
+      "scope": "Tier 1 + Tier 2 combined",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+    },
+    {
+      "year": 2025,
+      "metric": "process_safety_events_total",
+      "value": 27.0,
+      "unit": "number",
+      "scope": "Tier 1 + Tier 2 combined",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+    },
+    {
+      "year": 2024,
+      "metric": "process_safety_events_tier1",
+      "value": 3.0,
+      "unit": "number",
+      "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+    },
+    {
+      "year": 2025,
+      "metric": "process_safety_events_tier1",
+      "value": 5.0,
+      "unit": "number",
+      "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+    },
+    {
+      "year": 2024,
+      "metric": "process_safety_events_tier2",
+      "value": 35.0,
+      "unit": "number",
+      "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+    },
+    {
+      "year": 2025,
+      "metric": "process_safety_events_tier2",
+      "value": 22.0,
+      "unit": "number",
+      "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+    },
+    {
+      "year": 2019,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 84.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+    },
+    {
+      "year": 2021,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 81.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+    },
+    {
+      "year": 2022,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 81.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+    },
+    {
+      "year": 2023,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 80.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+    },
+    {
+      "year": 2024,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 79.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+    },
+    {
+      "year": 2025,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 79.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+    },
+    {
+      "year": 2023,
+      "metric": "total_emissions",
+      "value": 32.1,
+      "unit": "MtCO2e",
+      "scope": "Scope 1+2 operational control basis",
+      "source": "bp/2023_sustainability_report.pdf",
+      "page": 22
+    },
+    {
+      "year": 2019,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 79.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+      "source": "bp/2023_sustainability_report.pdf",
+      "page": 25
+    },
+    {
+      "year": 2020,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 77.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+      "source": "bp/2023_sustainability_report.pdf",
+      "page": 25
+    },
+    {
+      "year": 2021,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 78.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+      "source": "bp/2023_sustainability_report.pdf",
+      "page": 25
+    },
+    {
+      "year": 2022,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 77.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+      "source": "bp/2023_sustainability_report.pdf",
+      "page": 25
+    },
+    {
+      "year": 2023,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 77.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+      "source": "bp/2023_sustainability_report.pdf",
+      "page": 25
+    }
+  ],
+  "n_did_rows": 48,
+  "did_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "did_metrics": [
+    "avg_carbon_intensity_sold_energy",
+    "methane_emissions",
+    "methane_pct_of_gas_marketed",
+    "process_safety_events_tier1",
+    "process_safety_events_tier2",
+    "process_safety_events_total",
+    "scope_1_emissions",
+    "scope_2_emissions",
+    "total_emissions"
+  ],
+  "n_target_rows": 14,
+  "target_metrics": [
+    "target_carbon_intensity_reduction",
+    "target_scope_1_2_reduction",
+    "target_scope_3_reduction"
+  ],
+  "n_reports": 3
+}

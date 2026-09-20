@@ -40,7 +40,7 @@ OUT_DIR = ROOT / "out"
 WEB_DATA = ROOT / "web" / "public" / "data"
 CONFIG = ROOT / "config" / "weights.yaml"
 
-DISPLAY = {"hm": "H&M Group", "microsoft": "Microsoft", "amazon": "Amazon", "delta": "Delta Air Lines"}
+DISPLAY = {"hm": "H&M Group", "microsoft": "Microsoft", "amazon": "Amazon", "delta": "Delta Air Lines", "bp": "bp"}
 
 SUB_SCORE_FIELDS = ["vagueness", "unsupported_claims", "sins_severity", "say_do_gap", "goalpost_drift"]
 

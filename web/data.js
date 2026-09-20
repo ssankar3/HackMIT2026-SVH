@@ -1,7 +1,7 @@
 window.__GREENWASH_DATA__ = {
  "amazon": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T05:49:27+00:00",
+  "generated_at": "2026-09-20T14:56:30+00:00",
   "summary": {
    "company": "amazon",
    "display_name": "Amazon",
@@ -16429,16 +16429,15806 @@ window.__GREENWASH_DATA__ = {
    "notes": "Stage 4/7 blocked; no LLM predictions to score yet."
   }
  },
+ "bp": {
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-20T14:56:30+00:00",
+  "summary": {
+   "company": "bp",
+   "display_name": "bp",
+   "overall_score": 50.1,
+   "confidence": "low",
+   "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
+   "peer_percentile": 66.7,
+   "abstain": false,
+   "abstain_reasons": [],
+   "headline": "5 of 14 republished figures were restated between reports (median move 5.19%, max 6.33%). Language: 32 substantive softening events across reports (54 recycled boilerplate excluded).",
+   "sub_scores": {
+    "vagueness": 84.5,
+    "unsupported_claims": 55.0,
+    "sins_severity": 29.9,
+    "say_do_gap": 50.0,
+    "goalpost_drift": 42.9
+   }
+  },
+  "coverage": {
+   "n_documents": 3,
+   "n_pages": 0,
+   "n_chunks": 0,
+   "n_claims": 220,
+   "n_evidence_verified": 0,
+   "n_did_rows": 48,
+   "did_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "did_metrics": [
+    "avg_carbon_intensity_sold_energy",
+    "methane_emissions",
+    "methane_pct_of_gas_marketed",
+    "process_safety_events_tier1",
+    "process_safety_events_tier2",
+    "process_safety_events_total",
+    "scope_1_emissions",
+    "scope_2_emissions",
+    "total_emissions"
+   ],
+   "stages_completed": [
+    "stage6_saydo",
+    "stage8_score",
+    "stage2_claims",
+    "stage3_language",
+    "stage3b_langdrift",
+    "stage4_sins",
+    "stage6b_claim_link"
+   ],
+   "stages_blocked": {
+    "stage5_evidence": "no ANTHROPIC_API_KEY in environment",
+    "stage7_debate": "no ANTHROPIC_API_KEY in environment"
+   }
+  },
+  "timeline": [
+   {
+    "year": 2019,
+    "said_claim_ids": [],
+    "did_points": [
+     {
+      "year": 2019,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 84.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+     }
+    ],
+    "drift_ids": [
+     "bp-drift-000"
+    ],
+    "score_as_of": null,
+    "score_hindsight": 10.5
+   },
+   {
+    "year": 2020,
+    "said_claim_ids": [],
+    "did_points": [],
+    "drift_ids": [
+     "bp-drift-001"
+    ],
+    "score_as_of": null,
+    "score_hindsight": 8.7
+   },
+   {
+    "year": 2021,
+    "said_claim_ids": [
+     "bp-claim-0007",
+     "bp-claim-0008",
+     "bp-claim-0009",
+     "bp-claim-0010",
+     "bp-claim-0011",
+     "bp-claim-0012",
+     "bp-claim-0013",
+     "bp-claim-0031",
+     "bp-claim-0033",
+     "bp-claim-0034",
+     "bp-claim-0035",
+     "bp-claim-0036"
+    ],
+    "did_points": [
+     {
+      "year": 2021,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 81.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+     }
+    ],
+    "drift_ids": [
+     "bp-drift-002"
+    ],
+    "score_as_of": null,
+    "score_hindsight": 6.4
+   },
+   {
+    "year": 2022,
+    "said_claim_ids": [
+     "bp-claim-0000",
+     "bp-claim-0004",
+     "bp-claim-0005",
+     "bp-claim-0006",
+     "bp-claim-0014",
+     "bp-claim-0015",
+     "bp-claim-0016",
+     "bp-claim-0017",
+     "bp-claim-0018",
+     "bp-claim-0047",
+     "bp-claim-0048",
+     "bp-claim-0049"
+    ],
+    "did_points": [
+     {
+      "year": 2022,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 81.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+     }
+    ],
+    "drift_ids": [
+     "bp-drift-003"
+    ],
+    "score_as_of": null,
+    "score_hindsight": 8.7
+   },
+   {
+    "year": 2023,
+    "said_claim_ids": [
+     "bp-claim-0001",
+     "bp-claim-0002",
+     "bp-claim-0019",
+     "bp-claim-0020",
+     "bp-claim-0021",
+     "bp-claim-0055",
+     "bp-claim-0056",
+     "bp-claim-0057",
+     "bp-claim-0058",
+     "bp-claim-0059",
+     "bp-claim-0060",
+     "bp-claim-0061"
+    ],
+    "did_points": [
+     {
+      "year": 2023,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 80.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+     }
+    ],
+    "drift_ids": [
+     "bp-drift-004"
+    ],
+    "score_as_of": null,
+    "score_hindsight": 6.5
+   },
+   {
+    "year": 2024,
+    "said_claim_ids": [
+     "bp-claim-0003",
+     "bp-claim-0022",
+     "bp-claim-0023",
+     "bp-claim-0024",
+     "bp-claim-0025",
+     "bp-claim-0026",
+     "bp-claim-0032",
+     "bp-claim-0063",
+     "bp-claim-0064",
+     "bp-claim-0065",
+     "bp-claim-0066",
+     "bp-claim-0067"
+    ],
+    "did_points": [
+     {
+      "year": 2024,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 79.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+     },
+     {
+      "year": 2024,
+      "metric": "methane_emissions",
+      "value": 46.0,
+      "unit": "kt",
+      "scope": "absolute upstream methane emissions used for intensity calc",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+     },
+     {
+      "year": 2024,
+      "metric": "methane_pct_of_gas_marketed",
+      "value": 0.07,
+      "unit": "%",
+      "scope": "upstream operated oil & gas methane intensity",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+     },
+     {
+      "year": 2024,
+      "metric": "process_safety_events_tier1",
+      "value": 3.0,
+      "unit": "number",
+      "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+     },
+     {
+      "year": 2024,
+      "metric": "process_safety_events_tier2",
+      "value": 35.0,
+      "unit": "number",
+      "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+     },
+     {
+      "year": 2024,
+      "metric": "process_safety_events_total",
+      "value": 38.0,
+      "unit": "number",
+      "scope": "Tier 1 + Tier 2 combined",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+     },
+     {
+      "year": 2024,
+      "metric": "scope_1_emissions",
+      "value": 32.8,
+      "unit": "MtCO2e",
+      "scope": "Scope 1 direct; operational control",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+     },
+     {
+      "year": 2024,
+      "metric": "total_emissions",
+      "value": 33.6,
+      "unit": "MtCO2e",
+      "scope": "Scope 1+2 operational control basis; comparison cited in 2025 report",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+     }
+    ],
+    "drift_ids": [],
+    "score_as_of": null,
+    "score_hindsight": null
+   },
+   {
+    "year": 2025,
+    "said_claim_ids": [
+     "bp-claim-0027",
+     "bp-claim-0028",
+     "bp-claim-0029",
+     "bp-claim-0030",
+     "bp-claim-0072",
+     "bp-claim-0073",
+     "bp-claim-0074",
+     "bp-claim-0075",
+     "bp-claim-0076",
+     "bp-claim-0081",
+     "bp-claim-0187",
+     "bp-claim-0188"
+    ],
+    "did_points": [
+     {
+      "year": 2025,
+      "metric": "avg_carbon_intensity_sold_energy",
+      "value": 79.0,
+      "unit": "gCO2e/MJ",
+      "scope": "lifecycle basis vs 2019 baseline",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 16
+     },
+     {
+      "year": 2025,
+      "metric": "methane_emissions",
+      "value": 25.0,
+      "unit": "kt",
+      "scope": "absolute upstream methane emissions used for intensity calc",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+     },
+     {
+      "year": 2025,
+      "metric": "methane_pct_of_gas_marketed",
+      "value": 0.04,
+      "unit": "%",
+      "scope": "upstream operated oil & gas methane intensity",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 14
+     },
+     {
+      "year": 2025,
+      "metric": "process_safety_events_tier1",
+      "value": 5.0,
+      "unit": "number",
+      "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+     },
+     {
+      "year": 2025,
+      "metric": "process_safety_events_tier2",
+      "value": 22.0,
+      "unit": "number",
+      "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+     },
+     {
+      "year": 2025,
+      "metric": "process_safety_events_total",
+      "value": 27.0,
+      "unit": "number",
+      "scope": "Tier 1 + Tier 2 combined",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 5
+     },
+     {
+      "year": 2025,
+      "metric": "scope_1_emissions",
+      "value": 33.7,
+      "unit": "MtCO2e",
+      "scope": "Scope 1 direct; operational control",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+     },
+     {
+      "year": 2025,
+      "metric": "scope_2_emissions",
+      "value": 0.7,
+      "unit": "MtCO2e",
+      "scope": "Scope 2 indirect market-based; operational control",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+     },
+     {
+      "year": 2025,
+      "metric": "total_emissions",
+      "value": 34.3,
+      "unit": "MtCO2e",
+      "scope": "Scope 1+2 operational control basis",
+      "source": "bp/2025_sustainability_report.pdf",
+      "page": 12
+     }
+    ],
+    "drift_ids": [
+     "bp-drift-005"
+    ],
+    "score_as_of": 100.0,
+    "score_hindsight": 100.0
+   }
+  ],
+  "year_scores": [
+   {
+    "year": 2019,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": 10.5
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 1
+   },
+   {
+    "year": 2020,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": 8.7
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 1
+   },
+   {
+    "year": 2021,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": 6.4
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 1
+   },
+   {
+    "year": 2022,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": 8.7
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 1
+   },
+   {
+    "year": 2023,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": 6.5
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 1
+   },
+   {
+    "year": 2024,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": null
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 0
+   },
+   {
+    "year": 2025,
+    "sub_scores": {
+     "vagueness": null,
+     "unsupported_claims": null,
+     "sins_severity": null,
+     "say_do_gap": null,
+     "goalpost_drift": 100.0
+    },
+    "overall": null,
+    "confidence": "low",
+    "abstain": true,
+    "abstain_reasons": [],
+    "n_claims": 0,
+    "n_verified_quotes": 0,
+    "n_drift_events": 1
+   }
+  ],
+  "claims": [
+   {
+    "claim_id": "bp-claim-0000",
+    "claim_text": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2.0,
+    "unit": null,
+    "baseline_year": 2050,
+    "target_year": 2050,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p25",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1033,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.8,
+     "readability": 62.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "2"
+      },
+      {
+       "start": 109,
+       "end": 113,
+       "kind": "baseline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0001",
+    "claim_text": "While this adds to the challenge of reducing emissions, our work to do so continues. y On net zero sales\uf0ab (aim 3) \u2013 our target for 2025 is a 5% reduction in carbon intensity and we have now reached 3% compared with 2019. y On reducing methane (aim 4) \u2013 our first goal was to deploy our methane measurement approach across our operated upstream oil and gas assets by the end of 2023.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2023,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p4",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 4,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.8,
+     "readability": 55.6,
+     "sentiment": -0.0156,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 23,
+       "end": 32,
+       "kind": "negative",
+       "term": "challenge"
+      },
+      {
+       "start": 141,
+       "end": 143,
+       "kind": "qty",
+       "term": "5%"
+      },
+      {
+       "start": 215,
+       "end": 219,
+       "kind": "baseline",
+       "term": "2019"
+      },
+      {
+       "start": 377,
+       "end": 381,
+       "kind": "deadline",
+       "term": "2023"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0002",
+    "claim_text": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2.0,
+    "unit": null,
+    "baseline_year": 2050,
+    "target_year": 2050,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p23",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 23,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1033,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.8,
+     "readability": 62.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "2"
+      },
+      {
+       "start": 109,
+       "end": 113,
+       "kind": "baseline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0003",
+    "claim_text": "Our interim target is a 20% reduction in Scope 1 and 2 emissions by the end of 2025, against the 2019 baseline.",
+    "claim_type": "target",
+    "metric": "scope_1",
+    "canonical_metric": "scope_1_emissions",
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p19",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0588,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.8,
+     "readability": 55.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 24,
+       "end": 27,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 79,
+       "end": 83,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 97,
+       "end": 101,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": "behind",
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0004",
+    "claim_text": "Our aim to reduce our oil and gas production from 2019 levels by around 25% by 2030, underpins our 2030 aim of a 20-30% reduction in Scope 3 emissions covered by aim 2 against a 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 25.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2030,
+    "scope": "Scope 3",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p26",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 26,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0345,
+     "future_orientation_ratio": 0.1579,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.662,
+     "readability": 46.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 50,
+       "end": 54,
+       "kind": "baseline",
+       "term": "2019"
+      },
+      {
+       "start": 65,
+       "end": 71,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 72,
+       "end": 75,
+       "kind": "qty",
+       "term": "25%"
+      },
+      {
+       "start": 79,
+       "end": 83,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0005",
+    "claim_text": "This means we expect to invest more than 40%, or $6-8 billion of our capital expenditure in transition growth engines by 2025 and around 50% by 2030 \u2013 or $7-9 billion. y For aim 2 we are now targeting a 10-15% reduction by 2025 (previously 20%) in the emissions associated with the carbon in our upstream oil and gas production and are aiming for 20-30% reduction by 2030 (previously 35-40%).",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 40.0,
+    "unit": null,
+    "baseline_year": 2025,
+    "target_year": 2025,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p20",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0357,
+     "future_orientation_ratio": 0.1093,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.657,
+     "readability": 42.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 14,
+       "end": 20,
+       "kind": "hedge",
+       "term": "expect"
+      },
+      {
+       "start": 41,
+       "end": 44,
+       "kind": "qty",
+       "term": "40%"
+      },
+      {
+       "start": 121,
+       "end": 125,
+       "kind": "baseline",
+       "term": "2025"
+      },
+      {
+       "start": 130,
+       "end": 136,
+       "kind": "hedge",
+       "term": "around"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0006",
+    "claim_text": "We believe that the Scope 3 emissions associated with our upstream oil and gas production will not exceed their 2019 peak and have stated that we are aiming for a reduction in oil and gas production by around 25% by 2030, compared to 2019 (excluding production from Rosneft)c.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 25.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2030,
+    "scope": "Scope 3; upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p25",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0455,
+     "future_orientation_ratio": 0.0882,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.618,
+     "readability": 31.4,
+     "sentiment": 0.0,
+     "negated": true,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 10,
+       "kind": "hedge",
+       "term": "believe"
+      },
+      {
+       "start": 112,
+       "end": 116,
+       "kind": "baseline",
+       "term": "2019"
+      },
+      {
+       "start": 202,
+       "end": 208,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 209,
+       "end": 212,
+       "kind": "qty",
+       "term": "25%"
+      },
+      {
+       "start": 216,
+       "end": 220,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0007",
+    "claim_text": "Be net zero on an absolute basis across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": 2050,
+    "target_year": 2050,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p8",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.07,
+     "quantification_present": false,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 59.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 93,
+       "end": 97,
+       "kind": "baseline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0008",
+    "claim_text": "Install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensity of our operations.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2023,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p8",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.02,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 27.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 86,
+       "end": 90,
+       "kind": "deadline",
+       "term": "2023"
+      },
+      {
+       "start": 127,
+       "end": 130,
+       "kind": "qty",
+       "term": "50%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0009",
+    "claim_text": "We\u2019re targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p24",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 24,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2581,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 40.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 18,
+       "end": 21,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 70,
+       "end": 74,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 128,
+       "end": 132,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0010",
+    "claim_text": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production\uf0ab by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p25",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1033,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 62.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "2"
+      },
+      {
+       "start": 110,
+       "end": 114,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0011",
+    "claim_text": "Our aim 4 is to install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensitya of our operations.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2023,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p27",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 27,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0512,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 31.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 102,
+       "end": 106,
+       "kind": "deadline",
+       "term": "2023"
+      },
+      {
+       "start": 143,
+       "end": 146,
+       "kind": "qty",
+       "term": "50%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0012",
+    "claim_text": "During the COP26 climate change conference in Glasgow, UK, 103 countries signed the Global Methane Pledge to reduce global methane emissions by 30% by 2030 against a 2020 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 30.0,
+    "unit": null,
+    "baseline_year": 2020,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p28",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 28,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.06,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 39.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 144,
+       "end": 147,
+       "kind": "qty",
+       "term": "30%"
+      },
+      {
+       "start": 151,
+       "end": 155,
+       "kind": "deadline",
+       "term": "2030"
+      },
+      {
+       "start": 166,
+       "end": 170,
+       "kind": "baseline",
+       "term": "2020"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0013",
+    "claim_text": "In addition, our CEO publicly welcomed the \u2018Fit for 55\u2019 legislative package \u2013 to help the EU to cut its emissions by at least 55% by 2030, compared with 1990 levels.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 55.0,
+    "unit": null,
+    "baseline_year": 1990,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p31",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 31,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0585,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 47.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 126,
+       "end": 129,
+       "kind": "qty",
+       "term": "55%"
+      },
+      {
+       "start": 133,
+       "end": 137,
+       "kind": "deadline",
+       "term": "2030"
+      },
+      {
+       "start": 153,
+       "end": 157,
+       "kind": "baseline",
+       "term": "1990"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0014",
+    "claim_text": "We plan to invest an additional $8 billion by 2030 into our transition growth engines including EV chargers and sustainable aviation fuels that can help people and businesses decarbonize sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 8.0,
+    "unit": null,
+    "baseline_year": 2030,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p5",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 5,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0914,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 21.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 33,
+       "end": 42,
+       "kind": "qty",
+       "term": "8 billion"
+      },
+      {
+       "start": 46,
+       "end": 50,
+       "kind": "baseline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0015",
+    "claim_text": "Net zero across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": 2050,
+    "target_year": 2050,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p19",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0867,
+     "quantification_present": false,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 67.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 69,
+       "end": 73,
+       "kind": "baseline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0016",
+    "claim_text": "Install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensity of our operations.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2023,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p19",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.02,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 27.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 86,
+       "end": 90,
+       "kind": "deadline",
+       "term": "2023"
+      },
+      {
+       "start": 127,
+       "end": 130,
+       "kind": "qty",
+       "term": "50%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0017",
+    "claim_text": "We are targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p24",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 24,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2581,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 40.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 19,
+       "end": 22,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 71,
+       "end": 75,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 129,
+       "end": 133,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0018",
+    "claim_text": "Our aim 4 is to install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensitya of our operations.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2023,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p29",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 29,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0512,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 31.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 102,
+       "end": 106,
+       "kind": "deadline",
+       "term": "2023"
+      },
+      {
+       "start": 143,
+       "end": 146,
+       "kind": "qty",
+       "term": "50%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0019",
+    "claim_text": "We are targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p22",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 22,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2581,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 40.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 19,
+       "end": 22,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 71,
+       "end": 75,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 129,
+       "end": 133,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0020",
+    "claim_text": "Our aim 4 is to install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensity\uf0ab of our operations.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2023,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p26",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 26,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0512,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 31.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 102,
+       "end": 106,
+       "kind": "deadline",
+       "term": "2023"
+      },
+      {
+       "start": 143,
+       "end": 146,
+       "kind": "qty",
+       "term": "50%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0021",
+    "claim_text": "Environmental Defense Fund (EDF) \u2013 Through our memorandum of understanding with EDF, which runs until 2025, we are working together to drive the reduction of global methane emissions across the oil and gas value chain.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2025.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": "value chain",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p56",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 56,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 29.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 102,
+       "end": 107,
+       "kind": "qty",
+       "term": "2025,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0022",
+    "claim_text": "We are targeting a 20% reduction in our operational emissions by the end of 2025 and aiming for a 45-50% reduction by the end of 2030 against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p20",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.08,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 42.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 19,
+       "end": 22,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 76,
+       "end": 80,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 146,
+       "end": 150,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0023",
+    "claim_text": "Our Scope 1 and Scope 2 emissions have already reduced by 38% in 2024 \u2013 more than our 2025 target of a 20% reduction, against our 2019 baseline.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 38.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": null,
+    "scope": "Scope 1; Scope 2",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p20",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.05,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 51.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 58,
+       "end": 61,
+       "kind": "qty",
+       "term": "38%"
+      },
+      {
+       "start": 130,
+       "end": 134,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.55,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0024",
+    "claim_text": "We are targeting a reduction in intensity of 5% by the end of 2025 and aiming for an 8-10% reduction by the end of 2030 compared to our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p23",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 23,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.08,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 49.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 45,
+       "end": 47,
+       "kind": "qty",
+       "term": "5%"
+      },
+      {
+       "start": 62,
+       "end": 66,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 136,
+       "end": 140,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0025",
+    "claim_text": "We were assessed as \u2018fully aligned\u2019 against five metrics (net zero ambition by 2050, long-term emissions targets, capital allocation, climate governance and TCFD alignment) and \u2018partially aligned\u2019 on all other metrics.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2050.0,
+    "unit": null,
+    "baseline_year": 2050,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p41",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 41,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.12,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 7.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 79,
+       "end": 84,
+       "kind": "qty",
+       "term": "2050,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0026",
+    "claim_text": "Environmental Defense Fund (EDF) \u2013 Under our memorandum of understanding with EDF, which runs until the end of 2025, we plan to work together to help drive the reduction of global methane emissions across the oil and gas value chain.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2025.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": "value chain",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p42",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 42,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0263,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 32.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 111,
+       "end": 116,
+       "kind": "qty",
+       "term": "2025,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0027",
+    "claim_text": "Net zero operations\u00ab \u2013 By the end of 2025, we reduced operational emissions by 37% against the 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 37.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p3",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 3,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 22.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 37,
+       "end": 41,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 79,
+       "end": 82,
+       "kind": "qty",
+       "term": "37%"
+      },
+      {
+       "start": 95,
+       "end": 99,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0028",
+    "claim_text": "Net zero sales\u00ab \u2013 In 2025 the average carbon intensity of the energy products\u00ab sold was 79gCO2e/MJ, meaning we achieved our target to reduce the average lifecycle intensity by 5% by the end of 2025 (against the 2019 baseline).",
+    "claim_type": "target",
+    "metric": "carbon_intensity",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p3",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 3,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0278,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 24.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 21,
+       "end": 25,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 176,
+       "end": 178,
+       "kind": "qty",
+       "term": "5%"
+      },
+      {
+       "start": 211,
+       "end": 215,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": "on_track",
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0029",
+    "claim_text": "33.2 30.4 31.1 32.8 33.7 Our aim is to reach net zero\u00ab by 2050 or sooner for Scope 1 and 2 emissions within bp\u2019s operational control (on a CO2e basis), including by maintaining \u2018near-zero\u2019a methane intensity\u00ab across our operated producing assets, enabled by supportive government policies.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 33.2,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p14",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 14,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0688,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 41.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 0,
+       "end": 4,
+       "kind": "qty",
+       "term": "33.2"
+      },
+      {
+       "start": 58,
+       "end": 62,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0030",
+    "claim_text": "We achieved a reduction of 37%c against a targeted 20% reduction in our operational emissions by the end of 2025 and we are aiming for a 45-50% reduction by the end of 2030, both against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 37.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p14",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 14,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0606,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 34.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 27,
+       "end": 30,
+       "kind": "qty",
+       "term": "37%"
+      },
+      {
+       "start": 108,
+       "end": 112,
+       "kind": "deadline",
+       "term": "2025"
+      },
+      {
+       "start": 191,
+       "end": 195,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0031",
+    "claim_text": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing oil and gas production, which we expect to reduce by around 40% by 2030, against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 40.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": 2030,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p25",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0526,
+     "future_orientation_ratio": 0.0463,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.59,
+     "readability": 34.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 159,
+       "end": 165,
+       "kind": "hedge",
+       "term": "expect"
+      },
+      {
+       "start": 179,
+       "end": 185,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 186,
+       "end": 189,
+       "kind": "qty",
+       "term": "40%"
+      },
+      {
+       "start": 193,
+       "end": 197,
+       "kind": "deadline",
+       "term": "2030"
+      },
+      {
+       "start": 211,
+       "end": 215,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.7,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0032",
+    "claim_text": "We reached the milestone of one terawatt-hour (TWh) of energy sold and we increased EV charge points\uf0ab to around 39,100 globally \u2013 an increase of 35% compared to 2023.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 35.0,
+    "unit": null,
+    "baseline_year": 2023,
+    "target_year": null,
+    "scope": "global",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p25",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.04,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.44,
+     "readability": 42.7,
+     "sentiment": 0.04,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 15,
+       "end": 24,
+       "kind": "positive",
+       "term": "milestone"
+      },
+      {
+       "start": 105,
+       "end": 111,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 145,
+       "end": 148,
+       "kind": "qty",
+       "term": "35%"
+      },
+      {
+       "start": 161,
+       "end": 165,
+       "kind": "baseline",
+       "term": "2023"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.55,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0033",
+    "claim_text": "On aim 1, we are now aiming to cut our operational emissions in half by 2030 (up from 30-35%).",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 35.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p3",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 3,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2075,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 69.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 72,
+       "end": 76,
+       "kind": "deadline",
+       "term": "2030"
+      },
+      {
+       "start": 89,
+       "end": 92,
+       "kind": "qty",
+       "term": "35%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0034",
+    "claim_text": "And on aim 3 (covering the lifecycle emissions for the energy products we sell) we now aim to reduce carbon intensity to net zero by 2050 or sooner \u2013 up from 50% \u2013 and have increased the volume of emissions covered by this aim, which now includes physically traded sales of energy products.",
+    "claim_type": "target",
+    "metric": "carbon_intensity",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p3",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 3,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1033,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 15.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 133,
+       "end": 137,
+       "kind": "deadline",
+       "term": "2050"
+      },
+      {
+       "start": 158,
+       "end": 161,
+       "kind": "qty",
+       "term": "50%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": "behind",
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0035",
+    "claim_text": "1 Net zero operations\uf0ab 2 Net zero production\uf0ab 3 Net zero sales\uf0ab 4 Reducing methane 5 More investment for new energies Be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p8",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0533,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 18.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 0,
+       "end": 1,
+       "kind": "qty",
+       "term": "1"
+      },
+      {
+       "start": 183,
+       "end": 187,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0036",
+    "claim_text": "We are aiming to increase capital expenditure on our low carbon businesses to $4-6 billion each year by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 6.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p22",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 22,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1376,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 45.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 81,
+       "end": 90,
+       "kind": "qty",
+       "term": "6 billion"
+      },
+      {
+       "start": 104,
+       "end": 108,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0037",
+    "claim_text": "Our aim 1 is to be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p24",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 24,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1311,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 57.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "1"
+      },
+      {
+       "start": 81,
+       "end": 85,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0038",
+    "claim_text": "Our aim 3 is to reduce to net zero the carbon intensity of the energy products we sell by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 3.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p26",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 26,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.12,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 59.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "3"
+      },
+      {
+       "start": 90,
+       "end": 94,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0039",
+    "claim_text": "Throughout 2021, these advocates supported a number of progressive climate policy campaigns, including the rEV index campaign, which measures the UK\u2019s progress in transitioning to electric vehicles.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2021,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p32",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 10.2,
+     "sentiment": 0.0741,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 11,
+       "end": 16,
+       "kind": "qty",
+       "term": "2021,"
+      },
+      {
+       "start": 151,
+       "end": 159,
+       "kind": "positive",
+       "term": "progress"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0040",
+    "claim_text": "Throughout 2021, we pushed for constructive engagement on climate policy proposals in the US, with API, the US Chamber of Commerce, the National Association of Manufacturers, and other organizations.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2021,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p33",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 6.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 11,
+       "end": 16,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0041",
+    "claim_text": "Throughout 2021, we reviewed ways in which we can support access to affordable energy and in 2022, we are set to develop and outline an approach to meeting this objective.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2021,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p37",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 45.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 11,
+       "end": 16,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0042",
+    "claim_text": "Throughout 2021, we supported the development of the Energy for a Just Transition collaboration led by Business for Social Responsibility (BSR) and The B Team and are now active participants.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2021,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p37",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 17.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 11,
+       "end": 16,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0043",
+    "claim_text": "The 2021 UN Biodiversity Conference (COP15) Part 1 emphasized the need for action to put biodiversity on a path to recovery by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p45",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 45,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.07,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 30.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 7,
+       "end": 8,
+       "kind": "qty",
+       "term": "1"
+      },
+      {
+       "start": 127,
+       "end": 131,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0044",
+    "claim_text": "Our aim 17 is becoming water positive by 2035.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 17.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2035,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p46",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 46,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1629,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 54.7,
+     "sentiment": 0.1429,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 10,
+       "kind": "qty",
+       "term": "17"
+      },
+      {
+       "start": 29,
+       "end": 37,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 41,
+       "end": 45,
+       "kind": "deadline",
+       "term": "2035"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0045",
+    "claim_text": "By 2030, Castrol aims to reduce its plastic footprint by half, halve the net carbon intensity per litre of its products, and help its commercial customers towards their sustainability goals by saving energy, waste and water.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2030.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p48",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 48,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1057,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 31.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2030,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0046",
+    "claim_text": "Business for Social Responsibility \u2013 We participate in the Energy for a Just Transition collaboration led by Business for Social Responsibility and the B Team, and have supported the initiation and development of the collaboration throughout 2021.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": 2021,
+    "target_year": 2021,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p54",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 54,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": -10.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 242,
+       "end": 246,
+       "kind": "baseline",
+       "term": "2021"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0047",
+    "claim_text": "We have already exceeded our 2025 target of 20% emission reductions against our 2019 baseline.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p24",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 24,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0833,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 25.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 44,
+       "end": 47,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 80,
+       "end": 84,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0048",
+    "claim_text": "Our aim 1 is to be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p24",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 24,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1311,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 57.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "1"
+      },
+      {
+       "start": 81,
+       "end": 85,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0049",
+    "claim_text": "Our destination is unchanged: we are aiming to be net zero for aim 2 by 2050, or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p26",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 26,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2075,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 63.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 67,
+       "end": 68,
+       "kind": "qty",
+       "term": "2"
+      },
+      {
+       "start": 72,
+       "end": 76,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0050",
+    "claim_text": "Our aim 3 is to reduce to net zero the carbon intensity of the energy products we sell by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 3.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p27",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 27,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.12,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 59.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "3"
+      },
+      {
+       "start": 90,
+       "end": 94,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0051",
+    "claim_text": "As we pursue our net zero ambition, we see our annual transition growth investment reaching $6-8 billion in 2025 and are aiming for it to reach $7-9 billion in 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 8.0,
+    "unit": null,
+    "baseline_year": 2025,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p30",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 30,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0769,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 53.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 95,
+       "end": 104,
+       "kind": "qty",
+       "term": "8 billion"
+      },
+      {
+       "start": 108,
+       "end": 112,
+       "kind": "baseline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0052",
+    "claim_text": "We are aiming for a 20% share of global sustainable aviation fuel (SAF) supply by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p37",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1629,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 65.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 20,
+       "end": 23,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 82,
+       "end": 86,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0053",
+    "claim_text": "We set a target to have developed 20GW of renewable energy generating capacity to FID by 2025, with an aim of 50GW by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2025.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p40",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 40,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1564,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 46.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 89,
+       "end": 94,
+       "kind": "qty",
+       "term": "2025,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0054",
+    "claim_text": "Our aim 17 is becoming water positive by 2035.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 17.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2035,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p50",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 50,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1629,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 54.7,
+     "sentiment": 0.1429,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 10,
+       "kind": "qty",
+       "term": "17"
+      },
+      {
+       "start": 29,
+       "end": 37,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 41,
+       "end": 45,
+       "kind": "deadline",
+       "term": "2035"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0055",
+    "claim_text": "We have already exceeded our 2025 target of 20% emission reductions against our 2019 baseline.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p22",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 22,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0833,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 25.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 44,
+       "end": 47,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 80,
+       "end": 84,
+       "kind": "baseline",
+       "term": "2019"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0056",
+    "claim_text": "Our aim 1 is to be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p22",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 22,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1311,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 57.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "1"
+      },
+      {
+       "start": 81,
+       "end": 85,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0057",
+    "claim_text": "The Charter includes aims to achieve net zero operations by or before 2050, and zero routine flaring and near-zero methane emissions by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2050.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p27",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 27,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1152,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 32.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 70,
+       "end": 75,
+       "kind": "qty",
+       "term": "2050,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0058",
+    "claim_text": "Our current business plans see low carbon activity comprising more than 80% of our aim 5 spend by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 80.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p29",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 29,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2075,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 58.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 72,
+       "end": 75,
+       "kind": "qty",
+       "term": "80%"
+      },
+      {
+       "start": 98,
+       "end": 102,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0059",
+    "claim_text": "Throughout 2023 we made a case for action in support of our position on climate with these 10 \u2018partially aligned\u2019 groups.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 10.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2023,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p31",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 31,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 58.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 11,
+       "end": 15,
+       "kind": "deadline",
+       "term": "2023"
+      },
+      {
+       "start": 91,
+       "end": 93,
+       "kind": "qty",
+       "term": "10"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0060",
+    "claim_text": "We also signed a global mobility agreement with Uber to help accelerate their commitment to become a zero-tailpipe emissions mobility platform in the US, Canada and Europe by 2030 and globally by 2040.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": "global",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p33",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1168,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 11.6,
+     "sentiment": 0.0323,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 61,
+       "end": 71,
+       "kind": "positive",
+       "term": "accelerate"
+      },
+      {
+       "start": 175,
+       "end": 179,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0061",
+    "claim_text": "We have set a target to develop 20GW of renewable energy generating capacity to FID by 2025, with an aim of developing 50GW by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2025.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p36",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 36,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1504,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 40.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 87,
+       "end": 92,
+       "kind": "qty",
+       "term": "2025,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0062",
+    "claim_text": "Our aim 17 is becoming water positive by 2035.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 17.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2035,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p48",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 48,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1629,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 54.7,
+     "sentiment": 0.1429,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 10,
+       "kind": "qty",
+       "term": "17"
+      },
+      {
+       "start": 29,
+       "end": 37,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 41,
+       "end": 45,
+       "kind": "deadline",
+       "term": "2035"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0063",
+    "claim_text": "Our aim is to reach net zero by 2050 or sooner for Scope 1 and 2 emissions within bp\u2019s operational controla including by maintaining \u2018near-zero\u2019 methane intensity across our operated producing assets, enabled by supportive government policies.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p4",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 4,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0771,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": -0.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 32,
+       "end": 36,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0064",
+    "claim_text": "As with the bonus scorecard, for 2025-27 we are using an absolute percentage reduction in operational emissions against our 2019 baseline as the basis for measuring progress against our net zero operations aim in our long-term scorecard.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 27.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p13",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 13,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0286,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 11.8,
+     "sentiment": 0.0286,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 38,
+       "end": 40,
+       "kind": "qty",
+       "term": "27"
+      },
+      {
+       "start": 124,
+       "end": 128,
+       "kind": "baseline",
+       "term": "2019"
+      },
+      {
+       "start": 165,
+       "end": 173,
+       "kind": "positive",
+       "term": "progress"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0065",
+    "claim_text": "Our methane intensity target remains 0.20% by the end of 2025.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 0.2,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p19",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1111,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 61.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 37,
+       "end": 42,
+       "kind": "qty",
+       "term": "0.20%"
+      },
+      {
+       "start": 57,
+       "end": 61,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0066",
+    "claim_text": "Net zero sales Our interim target is a 5% reduction by the end of 2025 for the average lifecycle carbon intensity of our sold energy products\uf0ab.",
+    "claim_type": "target",
+    "metric": "carbon_intensity",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p19",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0417,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 34.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 39,
+       "end": 41,
+       "kind": "qty",
+       "term": "5%"
+      },
+      {
+       "start": 66,
+       "end": 70,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": "on_track",
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0067",
+    "claim_text": "Our aim is to reach net zero\uf0ab by 2050 or sooner for Scope 1 and 2 emissions within bp\u2019s operational control (on a CO2e basis), including by maintaining \u2018near-zero\u2019 methane intensity\uf0ab across our operated producing assets, enabled by supportive government policies.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p19",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.07,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 5.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 33,
+       "end": 37,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0068",
+    "claim_text": "Progress towards water positive Our target is to be 20% towards water positive by the end of 2025.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p37",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 53.1,
+     "sentiment": 0.1875,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 0,
+       "end": 8,
+       "kind": "positive",
+       "term": "Progress"
+      },
+      {
+       "start": 23,
+       "end": 31,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 52,
+       "end": 55,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 70,
+       "end": 78,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 93,
+       "end": 97,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0069",
+    "claim_text": "The OGDC aims for net zero operations\uf0ab by 2050, zero routine flaring and near-zero methane emissions by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2050.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p43",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 43,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2075,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 42.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 42,
+       "end": 47,
+       "kind": "qty",
+       "term": "2050,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0070",
+    "claim_text": "Climate-related benchmarks CA100+ In the latest Climate Action 100+ net zero company benchmarkc, published October 2024, our score was unchanged compared with 2023.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 100.0,
+    "unit": null,
+    "baseline_year": 2023,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p47",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 47,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 13.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 29,
+       "end": 32,
+       "kind": "qty",
+       "term": "100"
+      },
+      {
+       "start": 159,
+       "end": 163,
+       "kind": "baseline",
+       "term": "2023"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0071",
+    "claim_text": "Net zero operations bp\u2019s aim to reach net zero operational greenhouse gas (CO2 and methane) emissions by 2050 or sooner, on a gross operational control basis, in accordance with bp\u2019s net zero operations aim, which relates to our reported Scope 1 and 2 emissions.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p49",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 49,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0898,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 15.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 105,
+       "end": 109,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0072",
+    "claim_text": "Our aim is to reach net zero\u00ab by 2050 or sooner for Scope 1 and 2 emissions within bp\u2019s operational control (on a CO2e basis), including by maintaining \u2018near-zero\u2019 methane intensity\u00ab across our operated producing assets, enabled by supportive government policies.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p13",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 13,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.07,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 5.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 33,
+       "end": 37,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0073",
+    "claim_text": "Our target for net zero sales was a reduction in intensity of 5% by the end of 2025.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p17",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 17,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 63.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 62,
+       "end": 64,
+       "kind": "qty",
+       "term": "5%"
+      },
+      {
+       "start": 79,
+       "end": 83,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0074",
+    "claim_text": "Target description To be 20% towards water positive by 2025c.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 20.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p32",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1111,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 47.3,
+     "sentiment": 0.1111,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 25,
+       "end": 28,
+       "kind": "qty",
+       "term": "20%"
+      },
+      {
+       "start": 43,
+       "end": 51,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 55,
+       "end": 59,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0075",
+    "claim_text": "Update We made progress towards this target and, by the end of 2025, over half of in-scope packaging was recyclable.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2025.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p34",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 34,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0526,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 58.4,
+     "sentiment": 0.0526,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 15,
+       "end": 23,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 63,
+       "end": 68,
+       "kind": "qty",
+       "term": "2025,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0076",
+    "claim_text": "We disposed of 323kt of hazardous and nonhazardous waste from our operated businesses in 2025, a 17% increase from 2024 (2024 276kt) and we recycled or recovered 213kt of waste, a 14% decrease from 2024 (2024 247kt).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 17.0,
+    "unit": null,
+    "baseline_year": 2024,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p35",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 35,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.4,
+     "readability": 35.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 97,
+       "end": 100,
+       "kind": "qty",
+       "term": "17%"
+      },
+      {
+       "start": 115,
+       "end": 119,
+       "kind": "baseline",
+       "term": "2024"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0077",
+    "claim_text": "In the UK, we have made several recent announcements, including our plan to build a hydrogen production facility at Teesside in the North East of England, intended to deliver up to 1GW of blue hydrogen by 2030, and the HyGreen Teesside project targeting 60MWe of green hydrogen production by 2025.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2030.0,
+    "unit": null,
+    "baseline_year": 2025,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p29",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 29,
+    "features": {
+     "vague_word_ratio": 0.0208,
+     "hedging_ratio": 0.0417,
+     "future_orientation_ratio": 0.1033,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.35,
+     "readability": 17.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 24,
+       "end": 31,
+       "kind": "vague",
+       "term": "several"
+      },
+      {
+       "start": 175,
+       "end": 180,
+       "kind": "hedge",
+       "term": "up to"
+      },
+      {
+       "start": 205,
+       "end": 210,
+       "kind": "qty",
+       "term": "2030,"
+      },
+      {
+       "start": 292,
+       "end": 296,
+       "kind": "baseline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0078",
+    "claim_text": "By the end of 2024 across Continental Europe, we offered recyclable coffee cups with less than 5% polyethylene content with plans to introduce further recyclable packaging, such as moulded fibre lids, in 2025. y Continued to reduce food waste through a partnership with Too Good To Go in Europe, with more than one million Too Good To Go magic bags sold across our retail network.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2024,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p39",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 39,
+    "features": {
+     "vague_word_ratio": 0.0161,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0161,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.336,
+     "readability": 47.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 14,
+       "end": 18,
+       "kind": "deadline",
+       "term": "2024"
+      },
+      {
+       "start": 95,
+       "end": 97,
+       "kind": "qty",
+       "term": "5%"
+      },
+      {
+       "start": 212,
+       "end": 221,
+       "kind": "vague",
+       "term": "Continued"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0079",
+    "claim_text": "We have retained our net zero ambition and long term GHG reduction aims \u2013 to achieve net zero across our operations and sales by 2050 or sooner \u2013 which means we intend to phase out expenditure in unabated carbon intensive assetsc and products by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p26",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 26,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0233,
+     "future_orientation_ratio": 0.1363,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.307,
+     "readability": 23.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 129,
+       "end": 133,
+       "kind": "deadline",
+       "term": "2050"
+      },
+      {
+       "start": 161,
+       "end": 167,
+       "kind": "hedge",
+       "term": "intend"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0080",
+    "claim_text": "Since 2019 our estimated Scope 3 emissions covered by aim 2 have reduced by 15% which is at the upper end of our revised 2025 target of a 10-15% reduction against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 15.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": null,
+    "scope": "Scope 3",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p26",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 26,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0741,
+     "future_orientation_ratio": 0.0741,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.304,
+     "readability": 38.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 6,
+       "end": 10,
+       "kind": "baseline",
+       "term": "2019"
+      },
+      {
+       "start": 15,
+       "end": 24,
+       "kind": "hedge",
+       "term": "estimated"
+      },
+      {
+       "start": 76,
+       "end": 79,
+       "kind": "qty",
+       "term": "15%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.55,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0081",
+    "claim_text": "From 2018-24 the plant achieved a 69% reduction in freshwater use, thanks to several key actions, including the installation of digital water meters, reuse of treated wastewater for on-site irrigation, installation of a rooftop rainwater harvesting system, and awareness campaigns to engage employees.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 69.0,
+    "unit": null,
+    "baseline_year": 2018,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p32",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0244,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0244,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.302,
+     "readability": -4.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 5,
+       "end": 9,
+       "kind": "baseline",
+       "term": "2018"
+      },
+      {
+       "start": 34,
+       "end": 37,
+       "kind": "qty",
+       "term": "69%"
+      },
+      {
+       "start": 77,
+       "end": 84,
+       "kind": "vague",
+       "term": "several"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0082",
+    "claim_text": "We continued growing our originated portfolio of verified carbon credits throughout 2022.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": 2022,
+    "target_year": 2022,
+    "scope": null,
+    "has_third_party_verification": true,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p51",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 51,
+    "features": {
+     "vague_word_ratio": 0.0909,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": true,
+     "specificity_score": 0.3,
+     "readability": 3.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 12,
+       "kind": "vague",
+       "term": "continued"
+      },
+      {
+       "start": 49,
+       "end": 57,
+       "kind": "verify",
+       "term": "verified"
+      },
+      {
+       "start": 84,
+       "end": 88,
+       "kind": "baseline",
+       "term": "2022"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "false_labels",
+      "rationale": "uses certification-style wording ('verified') without naming the certifying body or standard",
+      "severity": 0.45,
+      "evidence_needed": "the name of the certifying organisation and the standard applied"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0083",
+    "claim_text": "Since 2019 our estimated Scope 3 emissions covered by aim 2 have reduced by 13%, which is around the mid-range of our 2025 target of a 10-15% reduction against our 2019 baseline.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 13.0,
+    "unit": null,
+    "baseline_year": 2019,
+    "target_year": null,
+    "scope": "Scope 3",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p23",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 23,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.12,
+     "future_orientation_ratio": 0.08,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.3,
+     "readability": 39.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 6,
+       "end": 10,
+       "kind": "baseline",
+       "term": "2019"
+      },
+      {
+       "start": 15,
+       "end": 24,
+       "kind": "hedge",
+       "term": "estimated"
+      },
+      {
+       "start": 76,
+       "end": 79,
+       "kind": "qty",
+       "term": "13%"
+      },
+      {
+       "start": 90,
+       "end": 96,
+       "kind": "hedge",
+       "term": "around"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.55,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0084",
+    "claim_text": "We seek to advance these areas through our aims 1-5 in support of our ambition to be a net zero company by 2050, or sooner, and aims 6-10 which are focused on activities that can help the world get to net zero.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p20",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0256,
+     "future_orientation_ratio": 0.1226,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.298,
+     "readability": 50.1,
+     "sentiment": 0.0256,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 7,
+       "kind": "hedge",
+       "term": "seek"
+      },
+      {
+       "start": 11,
+       "end": 18,
+       "kind": "positive",
+       "term": "advance"
+      },
+      {
+       "start": 48,
+       "end": 49,
+       "kind": "qty",
+       "term": "1"
+      },
+      {
+       "start": 107,
+       "end": 111,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0085",
+    "claim_text": "There is potential to store up to 23 million tonnes of carbon dioxide a year in the Southern North Sea, by 2035. y Remediation work on the former Redcar steelworks commenced, with plans to locate Net Zero Teesside Power there.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 23.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2035,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p33",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0263,
+     "future_orientation_ratio": 0.0463,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.295,
+     "readability": 60.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 28,
+       "end": 33,
+       "kind": "hedge",
+       "term": "up to"
+      },
+      {
+       "start": 34,
+       "end": 44,
+       "kind": "qty",
+       "term": "23 million"
+      },
+      {
+       "start": 107,
+       "end": 111,
+       "kind": "deadline",
+       "term": "2035"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0086",
+    "claim_text": "By 2030 we aim to have developed 50GW of renewable generating capacitya \u2013 broadly enough to meet the power needs of 36 million peopleb, including exploring ways to make clean energy accessible to those who need it mostc.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 36.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p37",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0286,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0771,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.286,
+     "readability": 28.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 7,
+       "kind": "deadline",
+       "term": "2030"
+      },
+      {
+       "start": 74,
+       "end": 81,
+       "kind": "vague",
+       "term": "broadly"
+      },
+      {
+       "start": 116,
+       "end": 126,
+       "kind": "qty",
+       "term": "36 million"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0087",
+    "claim_text": "By 2030, we aim to have developed 50GW of renewable generating capacitya \u2013 broadly enough to meet the power needs of 36 million peopleb, including exploring ways to make clean energy accessible to those who need it most.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 36.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p40",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 40,
+    "features": {
+     "vague_word_ratio": 0.0286,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0771,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.286,
+     "readability": 28.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 7,
+       "kind": "deadline",
+       "term": "2030"
+      },
+      {
+       "start": 75,
+       "end": 82,
+       "kind": "vague",
+       "term": "broadly"
+      },
+      {
+       "start": 117,
+       "end": 127,
+       "kind": "qty",
+       "term": "36 million"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0088",
+    "claim_text": "By 2030 we aim to have developed 50GW of renewable generating capacitya \u2013 broadly enough to meet the power needs of 36 million peopleb, including exploring ways to make clean energy accessible to those who need it most.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 36.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p36",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 36,
+    "features": {
+     "vague_word_ratio": 0.0286,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0771,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.286,
+     "readability": 28.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 7,
+       "kind": "deadline",
+       "term": "2030"
+      },
+      {
+       "start": 74,
+       "end": 81,
+       "kind": "vague",
+       "term": "broadly"
+      },
+      {
+       "start": 116,
+       "end": 126,
+       "kind": "qty",
+       "term": "36 million"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0089",
+    "claim_text": "In 2021, our total air emissions reduced by 38% compared with 2020, largely due to reductions in flaring at some of our operating facilities, including US onshore operations.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 38.0,
+    "unit": null,
+    "baseline_year": 2020,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p18",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 18,
+    "features": {
+     "vague_word_ratio": 0.04,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.24,
+     "readability": 15.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 44,
+       "end": 47,
+       "kind": "qty",
+       "term": "38%"
+      },
+      {
+       "start": 62,
+       "end": 66,
+       "kind": "baseline",
+       "term": "2020"
+      },
+      {
+       "start": 68,
+       "end": 75,
+       "kind": "vague",
+       "term": "largely"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0090",
+    "claim_text": "Throughout 2021, we continued working to reduce our operational methane emissions \u2013 from upgrades in our current operations to advancing the design and use of new technology.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2021,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p27",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 27,
+    "features": {
+     "vague_word_ratio": 0.04,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.24,
+     "readability": 15.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 11,
+       "end": 16,
+       "kind": "qty",
+       "term": "2021,"
+      },
+      {
+       "start": 20,
+       "end": 29,
+       "kind": "vague",
+       "term": "continued"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.5,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0091",
+    "claim_text": "It means that by doubling down on five transition growth engines where we have real strengths \u2013 bioenergy, convenience, EV charging, renewables and hydrogen \u2013 we can grow as a company and at the same time advance towards our aim of net zero on the products we sell (aim 3).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 3.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p3",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 3,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0426,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 36.7,
+     "sentiment": 0.0213,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 205,
+       "end": 212,
+       "kind": "positive",
+       "term": "advance"
+      },
+      {
+       "start": 270,
+       "end": 271,
+       "kind": "qty",
+       "term": "3"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0092",
+    "claim_text": "In 2020, we set out our net zero ambition and a new strategy to become an integrated energy company.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2020.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p6",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 6,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0556,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 42.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2020,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0093",
+    "claim_text": "Reduce to net zero the carbon intensity of the energy products we sell by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p8",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0825,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 53.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 74,
+       "end": 78,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0094",
+    "claim_text": "6 Advocating 7 Incentivizing employees 8 Aligning associations 9 Transparency leader 10 Clean cities and corporates More actively advocate for policies that support net zero, including carbon pricing.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 6.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p8",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": -26.2,
+     "sentiment": 0.0435,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 0,
+       "end": 1,
+       "kind": "qty",
+       "term": "6"
+      },
+      {
+       "start": 78,
+       "end": 84,
+       "kind": "positive",
+       "term": "leader"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0095",
+    "claim_text": "Develop enough clean energy to benefit more than 36 million people.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 36.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p8",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 44.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 49,
+       "end": 59,
+       "kind": "qty",
+       "term": "36 million"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0096",
+    "claim_text": "Become water positive by 2035.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2035,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p8",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.02,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 33.6,
+     "sentiment": 0.25,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 13,
+       "end": 21,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 25,
+       "end": 29,
+       "kind": "deadline",
+       "term": "2035"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0097",
+    "claim_text": "In 2021, survey activity was carried out in an international protected area as part of the UK Net Zero Teesside project.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p18",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 18,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 38.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0098",
+    "claim_text": "Our ambition is to be a net zero company by 2050 or sooner, and to help the world get to net zero.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p21",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 21,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1152,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 72.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 44,
+       "end": 48,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0099",
+    "claim_text": "In 2021, bp joined forces with five other operators in the North Sea and with the Net Zero Technology Centre to develop a method for offshore methane measurements using autonomous aircraft.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p27",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 27,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 26.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0100",
+    "claim_text": "This is a critical step toward helping the US reach net zero by 2050 or sooner and we look forward to continuing to engage with the Agency as it develops methane rules.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p28",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 28,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0523,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 47.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 64,
+       "end": 68,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0101",
+    "claim_text": "As we continue towards our net zero ambition, we target increasing our low carbon investment to $3-4 billion per year in 2025, and aim to increase it to at least $5 billion per year in 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 4.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p28",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 28,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0938,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 50.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 99,
+       "end": 108,
+       "kind": "qty",
+       "term": "4 billion"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0102",
+    "claim_text": "We launched our five aims to help the world get to net zero in February 2020, alongside five aims to get bp to net zero.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2020.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p30",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 30,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0833,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 73.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 72,
+       "end": 77,
+       "kind": "qty",
+       "term": "2020,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0103",
+    "claim_text": "Our aim 6 is to more actively advocate for policies that support net zero, including carbon pricing.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 6.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p31",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 31,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 37.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "6"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0104",
+    "claim_text": "We have responded to multiple consultations on these proposals, for example, on the ramp-up of production of sustainable aviation fuel and increasing the overall share of renewables to at least 40%.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 40.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p31",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 31,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 26.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 194,
+       "end": 197,
+       "kind": "qty",
+       "term": "40%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0105",
+    "claim_text": "Our aim 7 is to incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 7.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p32",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0909,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 46.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "7"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0106",
+    "claim_text": "In 2021, we launched our new digital training course \u2018Net Zero + Me\u2019, which we developed to show how employees across bp contribute to our ambition.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p32",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0417,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 48.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0107",
+    "claim_text": "Our aim 10 is to launch a new team to create integrated clean energy and mobility solutions.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 10.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p34",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 34,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 53.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 10,
+       "kind": "qty",
+       "term": "10"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0108",
+    "claim_text": "We also progressed our strategic partnership with Qantas to supply sustainable aviation fuel to the airline from 2022 for selected flights from London to Australia departing from London\u2019s Heathrow Airport.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": 2022,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p34",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 34,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 24.1,
+     "sentiment": 0.0333,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 113,
+       "end": 117,
+       "kind": "baseline",
+       "term": "2022"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0109",
+    "claim_text": "Our aim 11 is to develop enough clean energy to benefit more than 36 million people.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 36.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p37",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0714,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 59.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 66,
+       "end": 76,
+       "kind": "qty",
+       "term": "36 million"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0110",
+    "claim_text": "We have set two objectives for this aim: 50GW renewable energy equivalent developed to final investment decision (FID) by 2030; and programmes to support access and affordability.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p37",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0969,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 8.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 122,
+       "end": 126,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0111",
+    "claim_text": "We set a target of 20GW of renewable energy generating capacity to be developed to FID by 2025 with an aim of 50GW by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p37",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 37,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1504,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 47.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 90,
+       "end": 94,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0112",
+    "claim_text": "Our onshore business in Oman, which completed a detailed Water Value Improvement process in 2017/18, is already undertaking water assessments and others are due to start soon, including our Castellon refinery in Spain.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 18.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p46",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 46,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 10.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 97,
+       "end": 100,
+       "kind": "qty",
+       "term": "18,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0113",
+    "claim_text": "In November 2021, Finite Carbon launched a forest carbon offset programme in Canada that offers forestland owners and First Nations an opportunity to manage their lands to remove and store carbon dioxide, using a methodology approved by the American Carbon Registry.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p47",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 47,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 3.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 12,
+       "end": 17,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "false_labels",
+      "rationale": "uses certification-style wording ('approved') without naming the certifying body or standard",
+      "severity": 0.6,
+      "evidence_needed": "the name of the certifying organisation and the standard applied"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0114",
+    "claim_text": "The workshop aimed to help integrate carbon into business processes and management systems across our operations, and included a focus on net zero carbon culture.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p50",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 50,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.04,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 15.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0115",
+    "claim_text": "And in 2021, more than 1,500 sustainability awards were made through our energize recognition platform, celebrating progress in our three focus areas: net zero, people and planet.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p50",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 50,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.04,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 29.2,
+     "sentiment": 0.04,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 7,
+       "end": 12,
+       "kind": "qty",
+       "term": "2021,"
+      },
+      {
+       "start": 116,
+       "end": 124,
+       "kind": "positive",
+       "term": "progress"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0116",
+    "claim_text": "In 2021, CMI published its final Net-Zero America report, which outlines five distinct technological pathways for the US to decarbonize its energy system.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p53",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 53,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 11.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0117",
+    "claim_text": "In 2021, Princeton kicked off a new project to investigate how land-based climate solutions can be deployed to maximize carbon storage on land while simultaneously maintaining global biodiversity, clean energy and food security.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p53",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 53,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 2.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0118",
+    "claim_text": "Science-Based Targets initiative \u2013 We engaged with the Science-Based Targets initiative (SBTi) as they developed their Net Zero Standard.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": true,
+    "verifier_name": null,
+    "chunk_id": "2021_sustainability_report.pdf#p54",
+    "doc_name": "2021_sustainability_report.pdf",
+    "publish_year": 2021,
+    "page": 54,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1111,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": true,
+     "specificity_score": 0.2,
+     "readability": 5.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 0,
+       "end": 21,
+       "kind": "verify",
+       "term": "Science-Based Targets"
+      },
+      {
+       "start": 55,
+       "end": 76,
+       "kind": "verify",
+       "term": "Science-Based Targets"
+      },
+      {
+       "start": 89,
+       "end": 93,
+       "kind": "verify",
+       "term": "SBTi"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0119",
+    "claim_text": "Following our update on strategic progress in February 2023, we made an adjustment to our aim 2 (net zero production).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2023.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p6",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 6,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0556,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 42.9,
+     "sentiment": 0.0556,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 34,
+       "end": 42,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 55,
+       "end": 60,
+       "kind": "qty",
+       "term": "2023,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0120",
+    "claim_text": "We also made progress in our aims 6-10 to help the world get to net zero, including advocating for policies that support net zero.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 6.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p6",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 6,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0435,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 54.8,
+     "sentiment": 0.0435,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 13,
+       "end": 21,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 34,
+       "end": 35,
+       "kind": "qty",
+       "term": "6"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0121",
+    "claim_text": "Since launching our net zero aims in 2020 and our people and planet aims in 2021, we have been in action to deliver them.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p8",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 8,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1364,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 76.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 76,
+       "end": 81,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0122",
+    "claim_text": "We strengthened our development offer throughout 2022 as we evolved to meet the demands of the energy transition.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2022,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p14",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 14,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 35.3,
+     "sentiment": 0.0588,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 49,
+       "end": 53,
+       "kind": "deadline",
+       "term": "2022"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0123",
+    "claim_text": "Since 2019 bpx\u2019s Permian methane intensity has reduced from over 4% to under 1% and its flaring intensity has dropped from 16% to less than 0.5% in 2022.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 4.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p18",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 18,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 59.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 65,
+       "end": 67,
+       "kind": "qty",
+       "term": "4%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0124",
+    "claim_text": "Net zero across our entire operations by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p19",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1311,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 47.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 41,
+       "end": 45,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0125",
+    "claim_text": "Net zero across the energy products we sell by 2050 or sooner.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p19",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1109,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 64.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 47,
+       "end": 51,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0126",
+    "claim_text": "Since we launched our 10 net zero aims in 2020, we have been working to deliver them.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 10.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p20",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0667,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 78.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 22,
+       "end": 24,
+       "kind": "qty",
+       "term": "10"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0127",
+    "claim_text": "Our destination is unchanged \u2013 to be a net zero company by 2050 or sooner, and to help the world get to net zeroa.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p20",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0655,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 61.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 59,
+       "end": 63,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0128",
+    "claim_text": "We are aiming to be net zero across our operations, production and sales.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p20",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0769,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 50.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0129",
+    "claim_text": "Most of this spend related to investments in biogas, EV charging, offshore wind, power and convenience. i 2025 target has been updated from $3-4 billion (in low carbon activity investment\uf0ab) to $6-8 billion in transition growth investment and 2030 aim has increased from ~$5 billion to $7-9 billion respectively. j Average carbon intensity of our sold energy products.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 4.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p21",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 21,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0385,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 36.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 143,
+       "end": 152,
+       "kind": "qty",
+       "term": "4 billion"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0130",
+    "claim_text": "Our ambition and aims enable us to make a positive contribution to the world meeting the Paris goals and getting to net zero, including in its pursuit of efforts to limit global average temperature rise to 1.5\u00b0C above preindustrial levels.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.5,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p22",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 22,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.075,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 44.8,
+     "sentiment": 0.025,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 42,
+       "end": 50,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 206,
+       "end": 209,
+       "kind": "qty",
+       "term": "1.5"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0131",
+    "claim_text": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing that production.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p25",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 42.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0132",
+    "claim_text": "We are sometimes asked how our aim 3 relates to the Scope 1, 2 and 3 based approach we use for aim 1 (net zero operations) and aim 2 (net zero production).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p28",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 28,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1154,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 47.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0133",
+    "claim_text": "We continue to progress our work under the World Bank\u2019s Zero Routine Flaring Initiative by 2030 (and by 2025 in our bpx energy operations).",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p29",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 29,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0635,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 43.7,
+     "sentiment": 0.0435,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 15,
+       "end": 23,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 91,
+       "end": 95,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0134",
+    "claim_text": "We have expanded the sustainability measures in our long-term incentive plan scorecard for group leaders, including linking performance to progress on our aim 1 (net zero operations).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p32",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0769,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 14.5,
+     "sentiment": 0.0769,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 139,
+       "end": 147,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 159,
+       "end": 160,
+       "kind": "qty",
+       "term": "1"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0135",
+    "claim_text": "Our aim 6 is to more actively advocate for policies that support net zero, including carbon pricing.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 6.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p33",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 37.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "6"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0136",
+    "claim_text": "The Climate Action 100+ Net Zero Company Benchmark assessed our Climate Policy Engagement as \u2018Aligned\u2019 \u2013 on the basis that we take up Paris Agreement-aligned climate lobbying positions.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 100.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p33",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 8.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 19,
+       "end": 22,
+       "kind": "qty",
+       "term": "100"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0137",
+    "claim_text": "Our aim 7 is to incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 7.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p33",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0909,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 46.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "7"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0138",
+    "claim_text": "This included explicitly linking performance to progress on our net zero operations aim (aim 1).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p33",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1429,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 29.5,
+     "sentiment": 0.0714,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 48,
+       "end": 56,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 93,
+       "end": 94,
+       "kind": "qty",
+       "term": "1"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0139",
+    "claim_text": "We pushed for constructive engagement on climate policy proposals throughout 2022.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2022,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p34",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 34,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 10.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 77,
+       "end": 81,
+       "kind": "deadline",
+       "term": "2022"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0140",
+    "claim_text": "Our aim 10 is to provide integrated clean energy and mobility solutions.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 10.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p36",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 36,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0909,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 26.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 10,
+       "kind": "qty",
+       "term": "10"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0141",
+    "claim_text": "Our aim 11 is to develop enough clean energy to benefit more than 36 million people.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 36.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p40",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 40,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0714,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 59.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 66,
+       "end": 76,
+       "kind": "qty",
+       "term": "36 million"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0142",
+    "claim_text": "By the end of 2022 we had brought 5.8GW to FID, with 37.2GW in our renewables pipeline\uf0ab.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2022,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p40",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 40,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 90.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 14,
+       "end": 18,
+       "kind": "deadline",
+       "term": "2022"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0143",
+    "claim_text": "The projects will play an important role in supporting the UK government\u2019s target to produce sufficient offshore wind energy to power every UK home by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p40",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 40,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1354,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 40.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 151,
+       "end": 155,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0144",
+    "claim_text": "Silvassa has achieved a 66% reduction in water use and is investigating the potential of other water stewardship activities, including rainwater harvesting and managed aquifer recharge.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 66.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p50",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 50,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": -8.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 24,
+       "end": 27,
+       "kind": "qty",
+       "term": "66%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0145",
+    "claim_text": "We built on the foundational work we completed in 2021, by finalizing our internal framework for circularity.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p52",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 52,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 21.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 50,
+       "end": 55,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0146",
+    "claim_text": "The product is being packed in 100% post-consumer recycled bottles, made from reprocessed plastic waste instead of virgin plastic.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 100.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p52",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 52,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 33.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 31,
+       "end": 35,
+       "kind": "qty",
+       "term": "100%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0147",
+    "claim_text": "This roll-out builds on Castrol\u2019s global launch of lighter packaging in 2021, which reduced its plastics use by more than 2,000 tonnes year-on-year.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p52",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 52,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 53.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 72,
+       "end": 77,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0148",
+    "claim_text": "Castrol is also exploring the potential use of alternative materials as part of its aim to halve its plastic footprint by 2030a.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p52",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 52,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0909,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 49.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 122,
+       "end": 126,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0149",
+    "claim_text": "To help achieve our aim 19, unlock circularity, which includes a 2025 recycled or recyclable packaging target for our European retail business, we started sourcing single-wall rather than double-wall coffee cups for use in our Wild Bean retail outlets in Europe.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 19.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p53",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 53,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0513,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 17.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 24,
+       "end": 27,
+       "kind": "qty",
+       "term": "19,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0150",
+    "claim_text": "Princeton\u2019s Net-Zero America report, funded in part by CMI and published in 2021, was updated in 2022 for Australia, to include analysis off technological pathways for decarbonization.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p57",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 57,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 1.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 76,
+       "end": 81,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0151",
+    "claim_text": "In 2022, ICAM kicked off major strategic research. projects investigating catalysis for green hydrogen and catalysis for CO2 conversion.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2022.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p57",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 57,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 14.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2022,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0152",
+    "claim_text": "Since launching our net zero aims in 2020 and our people and planet aims in 2021, we have been in action to deliver them.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p7",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 7,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1364,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 76.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 76,
+       "end": 81,
+       "kind": "qty",
+       "term": "2021,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0153",
+    "claim_text": "Our destination is unchanged \u2014 to be a net zero\uf0ab company by 2050 or sooner, and to help the world get to net zero.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p17",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 17,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0655,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 61.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 60,
+       "end": 64,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0154",
+    "claim_text": "We launched our five aims to get bp to net zero in February 2020, alongside five aims to help the world get to net zero.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2020.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p18",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 18,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0833,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 73.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 60,
+       "end": 65,
+       "kind": "qty",
+       "term": "2020,"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0155",
+    "claim_text": "We have worked consistently to deliver our 10 net zero aims since their launch in 2020.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 10.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p19",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0714,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 65.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 43,
+       "end": 45,
+       "kind": "qty",
+       "term": "10"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0156",
+    "claim_text": "Our ambition is to be a net zero\uf0ab company by 2050 or sooner, and to help the world get to net zeroa.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p19",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1152,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 72.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 45,
+       "end": 49,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0157",
+    "claim_text": "We are aiming to be net zero across our operations, production and sales.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p19",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0769,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 50.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0158",
+    "claim_text": "When we refer to \u2018consistency with Paris\u2019 we consider this to mean consistency with the world meeting the temperature goal set out in Articles 2.1(a) and 4.1 of the Paris Agreement on Climate Change\uf0ab.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2.1,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p20",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0303,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 59.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 143,
+       "end": 146,
+       "kind": "qty",
+       "term": "2.1"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0159",
+    "claim_text": "Portfolio optimization Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is partly linked to reducing that production.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "upstream",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p23",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 23,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 21.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0160",
+    "claim_text": "Our methodology is aligned with the Oil and Gas Climate Initiative\u2019s (OGCI). b Methane intensity is currently calculated using our existing methodology and, while it reflects progress in reducing methane emissions, will not directly correlate with progress towards delivering the 2025 target under aim 4. c The 0.20% methane intensity target is based on our new measurement approach.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 0.2,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p26",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 26,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0714,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 24.9,
+     "sentiment": 0.0357,
+     "negated": true,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 175,
+       "end": 183,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 248,
+       "end": 256,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 311,
+       "end": 316,
+       "kind": "qty",
+       "term": "0.20%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0161",
+    "claim_text": "We are part of a group of more than 50 companies that have signed the Oil & Gas Decarbonization Charter, launched at COP28 in December 2023.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p27",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 27,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 54.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 36,
+       "end": 38,
+       "kind": "qty",
+       "term": "50"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0162",
+    "claim_text": "Our aim 6 is to more actively advocate for policies that support net zero\uf0ab, including carbon pricing.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 6.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p30",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 30,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 37.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "6"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0163",
+    "claim_text": "Our aim 7 is to incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 7.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p30",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 30,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0909,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 46.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 9,
+       "kind": "qty",
+       "term": "7"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0164",
+    "claim_text": "This measure covers the same Scope 1 and 2 emissions reported under aim 1 (net zero operations)\uf0ab.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p31",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 31,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0714,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 41.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0165",
+    "claim_text": "Our aim 10 is to provide integrated clean energy and mobility solutions.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 10.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p33",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0909,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 26.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 8,
+       "end": 10,
+       "kind": "qty",
+       "term": "10"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0166",
+    "claim_text": "Our aim 11 is to develop enough clean energy to benefit more than 36 million people.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 36.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p36",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 36,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0714,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 59.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 66,
+       "end": 76,
+       "kind": "qty",
+       "term": "36 million"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     },
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0167",
+    "claim_text": "We are making progress towards our target for all bp own-brand food packaging in Europe to be reusable, recyclable or biodegradable by 2025.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p52",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 52,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0655,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 46.1,
+     "sentiment": 0.0455,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 14,
+       "end": 22,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 135,
+       "end": 139,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0168",
+    "claim_text": "For example, our procurement activities support the delivery of aim 19 \u2013 unlock circularity and aim 1 \u2013 net zero operations\uf0ab, because we source goods and services that support efforts towards our operational decarbonization.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 19.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p53",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 53,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0667,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": -6.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 68,
+       "end": 70,
+       "kind": "qty",
+       "term": "19"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0169",
+    "claim_text": "Breakout sessions provided an update to investors on safety and delivery against our net zero aims, in particular aim 1\u2013 net zero operations\uf0ab and aim 4 \u2013 reducing methane.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p56",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 56,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1154,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 17.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 118,
+       "end": 119,
+       "kind": "qty",
+       "term": "1"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0170",
+    "claim_text": "Our aim is to reduce to net zero the average lifecycle carbon intensity of the energy products\uf0ab we sell by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p4",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 4,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0806,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 11.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 107,
+       "end": 111,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0171",
+    "claim_text": "At Redcar & Cleveland College, 41 students have now enrolled in the bp-supported Clean Energy Technician Scholarship programme.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 41.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p6",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 6,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 21.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 31,
+       "end": 33,
+       "kind": "qty",
+       "term": "41"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0172",
+    "claim_text": "This measure covers the same Scope 1 and 2 emissions reported as part of our net zero operations\uf0ab aim.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p12",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 12,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0588,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 55.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0173",
+    "claim_text": "Our ambition is to be a net zero company by 2050 or sooner, and to help the world get to net zero.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p18",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 18,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1152,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 72.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 44,
+       "end": 48,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0174",
+    "claim_text": "We have two net zero aims: for our operations and for the energy products we sell.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p19",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0625,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 69.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0175",
+    "claim_text": "Our aim is to reduce to net zero the average lifecycle carbon intensity of the energy products\uf0ab we sell by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p19",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0806,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 11.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 107,
+       "end": 111,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0176",
+    "claim_text": "Our net zero operations aim combines our previous Scope 1 and 2 aim and methane aim.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p20",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 20,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2143,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 59.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0177",
+    "claim_text": "We remain on track to reach zero routine flaring by 2030 in line with our aim under the World Bank\u2019s Zero Routine Flaring Initiative. bpx energy has achieved zero routine flaring, ahead of its 2025 goal.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p21",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 21,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1057,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 58.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 52,
+       "end": 56,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0178",
+    "claim_text": "Energy included under net zero sales for 2019 (our baseline year) has been restated to 7.9EJ and the associated lifecycle emissions to 671MtCO2e.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 671.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p23",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 23,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 44.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 135,
+       "end": 144,
+       "kind": "qty",
+       "term": "671MtCO2e"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0179",
+    "claim_text": "In working towards our net zero sales aim, we recognize that benefits arise over the longer term \u2013 for example, as offshore wind projects that we have invested in through this decade come into operation after 2030; or as utilization rates for EV charge points increase in future as EV uptake grows.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": 2030,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p25",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.04,
+     "quantification_present": false,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 20.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 209,
+       "end": 213,
+       "kind": "baseline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0180",
+    "claim_text": "In September 2024 with our 50:50 joint venture partner Iberdrola, we took the final investment decision to develop a 25MW green hydrogen project that aims to support emissions reductions in our refinery operations in Castell\u00f3n, Spain.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p25",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 25,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0286,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 16.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 27,
+       "end": 29,
+       "kind": "qty",
+       "term": "50"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0181",
+    "claim_text": "The retirement of our aim 11, \u2018more clean energy\u2019, is in line with our strategy reset in February 2025.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 11.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p29",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 29,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0588,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 55.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 26,
+       "end": 29,
+       "kind": "qty",
+       "term": "11,"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0182",
+    "claim_text": "This is a joint venture\uf0ab with Aberdeen City Council to develop a green hydrogen\uf0ab production and distribution facility in the city, which will help stimulate skills development and new supply chains in the region.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "supply chain",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p29",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 29,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0294,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 25.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0183",
+    "claim_text": "They will support a range of renewable and clean energy solutions, including solar home systems, mini and metro electricity grids, clean cooking solutions and enabling technologies such as e-mobility, energy storage and management solutions.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": true,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p33",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0294,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": true,
+     "specificity_score": 0.2,
+     "readability": -4.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0184",
+    "claim_text": "The project has also reduced water costs to the community by 80%, helping to alleviate residents\u2019 financial burdens and enhance their economic stability.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 80.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p38",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 38,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 11.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 61,
+       "end": 64,
+       "kind": "qty",
+       "term": "80%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0185",
+    "claim_text": "Climate Action 100+ (CA100+) \u2013 We maintained our score in the 2024 CA100+ Net Zero Company Benchmark.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 100.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p41",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 41,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 59.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 15,
+       "end": 18,
+       "kind": "qty",
+       "term": "100"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0186",
+    "claim_text": "Net zero References to global net zero in the phrase, \u2018to help the world get to net zero\u2019, means achieving \u2018...a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases...on the basis of equity, and in the context of sustainable development and efforts to eradicate poverty\u2019, as set out in Article 4(1) of the Paris Agreement.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 4.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p49",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 49,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 55.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 335,
+       "end": 336,
+       "kind": "qty",
+       "term": "4"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0187",
+    "claim_text": "Biodiversity \u2013 We achieved all three targets for 2025, with all new in-scope projects implementing net positive impact plans; biodiversity enhancement plans in place at 100% of our major operating sites in sensitive areas; and funding provided for eight restoration projects in the UK, Trinidad and Tobago, Brazil, Azerbaijan, Georgia, T\u00fcrkiye and the US.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 100.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p3",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 3,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0577,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": -5.4,
+     "sentiment": 0.0192,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 103,
+       "end": 111,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 169,
+       "end": 173,
+       "kind": "qty",
+       "term": "100%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0188",
+    "claim_text": "Our ambition is to be a net zero\u00ab company by 2050 or sooner, and to help the world get to net zero.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p12",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 12,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1152,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 72.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 45,
+       "end": 49,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0189",
+    "claim_text": "We have two net zero aims: for our operations and the energy products\u00ab we sell.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p13",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 13,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0667,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 67.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0190",
+    "claim_text": "Our aim is to reduce to net zero the average lifecycle carbon intensity\u00ab of the energy products we sell by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p13",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 13,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0806,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 11.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 107,
+       "end": 111,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0191",
+    "claim_text": "The percentage change is calculated from the source data instead of the rounded carbon intensity number. e We see abatement as including netting by means of offsets as necessary, in order to achieve net zero for the value chains in which we participate, in line with our ambition and aims.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "value chain",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p13",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 13,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.04,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 42.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0192",
+    "claim_text": "We also achieved our 2025 target for methane intensity of 0.20%.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 0.2,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p14",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 14,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1111,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 42.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 58,
+       "end": 63,
+       "kind": "qty",
+       "term": "0.20%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0193",
+    "claim_text": "This included the green hydrogen\u00ab project adjacent to our refinery in Lingen, Germany, which will help decarbonize our own operations.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p15",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 15,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.05,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 21.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0194",
+    "claim_text": "Our aim is to reduce to net zero the average lifecycle carbon intensity\u00ab of the energy products we sella by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p17",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 17,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0806,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 9.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 108,
+       "end": 112,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0195",
+    "claim_text": "We have exceeded our 2025 target to reduce carbon intensity by 5%.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p17",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 17,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 44.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 63,
+       "end": 65,
+       "kind": "qty",
+       "term": "5%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0196",
+    "claim_text": "Energy included under our net zero sales aim was 7.9EJ and the associated lifecycle emissions were 621MtCO2e.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 621.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p17",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 17,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0556,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 47.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 99,
+       "end": 108,
+       "kind": "qty",
+       "term": "621MtCO2e"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0197",
+    "claim_text": "We continue to increase the volumes of sustainable aviation fuel (SAF) we sell and have delivered SAF to over 60 locations across 22 countries in support of customer demand and our obligations to meet UK and EU SAF mandates.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 60.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p19",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 25.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 110,
+       "end": 112,
+       "kind": "qty",
+       "term": "60"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0198",
+    "claim_text": "In January 2026 we launched Etlas, a 50:50 joint venture\u00ab (JV) with Corteva Inc, to develop crop-based feedstocks for biofuels such as sustainable aviation fuel and renewable diesel.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p19",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 30.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 37,
+       "end": 39,
+       "kind": "qty",
+       "term": "50"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0199",
+    "claim_text": "In 2025 we focused on delivering two green hydrogen\u00ab projects sanctioned in 2024: our 50:50 JV with Iberdrola at our Castell\u00f3n refinery in Spain, and next to our refinery in Lingen, Germany.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p19",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 26.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 86,
+       "end": 88,
+       "kind": "qty",
+       "term": "50"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0200",
+    "claim_text": "This measure covers Scope 1 and 2 emissions based on our net zero operations\u00ab aim.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p23",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 23,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0769,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 50.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0201",
+    "claim_text": "For 2026 progress towards our aim to achieve net zero operations by 2050 or sooner will continue to be rewarded through our long-term performance share plans rather than the annual bonus.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2050,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p23",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 23,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1579,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 40.3,
+     "sentiment": 0.0345,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 9,
+       "end": 17,
+       "kind": "positive",
+       "term": "progress"
+      },
+      {
+       "start": 68,
+       "end": 72,
+       "kind": "deadline",
+       "term": "2050"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0202",
+    "claim_text": "We also track the development of metrics and targets, including the work of the Nature Positive Initiative and the Science Based Targets Network for Nature.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": true,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p31",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 31,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.08,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": true,
+     "specificity_score": 0.2,
+     "readability": 35.9,
+     "sentiment": 0.04,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 87,
+       "end": 95,
+       "kind": "positive",
+       "term": "Positive"
+      },
+      {
+       "start": 115,
+       "end": 136,
+       "kind": "verify",
+       "term": "Science Based Targets"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0203",
+    "claim_text": "Since 2020 we have reduced freshwater withdrawals (excluding once through cooling water) by 15% and freshwater consumption by 15% against the baselineb.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 15.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p32",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 22.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 92,
+       "end": 95,
+       "kind": "qty",
+       "term": "15%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0204",
+    "claim_text": "Update In 2025 we achieved 26% towards water positive, primarily with contributions from catchment collaboration projects (10.95Mm\u00b3) and operational water efficiency initiatives (4.48Mm\u00b3).",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 26.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p32",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 32,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": -9.8,
+     "sentiment": 0.0476,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 27,
+       "end": 30,
+       "kind": "qty",
+       "term": "26%"
+      },
+      {
+       "start": 45,
+       "end": 53,
+       "kind": "positive",
+       "term": "positive"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0205",
+    "claim_text": "Thanks to advanced irrigation systems and new water storage facilities the project delivered more than 1.04Mm3 of clean water to irrigate 85 hectares of land planted with fruit trees provided by the government, early in 2025.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 85.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p33",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 33,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0294,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 40.3,
+     "sentiment": 0.0294,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 138,
+       "end": 149,
+       "kind": "qty",
+       "term": "85 hectares"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0206",
+    "claim_text": "Target description All bp-owned food brand packaging in Europe to be reusable, recyclable or biodegradable by 2025.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2025,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p34",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 34,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0825,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 37.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 110,
+       "end": 114,
+       "kind": "deadline",
+       "term": "2025"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0207",
+    "claim_text": "For example, in some markets we now offer recyclable cups (with less than 5% polyethylene content).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 5.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p34",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 34,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 56.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 74,
+       "end": 76,
+       "kind": "qty",
+       "term": "5%"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0208",
+    "claim_text": "In the latest Climate Action 100+ net zero company benchmarkb, published October 2025, we were assessed to be aligned on four indicators covering our ambition, long-term goals, climate governance and TCFD disclosures.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 100.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p43",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 43,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0667,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 10.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 29,
+       "end": 32,
+       "kind": "qty",
+       "term": "100"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0209",
+    "claim_text": "References to global net zero in the phrase, \u2018to help the world get to net zero\u2019, means achieving \u2018...a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases...on the basis of equity, and in the context of sustainable development and efforts to eradicate poverty\u2019, as set out in Article 4(1) of the Paris Agreement.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 4.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p44",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 44,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 55.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 326,
+       "end": 327,
+       "kind": "qty",
+       "term": "4"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0210",
+    "claim_text": "In addition to operating 50 RNG and landfill gas-to-energy facilities across the US, producing around 6,000boed of RNG today, it has a development pipeline of more than 80 projects with the potential to produce around five times more RNG by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 50.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p30",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 30,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0526,
+     "future_orientation_ratio": 0.0463,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.19,
+     "readability": 19.1,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 25,
+       "end": 27,
+       "kind": "qty",
+       "term": "50"
+      },
+      {
+       "start": 95,
+       "end": 101,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 211,
+       "end": 217,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 241,
+       "end": 245,
+       "kind": "deadline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0211",
+    "claim_text": "It could generate up to 860MW of low carbon power. y H2Teesside aims to be one of the UK\u2019s largest blue hydrogen\uf0ab production facilities, targeting 1GW of hydrogen production by 2030.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": 2030,
+    "target_year": 2030,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p36",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 36,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0625,
+     "future_orientation_ratio": 0.1138,
+     "quantification_present": false,
+     "baseline_present": true,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.15,
+     "readability": 55.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "hedge",
+       "term": "could"
+      },
+      {
+       "start": 18,
+       "end": 23,
+       "kind": "hedge",
+       "term": "up to"
+      },
+      {
+       "start": 177,
+       "end": 181,
+       "kind": "baseline",
+       "term": "2030"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.15; relies on vague/hedging vocabulary (ratio 0.062)",
+      "severity": 0.71,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0212",
+    "claim_text": "We disposed of around 280kt of hazardous and non-hazardous waste from our operated businesses in 2024, a 17% increase from 2023 (2023 240kt) and we recycled or recovered around 250kt of waste, a 15% increase from 2023.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 17.0,
+    "unit": null,
+    "baseline_year": 2023,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p15",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 15,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0645,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.142,
+     "readability": 30.7,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 15,
+       "end": 21,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 105,
+       "end": 108,
+       "kind": "qty",
+       "term": "17%"
+      },
+      {
+       "start": 123,
+       "end": 127,
+       "kind": "baseline",
+       "term": "2023"
+      },
+      {
+       "start": 170,
+       "end": 176,
+       "kind": "hedge",
+       "term": "around"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0213",
+    "claim_text": "References to net zero for bp in the context of our ambition and net zero operations and net zero sales aims mean achieving a balance between (a) the relevant Scope 1 and 2 emissions (for net zero operations) and product lifecycle emissions (for net zero sales) and (b) the aggregate of applicable deductions from qualifying activities such as sinks under our methodology at the applicable time.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2024_sustainability_report.pdf#p49",
+    "doc_name": "2024_sustainability_report.pdf",
+    "publish_year": 2024,
+    "page": 49,
+    "features": {
+     "vague_word_ratio": 0.0156,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0312,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.138,
+     "readability": -8.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 150,
+       "end": 158,
+       "kind": "vague",
+       "term": "relevant"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.14; relies on vague/hedging vocabulary (ratio 0.016)",
+      "severity": 0.49,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     },
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.14; relies on vague/hedging vocabulary (ratio 0.016)",
+      "severity": 0.49,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0214",
+    "claim_text": "References to net zero for bp in the context of our ambition and net zero operations and net zero sales aims mean achieving a balance between (a) the relevant Scope 1 and 2 emissions (for net zero operations) and product lifecycle emissions (for net zero sales) and (b) the aggregate of applicable deductions from qualifying activities such as sinks under our methodology at the applicable time.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p44",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 44,
+    "features": {
+     "vague_word_ratio": 0.0156,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0312,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.138,
+     "readability": -8.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 150,
+       "end": 158,
+       "kind": "vague",
+       "term": "relevant"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.14; relies on vague/hedging vocabulary (ratio 0.016)",
+      "severity": 0.49,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     },
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.14; relies on vague/hedging vocabulary (ratio 0.016)",
+      "severity": 0.49,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0215",
+    "claim_text": "There is potential to store up to 23 million tonnes of CO2 emissions a year by 2035.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 23.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2035,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p36",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 36,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0667,
+     "future_orientation_ratio": 0.02,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.133,
+     "readability": 73.2,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 28,
+       "end": 33,
+       "kind": "hedge",
+       "term": "up to"
+      },
+      {
+       "start": 34,
+       "end": 44,
+       "kind": "qty",
+       "term": "23 million"
+      },
+      {
+       "start": 79,
+       "end": 83,
+       "kind": "deadline",
+       "term": "2035"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0216",
+    "claim_text": "Waste data for 2023 We disposed of around 240kt of hazardous and non-hazardous waste in 2023, a 21% decrease from 2022 (2022 305kt) and we recycled or recovered around 250kt of waste, a 4% increase from 2022.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 21.0,
+    "unit": null,
+    "baseline_year": 2022,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p52",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 52,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0667,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.133,
+     "readability": 43.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 35,
+       "end": 41,
+       "kind": "hedge",
+       "term": "around"
+      },
+      {
+       "start": 96,
+       "end": 99,
+       "kind": "qty",
+       "term": "21%"
+      },
+      {
+       "start": 114,
+       "end": 118,
+       "kind": "baseline",
+       "term": "2022"
+      },
+      {
+       "start": 161,
+       "end": 167,
+       "kind": "hedge",
+       "term": "around"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0217",
+    "claim_text": "By setting a path that enables us to make a positive contribution, working to build and participate in many of the new net zero value chains the world will need, and by decarbonizing our own operations, our ambition and aims support the world\u2019s progress towards the goals of the Paris Agreement.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations; value chain",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2023_sustainability_report.pdf#p19",
+    "doc_name": "2023_sustainability_report.pdf",
+    "publish_year": 2023,
+    "page": 19,
+    "features": {
+     "vague_word_ratio": 0.0192,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0769,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.123,
+     "readability": 20.6,
+     "sentiment": 0.0385,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 44,
+       "end": 52,
+       "kind": "positive",
+       "term": "positive"
+      },
+      {
+       "start": 103,
+       "end": 107,
+       "kind": "vague",
+       "term": "many"
+      },
+      {
+       "start": 245,
+       "end": 253,
+       "kind": "positive",
+       "term": "progress"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.12; relies on vague/hedging vocabulary (ratio 0.019)",
+      "severity": 0.52,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0218",
+    "claim_text": "Examples of actions supporting delivery of our net zero operations aim As different activities drive a reduction in the absolute emissions from our operations, the chart below shows an outlook of the potential relative scale of contribution of several specific activities towards our 2030 aim, compared to each other.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "own operations",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p15",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 15,
+    "features": {
+     "vague_word_ratio": 0.0208,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0417,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.117,
+     "readability": -7.6,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 244,
+       "end": 251,
+       "kind": "vague",
+       "term": "several"
+      }
+     ],
+     "report_assured": true
+    },
+    "sins": [
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.12; relies on vague/hedging vocabulary (ratio 0.021)",
+      "severity": 0.54,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "bp-claim-0219",
+    "claim_text": "As a result, the proportion of capital expenditure that counts towards our aim 5 2025 target has changed from $3-4 billion in low carbon activity investment, to transition growth investment of $6-8 billion, and our 2030 aim has changed from around $5 billion in low carbon investment, to $7-9 billion of transition growth investment.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 4.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2022_sustainability_report.pdf#p30",
+    "doc_name": "2022_sustainability_report.pdf",
+    "publish_year": 2022,
+    "page": 30,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0213,
+     "future_orientation_ratio": 0.0638,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.115,
+     "readability": 13.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 113,
+       "end": 122,
+       "kind": "qty",
+       "term": "4 billion"
+      },
+      {
+       "start": 241,
+       "end": 247,
+       "kind": "hedge",
+       "term": "around"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   }
+  ],
+  "evidence": [],
+  "drift_events": [
+   {
+    "drift_id": "bp-drift-000",
+    "year": 2019,
+    "type": "metric_restated",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "old": "79",
+    "new": "84",
+    "magnitude_pct": 6.33,
+    "description": "avg_carbon_intensity_sold_energy for 2019 was published as 79 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 84 gCO2e/MJ in 2024_sustainability_report.pdf (+6.3%)",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2024_sustainability_report.pdf",
+    "page": 22,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-001",
+    "year": 2020,
+    "type": "metric_restated",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "old": "77",
+    "new": "81",
+    "magnitude_pct": 5.19,
+    "description": "avg_carbon_intensity_sold_energy for 2020 was published as 77 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 81 gCO2e/MJ in 2024_sustainability_report.pdf (+5.2%)",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2024_sustainability_report.pdf",
+    "page": 22,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-002",
+    "year": 2021,
+    "type": "metric_restated",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "old": "78",
+    "new": "81",
+    "magnitude_pct": 3.85,
+    "description": "avg_carbon_intensity_sold_energy for 2021 was published as 78 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 81 gCO2e/MJ in 2024_sustainability_report.pdf (+3.8%)",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2024_sustainability_report.pdf",
+    "page": 22,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-003",
+    "year": 2022,
+    "type": "metric_restated",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "old": "77",
+    "new": "81",
+    "magnitude_pct": 5.19,
+    "description": "avg_carbon_intensity_sold_energy for 2022 was published as 77 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 81 gCO2e/MJ in 2024_sustainability_report.pdf (+5.2%)",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2024_sustainability_report.pdf",
+    "page": 22,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-004",
+    "year": 2023,
+    "type": "metric_restated",
+    "canonical_metric": "avg_carbon_intensity_sold_energy",
+    "old": "77",
+    "new": "80",
+    "magnitude_pct": 3.9,
+    "description": "avg_carbon_intensity_sold_energy for 2023 was published as 77 gCO2e/MJ in 2023_sustainability_report.pdf, then restated to 80 gCO2e/MJ in 2024_sustainability_report.pdf (+3.9%)",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2024_sustainability_report.pdf",
+    "page": 22,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-005",
+    "year": 2025,
+    "type": "commitment_dropped",
+    "canonical_metric": "target_scope_3_reduction",
+    "old": "10",
+    "new": null,
+    "magnitude_pct": -100.0,
+    "description": "the 2025 target for scope_3_reduction (10%) was last published in 2023_sustainability_report.pdf and no longer appears as of the 2025 report, with its deadline still in the future",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-006",
+    "year": 2030,
+    "type": "commitment_dropped",
+    "canonical_metric": "target_scope_3_reduction",
+    "old": "20",
+    "new": null,
+    "magnitude_pct": -100.0,
+    "description": "the 2030 target for scope_3_reduction (20%) was last published in 2023_sustainability_report.pdf and no longer appears as of the 2025 report, with its deadline still in the future",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-007",
+    "year": 2030,
+    "type": "target_value_changed",
+    "canonical_metric": "target_carbon_intensity_reduction",
+    "old": "15",
+    "new": "8",
+    "magnitude_pct": -46.67,
+    "description": "the 2030 target for carbon_intensity_reduction was published as 15% in 2023_sustainability_report.pdf, then cut to 8% in 2024_sustainability_report.pdf (-46.7%)",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2024_sustainability_report.pdf",
+    "page": 27,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-drift-008",
+    "year": 2030,
+    "type": "target_value_changed",
+    "canonical_metric": "target_scope_1_2_reduction",
+    "old": "50",
+    "new": "45",
+    "magnitude_pct": -10.0,
+    "description": "the 2030 target for scope_1_2_reduction was published as 50% in 2023_sustainability_report.pdf, then cut to 45% in 2024_sustainability_report.pdf (-10.0%)",
+    "evidence_chunk_ids": [],
+    "old_source": "bp/2023_sustainability_report.pdf",
+    "new_source": "bp/2024_sustainability_report.pdf",
+    "page": 27,
+    "match_basis": null,
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-lang-000",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensity of our operations.",
+    "new": "Install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensity of our operations.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "scope=own operations",
+     "deadline=2023",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-001",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 7 is to incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "new": "Our aim 7 is to incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-002",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 3 is to reduce to net zero the carbon intensity of the energy products we sell by 2050 or sooner.",
+    "new": "Our aim 3 is to reduce to net zero the carbon intensity of the energy products we sell by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "metric_family=carbon_intensity",
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-003",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 6 is to more actively advocate for policies that support net zero, including carbon pricing.",
+    "new": "Our aim 6 is to more actively advocate for policies that support net zero, including carbon pricing.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-004",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We will also support the development of scalable markets for certified natural climate solutions that help the world reduce deforestation, get to net zero and deliver environmental and social benefits.",
+    "new": "We will also support the development of scalable markets for certified natural climate solutions that help the world reduce deforestation, get to net zero and deliver environmental and social benefits.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-005",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "These emissions were 54.4MtCO2e in 2019.",
+    "new": "These emissions were 54.4MtCO2e in 2019.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-006",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 11 is to develop enough clean energy to benefit more than 36 million people.",
+    "new": "Our aim 11 is to develop enough clean energy to benefit more than 36 million people.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-007",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 17 is becoming water positive by 2035.",
+    "new": "Our aim 17 is becoming water positive by 2035.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2035",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-008",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 1 is to be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "new": "Our aim 1 is to be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-009",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "And we will work to influence our joint ventures to set their own methane intensity targets of 0.2%.",
+    "new": "And we will work to influence our joint ventures to set their own methane intensity targets of 0.2%.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-010",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 4 is to install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensitya of our operations.",
+    "new": "Our aim 4 is to install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensitya of our operations.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "scope=own operations",
+     "deadline=2023",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-011",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "new": "Incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-012",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We have actively participated in the development of carbon and net zero standards and benchmarks.",
+    "new": "We have actively participated in the development of carbon and net zero standards and benchmarks.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-013",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Be net zero on an absolute basis across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "new": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "scope=upstream",
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-014",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Operational control boundary broadly covers bp-operated assetsa. bp equity share covers 100% of emissions from subsidiaries and the percentage of emissions equivalent to our share of joint arrangements and associatesd.",
+    "new": "Operational control boundary broadly covers bp-operated assetsa. bp equity share covers 100% of emissions from subsidiaries and the percentage of emissions equivalent to our share of joint arrangements and associatesb.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-015",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Embedded across our strategy is our sustainability frame, which sets out our aims for getting to net zero, improving people\u2019s lives and caring for our planet.",
+    "new": "Sustainability Embedded across our strategy is our sustainability frame, which sets out our aims for getting to net zero, improving people\u2019s lives and caring for our planet.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-016",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "To help our employees deliver our strategy and sustainability aims, we are educating them about the importance of net zero, incentivizing them to become advocates and providing the support they need to do so.",
+    "new": "To help our employees contribute to the delivery of our strategy and sustainability aims, we are educating them about the importance of net zero, incentivizing them to become advocates and providing the support they need to do so.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-017",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "By 2030 we aim to have developed 50GW of renewable generating capacitya \u2013 broadly enough to meet the power needs of 36 million peopleb, including exploring ways to make clean energy accessible to those who need it mostc.",
+    "new": "By 2030, we aim to have developed 50GW of renewable generating capacitya \u2013 broadly enough to meet the power needs of 36 million peopleb, including exploring ways to make clean energy accessible to those who need it most.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2030",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-018",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We set a target of 20GW of renewable energy generating capacity to be developed to FID by 2025 with an aim of 50GW by 2030.",
+    "new": "We set a target to have developed 20GW of renewable energy generating capacity to FID by 2025, with an aim of 50GW by 2030.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "metric_family=renewable_share",
+     "deadline=2025",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-019",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We\u2019re targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "new": "We are targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2025",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-020",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing oil and gas production, which we expect to reduce by around 40% by 2030, against our 2019 baseline.",
+    "new": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing that production.",
+    "magnitude_pct": null,
+    "description": "[quantity_dropped] quantity '40%' no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "scope=upstream"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-021",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing oil and gas production, which we expect to reduce by around 40% by 2030, against our 2019 baseline.",
+    "new": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing that production.",
+    "magnitude_pct": null,
+    "description": "[deadline_dropped] target year 2030 no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "scope=upstream"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-022",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing oil and gas production, which we expect to reduce by around 40% by 2030, against our 2019 baseline.",
+    "new": "Becoming net zero on an absolute basis across the carbon in our upstream oil and gas production is in part linked to reducing that production.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.59 -> 0.20 (-0.39)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "scope=upstream"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-023",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production\uf0ab by 2050 or sooner.",
+    "new": "Net zero across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'hedged' -> 'none'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "scope=upstream",
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-024",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production\uf0ab by 2050 or sooner.",
+    "new": "Net zero across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[quantity_dropped] quantity '2' no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "scope=upstream",
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-025",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Based on anticipated changes in the areas WRI marks as water stressed, this number may increase to 12 by 2040, assuming a business-asusual scenario with no portfolio changes.",
+    "new": "Based on anticipated changes in the areas WRI identifies as water stressed, this number is set to increase by 2030 (assuming a business-as-usual scenario with no portfolio changes).",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'hedged' -> 'none'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-026",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Based on anticipated changes in the areas WRI marks as water stressed, this number may increase to 12 by 2040, assuming a business-asusual scenario with no portfolio changes.",
+    "new": "Based on anticipated changes in the areas WRI identifies as water stressed, this number is set to increase by 2030 (assuming a business-as-usual scenario with no portfolio changes).",
+    "magnitude_pct": null,
+    "description": "[quantity_dropped] quantity '12' no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-027",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our ambition is to be a net zero company by 2050 or sooner, and to help the world get to net zero.",
+    "new": "Our destination is unchanged \u2013 to be a net zero company by 2050 or sooner, and to help the world get to net zeroa.",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'hedged' -> 'none'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-028",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "For 2030 we are now aiming for a 1520% reduction in the lifecycle carbon intensity of these products against the 2019 baseline.",
+    "new": "For 2030 we are aiming for a 15-20% reduction in the lifecycle carbon intensity of these products (previously >15%).",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.40 -> 0.20 (-0.20)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "metric_family=carbon_intensity",
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-029",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Since 2019 estimated Scope 3 emissions have reduced by 16%.",
+    "new": "Since 2019 our estimated Scope 3 emissions covered by aim 2 have reduced by 15% which is at the upper end of our revised 2025 target of a 10-15% reduction against our 2019 baseline.",
+    "magnitude_pct": null,
+    "description": "[achievement_reverted_to_aspiration] previously reported as achieved, now framed as an aim",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "slots",
+    "matched_slots": [
+     "metric_family=scope_3",
+     "scope=Scope 3"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-030",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Throughout 2021, we pushed for constructive engagement on climate policy proposals in the US, with API, the US Chamber of Commerce, the National Association of Manufacturers, and other organizations.",
+    "new": "We pushed for constructive engagement on climate policy proposals throughout 2022.",
+    "magnitude_pct": null,
+    "description": "[quantity_dropped] quantity '2021,' no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline~2021/2022",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-031",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Throughout 2021, we pushed for constructive engagement on climate policy proposals in the US, with API, the US Chamber of Commerce, the National Association of Manufacturers, and other organizations.",
+    "new": "We pushed for constructive engagement on climate policy proposals throughout 2022.",
+    "magnitude_pct": null,
+    "description": "[deadline_pushed] target year moved 2021 -> 2022",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline~2021/2022",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-032",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Throughout 2021, we pushed for constructive engagement on climate policy proposals in the US, with API, the US Chamber of Commerce, the National Association of Manufacturers, and other organizations.",
+    "new": "We pushed for constructive engagement on climate policy proposals throughout 2022.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.40 -> 0.20 (-0.20)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline~2021/2022",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-033",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "6 Advocating 7 Incentivizing employees 8 Aligning associations 9 Transparency leader 10 Clean cities and corporates More actively advocate for policies that support net zero, including carbon pricing.",
+    "new": "More actively advocate for policies that support net zero, including carbon pricing.",
+    "magnitude_pct": null,
+    "description": "[quantity_dropped] quantity '6' no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-034",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "6 Advocating 7 Incentivizing employees 8 Aligning associations 9 Transparency leader 10 Clean cities and corporates More actively advocate for policies that support net zero, including carbon pricing.",
+    "new": "More actively advocate for policies that support net zero, including carbon pricing.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.20 -> 0.00 (-0.20)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-035",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "1 Net zero operations\uf0ab 2 Net zero production\uf0ab 3 Net zero sales\uf0ab 4 Reducing methane 5 More investment for new energies Be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "new": "Net zero across our entire operations by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[quantity_dropped] quantity '1' no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-036",
+    "year": 2022,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "1 Net zero operations\uf0ab 2 Net zero production\uf0ab 3 Net zero sales\uf0ab 4 Reducing methane 5 More investment for new energies Be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "new": "Net zero across our entire operations by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.40 -> 0.20 (-0.20)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2021_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-037",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "In the future, any corporate advertising will be to push for progressive climate policy, communicate our net zero ambition or support delivery of our strategy, invite ideas, or build collaborations.",
+    "new": "In the future, any corporate advertising will be to push for progressive climate policy, communicate our net zero ambition or support delivery of our strategy, invite ideas, or build collaborations.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-038",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our voice is one among many, but we believe everyone needs to work together to achieve net zero.",
+    "new": "Our voice is one among many, but we believe everyone needs to work together to achieve net zero.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-039",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 7 is to incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "new": "Our aim 7 is to incentivize our global workforce to deliver on our aims and mobilize them to become advocates for net zero.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-040",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Since launching our net zero aims in 2020 and our people and planet aims in 2021, we have been in action to deliver them.",
+    "new": "Since launching our net zero aims in 2020 and our people and planet aims in 2021, we have been in action to deliver them.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-041",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We are targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "new": "We are targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2025",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-042",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "new": "Our aim 2 is to be net zero on an absolute basis across the carbon in our upstream oil and gas production by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "scope=upstream",
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-043",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 10 is to provide integrated clean energy and mobility solutions.",
+    "new": "Our aim 10 is to provide integrated clean energy and mobility solutions.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-044",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 17 is becoming water positive by 2035.",
+    "new": "Our aim 17 is becoming water positive by 2035.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2035",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-045",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We believe that our net zero ambition and aims, taken together, set out a path for bp that is consistent with the goals of the Paris Agreement.",
+    "new": "We believe that our net zero ambition and aims, taken together, set out a path for bp that is consistent with the goals of the Paris Agreement.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-046",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We are aiming to be net zero across our operations, production and sales.",
+    "new": "We are aiming to be net zero across our operations, production and sales.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "scope=own operations",
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-047",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 1 is to be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "new": "Our aim 1 is to be net zero across our entire operations on an absolute basis by 2050 or sooner.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-048",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We have actively participated in the development of carbon and net zero standards and benchmarks.",
+    "new": "We have actively participated in the development of carbon and net zero standards and benchmarks.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-049",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We also plan to increase the use of blue and green hydrogen\uf0ab at our refineries, reducing the emissions associated with the use of natural gas and grey hydrogen.",
+    "new": "We also plan to increase the use of blue and green hydrogen\uf0ab at our refineries, reducing the emissions associated with the use of natural gas and grey hydrogen.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-050",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We have already exceeded our 2025 target of 20% emission reductions against our 2019 baseline.",
+    "new": "We have already exceeded our 2025 target of 20% emission reductions against our 2019 baseline.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=achievement"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-051",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 11 is to develop enough clean energy to benefit more than 36 million people.",
+    "new": "Our aim 11 is to develop enough clean energy to benefit more than 36 million people.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-052",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We will also support the development of scalable markets for certified natural climate solutions that help the world reduce deforestation, get to net zero and deliver environmental and social benefits.",
+    "new": "We will also support the development of scalable markets for certified natural climate solutions that help the world reduce deforestation, get to net zero\uf0ab and deliver environmental and social benefits.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-053",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "These CQC projects are designed to support several UN Sustainable Development Goals, including improved health, gender equality and affordable and clean energy.",
+    "new": "CQC projects are designed to support several UN Sustainable Development Goals, including improved health, gender equality and affordable and clean energy.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-054",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "By 2030, we aim to have developed 50GW of renewable generating capacitya \u2013 broadly enough to meet the power needs of 36 million peopleb, including exploring ways to make clean energy accessible to those who need it most.",
+    "new": "By 2030 we aim to have developed 50GW of renewable generating capacitya \u2013 broadly enough to meet the power needs of 36 million peopleb, including exploring ways to make clean energy accessible to those who need it most.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2030",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-055",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensity of our operations.",
+    "new": "Our aim 4 is to install methane measurement at all our existing major oil and gas processing sites by 2023, publish the data, and then drive a 50% reduction in methane intensity\uf0ab of our operations.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "scope=own operations",
+     "deadline=2023",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-056",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Alongside some of our peers, we participated in a pilot of the new Net Zero Standard for Oil & Gas developed by the Institutional Investors Group for Climate Change.",
+    "new": "Alongside some of our peers, we participated in the new Net Zero Standard for Oil & Gas developed by the Institutional Investors Group for Climate Change.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-057",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "And we will work to influence our joint ventures to set their own methane intensity targets of 0.2%.",
+    "new": "And we will work to influence our joint ventures\uf0ab to set their own methane intensity targets of 0.2%.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-058",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim 6 is to more actively advocate for policies that support net zero, including carbon pricing.",
+    "new": "Our aim 6 is to more actively advocate for policies that support net zero\uf0ab, including carbon pricing.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-059",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our combined Scope 1 and 2 emissions, covered by aim 1 were 31.9MtCO2e \u2013 a decrease of 41% from our 2019 baseline of 54.4MtCO2e.",
+    "new": "We continued on our path towards our operational emissions reduction target in 2023, although compared with 2022 (31.9MtCO2e), Scope 1 and 2 emissions remained broadly flat.",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'hedged' -> 'none'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "slots",
+    "matched_slots": [
+     "metric_family=scope_1",
+     "scope=Scope 1",
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-060",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our combined Scope 1 and 2 emissions, covered by aim 1 were 31.9MtCO2e \u2013 a decrease of 41% from our 2019 baseline of 54.4MtCO2e.",
+    "new": "We continued on our path towards our operational emissions reduction target in 2023, although compared with 2022 (31.9MtCO2e), Scope 1 and 2 emissions remained broadly flat.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.60 -> 0.30 (-0.30)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "slots",
+    "matched_slots": [
+     "metric_family=scope_1",
+     "scope=Scope 1",
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-061",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Scope 2 (indirect) emissions decreased by 0.9MtCO2e, to 1.5MtCO2e, a 38% reduction compared with 2021.",
+    "new": "They should not be taken to represent specific expectations of actual impacts of actions driving delivery. c Scope 2 emissions on a market basis. d Operational control data comprises 100% of emissions from activities operated by bp, going beyond the Ipieca guidelines by including emissions from cert",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.60 -> 0.32 (-0.28)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "slots",
+    "matched_slots": [
+     "metric_family=scope_2",
+     "scope=Scope 2",
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-062",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We are aiming for a 20% share of global sustainable aviation fuel (SAF) supply by 2030.",
+    "new": "We are aiming to be a leading supplier of sustainable aviation fuel (SAF).",
+    "magnitude_pct": null,
+    "description": "[quantity_dropped] quantity '20%' no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-lang-063",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We are aiming for a 20% share of global sustainable aviation fuel (SAF) supply by 2030.",
+    "new": "We are aiming to be a leading supplier of sustainable aviation fuel (SAF).",
+    "magnitude_pct": null,
+    "description": "[deadline_dropped] target year 2030 no longer stated",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-lang-064",
+    "year": 2023,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We are aiming for a 20% share of global sustainable aviation fuel (SAF) supply by 2030.",
+    "new": "We are aiming to be a leading supplier of sustainable aviation fuel (SAF).",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.40 -> 0.00 (-0.40)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2022_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-lang-065",
+    "year": 2024,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Low carbon activity capital expenditure In 2023 low carbon activity investment\uf0ab, a subset of our total transition growth investment, accounted for 67% of our total aim 5 investment.",
+    "new": "Low carbon activity capital expenditure In 2024 low carbon activity investment\uf0ab, a subset of our total transition growth investment, accounted for 80% of our total investment.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-066",
+    "year": 2024,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Low carbon activity capital expenditure In 2023 low carbon activity investment\uf0ab, a subset of our total transition growth investment, accounted for 67% of our total aim 5 investment.",
+    "new": "Low carbon activity capital expenditure In 2024 low carbon activity investment\uf0ab, a subset of our total transition growth investment, accounted for 80% of our total investment.",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'hedged' -> 'none'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-067",
+    "year": 2024,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "In 2023 our Scope 1 (direct) emissions, covered by aim 1, were 31.1MtCO2e \u2013 an overall increase from 30.4MtCO2e in 2022.",
+    "new": "Compared with 2023 (32.1MtCO2e), Scope 1 and 2 emissions increased in 2024 due to growth in our portfolio, project start ups and operational issues at Tangguh, Indonesia.",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'hedged' -> 'none'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "slots",
+    "matched_slots": [
+     "metric_family=scope_1",
+     "scope=Scope 1",
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-068",
+    "year": 2024,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "We are targeting a 20% reduction in our aim 1 operational emissions by 2025 and will aim for a 50% reduction by 2030 against our 2019 baseline.",
+    "new": "We are targeting a 20% reduction in our operational emissions by the end of 2025 and aiming for a 45-50% reduction by the end of 2030 against our 2019 baseline.",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'firm' -> 'hedged'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2025",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-069",
+    "year": 2024,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "In 2022 we acquired Archaea Energy, which continued its growth throughout 2023.",
+    "new": "Our biogas operation, Archaea Energy, continued its growth throughout 2024.",
+    "magnitude_pct": null,
+    "description": "[deadline_pushed] target year moved 2023 -> 2024",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2023_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline~2023/2024",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-070",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Any opportunities identified are screened through existing business processes and plans that support our net zero ambition.",
+    "new": "Any opportunities identified are screened through existing business processes and plans that support our net zero ambition.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-071",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Any interim target or aim in respect of bp\u2019s net zero sales aim is defined in terms of reductions in the carbon intensity of the energy products we sell (in grams CO2e/MJ) relative to the baseline year of 2019.",
+    "new": "Any interim target or aim in respect of bp\u2019s net zero sales aim is defined in terms of reductions in the carbon intensity of the energy products we sell (in grams CO2e/MJ) relative to the baseline year of 2019.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "metric_family=carbon_intensity",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-072",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "References to net zero for bp in the context of our ambition and net zero operations and net zero sales aims mean achieving a balance between (a) the relevant Scope 1 and 2 emissions (for net zero operations) and product lifecycle emissions (for net zero sales) and (b) the aggregate of applicable de",
+    "new": "References to net zero for bp in the context of our ambition and net zero operations and net zero sales aims mean achieving a balance between (a) the relevant Scope 1 and 2 emissions (for net zero operations) and product lifecycle emissions (for net zero sales) and (b) the aggregate of applicable de",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "metric_family=scope_1",
+     "scope=Scope 1",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-073",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Any interim target or aim in respect of bp\u2019s net zero operations aim is defined in terms of absolute reductions relative to the baseline year of 2019.",
+    "new": "Any interim target or aim in respect of bp\u2019s net zero operations aim is defined in terms of absolute reductions relative to the baseline year of 2019.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-074",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Net zero References to global net zero in the phrase, \u2018to help the world get to net zero\u2019, means achieving \u2018...a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases...on the basis of equity, and in the context of sustainable development and efforts to eradica",
+    "new": "References to global net zero in the phrase, \u2018to help the world get to net zero\u2019, means achieving \u2018...a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases...on the basis of equity, and in the context of sustainable development and efforts to eradicate povert",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-075",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim is to reduce to net zero the average lifecycle carbon intensity of the energy products\uf0ab we sell by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "new": "Our aim is to reduce to net zero the average lifecycle carbon intensity\u00ab of the energy products we sell by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "metric_family=carbon_intensity",
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-076",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Sold energy products For the purposes of bp\u2019s net zero sales aim, sold energy products\uf0ab represent sales by a bp group subsidiary, joint operation or bp equity accounted entity (EAE).",
+    "new": "For the purposes of bp\u2019s net zero sales aim, sold energy products represent sales by a bp group subsidiary, joint operation or bp equity accounted entity (EAE).",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-077",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our ambition is to be a net zero company by 2050 or sooner, and to help the world get to net zero.",
+    "new": "Our ambition is to be a net zero\u00ab company by 2050 or sooner, and to help the world get to net zero.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-078",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Further details of our net zero sales methodology are described in the bp Basis of Reporting 2024.",
+    "new": "Further details of our net zero sales methodology are described in the bp Basis of Reporting 2025.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-079",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "It is not intended to indicate actual impacts or contributions to delivery of the net zero sales aim.",
+    "new": "The chart is not intended to indicate actual impacts or contributions to delivery of our net zero sales aim.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-080",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our aim is to reduce to net zero the average lifecycle carbon intensity of the energy products\uf0ab we sell by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "new": "Our aim is to reduce to net zero the average lifecycle carbon intensity\u00ab of the energy products we sella by 2050 or sooner, enabled by supportive government policies and the decarbonization of energy demand.",
+    "magnitude_pct": null,
+    "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "both",
+    "matched_slots": [
+     "metric_family=carbon_intensity",
+     "deadline=2050",
+     "claim_type=target"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-081",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our water consumption in 2024 We saw a 15% fall in freshwater withdrawals (excluding once through cooling water) and a 17% fall in freshwater consumption, compared with our 2020 baselineb.",
+    "new": "Since 2020 we have reduced freshwater withdrawals (excluding once through cooling water) by 15% and freshwater consumption by 15% against the baselineb.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.40 -> 0.20 (-0.20)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": []
+   },
+   {
+    "drift_id": "bp-lang-082",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our combined Scope 1 and 2 emissions, covered by this aim were 33.6MtCO2e \u2013 a decrease of 38% from our 2019 baseline.",
+    "new": "Compared with 2024 (33.6MtCO2e), Scope 1 and 2 emissions increased in 2025 due to growth in our portfolio and seven major project\u00ab start-ups.",
+    "magnitude_pct": null,
+    "description": "[commitment_softened] commitment strength 'hedged' -> 'none'",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "slots",
+    "matched_slots": [
+     "metric_family=scope_1",
+     "scope=Scope 1",
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-083",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Compared with 2023 (32.1MtCO2e), Scope 1 and 2 emissions increased in 2024 due to growth in our portfolio, project start ups and operational issues at Tangguh, Indonesia.",
+    "new": "Of these Scope 1 emissions, 32.8MtCO2e were carbon dioxide and 0.9MtCO2e were from methane.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.60 -> 0.40 (-0.20)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "slots",
+    "matched_slots": [
+     "metric_family=scope_1",
+     "scope=Scope 1",
+     "claim_type=other"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-084",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "In working towards our net zero sales aim, we recognize that benefits arise over the longer term \u2013 for example, as offshore wind projects that we have invested in through this decade come into operation after 2030; or as utilization rates for EV charge points increase in future as EV uptake grows.",
+    "new": "In working towards our net zero sales aim, we recognize that benefits arise over the longer term \u2013 for example, as the bioenergy market develops or as utilization rates for EV charge points\u00ab increase in future as EV uptake grows.",
+    "magnitude_pct": null,
+    "description": "[specificity_fell] specificity 0.20 -> 0.00 (-0.20)",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "claim_type=attribute"
+    ]
+   },
+   {
+    "drift_id": "bp-lang-085",
+    "year": 2025,
+    "type": "wording_softened",
+    "canonical_metric": null,
+    "old": "Our biogas operation, Archaea Energy, continued its growth throughout 2024.",
+    "new": "Our renewable natural gas (RNG)\u00ab business, Archaea Energy, continued its growth throughout 2025.",
+    "magnitude_pct": null,
+    "description": "[deadline_pushed] target year moved 2024 -> 2025",
+    "evidence_chunk_ids": [],
+    "old_source": "data/raw/bp/2024_sustainability_report.pdf",
+    "new_source": "data/raw/bp/2025_sustainability_report.pdf",
+    "page": null,
+    "match_basis": "text",
+    "matched_slots": [
+     "deadline~2024/2025",
+     "claim_type=target"
+    ]
+   }
+  ],
+  "did_points": [
+   {
+    "year": 2023,
+    "metric": "total_emissions",
+    "value": 32.1,
+    "unit": "MtCO2e",
+    "scope": "Scope 1+2 operational control basis; comparison cited in 2024 report",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 18
+   },
+   {
+    "year": 2024,
+    "metric": "total_emissions",
+    "value": 33.6,
+    "unit": "MtCO2e",
+    "scope": "Scope 1+2 operational control basis",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 18
+   },
+   {
+    "year": 2023,
+    "metric": "scope_1_emissions",
+    "value": 31.1,
+    "unit": "MtCO2e",
+    "scope": "Scope 1 direct; operational control",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 18
+   },
+   {
+    "year": 2024,
+    "metric": "scope_1_emissions",
+    "value": 32.8,
+    "unit": "MtCO2e",
+    "scope": "Scope 1 direct; operational control",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 18
+   },
+   {
+    "year": 2024,
+    "metric": "scope_2_emissions",
+    "value": 0.8,
+    "unit": "MtCO2e",
+    "scope": "Scope 2 indirect market-based; operational control",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 18
+   },
+   {
+    "year": 2023,
+    "metric": "methane_pct_of_gas_marketed",
+    "value": 0.05,
+    "unit": "%",
+    "scope": "upstream operated oil & gas methane intensity",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 18
+   },
+   {
+    "year": 2024,
+    "metric": "methane_pct_of_gas_marketed",
+    "value": 0.07,
+    "unit": "%",
+    "scope": "upstream operated oil & gas methane intensity",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 18
+   },
+   {
+    "year": 2023,
+    "metric": "methane_emissions",
+    "value": 31.0,
+    "unit": "kt",
+    "scope": "absolute upstream methane emissions used for intensity calc",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 19
+   },
+   {
+    "year": 2024,
+    "metric": "methane_emissions",
+    "value": 46.0,
+    "unit": "kt",
+    "scope": "absolute upstream methane emissions used for intensity calc",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 19
+   },
+   {
+    "year": 2023,
+    "metric": "process_safety_events_total",
+    "value": 39.0,
+    "unit": "number",
+    "scope": "Tier 1 + Tier 2 combined",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 7
+   },
+   {
+    "year": 2024,
+    "metric": "process_safety_events_total",
+    "value": 38.0,
+    "unit": "number",
+    "scope": "Tier 1 + Tier 2 combined",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 7
+   },
+   {
+    "year": 2023,
+    "metric": "process_safety_events_tier1",
+    "value": 9.0,
+    "unit": "number",
+    "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 7
+   },
+   {
+    "year": 2024,
+    "metric": "process_safety_events_tier1",
+    "value": 3.0,
+    "unit": "number",
+    "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 7
+   },
+   {
+    "year": 2023,
+    "metric": "process_safety_events_tier2",
+    "value": 30.0,
+    "unit": "number",
+    "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 7
+   },
+   {
+    "year": 2024,
+    "metric": "process_safety_events_tier2",
+    "value": 35.0,
+    "unit": "number",
+    "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 7
+   },
+   {
+    "year": 2019,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 84.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 22
+   },
+   {
+    "year": 2020,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 81.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 22
+   },
+   {
+    "year": 2021,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 81.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 22
+   },
+   {
+    "year": 2022,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 81.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 22
+   },
+   {
+    "year": 2023,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 80.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 22
+   },
+   {
+    "year": 2024,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 79.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2024_sustainability_report.pdf",
+    "page": 22
+   },
+   {
+    "year": 2024,
+    "metric": "total_emissions",
+    "value": 33.6,
+    "unit": "MtCO2e",
+    "scope": "Scope 1+2 operational control basis; comparison cited in 2025 report",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 12
+   },
+   {
+    "year": 2025,
+    "metric": "total_emissions",
+    "value": 34.3,
+    "unit": "MtCO2e",
+    "scope": "Scope 1+2 operational control basis",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 12
+   },
+   {
+    "year": 2024,
+    "metric": "scope_1_emissions",
+    "value": 32.8,
+    "unit": "MtCO2e",
+    "scope": "Scope 1 direct; operational control",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 12
+   },
+   {
+    "year": 2025,
+    "metric": "scope_1_emissions",
+    "value": 33.7,
+    "unit": "MtCO2e",
+    "scope": "Scope 1 direct; operational control",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 12
+   },
+   {
+    "year": 2025,
+    "metric": "scope_2_emissions",
+    "value": 0.7,
+    "unit": "MtCO2e",
+    "scope": "Scope 2 indirect market-based; operational control",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 12
+   },
+   {
+    "year": 2024,
+    "metric": "methane_pct_of_gas_marketed",
+    "value": 0.07,
+    "unit": "%",
+    "scope": "upstream operated oil & gas methane intensity",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 14
+   },
+   {
+    "year": 2025,
+    "metric": "methane_pct_of_gas_marketed",
+    "value": 0.04,
+    "unit": "%",
+    "scope": "upstream operated oil & gas methane intensity",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 14
+   },
+   {
+    "year": 2024,
+    "metric": "methane_emissions",
+    "value": 46.0,
+    "unit": "kt",
+    "scope": "absolute upstream methane emissions used for intensity calc",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 14
+   },
+   {
+    "year": 2025,
+    "metric": "methane_emissions",
+    "value": 25.0,
+    "unit": "kt",
+    "scope": "absolute upstream methane emissions used for intensity calc",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 14
+   },
+   {
+    "year": 2024,
+    "metric": "process_safety_events_total",
+    "value": 38.0,
+    "unit": "number",
+    "scope": "Tier 1 + Tier 2 combined",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 5
+   },
+   {
+    "year": 2025,
+    "metric": "process_safety_events_total",
+    "value": 27.0,
+    "unit": "number",
+    "scope": "Tier 1 + Tier 2 combined",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 5
+   },
+   {
+    "year": 2024,
+    "metric": "process_safety_events_tier1",
+    "value": 3.0,
+    "unit": "number",
+    "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 5
+   },
+   {
+    "year": 2025,
+    "metric": "process_safety_events_tier1",
+    "value": 5.0,
+    "unit": "number",
+    "scope": "Tier 1: highest-consequence process safety event (API RP 754)",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 5
+   },
+   {
+    "year": 2024,
+    "metric": "process_safety_events_tier2",
+    "value": 35.0,
+    "unit": "number",
+    "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 5
+   },
+   {
+    "year": 2025,
+    "metric": "process_safety_events_tier2",
+    "value": 22.0,
+    "unit": "number",
+    "scope": "Tier 2: lesser-consequence process safety event (API RP 754)",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 5
+   },
+   {
+    "year": 2019,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 84.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 16
+   },
+   {
+    "year": 2021,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 81.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 16
+   },
+   {
+    "year": 2022,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 81.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 16
+   },
+   {
+    "year": 2023,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 80.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 16
+   },
+   {
+    "year": 2024,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 79.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 16
+   },
+   {
+    "year": 2025,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 79.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline",
+    "source": "bp/2025_sustainability_report.pdf",
+    "page": 16
+   },
+   {
+    "year": 2023,
+    "metric": "total_emissions",
+    "value": 32.1,
+    "unit": "MtCO2e",
+    "scope": "Scope 1+2 operational control basis",
+    "source": "bp/2023_sustainability_report.pdf",
+    "page": 22
+   },
+   {
+    "year": 2019,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 79.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+    "source": "bp/2023_sustainability_report.pdf",
+    "page": 25
+   },
+   {
+    "year": 2020,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 77.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+    "source": "bp/2023_sustainability_report.pdf",
+    "page": 25
+   },
+   {
+    "year": 2021,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 78.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+    "source": "bp/2023_sustainability_report.pdf",
+    "page": 25
+   },
+   {
+    "year": 2022,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 77.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+    "source": "bp/2023_sustainability_report.pdf",
+    "page": 25
+   },
+   {
+    "year": 2023,
+    "metric": "avg_carbon_intensity_sold_energy",
+    "value": 77.0,
+    "unit": "gCO2e/MJ",
+    "scope": "lifecycle basis vs 2019 baseline; pre-2024 methodology",
+    "source": "bp/2023_sustainability_report.pdf",
+    "page": 25
+   }
+  ],
+  "top_damaging_claim_ids": [
+   "bp-claim-0211",
+   "bp-claim-0031",
+   "bp-claim-0008",
+   "bp-claim-0010",
+   "bp-claim-0011"
+  ],
+  "language": {
+   "series": [
+    {
+     "year": 2021,
+     "n_claims": 130,
+     "mean_specificity": 0.1837,
+     "vague_ratio": 0.0027,
+     "hedging_ratio": 0.0106,
+     "future_ratio": 0.0441,
+     "quantified_share": 0.577,
+     "verified_share": 0.008,
+     "scope_share": 0.1,
+     "passive_share": 0.077,
+     "negated_share": 0.023,
+     "conditional_share": 0.008,
+     "readability": 35.5,
+     "mean_sentiment": 0.0084,
+     "say_more_prove_less": 0.28,
+     "firm_share": 0.069,
+     "hedged_share": 0.377,
+     "commitment_ratio": 0.18,
+     "report_assured": true,
+     "assurance_auditor": "Deloitte",
+     "assurance_page": 2
+    },
+    {
+     "year": 2022,
+     "n_claims": 145,
+     "mean_specificity": 0.1657,
+     "vague_ratio": 0.0055,
+     "hedging_ratio": 0.0105,
+     "future_ratio": 0.0446,
+     "quantified_share": 0.524,
+     "verified_share": 0.007,
+     "scope_share": 0.138,
+     "passive_share": 0.11,
+     "negated_share": 0.007,
+     "conditional_share": 0.0,
+     "readability": 38.5,
+     "mean_sentiment": 0.0061,
+     "say_more_prove_less": 0.28,
+     "firm_share": 0.083,
+     "hedged_share": 0.434,
+     "commitment_ratio": 0.19,
+     "report_assured": false,
+     "assurance_auditor": null,
+     "assurance_page": null
+    },
+    {
+     "year": 2023,
+     "n_claims": 118,
+     "mean_specificity": 0.1714,
+     "vague_ratio": 0.0072,
+     "hedging_ratio": 0.0144,
+     "future_ratio": 0.0459,
+     "quantified_share": 0.61,
+     "verified_share": 0.0,
+     "scope_share": 0.169,
+     "passive_share": 0.178,
+     "negated_share": 0.025,
+     "conditional_share": 0.0,
+     "readability": 36.2,
+     "mean_sentiment": 0.0054,
+     "say_more_prove_less": 0.26,
+     "firm_share": 0.068,
+     "hedged_share": 0.407,
+     "commitment_ratio": 0.17,
+     "report_assured": false,
+     "assurance_auditor": null,
+     "assurance_page": null
+    },
+    {
+     "year": 2024,
+     "n_claims": 99,
+     "mean_specificity": 0.1941,
+     "vague_ratio": 0.0046,
+     "hedging_ratio": 0.0055,
+     "future_ratio": 0.0409,
+     "quantified_share": 0.475,
+     "verified_share": 0.01,
+     "scope_share": 0.212,
+     "passive_share": 0.131,
+     "negated_share": 0.01,
+     "conditional_share": 0.0,
+     "readability": 31.4,
+     "mean_sentiment": 0.0056,
+     "say_more_prove_less": 0.32,
+     "firm_share": 0.061,
+     "hedged_share": 0.434,
+     "commitment_ratio": 0.14,
+     "report_assured": true,
+     "assurance_auditor": "Deloitte",
+     "assurance_page": 2
+    },
+    {
+     "year": 2025,
+     "n_claims": 83,
+     "mean_specificity": 0.1842,
+     "vague_ratio": 0.005,
+     "hedging_ratio": 0.0057,
+     "future_ratio": 0.0395,
+     "quantified_share": 0.542,
+     "verified_share": 0.012,
+     "scope_share": 0.181,
+     "passive_share": 0.181,
+     "negated_share": 0.036,
+     "conditional_share": 0.0,
+     "readability": 32.7,
+     "mean_sentiment": 0.0049,
+     "say_more_prove_less": 0.22,
+     "firm_share": 0.06,
+     "hedged_share": 0.337,
+     "commitment_ratio": 0.18,
+     "report_assured": true,
+     "assurance_auditor": "Deloitte",
+     "assurance_page": 2
+    }
+   ],
+   "sub_score_basis": {
+    "year": 2025,
+    "n_claims": 83,
+    "n_material": 62,
+    "n_checkable": 18,
+    "mean_specificity": 0.1552,
+    "quantified_share": 0.542,
+    "verified_share": 0.012,
+    "hedged_share": 0.337,
+    "firm_share": 0.06,
+    "say_more_prove_less": 0.22,
+    "report_assured": true,
+    "assurance_auditor": "Deloitte",
+    "assurance_discount_applied": 0.55,
+    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+   },
+   "drift_counts": {
+    "substantive": 32,
+    "boilerplate": 54,
+    "by_type": {
+     "boilerplate_recycled": 54,
+     "specificity_fell": 11,
+     "commitment_softened": 8,
+     "quantity_dropped": 7,
+     "deadline_pushed": 3,
+     "deadline_dropped": 2,
+     "achievement_reverted_to_aspiration": 1
+    }
+   },
+   "sins": {
+    "company": "bp",
+    "n_claims": 575,
+    "n_tagged": 339,
+    "counts": {
+     "no_proof": 259,
+     "vagueness": 70,
+     "false_labels": 11
+    },
+    "sins_severity": 29.9,
+    "worsening_years": [],
+    "not_implemented": [
+     "irrelevance",
+     "lesser_of_two_evils",
+     "fibbing"
+    ]
+   },
+   "sins_top": [
+    {
+     "claim_index": 125,
+     "sentence": "We are currently participating in a pilot that is expected in time to inform the CA100+ Net Zero Corporate Benchmark.",
+     "page": "53",
+     "publish_year": 2021,
+     "source_file": "data/raw/bp/2021_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.100)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 224,
+     "sentence": "Our voice is one among many, but we believe everyone needs to work together to achieve net zero.",
+     "page": "34",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.111)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 249,
+     "sentence": "These CQC projects are designed to support several UN Sustainable Development Goals, including improved health, gender equality and affordable and clean energy.",
+     "page": "40",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.091)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 269,
+     "sentence": "In 2022 our score improved in the CA100+ Net Zero Company Benchmark.",
+     "page": "56",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.091)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 271,
+     "sentence": "The outcome of this pilot is expected to be incorporated into the next version of the CA100+ Net Zero Company Benchmark.",
+     "page": "56",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.095)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 334,
+     "sentence": "In 2022 we acquired Archaea Energy, which continued its growth throughout 2023.",
+     "page": "28",
+     "publish_year": 2023,
+     "source_file": "data/raw/bp/2023_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.100)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 338,
+     "sentence": "This technology is expected to help reduce the cost of, and electricity requirements for, green hydrogen production.",
+     "page": "29",
+     "publish_year": 2023,
+     "source_file": "data/raw/bp/2023_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.118)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 353,
+     "sentence": "Our voice is one among many, but we believe everyone needs to work together to achieve net zero.",
+     "page": "31",
+     "publish_year": 2023,
+     "source_file": "data/raw/bp/2023_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.111)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 366,
+     "sentence": "CQC projects are designed to support several UN Sustainable Development Goals, including improved health, gender equality and affordable and clean energy.",
+     "page": "36",
+     "publish_year": 2023,
+     "source_file": "data/raw/bp/2023_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.095)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 451,
+     "sentence": "Our biogas operation, Archaea Energy, continued its growth throughout 2024.",
+     "page": "25",
+     "publish_year": 2024,
+     "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.111)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 521,
+     "sentence": "Our investments and activities in CCS and hydrogen can be expected to contribute towards delivery of our net zero operations aim.",
+     "page": "15",
+     "publish_year": 2025,
+     "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.095)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 536,
+     "sentence": "Our renewable natural gas (RNG)\u00ab business, Archaea Energy, continued its growth throughout 2025.",
+     "page": "19",
+     "publish_year": 2025,
+     "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.083)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 361,
+     "sentence": "We are aiming to be a leading supplier of sustainable aviation fuel (SAF).",
+     "page": "33",
+     "publish_year": 2023,
+     "source_file": "data/raw/bp/2023_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.077)",
+       "severity": 0.93,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.93
+    },
+    {
+     "claim_index": 168,
+     "sentence": "Contributes to net zero There are many ways a company at the heart of the energy sector can make a meaningful contribution to the world getting to net zero.",
+     "page": "22",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.069)",
+       "severity": 0.9,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.9
+    },
+    {
+     "claim_index": 240,
+     "sentence": "Our H2Teesside and HyGreen projects, together with the proposed power and carbon capture project, Net Zero Teesside Power, are expected to support local economic and supply chain development.",
+     "page": "38",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.069)",
+       "severity": 0.9,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.9
+    },
+    {
+     "claim_index": 188,
+     "sentence": "We expect our pathway to net zero to be finetuned over time, to reflect emerging opportunities and challenges as the world transitions to a better, and more balanced, energy system.",
+     "page": "26",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.067)",
+       "severity": 0.88,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.88
+    },
+    {
+     "claim_index": 393,
+     "sentence": "We are now concentrating them on the five areas we believe are most relevant to the long-term success of our businesses: net zero operations\uf0ab, net zero sales\uf0ab, people, biodiversity and water.",
+     "page": "3",
+     "publish_year": 2024,
+     "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.065)",
+       "severity": 0.87,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.87
+    },
+    {
+     "claim_index": 239,
+     "sentence": "We also intend to develop large-scale green hydrogen production hubs in Spain, Portugal and the UK.",
+     "page": "37",
+     "publish_year": 2022,
+     "source_file": "data/raw/bp/2022_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.062)",
+       "severity": 0.86,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.86
+    },
+    {
+     "claim_index": 413,
+     "sentence": "We continued to consider some of our net zero aims in certain key group planning processes.",
+     "page": "17",
+     "publish_year": 2024,
+     "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.062)",
+       "severity": 0.86,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.86
+    },
+    {
+     "claim_index": 73,
+     "sentence": "HyGreen Teesside could deliver up to 500MW of low carbon electrolyticenabled hydrogen production by 2030.",
+     "page": "29",
+     "publish_year": 2021,
+     "source_file": "data/raw/bp/2021_sustainability_report.pdf",
+     "specificity_score": 0.1,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.10; relies on vague/hedging vocabulary (ratio 0.143)",
+       "severity": 0.85,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.85
+    },
+    {
+     "claim_index": 446,
+     "sentence": "Full value chain emissions for energy products Net zero sales is estimated on a lifecycle basis covering the full value chain of well-to-wheel or well-to-wire emissions associated with the energy products we sell.",
+     "page": "24",
+     "publish_year": 2024,
+     "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.061)",
+       "severity": 0.85,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.85
+    },
+    {
+     "claim_index": 565,
+     "sentence": "Throughout 2025 we continued our active engagement with the OGDC, focusing on accelerating emissions reductions across our sector.",
+     "page": "39",
+     "publish_year": 2025,
+     "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.059)",
+       "severity": 0.84,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.84
+    },
+    {
+     "claim_index": 395,
+     "sentence": "We continued to optimize our portfolio, giving the go-ahead to two green hydrogen\uf0ab projects linked to our refineries.",
+     "page": "3",
+     "publish_year": 2024,
+     "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.056)",
+       "severity": 0.83,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.83
+    },
+    {
+     "claim_index": 445,
+     "sentence": "It is not intended to indicate actual impacts or contributions to delivery of the net zero sales aim.",
+     "page": "24",
+     "publish_year": 2024,
+     "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.056)",
+       "severity": 0.83,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.83
+    },
+    {
+     "claim_index": 304,
+     "sentence": "In addition to investing in and scaling our own lower carbon businesses there are many ways a company at the heart of the energy sector can make a meaningful contribution to the world getting to net zero.",
+     "page": "20",
+     "publish_year": 2023,
+     "source_file": "data/raw/bp/2023_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.054)",
+       "severity": 0.82,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.82
+    }
+   ],
+   "cross_signal": {
+    "rows": [
+     {
+      "report_year": 2022,
+      "numeric_restatements": 0,
+      "language_softenings": 17,
+      "both": false
+     },
+     {
+      "report_year": 2023,
+      "numeric_restatements": 0,
+      "language_softenings": 6,
+      "both": false
+     },
+     {
+      "report_year": 2024,
+      "numeric_restatements": 7,
+      "language_softenings": 4,
+      "both": true
+     },
+     {
+      "report_year": 2025,
+      "numeric_restatements": 2,
+      "language_softenings": 5,
+      "both": true
+     }
+    ],
+    "n_years": 4,
+    "n_concurrent": 2,
+    "concurrent_years": [
+     2024,
+     2025
+    ],
+    "interpretation": "Report-years where the company both restated prior figures and softened claim wording. Co-occurrence is suggestive, not causal, and with this few report-years it is not statistically testable."
+   },
+   "assurance": {
+    "2021": {
+     "assured": true,
+     "quote": "iality 55 Standards and frameworks 56 Independent assurance statement 57 Cautionary statement 58 About bp We deliver energy products and",
+     "page": 2,
+     "auditor": "Deloitte",
+     "source": "data/raw/bp/2021_sustainability_report.pdf"
+    },
+    "2022": {
+     "assured": false,
+     "quote": null,
+     "page": null,
+     "auditor": null,
+     "source": "data/raw/bp/2022_sustainability_report.pdf"
+    },
+    "2023": {
+     "assured": false,
+     "quote": null,
+     "page": null,
+     "auditor": null,
+     "source": "data/raw/bp/2023_sustainability_report.pdf"
+    },
+    "2024": {
+     "assured": true,
+     "quote": "reporting 45 Glossary 46 Deloitte\u2019s limited assurance report 48 Cautionary statement 50 Our sustainability frame Our purpose is to",
+     "page": 2,
+     "auditor": "Deloitte",
+     "source": "data/raw/bp/2024_sustainability_report.pdf"
+    },
+    "2025": {
+     "assured": true,
+     "quote": "ur reporting 41 Glossary 42 Deloitte\u2019s limited assurance report 44 Cautionary statement 46 About our 2025 reporting Since launching our",
+     "page": 2,
+     "auditor": "Deloitte",
+     "source": "data/raw/bp/2025_sustainability_report.pdf"
+    }
+   },
+   "say_do": {
+    "say_do_gap": 50.0,
+    "n_linked": 4,
+    "n_measurable": 4,
+    "n_behind": 2,
+    "n_on_track": 2,
+    "n_excluded_negated_or_conditional": 5,
+    "formula": "100 * (linked targets behind glidepath) / (measurable linked targets)",
+    "reason": null,
+    "links": [
+     {
+      "sentence": "And on aim 3 (covering the lifecycle emissions for the energy products we sell) we now aim to reduce carbon intensity to net zero by 2050 or sooner \u2013 up from 50% \u2013 and have increased the volume of emissions covered by this aim, which now includes physically traded sales of energy products.",
+      "page": "3",
+      "publish_year": 2021,
+      "source_file": "data/raw/bp/2021_sustainability_report.pdf",
+      "family": "carbon_intensity",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "quantity": "50%",
+      "baseline": null,
+      "deadline": "2050",
+      "status": "behind",
+      "actual": 79.0,
+      "required": 75.871,
+      "target": 50.0,
+      "actual_year": 2025,
+      "elapsed": 0.194,
+      "actual_pct_vs_baseline": -5.95,
+      "direction": "down"
+     },
+     {
+      "sentence": "Our interim target is a 20% reduction in Scope 1 and 2 emissions by the end of 2025, against the 2019 baseline.",
+      "page": "19",
+      "publish_year": 2024,
+      "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+      "family": "scope_1",
+      "canonical_metric": "scope_1_emissions",
+      "quantity": "20%",
+      "baseline": "2019",
+      "deadline": "2025",
+      "status": "behind",
+      "actual": 33.7,
+      "required": 24.88,
+      "target": 20.0,
+      "actual_year": 2025,
+      "elapsed": 1.0,
+      "actual_pct_vs_baseline": 8.36,
+      "direction": "down"
+     },
+     {
+      "sentence": "Net zero sales Our interim target is a 5% reduction by the end of 2025 for the average lifecycle carbon intensity of our sold energy products\uf0ab.",
+      "page": "19",
+      "publish_year": 2024,
+      "source_file": "data/raw/bp/2024_sustainability_report.pdf",
+      "family": "carbon_intensity",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "quantity": "5%",
+      "baseline": null,
+      "deadline": "2025",
+      "status": "on_track",
+      "actual": 79.0,
+      "required": 79.8,
+      "target": 5.0,
+      "actual_year": 2025,
+      "elapsed": 1.0,
+      "actual_pct_vs_baseline": -5.95,
+      "direction": "down"
+     },
+     {
+      "sentence": "Net zero sales\u00ab \u2013 In 2025 the average carbon intensity of the energy products\u00ab sold was 79gCO2e/MJ, meaning we achieved our target to reduce the average lifecycle intensity by 5% by the end of 2025 (against the 2019 baseline).",
+      "page": "3",
+      "publish_year": 2025,
+      "source_file": "data/raw/bp/2025_sustainability_report.pdf",
+      "family": "carbon_intensity",
+      "canonical_metric": "avg_carbon_intensity_sold_energy",
+      "quantity": "5%",
+      "baseline": "2019",
+      "deadline": "2025",
+      "status": "on_track",
+      "actual": 79.0,
+      "required": 79.8,
+      "target": 5.0,
+      "actual_year": 2025,
+      "elapsed": 1.0,
+      "actual_pct_vs_baseline": -5.95,
+      "direction": "down"
+     }
+    ]
+   }
+  },
+  "eval": {
+   "agreement_rate": null,
+   "per_sin_precision": {},
+   "per_sin_recall": {},
+   "brier_score": null,
+   "calibration_table": [],
+   "n_gold": 0,
+   "notes": "Stage 4/7 blocked; no LLM predictions to score yet."
+  }
+ },
  "hm": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T05:49:27+00:00",
+  "generated_at": "2026-09-20T14:56:30+00:00",
   "summary": {
    "company": "hm",
    "display_name": "H&M Group",
-   "overall_score": 46.3,
+   "overall_score": 43.7,
    "confidence": "low",
    "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
-   "peer_percentile": 50.0,
+   "peer_percentile": 33.3,
    "abstain": false,
    "abstain_reasons": [],
    "headline": "15 of 18 republished figures were restated between reports (median move 9.21%, max 19.48%). Language: 23 substantive softening events across reports (8 recycled boilerplate excluded).",
@@ -16447,11 +32237,11 @@ window.__GREENWASH_DATA__ = {
     "unsupported_claims": 53.3,
     "sins_severity": 30.6,
     "say_do_gap": 34.8,
-    "goalpost_drift": 49.8
+    "goalpost_drift": 32.4
    }
   },
   "coverage": {
-   "n_documents": 2,
+   "n_documents": 3,
    "n_pages": 0,
    "n_chunks": 0,
    "n_claims": 220,
@@ -31527,7 +47317,7 @@ window.__GREENWASH_DATA__ = {
  },
  "microsoft": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T05:49:27+00:00",
+  "generated_at": "2026-09-20T14:56:30+00:00",
   "summary": {
    "company": "microsoft",
    "display_name": "Microsoft",
@@ -47406,6 +63196,1045 @@ window.__GREENWASH_DATA__ = {
       "direction": "up"
      }
     ]
+   }
+  },
+  "eval": {
+   "agreement_rate": null,
+   "per_sin_precision": {},
+   "per_sin_recall": {},
+   "brier_score": null,
+   "calibration_table": [],
+   "n_gold": 0,
+   "notes": "Stage 4/7 blocked; no LLM predictions to score yet."
+  }
+ },
+ "patagonia": {
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-20T14:56:30+00:00",
+  "summary": {
+   "company": "patagonia",
+   "display_name": "patagonia",
+   "overall_score": 55.3,
+   "confidence": "low",
+   "confidence_rationale": "capped at low: 0 verified evidence quotes (need 2+ for medium)",
+   "peer_percentile": null,
+   "abstain": false,
+   "abstain_reasons": [
+    "say_do_gap: not measurable from available data",
+    "goalpost_drift: not measurable from available data"
+   ],
+   "headline": "No metric-year was published by more than one report, so restatement behaviour cannot be assessed from the available documents. Language: 0 substantive softening events across reports (0 recycled boilerplate excluded).",
+   "sub_scores": {
+    "vagueness": 73.8,
+    "unsupported_claims": 71.4,
+    "sins_severity": 31.4,
+    "say_do_gap": null,
+    "goalpost_drift": null
+   }
+  },
+  "coverage": {
+   "n_documents": 0,
+   "n_pages": 0,
+   "n_chunks": 0,
+   "n_claims": 13,
+   "n_evidence_verified": 0,
+   "n_did_rows": 0,
+   "did_years": [],
+   "did_metrics": [],
+   "stages_completed": [
+    "stage6_saydo",
+    "stage8_score",
+    "stage2_claims",
+    "stage3_language",
+    "stage3b_langdrift",
+    "stage4_sins"
+   ],
+   "stages_blocked": {
+    "stage5_evidence": "no ANTHROPIC_API_KEY in environment",
+    "stage7_debate": "no ANTHROPIC_API_KEY in environment"
+   }
+  },
+  "timeline": [],
+  "year_scores": [],
+  "claims": [
+   {
+    "claim_id": "patagonia-claim-0000",
+    "claim_text": "One of Patagonia\u2019s strategic commitments is to reach Net Zero emissions by 2040, which is 10 years earlier than the Science-Based Targets Initiative (SBTi) requires.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2040.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2040,
+    "scope": null,
+    "has_third_party_verification": true,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p2",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 2,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.145,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": true,
+     "specificity_score": 0.6,
+     "readability": 27.4,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 75,
+       "end": 80,
+       "kind": "qty",
+       "term": "2040,"
+      },
+      {
+       "start": 116,
+       "end": 137,
+       "kind": "verify",
+       "term": "Science-Based Targets"
+      },
+      {
+       "start": 150,
+       "end": 154,
+       "kind": "verify",
+       "term": "SBTi"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0001",
+    "claim_text": "In 2021, Patagonia aligned its greenhouse gas emission reduction targets with the Science Based Targets Initiative (SBTi), setting the ambition to reach Net Zero, as defined by SBTi, by 2040.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2021.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": 2040,
+    "scope": null,
+    "has_third_party_verification": true,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p9",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 9,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1629,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": true,
+     "scope_present": false,
+     "verification_present": true,
+     "specificity_score": 0.6,
+     "readability": 27.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 3,
+       "end": 8,
+       "kind": "qty",
+       "term": "2021,"
+      },
+      {
+       "start": 82,
+       "end": 103,
+       "kind": "verify",
+       "term": "Science Based Targets"
+      },
+      {
+       "start": 116,
+       "end": 120,
+       "kind": "verify",
+       "term": "SBTi"
+      },
+      {
+       "start": 177,
+       "end": 181,
+       "kind": "verify",
+       "term": "SBTi"
+      },
+      {
+       "start": 186,
+       "end": 190,
+       "kind": "deadline",
+       "term": "2040"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0002",
+    "claim_text": "FY2030 \u2013 Near Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1 and 2 GHG emissions 80% by FY2030 from a FY2017 base year.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 80.0,
+    "unit": null,
+    "baseline_year": 2017,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p9",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 9,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1364,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 53.8,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 108,
+       "end": 111,
+       "kind": "qty",
+       "term": "80%"
+      },
+      {
+       "start": 131,
+       "end": 135,
+       "kind": "baseline",
+       "term": "2017"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.55,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0003",
+    "claim_text": "FY20240 \u2013 Long-Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1, 2, and 3 GHG emissions 90% by FY2040 from a FY2017 base year.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 90.0,
+    "unit": null,
+    "baseline_year": 2017,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p9",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 9,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.1429,
+     "quantification_present": true,
+     "baseline_present": true,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": false,
+     "specificity_score": 0.6,
+     "readability": 48.5,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 113,
+       "end": 116,
+       "kind": "qty",
+       "term": "90%"
+      },
+      {
+       "start": 136,
+       "end": 140,
+       "kind": "baseline",
+       "term": "2017"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.55,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0004",
+    "claim_text": "While this target isn't validated by SBTi, progress towards this goal will help Patagonia accomplish its 2030 Scope 1 and 2 target.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": "Scope 1",
+    "has_third_party_verification": true,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p10",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 10,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.2105,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": true,
+     "verification_present": true,
+     "specificity_score": 0.4,
+     "readability": 49.5,
+     "sentiment": 0.0526,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 37,
+       "end": 41,
+       "kind": "verify",
+       "term": "SBTi"
+      },
+      {
+       "start": 43,
+       "end": 51,
+       "kind": "positive",
+       "term": "progress"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0005",
+    "claim_text": "The climate risk assessment systematically evaluated physical and transition risks across each scenario to test the resilience of Patagonia\u2019s business strategy across a range of plausible global transition pathways, from rapid decarbonization consistent with the ambition of the Paris Agreement\u2019s 1.5\u00b0C to a business-as-usual, high emissions trajectory.",
+    "claim_type": "target",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 1.5,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p4",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 4,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0204,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 0.7,
+     "sentiment": -0.0612,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 12,
+       "end": 16,
+       "kind": "negative",
+       "term": "risk"
+      },
+      {
+       "start": 77,
+       "end": 82,
+       "kind": "negative",
+       "term": "risks"
+      },
+      {
+       "start": 297,
+       "end": 300,
+       "kind": "qty",
+       "term": "1.5"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0006",
+    "claim_text": "As detailed above, in 2025, Patagonia also completed its first formal climate risk scenario analysis.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 2025.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p7",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 7,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 11.3,
+     "sentiment": -0.0714,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 22,
+       "end": 27,
+       "kind": "qty",
+       "term": "2025,"
+      },
+      {
+       "start": 78,
+       "end": 82,
+       "kind": "negative",
+       "term": "risk"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0007",
+    "claim_text": "As of FY24, Patagonia has achieved 98% renewable electricity adoption across its global operations and maintained this level of adoption in FY25.",
+    "claim_type": "achievement",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": 98.0,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p10",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 10,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": true,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.2,
+     "readability": 8.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 35,
+       "end": 38,
+       "kind": "qty",
+       "term": "98%"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "no_proof",
+      "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+      "severity": 0.35,
+      "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0008",
+    "claim_text": "Disclaimer on Forward-Looking Statements This report contains forward-looking statements and estimates regarding future performance, climate risks, and targets (e.g., Net-Zero 2040 commitment, potential climate impacts).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p2",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 2,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.04,
+     "future_orientation_ratio": 0.12,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.0,
+     "readability": 5.5,
+     "sentiment": -0.08,
+     "negated": false,
+     "conditional": false,
+     "highlights": [
+      {
+       "start": 141,
+       "end": 146,
+       "kind": "negative",
+       "term": "risks"
+      }
+     ],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.040)",
+      "severity": 0.75,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0009",
+    "claim_text": "Product innovation to meet anticipated regulatory requirements for recycled inputs and circularity.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p5",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 5,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0833,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.0,
+     "readability": -45.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [
+     {
+      "sin": "vagueness",
+      "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.083)",
+      "severity": 0.95,
+      "evidence_needed": "a number, a boundary/scope, and a baseline year"
+     }
+    ],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0010",
+    "claim_text": "Market Increased consumer and retailer demand for durable products that use recycled inputs and other preferred materials and are built for repair and recycling.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p5",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 5,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.0,
+     "readability": 23.9,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0011",
+    "claim_text": "Price volatility or supply constraints of key material inputs, including preferred versions (i.e. recycled synthetics vs virgin synthetics).",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p5",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 5,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.0,
+     "readability": 22.3,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   },
+   {
+    "claim_id": "patagonia-claim-0012",
+    "claim_text": "Increased consumer and retailer demand for durable products that use recycled inputs and are built for repair and recycling to align with consumer and regulatory demand.",
+    "claim_type": "product_label",
+    "metric": null,
+    "canonical_metric": null,
+    "target_value": null,
+    "unit": null,
+    "baseline_year": null,
+    "target_year": null,
+    "scope": null,
+    "has_third_party_verification": false,
+    "verifier_name": null,
+    "chunk_id": "2025_sustainability_report.pdf#p5",
+    "doc_name": "2025_sustainability_report.pdf",
+    "publish_year": 2025,
+    "page": 5,
+    "features": {
+     "vague_word_ratio": 0.0,
+     "hedging_ratio": 0.0,
+     "future_orientation_ratio": 0.0,
+     "quantification_present": false,
+     "baseline_present": false,
+     "date_present": false,
+     "scope_present": false,
+     "verification_present": false,
+     "specificity_score": 0.0,
+     "readability": 21.0,
+     "sentiment": 0.0,
+     "negated": false,
+     "conditional": false,
+     "highlights": [],
+     "report_assured": false
+    },
+    "sins": [],
+    "evidence_ids": [],
+    "progress_status": null,
+    "debate": null
+   }
+  ],
+  "evidence": [],
+  "drift_events": [],
+  "did_points": [],
+  "top_damaging_claim_ids": [
+   "patagonia-claim-0009",
+   "patagonia-claim-0008",
+   "patagonia-claim-0002",
+   "patagonia-claim-0003",
+   "patagonia-claim-0005"
+  ],
+  "language": {
+   "series": [
+    {
+     "year": 2025,
+     "n_claims": 18,
+     "mean_specificity": 0.2889,
+     "vague_ratio": 0.0,
+     "hedging_ratio": 0.0069,
+     "future_ratio": 0.0564,
+     "quantified_share": 0.667,
+     "verified_share": 0.222,
+     "scope_share": 0.333,
+     "passive_share": 0.0,
+     "negated_share": 0.0,
+     "conditional_share": 0.0,
+     "readability": 20.6,
+     "mean_sentiment": -0.0046,
+     "say_more_prove_less": 0.17,
+     "firm_share": 0.167,
+     "hedged_share": 0.222,
+     "commitment_ratio": 0.75,
+     "report_assured": false,
+     "assurance_auditor": null,
+     "assurance_page": null
+    }
+   ],
+   "sub_score_basis": {
+    "year": 2025,
+    "n_claims": 18,
+    "n_material": 13,
+    "n_checkable": 7,
+    "mean_specificity": 0.2615,
+    "quantified_share": 0.667,
+    "verified_share": 0.222,
+    "hedged_share": 0.222,
+    "firm_share": 0.167,
+    "say_more_prove_less": 0.17,
+    "report_assured": false,
+    "assurance_auditor": null,
+    "assurance_discount_applied": 0,
+    "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
+   },
+   "drift_counts": {
+    "substantive": 0,
+    "boilerplate": 0,
+    "by_type": {}
+   },
+   "sins": {
+    "company": "patagonia",
+    "n_claims": 18,
+    "n_tagged": 11,
+    "counts": {
+     "no_proof": 9,
+     "vagueness": 2
+    },
+    "sins_severity": 31.4,
+    "worsening_years": [],
+    "not_implemented": [
+     "irrelevance",
+     "lesser_of_two_evils",
+     "fibbing"
+    ]
+   },
+   "sins_top": [
+    {
+     "claim_index": 4,
+     "sentence": "Product innovation to meet anticipated regulatory requirements for recycled inputs and circularity.",
+     "page": "5",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.083)",
+       "severity": 0.95,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.95
+    },
+    {
+     "claim_index": 2,
+     "sentence": "Disclaimer on Forward-Looking Statements This report contains forward-looking statements and estimates regarding future performance, climate risks, and targets (e.g., Net-Zero 2040 commitment, potential climate impacts).",
+     "page": "2",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.0,
+     "sins": [
+      {
+       "sin": "vagueness",
+       "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.040)",
+       "severity": 0.75,
+       "evidence_needed": "a number, a boundary/scope, and a baseline year"
+      }
+     ],
+     "max_severity": 0.75
+    },
+    {
+     "claim_index": 10,
+     "sentence": "Scope 3 emissions account for nearly 99% of Patagonia\u2019s annual GHG emissions.",
+     "page": "8",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.4,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.55,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.55
+    },
+    {
+     "claim_index": 11,
+     "sentence": "Within Scope 3, on average 86% of Patagonia\u2019s emissions come from the manufacturing of textiles, including the origin of the textile raw material, processing and spinning of the fiber (yarn formation), fabric formation, and preparing, dyeing and finishing the fabric.",
+     "page": "8",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.4,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.55,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.55
+    },
+    {
+     "claim_index": 13,
+     "sentence": "FY2030 \u2013 Near Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1 and 2 GHG emissions 80% by FY2030 from a FY2017 base year.",
+     "page": "9",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.6,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.55,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.55
+    },
+    {
+     "claim_index": 14,
+     "sentence": "FY20240 \u2013 Long-Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1, 2, and 3 GHG emissions 90% by FY2040 from a FY2017 base year.",
+     "page": "9",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.6,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.55,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.55
+    },
+    {
+     "claim_index": 3,
+     "sentence": "The climate risk assessment systematically evaluated physical and transition risks across each scenario to test the resilience of Patagonia\u2019s business strategy across a range of plausible global transition pathways, from rapid decarbonization consistent with the ambition of the Paris Agreement\u2019s 1.5\u00b0C to a business-as-usual, high emissions trajectory.",
+     "page": "4",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.2,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.35,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.35
+    },
+    {
+     "claim_index": 8,
+     "sentence": "As detailed above, in 2025, Patagonia also completed its first formal climate risk scenario analysis.",
+     "page": "7",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.2,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.35,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.35
+    },
+    {
+     "claim_index": 9,
+     "sentence": "For FY25, they made up less than 1% of total emissions.",
+     "page": "8",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.2,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.35,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.35
+    },
+    {
+     "claim_index": 15,
+     "sentence": "Patagonia has also committed to achieve 100% renewable electricity adoption for its global operations.",
+     "page": "10",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.2,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.35,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.35
+    },
+    {
+     "claim_index": 17,
+     "sentence": "As of FY24, Patagonia has achieved 98% renewable electricity adoption across its global operations and maintained this level of adoption in FY25.",
+     "page": "10",
+     "publish_year": 2025,
+     "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+     "specificity_score": 0.2,
+     "sins": [
+      {
+       "sin": "no_proof",
+       "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+       "severity": 0.35,
+       "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+      }
+     ],
+     "max_severity": 0.35
+    }
+   ],
+   "cross_signal": {
+    "rows": [],
+    "n_years": 0,
+    "n_concurrent": 0,
+    "concurrent_years": [],
+    "interpretation": "Report-years where the company both restated prior figures and softened claim wording. Co-occurrence is suggestive, not causal, and with this few report-years it is not statistically testable."
+   },
+   "assurance": {
+    "2025": {
+     "assured": false,
+     "quote": null,
+     "page": null,
+     "auditor": null,
+     "source": "data/raw/patagonia/2025_sustainability_report.pdf"
+    }
+   },
+   "say_do": {
+    "say_do_gap": null,
+    "n_linked": 0,
+    "n_measurable": 0,
+    "n_behind": 0,
+    "n_excluded_negated_or_conditional": 0,
+    "reason": "only 0 target(s) could be pinned to a verified series with comparable units; need 3+ to score",
+    "links": []
    }
   },
   "eval": {

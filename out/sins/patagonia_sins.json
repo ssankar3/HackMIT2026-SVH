@@ -1,0 +1,205 @@
+{
+  "company": "patagonia",
+  "n_claims": 18,
+  "n_tagged": 11,
+  "counts": {
+    "no_proof": 9,
+    "vagueness": 2
+  },
+  "sins_severity": 31.4,
+  "worsening_years": [],
+  "not_implemented": [
+    "irrelevance",
+    "lesser_of_two_evils",
+    "fibbing"
+  ],
+  "tagged": [
+    {
+      "claim_index": 4,
+      "sentence": "Product innovation to meet anticipated regulatory requirements for recycled inputs and circularity.",
+      "page": "5",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.083)",
+          "severity": 0.95,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.95
+    },
+    {
+      "claim_index": 2,
+      "sentence": "Disclaimer on Forward-Looking Statements This report contains forward-looking statements and estimates regarding future performance, climate risks, and targets (e.g., Net-Zero 2040 commitment, potential climate impacts).",
+      "page": "2",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.040)",
+          "severity": 0.75,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.75
+    },
+    {
+      "claim_index": 10,
+      "sentence": "Scope 3 emissions account for nearly 99% of Patagonia\u2019s annual GHG emissions.",
+      "page": "8",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 11,
+      "sentence": "Within Scope 3, on average 86% of Patagonia\u2019s emissions come from the manufacturing of textiles, including the origin of the textile raw material, processing and spinning of the fiber (yarn formation), fabric formation, and preparing, dyeing and finishing the fabric.",
+      "page": "8",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 13,
+      "sentence": "FY2030 \u2013 Near Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1 and 2 GHG emissions 80% by FY2030 from a FY2017 base year.",
+      "page": "9",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 14,
+      "sentence": "FY20240 \u2013 Long-Term Target Ambition \u2022 Patagonia Works commits to reduce absolute scope 1, 2, and 3 GHG emissions 90% by FY2040 from a FY2017 base year.",
+      "page": "9",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 3,
+      "sentence": "The climate risk assessment systematically evaluated physical and transition risks across each scenario to test the resilience of Patagonia\u2019s business strategy across a range of plausible global transition pathways, from rapid decarbonization consistent with the ambition of the Paris Agreement\u2019s 1.5\u00b0C to a business-as-usual, high emissions trajectory.",
+      "page": "4",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 8,
+      "sentence": "As detailed above, in 2025, Patagonia also completed its first formal climate risk scenario analysis.",
+      "page": "7",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 9,
+      "sentence": "For FY25, they made up less than 1% of total emissions.",
+      "page": "8",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 15,
+      "sentence": "Patagonia has also committed to achieve 100% renewable electricity adoption for its global operations.",
+      "page": "10",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 17,
+      "sentence": "As of FY24, Patagonia has achieved 98% renewable electricity adoption across its global operations and maintained this level of adoption in FY25.",
+      "page": "10",
+      "publish_year": 2025,
+      "source_file": "data/raw/patagonia/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    }
+  ]
+}
