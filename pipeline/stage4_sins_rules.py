@@ -161,7 +161,7 @@ def sins_for(claim: dict, worsening_years: set) -> List[dict]:
         })
 
     # --- hidden trade-off ------------------------------------------------
-    if year in worsening_years and quantified and RE_IMPROVEMENT.search(text):
+    if year in worsening_years and quantified and not _b(claim.get("negated")) and RE_IMPROVEMENT.search(text):
         m = RE_IMPROVEMENT.search(text)
         out.append({
             "sin": "hidden_trade_off",

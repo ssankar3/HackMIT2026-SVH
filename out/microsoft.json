@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T03:08:24+00:00",
+  "generated_at": "2026-09-20T05:08:30+00:00",
   "summary": {
     "company": "microsoft",
     "display_name": "Microsoft",
@@ -12,7 +12,7 @@
     "abstain_reasons": [
       "say_do_gap: not measurable from available data"
     ],
-    "headline": "2 of 2 republished figures were restated between reports (median move 6.67%, max 11.19%). Language: 24 substantive softening events across reports (25 recycled boilerplate excluded).",
+    "headline": "2 of 2 republished figures were restated between reports (median move 6.67%, max 11.19%). Language: 44 substantive softening events across reports (25 recycled boilerplate excluded).",
     "sub_scores": {
       "vagueness": 84.2,
       "unsupported_claims": 95.7,
@@ -547,7 +547,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 61.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 32,
@@ -610,7 +612,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 77.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -703,7 +707,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 77.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -796,7 +802,9 @@
         "verification_present": true,
         "specificity_score": 0.8,
         "readability": 3.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 100,
@@ -864,7 +872,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 77.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -957,7 +967,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 58.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 39,
@@ -1014,7 +1026,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 45.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 71,
@@ -1083,7 +1097,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 8.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 66,
@@ -1152,7 +1168,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 77.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -1245,7 +1263,9 @@
         "verification_present": false,
         "specificity_score": 0.8,
         "readability": 14.5,
-        "sentiment": null,
+        "sentiment": 0.0385,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 57,
@@ -1314,7 +1334,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 48.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 19,
@@ -1365,7 +1387,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 14.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 41,
@@ -1409,7 +1433,9 @@
         "verification_present": true,
         "specificity_score": 0.6,
         "readability": 47.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 14,
@@ -1459,7 +1485,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 36.5,
-        "sentiment": null,
+        "sentiment": 0.0476,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 69,
@@ -1528,7 +1556,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": -0.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 11,
@@ -1591,7 +1621,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 19.8,
-        "sentiment": null,
+        "sentiment": 0.0323,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -1647,7 +1679,9 @@
         "verification_present": true,
         "specificity_score": 0.6,
         "readability": 47.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 26,
@@ -1697,7 +1731,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 21.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 230,
@@ -1766,7 +1802,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 66.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 26,
@@ -1823,7 +1861,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 28.5,
-        "sentiment": null,
+        "sentiment": 0.1111,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 11,
@@ -1886,7 +1926,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 12.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 119,
@@ -1943,7 +1985,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 60.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -2012,7 +2056,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 49.5,
-        "sentiment": null,
+        "sentiment": 0.0455,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 20,
@@ -2075,7 +2121,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 15.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -2132,7 +2180,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 10.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 137,
@@ -2195,7 +2245,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 33.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 54,
@@ -2258,7 +2310,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 60.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -2327,7 +2381,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 29.0,
-        "sentiment": null,
+        "sentiment": 0.0435,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 13,
@@ -2414,7 +2470,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 17.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -2483,7 +2541,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 62.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -2546,7 +2606,9 @@
         "verification_present": true,
         "specificity_score": 0.6,
         "readability": 30.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 102,
@@ -2590,7 +2652,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 53.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 79,
@@ -2653,7 +2717,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 60.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -2722,7 +2788,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 29.0,
-        "sentiment": null,
+        "sentiment": 0.0435,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 13,
@@ -2809,7 +2877,9 @@
         "verification_present": false,
         "specificity_score": 0.6,
         "readability": 45.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 51,
@@ -2853,7 +2923,9 @@
         "verification_present": true,
         "specificity_score": 0.6,
         "readability": -21.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 71,
@@ -2916,7 +2988,9 @@
         "verification_present": false,
         "specificity_score": 0.527,
         "readability": -7.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 56,
@@ -2973,7 +3047,9 @@
         "verification_present": true,
         "specificity_score": 0.518,
         "readability": -15.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 92,
@@ -2992,6 +3068,12 @@
             "end": 201,
             "kind": "positive",
             "term": "strengthen"
+          },
+          {
+            "start": 321,
+            "end": 330,
+            "kind": "negative",
+            "term": "difficult"
           }
         ],
         "report_assured": false
@@ -3036,7 +3118,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": -3.6,
-        "sentiment": null,
+        "sentiment": 0.0606,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 60,
@@ -3111,7 +3195,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 77.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 25,
@@ -3168,7 +3254,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 9.4,
-        "sentiment": null,
+        "sentiment": 0.0526,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -3231,7 +3319,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 63.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 48,
@@ -3282,7 +3372,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 29.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 45,
@@ -3339,7 +3431,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 73.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 36,
@@ -3390,7 +3484,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 41.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -3447,7 +3543,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 64.9,
-        "sentiment": null,
+        "sentiment": 0.0909,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 6,
@@ -3504,7 +3602,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 24.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 47,
@@ -3567,7 +3667,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 67.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 14,
@@ -3618,7 +3720,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 29.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 69,
@@ -3675,7 +3779,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 24.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 48,
@@ -3732,7 +3838,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 13.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 34,
@@ -3795,7 +3903,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 48.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 92,
@@ -3852,7 +3962,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 33.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -3915,7 +4027,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 66.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -3984,7 +4098,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 41.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -4041,7 +4157,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 40.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 56,
@@ -4098,7 +4216,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 74.8,
-        "sentiment": null,
+        "sentiment": 0.0833,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 10,
@@ -4148,7 +4268,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 47.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 19,
@@ -4192,7 +4314,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 55.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 66,
@@ -4249,7 +4373,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 30.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 80,
@@ -4293,7 +4419,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 51.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 26,
@@ -4350,7 +4478,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 70.0,
-        "sentiment": null,
+        "sentiment": 0.0769,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -4400,7 +4530,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 70.0,
-        "sentiment": null,
+        "sentiment": 0.0769,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -4450,7 +4582,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 43.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 251,
@@ -4513,7 +4647,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 41.7,
-        "sentiment": null,
+        "sentiment": 0.0172,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 52,
@@ -4582,7 +4718,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 40.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 62,
@@ -4645,7 +4783,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 56.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 48,
@@ -4708,7 +4848,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 9.3,
-        "sentiment": null,
+        "sentiment": -0.0192,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 33,
@@ -4759,7 +4901,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 55.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 43,
@@ -4822,7 +4966,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 22.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 170,
@@ -4885,7 +5031,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 46.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 59,
@@ -4948,7 +5096,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 25.3,
-        "sentiment": null,
+        "sentiment": 0.0323,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 38,
@@ -5011,7 +5161,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 43.7,
-        "sentiment": null,
+        "sentiment": 0.0435,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 38,
@@ -5068,7 +5220,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 54.2,
-        "sentiment": null,
+        "sentiment": 0.0417,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 48,
@@ -5137,7 +5291,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 43.7,
-        "sentiment": null,
+        "sentiment": 0.087,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -5212,7 +5368,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 47.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 78,
@@ -5269,7 +5427,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 52.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 47,
@@ -5320,7 +5480,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 21.3,
-        "sentiment": null,
+        "sentiment": 0.0263,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -5370,7 +5532,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 33.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -5433,7 +5597,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 66.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -5502,7 +5668,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 41.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -5553,7 +5721,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 25.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 125,
@@ -5610,7 +5780,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 47.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 19,
@@ -5654,7 +5826,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 10.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 64,
@@ -5711,7 +5885,9 @@
         "verification_present": true,
         "specificity_score": 0.4,
         "readability": -1.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 0,
@@ -5755,7 +5931,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 25.5,
-        "sentiment": null,
+        "sentiment": 0.0294,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -5818,7 +5996,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 45.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -5869,7 +6049,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 19.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 58,
@@ -5920,7 +6102,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 34.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 105,
@@ -5977,7 +6161,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 29.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 126,
@@ -6034,7 +6220,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 44.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 46,
@@ -6085,7 +6273,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 52.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 54,
@@ -6136,7 +6326,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 60.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 32,
@@ -6193,7 +6385,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 7.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6244,7 +6438,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 50.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 67,
@@ -6295,7 +6491,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 16.1,
-        "sentiment": null,
+        "sentiment": 0.125,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6364,7 +6562,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 43.7,
-        "sentiment": null,
+        "sentiment": 0.087,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6439,7 +6639,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 21.9,
-        "sentiment": null,
+        "sentiment": 0.0256,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -6489,7 +6691,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 37.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6546,7 +6750,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 66.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6615,7 +6821,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 22.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6672,7 +6880,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 72.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6723,7 +6933,9 @@
         "verification_present": true,
         "specificity_score": 0.4,
         "readability": 25.7,
-        "sentiment": null,
+        "sentiment": -0.0541,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 150,
@@ -6767,7 +6979,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 2.2,
-        "sentiment": null,
+        "sentiment": 0.0244,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 128,
@@ -6817,7 +7031,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 16.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -6892,7 +7108,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 55.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -6955,7 +7173,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 38.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 108,
@@ -7012,7 +7232,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 27.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 78,
@@ -7075,7 +7297,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 40.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 47,
@@ -7132,7 +7356,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 25.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 72,
@@ -7189,7 +7415,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 5.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 59,
@@ -7246,7 +7474,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 50.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -7297,7 +7527,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 26.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -7354,7 +7586,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 66.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -7423,7 +7657,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 22.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -7480,7 +7716,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 14.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 122,
@@ -7537,7 +7775,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 14.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 122,
@@ -7594,7 +7834,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 37.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 100,
@@ -7651,7 +7893,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 36.5,
-        "sentiment": null,
+        "sentiment": 0.0476,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 66,
@@ -7720,7 +7964,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": -3.9,
-        "sentiment": null,
+        "sentiment": 0.0909,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -7783,7 +8029,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 24.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 198,
@@ -7840,7 +8088,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 23.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -7891,7 +8141,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 33.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -7948,7 +8200,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 16.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -8023,7 +8277,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 55.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -8086,7 +8342,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 37.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 17,
@@ -8143,7 +8401,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 35.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 91,
@@ -8206,7 +8466,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 45.0,
-        "sentiment": null,
+        "sentiment": 0.0667,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 27,
@@ -8275,7 +8537,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 3.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 224,
@@ -8326,7 +8590,9 @@
         "verification_present": true,
         "specificity_score": 0.4,
         "readability": -11.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 80,
@@ -8383,7 +8649,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 47.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 135,
@@ -8427,7 +8695,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 9.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 41,
@@ -8484,7 +8754,9 @@
         "verification_present": true,
         "specificity_score": 0.4,
         "readability": 25.8,
-        "sentiment": null,
+        "sentiment": 0.025,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 25,
@@ -8541,7 +8813,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 5.3,
-        "sentiment": null,
+        "sentiment": 0.1111,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 46,
@@ -8598,7 +8872,9 @@
         "verification_present": false,
         "specificity_score": 0.4,
         "readability": 11.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 101,
@@ -8661,7 +8937,9 @@
         "verification_present": false,
         "specificity_score": 0.35,
         "readability": 15.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -8724,7 +9002,9 @@
         "verification_present": false,
         "specificity_score": 0.311,
         "readability": 25.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 123,
@@ -8774,7 +9054,9 @@
         "verification_present": false,
         "specificity_score": 0.307,
         "readability": -2.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 89,
@@ -8837,7 +9119,9 @@
         "verification_present": false,
         "specificity_score": 0.3,
         "readability": 30.0,
-        "sentiment": null,
+        "sentiment": 0.025,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 57,
@@ -8912,7 +9196,9 @@
         "verification_present": false,
         "specificity_score": 0.298,
         "readability": 24.1,
-        "sentiment": null,
+        "sentiment": 0.0513,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -8981,7 +9267,9 @@
         "verification_present": false,
         "specificity_score": 0.298,
         "readability": 11.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 57,
@@ -9050,7 +9338,9 @@
         "verification_present": false,
         "specificity_score": 0.292,
         "readability": 6.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 88,
@@ -9100,7 +9390,9 @@
         "verification_present": false,
         "specificity_score": 0.275,
         "readability": -8.1,
-        "sentiment": null,
+        "sentiment": 0.0312,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -9169,7 +9461,9 @@
         "verification_present": false,
         "specificity_score": 0.267,
         "readability": 5.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 97,
@@ -9238,7 +9532,9 @@
         "verification_present": false,
         "specificity_score": 0.24,
         "readability": 2.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -9301,7 +9597,9 @@
         "verification_present": false,
         "specificity_score": 0.233,
         "readability": 41.5,
-        "sentiment": null,
+        "sentiment": 0.0833,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -9370,7 +9668,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 29.5,
-        "sentiment": null,
+        "sentiment": 0.1429,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -9426,7 +9726,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 60.0,
-        "sentiment": null,
+        "sentiment": 0.027,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 48,
@@ -9489,7 +9791,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 17.3,
-        "sentiment": null,
+        "sentiment": 0.15,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -9551,7 +9855,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 26.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 69,
@@ -9608,7 +9914,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 28.4,
-        "sentiment": null,
+        "sentiment": 0.0476,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 57,
@@ -9658,7 +9966,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.9,
-        "sentiment": null,
+        "sentiment": 0.1,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 13,
@@ -9708,7 +10018,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.9,
-        "sentiment": null,
+        "sentiment": 0.2,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 13,
@@ -9764,7 +10076,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.9,
-        "sentiment": null,
+        "sentiment": 0.2,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 13,
@@ -9820,7 +10134,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 44.4,
-        "sentiment": null,
+        "sentiment": 0.1,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 13,
@@ -9870,7 +10186,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 6.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": false
       },
@@ -9907,7 +10225,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 27.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 161,
@@ -9951,7 +10271,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 28.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 207,
@@ -9995,7 +10317,9 @@
         "verification_present": true,
         "specificity_score": 0.2,
         "readability": 18.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": false
       },
@@ -10032,7 +10356,9 @@
         "verification_present": true,
         "specificity_score": 0.2,
         "readability": 2.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": false
       },
@@ -10069,7 +10395,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 11.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": false
       },
@@ -10106,7 +10434,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.9,
-        "sentiment": null,
+        "sentiment": -0.04,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 51,
@@ -10163,7 +10493,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 7.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 173,
@@ -10220,7 +10552,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": -18.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 117,
@@ -10277,7 +10611,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 15.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 146,
@@ -10328,7 +10664,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 9.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -10385,7 +10723,9 @@
         "verification_present": true,
         "specificity_score": 0.2,
         "readability": -6.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 135,
@@ -10429,7 +10769,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 15.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 65,
@@ -10486,7 +10828,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 17.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 6,
@@ -10537,7 +10881,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 28.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": false
       },
@@ -10574,7 +10920,9 @@
         "verification_present": true,
         "specificity_score": 0.2,
         "readability": 12.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 53,
@@ -10618,7 +10966,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 42.5,
-        "sentiment": null,
+        "sentiment": 0.0625,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -10668,7 +11018,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.9,
-        "sentiment": null,
+        "sentiment": 0.2,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -10724,7 +11076,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 17.3,
-        "sentiment": null,
+        "sentiment": 0.15,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 16,
@@ -10786,7 +11140,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 74.8,
-        "sentiment": null,
+        "sentiment": 0.1667,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 10,
@@ -10842,7 +11198,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 33.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 141,
@@ -10899,7 +11257,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 11.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 139,
@@ -10950,7 +11310,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.3,
-        "sentiment": null,
+        "sentiment": 0.1176,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -11006,7 +11368,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": -29.2,
-        "sentiment": null,
+        "sentiment": 0.0303,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 9,
@@ -11057,7 +11421,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 36.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 42,
@@ -11114,7 +11480,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 60.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 88,
@@ -11171,7 +11539,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 59.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 79,
@@ -11228,7 +11598,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 66.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": true,
+        "conditional": false,
         "highlights": [
           {
             "start": 3,
@@ -11279,7 +11651,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 47.6,
-        "sentiment": null,
+        "sentiment": 0.0556,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 70,
@@ -11329,7 +11703,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 49.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 21,
@@ -11380,7 +11756,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": -38.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": true
       },
@@ -11424,7 +11802,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": -15.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": true
       },
@@ -11461,7 +11841,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 6.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 124,
@@ -11512,7 +11894,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 47.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 7,
@@ -11563,7 +11947,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": -34.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": true
       },
@@ -11600,7 +11986,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 11.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 234,
@@ -11651,7 +12039,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 29.0,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 174,
@@ -11695,7 +12085,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": -2.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 0,
@@ -11746,7 +12138,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 36.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 42,
@@ -11803,7 +12197,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 20.5,
-        "sentiment": null,
+        "sentiment": 0.0294,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 190,
@@ -11853,7 +12249,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 22.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 124,
@@ -11904,7 +12302,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 60.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 88,
@@ -11961,7 +12361,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 59.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 79,
@@ -12018,7 +12420,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 20.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 36,
@@ -12069,7 +12473,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 30.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 66,
@@ -12120,7 +12526,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 32.5,
-        "sentiment": null,
+        "sentiment": 0.0833,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 13,
@@ -12170,7 +12578,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 55.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 77,
@@ -12221,7 +12631,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 34.2,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 28,
@@ -12272,7 +12684,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 57.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 46,
@@ -12323,7 +12737,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 55.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 126,
@@ -12374,7 +12790,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 46.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 0,
@@ -12425,7 +12843,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 18.1,
-        "sentiment": null,
+        "sentiment": 0.0588,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 22,
@@ -12475,7 +12895,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 19.0,
-        "sentiment": null,
+        "sentiment": 0.1,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 64,
@@ -12519,7 +12941,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 17.2,
-        "sentiment": null,
+        "sentiment": 0.0476,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 54,
@@ -12576,7 +13000,9 @@
         "verification_present": true,
         "specificity_score": 0.2,
         "readability": 2.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": true
       },
@@ -12613,7 +13039,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 51.1,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 68,
@@ -12670,7 +13098,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 58.4,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 49,
@@ -12727,7 +13157,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.5,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 36,
@@ -12784,7 +13216,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": -11.4,
-        "sentiment": null,
+        "sentiment": 0.04,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 31,
@@ -12841,7 +13275,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 71.8,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 88,
@@ -12898,7 +13334,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 45.6,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 69,
@@ -12967,7 +13405,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.9,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": true
       },
@@ -13004,7 +13444,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 9.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": true
       },
@@ -13041,7 +13483,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 31.7,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [
           {
             "start": 25,
@@ -13098,7 +13542,9 @@
         "verification_present": false,
         "specificity_score": 0.2,
         "readability": 35.3,
-        "sentiment": null,
+        "sentiment": 0.0,
+        "negated": false,
+        "conditional": false,
         "highlights": [],
         "report_assured": true
       },
@@ -13122,7 +13568,9 @@
       "evidence_chunk_ids": [],
       "old_source": "microsoft/2021_sustainability_report.pdf",
       "new_source": "microsoft/2025_sustainability_report.pdf",
-      "page": 30
+      "page": 30,
+      "match_basis": null,
+      "matched_slots": []
     },
     {
       "drift_id": "microsoft-drift-001",
@@ -13136,7 +13584,9 @@
       "evidence_chunk_ids": [],
       "old_source": "microsoft/2021_sustainability_report.pdf",
       "new_source": "microsoft/2025_sustainability_report.pdf",
-      "page": 30
+      "page": 30,
+      "match_basis": null,
+      "matched_slots": []
     },
     {
       "drift_id": "microsoft-drift-002",
@@ -13150,7 +13600,9 @@
       "evidence_chunk_ids": [],
       "old_source": "microsoft/2024_sustainability_report.pdf",
       "new_source": "microsoft/2025_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": null,
+      "matched_slots": []
     },
     {
       "drift_id": "microsoft-lang-000",
@@ -13164,7 +13616,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
       "drift_id": "microsoft-lang-001",
@@ -13178,7 +13635,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "both",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3",
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
       "drift_id": "microsoft-lang-002",
@@ -13192,7 +13656,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
       "drift_id": "microsoft-lang-003",
@@ -13206,7 +13675,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
       "drift_id": "microsoft-lang-004",
@@ -13220,7 +13694,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
       "drift_id": "microsoft-lang-005",
@@ -13234,7 +13713,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
       "drift_id": "microsoft-lang-006",
@@ -13248,52 +13732,164 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
       "drift_id": "microsoft-lang-007",
       "year": 2022,
       "type": "wording_softened",
       "canonical_metric": null,
-      "old": "Scope 3 represents the majority of Microsoft’s emissions, and we are committed to reducing these emissions by more than 50 percent by 2030.",
-      "new": "Scope 3 represents 96 percent of Microsoft’s annual emissions in FY22.",
+      "old": "Reduce value chain emissions By 2030, we will reduce our Scope 3 emissions by more than half from a 2020 baseline.",
+      "new": "Our value chain or Scope 3 emissions increased slightly at 0.5 percent, despite a 25 percent increase in purchased goods and services due to business growth.",
       "magnitude_pct": null,
       "description": "[commitment_softened] commitment strength 'firm' -> 'none'",
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3; value chain"
+      ]
     },
     {
       "drift_id": "microsoft-lang-008",
       "year": 2022,
       "type": "wording_softened",
       "canonical_metric": null,
-      "old": "Scope 3 represents the majority of Microsoft’s emissions, and we are committed to reducing these emissions by more than 50 percent by 2030.",
-      "new": "Scope 3 represents 96 percent of Microsoft’s annual emissions in FY22.",
+      "old": "Reduce value chain emissions By 2030, we will reduce our Scope 3 emissions by more than half from a 2020 baseline.",
+      "new": "Our value chain or Scope 3 emissions increased slightly at 0.5 percent, despite a 25 percent increase in purchased goods and services due to business growth.",
       "magnitude_pct": null,
       "description": "[deadline_dropped] target year 2030 no longer stated",
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3; value chain"
+      ]
     },
     {
       "drift_id": "microsoft-lang-009",
       "year": 2022,
       "type": "wording_softened",
       "canonical_metric": null,
-      "old": "Scope 3 represents the majority of Microsoft’s emissions, and we are committed to reducing these emissions by more than 50 percent by 2030.",
-      "new": "Scope 3 represents 96 percent of Microsoft’s annual emissions in FY22.",
+      "old": "Reduce value chain emissions By 2030, we will reduce our Scope 3 emissions by more than half from a 2020 baseline.",
+      "new": "Our value chain or Scope 3 emissions increased slightly at 0.5 percent, despite a 25 percent increase in purchased goods and services due to business growth.",
       "magnitude_pct": null,
-      "description": "[specificity_fell] specificity 0.60 -> 0.40 (-0.20)",
+      "description": "[specificity_fell] specificity 0.80 -> 0.40 (-0.40)",
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3; value chain"
+      ]
     },
     {
       "drift_id": "microsoft-lang-010",
+      "year": 2022,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "We are engaging suppliers and our business groups to cut our Scope 3 emissions by more than 50 percent and we’ll rely on carbon removal to reach carbon negative.",
+      "new": "In efforts to further accelerate progress towards our zero waste and Scope 3 carbon reduction commitments, we are working across the enterprise and with external partners to prioritize actions that align with our circular strategy.",
+      "magnitude_pct": null,
+      "description": "[quantity_dropped] quantity '50 percent' no longer stated",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-011",
+      "year": 2022,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "We are engaging suppliers and our business groups to cut our Scope 3 emissions by more than 50 percent and we’ll rely on carbon removal to reach carbon negative.",
+      "new": "In efforts to further accelerate progress towards our zero waste and Scope 3 carbon reduction commitments, we are working across the enterprise and with external partners to prioritize actions that align with our circular strategy.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.40 -> 0.20 (-0.20)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-012",
+      "year": 2022,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "We pledged to procure enough renewable energy to offset 50 percent of our energy consumption by 2018 and 60 percent in the next decade, and further specified that we’d aim to secure new renewable energy in the geography where our offices and datacenters are, bringing a stronger geographic connection",
+      "new": "It is estimated that by 2025, Microsoft Azure will run on 100 percent renewable energy.",
+      "magnitude_pct": null,
+      "description": "[deadline_pushed] target year moved 2018 -> 2025",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=renewable_share",
+        "claim_type=target"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-013",
+      "year": 2022,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "We pledged to procure enough renewable energy to offset 50 percent of our energy consumption by 2018 and 60 percent in the next decade, and further specified that we’d aim to secure new renewable energy in the geography where our offices and datacenters are, bringing a stronger geographic connection",
+      "new": "It is estimated that by 2025, Microsoft Azure will run on 100 percent renewable energy.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.53 -> 0.10 (-0.43)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=renewable_share",
+        "claim_type=target"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-014",
+      "year": 2022,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Through FY22 we will plan to convert our US distribution centers to 100 percent renewable energy through solar panel installations and using green renewable sources.",
+      "new": "These reductions include 12 suppliers switching to renewable energy, with six converting to 100 percent renewable energy as members of RE100.",
+      "magnitude_pct": null,
+      "description": "[commitment_softened] commitment strength 'firm' -> 'none'",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=renewable_share",
+        "claim_type=other"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-015",
       "year": 2022,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13304,10 +13900,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-011",
+      "drift_id": "microsoft-lang-016",
       "year": 2022,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13318,10 +13916,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-012",
+      "drift_id": "microsoft-lang-017",
       "year": 2022,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13332,10 +13932,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2021_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-013",
+      "drift_id": "microsoft-lang-018",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13346,10 +13948,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-014",
+      "drift_id": "microsoft-lang-019",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13360,10 +13967,35 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=attribute"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-015",
+      "drift_id": "microsoft-lang-020",
+      "year": 2023,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "By 2030, we will reduce our Scope 3 emissions by more than half from a 2020 baseline.",
+      "new": "By 2030, we will reduce our Scope 3 emissions by more than half from a 2020 baseline.",
+      "magnitude_pct": null,
+      "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "page": null,
+      "match_basis": "both",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3",
+        "deadline=2030",
+        "claim_type=target"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-021",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13374,10 +14006,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-016",
+      "drift_id": "microsoft-lang-022",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13388,24 +14025,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-017",
-      "year": 2023,
-      "type": "wording_softened",
-      "canonical_metric": null,
-      "old": "By 2030, we will reduce our Scope 3 emissions by more than half from a 2020 baseline.",
-      "new": "By 2030, we will reduce our Scope 3 emissions by more than half from a 2020 baseline.",
-      "magnitude_pct": null,
-      "description": "[boilerplate_recycled] near-identical wording republished; no change in commitment or evidence",
-      "evidence_chunk_ids": [],
-      "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
-      "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
-    },
-    {
-      "drift_id": "microsoft-lang-018",
+      "drift_id": "microsoft-lang-023",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13416,10 +14044,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-019",
+      "drift_id": "microsoft-lang-024",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13430,10 +14063,16 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "both",
+      "matched_slots": [
+        "metric_family=total_emissions",
+        "scope=Scope 3; upstream; downstream",
+        "claim_type=other"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-020",
+      "drift_id": "microsoft-lang-025",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13444,10 +14083,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=other"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-021",
+      "drift_id": "microsoft-lang-026",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13458,10 +14101,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2050",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-022",
+      "drift_id": "microsoft-lang-027",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13472,10 +14120,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-023",
+      "drift_id": "microsoft-lang-028",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13486,10 +14139,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-024",
+      "drift_id": "microsoft-lang-029",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13500,10 +14158,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=other"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-025",
+      "drift_id": "microsoft-lang-030",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13514,10 +14176,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=other"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-026",
+      "drift_id": "microsoft-lang-031",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13528,10 +14194,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-027",
+      "drift_id": "microsoft-lang-032",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13542,10 +14213,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-028",
+      "drift_id": "microsoft-lang-033",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13556,10 +14229,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-029",
+      "drift_id": "microsoft-lang-034",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13570,10 +14245,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-030",
+      "drift_id": "microsoft-lang-035",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13584,10 +14261,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-031",
+      "drift_id": "microsoft-lang-036",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13598,10 +14277,109 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=attribute"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-032",
+      "drift_id": "microsoft-lang-037",
+      "year": 2023,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "This was driven by improvements in our operations, telemetry-based measurement, renewable energy investments, sustainable aviation fuel purchases, and procurement of unbundled renewable energy certificates (RECs).",
+      "new": "Microsoft continues to build and scale carbon-free electricity through our procurement of renewable energy and investing to bring more carbon-free electricity onto the grids where we operate.",
+      "magnitude_pct": null,
+      "description": "[scope_narrowed] scope qualifier 'own operations' removed",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=renewable_share",
+        "claim_type=attribute"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-038",
+      "year": 2023,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Microsoft’s Scope 3 emissions account for more than 96 percent of our total emissions, with the vast majority of these emissions coming from three categories: Purchased Goods and Services (Category 1), Capital Goods (Category 2), and Use of Sold Products (Category 11).",
+      "new": "In FY23, 76.5% of our total emissions originated from our suppliers.",
+      "magnitude_pct": null,
+      "description": "[scope_narrowed] scope qualifier 'Scope 3' removed",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=total_emissions",
+        "claim_type=other"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-039",
+      "year": 2023,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Microsoft’s Scope 3 emissions account for more than 96 percent of our total emissions, with the vast majority of these emissions coming from three categories: Purchased Goods and Services (Category 1), Capital Goods (Category 2), and Use of Sold Products (Category 11).",
+      "new": "In FY23, 76.5% of our total emissions originated from our suppliers.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.40 -> 0.20 (-0.20)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=total_emissions",
+        "claim_type=other"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-040",
+      "year": 2023,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "For example, many of our PC accessories contain recycled materials, including the new Microsoft Adaptive Accessories and Audio Dock, both made with at least 30 percent post-consumer recycled plastic resin.",
+      "new": "The innovative Sustainable Rack Packaging system is designed to be made predominantly from recycled materials, completely devoid of single-use plastics, and fully repairable to prolong its lifespan.",
+      "magnitude_pct": null,
+      "description": "[quantity_dropped] quantity '30 percent' no longer stated",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=recycled_share",
+        "claim_type=attribute"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-041",
+      "year": 2023,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "These new systems will allow for better data such as weights, material type, and recycled content, ensuring regulatory compliance and supporting decision making around driving circular economy initiatives.",
+      "new": "This is accomplished first by increasing our use of post-consumer recycled content in the packaging materials, and second by designing packages that are recyclable in existing collection systems.",
+      "magnitude_pct": null,
+      "description": "[commitment_softened] commitment strength 'firm' -> 'none'",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=recycled_share",
+        "claim_type=attribute"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-042",
       "year": 2023,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13612,10 +14390,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2022_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=attribute"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-033",
+      "drift_id": "microsoft-lang-043",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13626,10 +14408,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "both",
+      "matched_slots": [
+        "metric_family=renewable_share",
+        "claim_type=attribute"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-034",
+      "drift_id": "microsoft-lang-044",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13640,10 +14427,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-035",
+      "drift_id": "microsoft-lang-045",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13654,10 +14446,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2025",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-036",
+      "drift_id": "microsoft-lang-046",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13668,10 +14465,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-037",
+      "drift_id": "microsoft-lang-047",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13682,10 +14484,17 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "both",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "scope=Scope 3",
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-038",
+      "drift_id": "microsoft-lang-048",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13696,10 +14505,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-039",
+      "drift_id": "microsoft-lang-049",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13710,10 +14524,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-040",
+      "drift_id": "microsoft-lang-050",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13724,10 +14543,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2050",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-041",
+      "drift_id": "microsoft-lang-051",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13738,10 +14562,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-042",
+      "drift_id": "microsoft-lang-052",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13752,10 +14581,15 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "deadline=2030",
+        "claim_type=target"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-043",
+      "drift_id": "microsoft-lang-053",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13766,10 +14600,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=attribute"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-044",
+      "drift_id": "microsoft-lang-054",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13780,10 +14618,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=attribute"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-045",
+      "drift_id": "microsoft-lang-055",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13794,10 +14636,14 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=other"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-046",
+      "drift_id": "microsoft-lang-056",
       "year": 2024,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13808,10 +14654,207 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
       "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": [
+        "claim_type=attribute"
+      ]
     },
     {
-      "drift_id": "microsoft-lang-047",
+      "drift_id": "microsoft-lang-057",
+      "year": 2024,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Scope 3 represents over 96% of Microsoft’s annual emissions in FY23.",
+      "new": "This milestone has inspired several suppliers to adopt even more ambitious targets, such as procuring 100% renewable energy under RE100 standards and implementing Scope 3 programs modeled on the Microsoft Cloud Supply Chain.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.40 -> 0.14 (-0.26)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "claim_type=other"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-058",
+      "year": 2024,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "We also partnered with Clearloop to expand equitable access to clean energy and help decarbonize the grid in the Mississippi Delta region, enabling a 6.6-megawatt project in Mississippi through an upfront payment for long-term renewable energy credits.",
+      "new": "By democratizing access to renewable energy insights, we empower decision-makers to make informed, responsible environmental choices and accelerate global clean energy adoption.",
+      "magnitude_pct": null,
+      "description": "[quantity_dropped] quantity '6.6' no longer stated",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=renewable_share",
+        "claim_type=attribute"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-059",
+      "year": 2024,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "We also partnered with Clearloop to expand equitable access to clean energy and help decarbonize the grid in the Mississippi Delta region, enabling a 6.6-megawatt project in Mississippi through an upfront payment for long-term renewable energy credits.",
+      "new": "By democratizing access to renewable energy insights, we empower decision-makers to make informed, responsible environmental choices and accelerate global clean energy adoption.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.40 -> 0.00 (-0.40)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=renewable_share",
+        "claim_type=attribute"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-060",
+      "year": 2024,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Recycled materials The post-consumer recycled content used in our devices packaging currently stands at 53.8%.",
+      "new": "We are focused on increasing use of recycled content, improving device repairability, and improving data quality of device recycling.",
+      "magnitude_pct": null,
+      "description": "[quantity_dropped] quantity '53.8%' no longer stated",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=recycled_share",
+        "claim_type=attribute"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-061",
+      "year": 2024,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Recycled materials The post-consumer recycled content used in our devices packaging currently stands at 53.8%.",
+      "new": "We are focused on increasing use of recycled content, improving device repairability, and improving data quality of device recycling.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.20 -> 0.00 (-0.20)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2023_sustainablity_report.pdf",
+      "new_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=recycled_share",
+        "claim_type=attribute"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-062",
+      "year": 2025,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "For Microsoft to be carbon negative by 2030, we will need to reduce our value chain emissions.",
+      "new": "It also supports our goal to be carbon negative by 2030 while driving broader adoption across the construction value chain.",
+      "magnitude_pct": null,
+      "description": "[commitment_softened] commitment strength 'firm' -> 'none'",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2025_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "scope=value chain",
+        "deadline=2030",
+        "claim_type=target"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-063",
+      "year": 2025,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "For Microsoft to be carbon negative by 2030, we will need to reduce our value chain emissions.",
+      "new": "It also supports our goal to be carbon negative by 2030 while driving broader adoption across the construction value chain.",
+      "magnitude_pct": null,
+      "description": "[quantity_dropped] quantity '2030,' no longer stated",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2025_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "scope=value chain",
+        "deadline=2030",
+        "claim_type=target"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-064",
+      "year": 2025,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "For Microsoft to be carbon negative by 2030, we will need to reduce our value chain emissions.",
+      "new": "It also supports our goal to be carbon negative by 2030 while driving broader adoption across the construction value chain.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.80 -> 0.60 (-0.20)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2025_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "scope=value chain",
+        "deadline=2030",
+        "claim_type=target"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-065",
+      "year": 2025,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Our value chain or Scope 3 emissions increased by 26% from our 2020 baseline.",
+      "new": "Scope 3 remains the largest share of our footprint overall, but one of the clearest changes this year was the growing contribution of Scope 2, which represents 13% of our total emissions—up from nearly 2% last year.",
+      "magnitude_pct": null,
+      "description": "[specificity_fell] specificity 0.60 -> 0.40 (-0.20)",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2025_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=scope_3",
+        "claim_type=other"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-066",
+      "year": 2025,
+      "type": "wording_softened",
+      "canonical_metric": null,
+      "old": "Microsoft’s Scope 3 emissions continue to account for more than 97% of our total emissions.",
+      "new": "Our total emissions (Scopes 1, 2, and 3) increased 25% year over year, driven primarily by the expansion of our datacenter infrastructure and pausing our use of non-additional, unbundled renewable energy certificates as we prioritize investments that bring net new power to grids.",
+      "magnitude_pct": null,
+      "description": "[scope_narrowed] scope qualifier 'Scope 3' removed",
+      "evidence_chunk_ids": [],
+      "old_source": "data/raw/microsoft/2024_sustainability_report.pdf",
+      "new_source": "data/raw/microsoft/2025_sustainability_report.pdf",
+      "page": null,
+      "match_basis": "slots",
+      "matched_slots": [
+        "metric_family=total_emissions",
+        "claim_type=other"
+      ]
+    },
+    {
+      "drift_id": "microsoft-lang-067",
       "year": 2025,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13822,10 +14865,12 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2024_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2025_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     },
     {
-      "drift_id": "microsoft-lang-048",
+      "drift_id": "microsoft-lang-068",
       "year": 2025,
       "type": "wording_softened",
       "canonical_metric": null,
@@ -13836,7 +14881,9 @@
       "evidence_chunk_ids": [],
       "old_source": "data/raw/microsoft/2024_sustainability_report.pdf",
       "new_source": "data/raw/microsoft/2025_sustainability_report.pdf",
-      "page": null
+      "page": null,
+      "match_basis": "text",
+      "matched_slots": []
     }
   ],
   "did_points": [
@@ -14068,7 +15115,10 @@
         "verified_share": 0.051,
         "scope_share": 0.116,
         "passive_share": 0.152,
+        "negated_share": 0.0,
+        "conditional_share": 0.005,
         "readability": 29.8,
+        "mean_sentiment": 0.0158,
         "say_more_prove_less": 0.44,
         "firm_share": 0.343,
         "hedged_share": 0.035,
@@ -14088,11 +15138,14 @@
         "verified_share": 0.025,
         "scope_share": 0.118,
         "passive_share": 0.143,
+        "negated_share": 0.01,
+        "conditional_share": 0.0,
         "readability": 28.7,
+        "mean_sentiment": 0.0064,
         "say_more_prove_less": 0.23,
-        "firm_share": 0.202,
+        "firm_share": 0.192,
         "hedged_share": 0.025,
-        "commitment_ratio": 8.2,
+        "commitment_ratio": 7.8,
         "report_assured": true,
         "assurance_auditor": null,
         "assurance_page": 17
@@ -14108,7 +15161,10 @@
         "verified_share": 0.035,
         "scope_share": 0.153,
         "passive_share": 0.188,
+        "negated_share": 0.0,
+        "conditional_share": 0.0,
         "readability": 29.1,
+        "mean_sentiment": 0.0081,
         "say_more_prove_less": 0.32,
         "firm_share": 0.153,
         "hedged_share": 0.071,
@@ -14128,7 +15184,10 @@
         "verified_share": 0.02,
         "scope_share": 0.111,
         "passive_share": 0.116,
+        "negated_share": 0.0,
+        "conditional_share": 0.0,
         "readability": 25.0,
+        "mean_sentiment": 0.0142,
         "say_more_prove_less": 0.48,
         "firm_share": 0.171,
         "hedged_share": 0.045,
@@ -14148,7 +15207,10 @@
         "verified_share": 0.066,
         "scope_share": 0.145,
         "passive_share": 0.066,
+        "negated_share": 0.0,
+        "conditional_share": 0.0,
         "readability": 16.1,
+        "mean_sentiment": 0.0085,
         "say_more_prove_less": 0.31,
         "firm_share": 0.053,
         "hedged_share": 0.092,
@@ -14175,14 +15237,16 @@
       "caveat": "vagueness is lexical specificity over material claims; unsupported_claims is the naked-assertion rate among quantified targets/achievements, discounted if the report carries a third-party assurance statement"
     },
     "drift_counts": {
-      "substantive": 24,
+      "substantive": 44,
       "boilerplate": 25,
       "by_type": {
         "boilerplate_recycled": 25,
-        "specificity_fell": 10,
-        "commitment_softened": 7,
+        "specificity_fell": 18,
+        "commitment_softened": 10,
+        "quantity_dropped": 7,
         "deadline_dropped": 5,
-        "quantity_dropped": 2
+        "scope_narrowed": 3,
+        "deadline_pushed": 1
       }
     },
     "sins": {
@@ -14664,25 +15728,25 @@
         {
           "report_year": 2022,
           "numeric_restatements": 0,
-          "language_softenings": 8,
+          "language_softenings": 13,
           "both": false
         },
         {
           "report_year": 2023,
           "numeric_restatements": 0,
-          "language_softenings": 9,
+          "language_softenings": 14,
           "both": false
         },
         {
           "report_year": 2024,
           "numeric_restatements": 0,
-          "language_softenings": 5,
+          "language_softenings": 10,
           "both": false
         },
         {
           "report_year": 2025,
           "numeric_restatements": 3,
-          "language_softenings": 2,
+          "language_softenings": 7,
           "both": true
         }
       ],
@@ -14735,6 +15799,7 @@
       "n_linked": 4,
       "n_measurable": 4,
       "n_behind": 0,
+      "n_excluded_negated_or_conditional": 0,
       "reason": "every linked target is a share metric (renewable/recycled). Scoring that alone would read as clean while absolute emissions can still be rising, so the say-do gap is left unmeasurable",
       "links": [
         {

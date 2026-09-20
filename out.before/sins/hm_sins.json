@@ -1,0 +1,4087 @@
+{
+  "company": "hm",
+  "n_claims": 397,
+  "n_tagged": 225,
+  "counts": {
+    "no_proof": 177,
+    "vagueness": 43,
+    "hidden_trade_off": 35,
+    "false_labels": 10
+  },
+  "sins_severity": 30.6,
+  "worsening_years": [
+    2024
+  ],
+  "not_implemented": [
+    "irrelevance",
+    "lesser_of_two_evils",
+    "fibbing"
+  ],
+  "tagged": [
+    {
+      "claim_index": 10,
+      "sentence": "Monki is a purpose-driven fashion brand that believes in sisterhood and the power of community and in contributing to a more sustainable fashion industry.",
+      "page": "22",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.083)",
+          "severity": 0.95,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.95
+    },
+    {
+      "claim_index": 55,
+      "sentence": "Monki is a purpose-driven fashion brand that believes in sisterhood, the power of community and in contributing to a more sustainable fashion industry.",
+      "page": "26",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.087)",
+          "severity": 0.95,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.95
+    },
+    {
+      "claim_index": 113,
+      "sentence": "Sustainability risks For many years H&M Group has been taking a leading role in driving change towards a more sustainable fashion future and in setting ambitious sustainability targets and strategies.",
+      "page": "37",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.097)",
+          "severity": 0.95,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.95
+    },
+    {
+      "claim_index": 133,
+      "sentence": "Progress was largely due to scaling use of recycled polyester and Responsible Wool Standard compliant wool.",
+      "page": "43",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.125)",
+          "severity": 0.95,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        },
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('Standard') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.95
+    },
+    {
+      "claim_index": 376,
+      "sentence": "The expected outcome of this action is reduced environmental impact, optimised resource use and improved circularity through longer-\u00adlasting, more recyclable products.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.136)",
+          "severity": 0.95,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.95
+    },
+    {
+      "claim_index": 238,
+      "sentence": "This increase was mainly driven by our continued priority to use recycled plastic.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.077)",
+          "severity": 0.93,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.93
+    },
+    {
+      "claim_index": 243,
+      "sentence": "In this time-horizon, carbon pricing materialises most significantly in a Net Zero scenario, with later and lower carbon prices in the delayed transition, and hot house scenarios.",
+      "page": "46",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.074)",
+          "severity": 0.92,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.92
+    },
+    {
+      "claim_index": 147,
+      "sentence": "We believe fashion should be accessible to everyone and that our products should be made in a responsible way, and designed to be used, re\u00adused and recycled.",
+      "page": "10",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.071)",
+          "severity": 0.91,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.91
+    },
+    {
+      "claim_index": 115,
+      "sentence": "Investments would also be needed to develop sustainably sourced materials for use in our garments.",
+      "page": "39",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.067)",
+          "severity": 0.88,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.88
+    },
+    {
+      "claim_index": 231,
+      "sentence": "Progress towards targets in 2024 We continued to increase the share of recycled and sustainably sourced materials.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.062)",
+          "severity": 0.86,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.86
+    },
+    {
+      "claim_index": 377,
+      "sentence": "We are also one of the founding members of the Better Cotton Initiative (BCI) and the Organic Cotton Accelerator (OCA), which are committed to create a transparent, responsible and resilient organic cotton supply chain.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.059)",
+          "severity": 0.84,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.84
+    },
+    {
+      "claim_index": 95,
+      "sentence": "The decisions we make at this stage determine the materials and processes we use, the expected lifetime of products we create for each assortment, and the potential for those products to be repaired, reused or recycled.",
+      "page": "12",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.056)",
+          "severity": 0.83,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.83
+    },
+    {
+      "claim_index": 4,
+      "sentence": "We have set a leading individual goal to only use recycled polyester by 2025 and to further scale up textile-to-textile recycling.",
+      "page": "13",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.050)",
+          "severity": 0.8,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.8
+    },
+    {
+      "claim_index": 233,
+      "sentence": "We continued to increase the shares of recycled or sustainably sourced materials and plastic packaging designed for reuse and \u00adrecycling.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.050)",
+          "severity": 0.8,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.8
+    },
+    {
+      "claim_index": 38,
+      "sentence": "We further define more sustainably sourced for different materials in our Material Categorisation, Responsible Raw Material Sourcing Policy and Animal Welfare Policy.",
+      "page": "4",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.045)",
+          "severity": 0.78,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.78
+    },
+    {
+      "claim_index": 51,
+      "sentence": "Our brands and business ventures want to enable people all around the world to express themselves through more sustainable fashion and design.",
+      "page": "21",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.045)",
+          "severity": 0.78,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.78
+    },
+    {
+      "claim_index": 239,
+      "sentence": "For sustainably sourced materials we continued to increase the share of wool certified to the Responsible Wool Standard (RWS) as well as the share of sustainably sourced man-made cellulosic fibres and FSC certified wood and wood-based materials, for both commercial products and for packaging.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.045)",
+          "severity": 0.78,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.78
+    },
+    {
+      "claim_index": 185,
+      "sentence": "This includes various initiatives aimed at phasing out fossil fuels, supporting energy efficiency, and replacing conventional materials with recycled or sustainably sourced alternatives.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.043)",
+          "severity": 0.77,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.77
+    },
+    {
+      "claim_index": 244,
+      "sentence": "It is very likely that H&M Group\u2019s exposure to carbon pricing will materialise prior to reaching the net zero 2040 target, but by reducing emissions the impact of any pricing schemes would be mitigated, and earlier decarbonisation leads to less \u00adexposure to any pricing scheme.",
+      "page": "46",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.043)",
+          "severity": 0.77,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.77
+    },
+    {
+      "claim_index": 228,
+      "sentence": "For packaging, we have already made significant progress towards our \u00adtarget to design all our plastic packaging for reuse and recycling by 2025.",
+      "page": "39",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.018,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.02; relies on vague/hedging vocabulary (ratio 0.045)",
+          "severity": 0.76,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.76
+    },
+    {
+      "claim_index": 258,
+      "sentence": "As we have a substantial need for innovative new materials, we invest in startups that support our longterm ambition to use only sustainably sourced textiles.",
+      "page": "15",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.040)",
+          "severity": 0.75,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.75
+    },
+    {
+      "claim_index": 31,
+      "sentence": "Maintaining strong relationships with our stakeholders helps us identify innovative ways to create fashion for our customers, drive innovation, and develop more sustainable materials and new business models.",
+      "page": "37",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.036)",
+          "severity": 0.73,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.73
+    },
+    {
+      "claim_index": 34,
+      "sentence": "The brands offer various products and services based on circular business models and in the collections the percentage of recycled and other more sustainably sourced materials is increasing.",
+      "page": "55",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.036)",
+          "severity": 0.73,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.73
+    },
+    {
+      "claim_index": 271,
+      "sentence": "These events may also lead to a shift in consumer sentiment with an increased demand for recycled products and materials, presenting opportunities to grow revenue by scaling resale.",
+      "page": "39",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.036)",
+          "severity": 0.73,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.73
+    },
+    {
+      "claim_index": 349,
+      "sentence": "Throughout the year, we continued our efforts to avoid and reduce land\u2011use changes and the conversion of natural ecosystems by increasing the use of sustainably sourced materials.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.036)",
+          "severity": 0.73,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.73
+    },
+    {
+      "claim_index": 43,
+      "sentence": "Our investments have in a short time created significant value, for example by improving the customer experience and enabling scaling and commercialisation of recycled and more sustainably sourced materials.",
+      "page": "8",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.035)",
+          "severity": 0.72,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.72
+    },
+    {
+      "claim_index": 351,
+      "sentence": "Our commitment to increasing the share of recycled and sustainably sourced materials, improving raw\u2011material traceability, and continued collaboration with WWF will remain central to achieving our biodiversity ambitions.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.035)",
+          "severity": 0.72,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.72
+    },
+    {
+      "claim_index": 213,
+      "sentence": "Reduce We are reducing our impact by increasing the recycled content of our products and using greater amounts of certified materials such as responsible wool and wood from FSC certified forests.",
+      "page": "37",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.032)",
+          "severity": 0.71,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.71
+    },
+    {
+      "claim_index": 7,
+      "sentence": "Our EUR 500 million sustainability-linked bond (SLB) was amongst other things launched to contribute to our goal to reduce carbon emissions (scope 1,2 and 3) in absolute figures by 56 percent by 2030 (baseline 2019).",
+      "page": "14",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 42,
+      "sentence": "To reach our ambitious climate goals of halving the group\u2019s greenhouse gas emissions by 2030 and achieving net-zero by 2040, we invest in projects to reduce greenhouse gas emissions throughout our whole value chain.",
+      "page": "7",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.479,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 46,
+      "sentence": "The ambition is to achieve net-zero greenhouse gas (GHG) emissions by 2040 and to reduce absolute scope 1, 2 and 31 GHG emissions by 56 percent by 20302.",
+      "page": "14",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 64,
+      "sentence": "Our climate goal is to reduce our absolute scope 1, 2 and 31 greenhouse gas emissions (GHG) by 56 percent by 2030, against a 2019 baseline.",
+      "page": "42",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 68,
+      "sentence": "In support of our overall climate goals, we aim to source 100 percent renewable electricity in both our own operations and our supply chain by 2030.",
+      "page": "42",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 122,
+      "sentence": "Net zero, as defined by the Science Based Targets initiative (SBTi), focuses on reducing emissions as far as possible before removing emissions that cannot be avoided.",
+      "page": "42",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.046,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.05; relies on vague/hedging vocabulary (ratio 0.038)",
+          "severity": 0.7,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 167,
+      "sentence": "Reducing absolute GHG emssions H&M Group has set targets to reduce absolute scope 1 and 2 GHG emissions by 56 percent by 2030, against a 2019 baseline, and to reduce absolute scope 3 GHG emissions by 56 percent by 2030, against a 2019 baseline.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('Reducing') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 168,
+      "sentence": "In addition, we have set targets to reduce absolute scope 1 and 2 GHG \u00ademissions by 90 percent by 2040, and to reduce absolute scope 3 GHG \u00ademissions by 90 percent by 2040, against a 2019 baseline.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduce') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 172,
+      "sentence": "For our own operations as a whole, we have set a target to source 100 percent renewable electricity, including at least 50 percent from power purchase agreements with new renewable electricity generation by 2030.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 255,
+      "sentence": "During the year we further reduced our emissions in Scope 32 and are well on the way to our longterm target of an absolute reduction of 56 percent by 2030.",
+      "page": "8",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 278,
+      "sentence": "Decarbonising own operations To enable the decarbonisation of our own operations, we have set targets to reduce absolute Scope 1 and 2 GHG emissions by 90 percent by 2040 and 56 percent by 2030, against a 2019 baseline.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 281,
+      "sentence": "Based on our projections, this action is expected to reduce our Scope 1 and 2 market-based GHG emissions by around 1 percent by 2030, compared with our total emissions in 2019.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.3,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 282,
+      "sentence": "The aim of this action is to ensure that we reach 100 percent matching of renewable electricity for our own operations by 2030, with at least 50 percent coming from Virtual Power Purchase Agreements (VPPAs), driving the development of new renewable electricity generation.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 283,
+      "sentence": "Based on our projections, this action is expected to reduce our market-based Scope 1 \u00adand 2 GHG emissions by around 55 percent by 2030, compared with our total emissions in 2019.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.3,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 284,
+      "sentence": "Decarbonising production To enable the decarbonisation of production processes in our garment \u00adsupply chain from Tier 1 to 3, we have set targets to reduce absolute Scope 3 GHG emissions (excluding indirect use-phase emissions) by 90 percent by 2040 and 56 percent by 2030, compared with a 2019 baseline.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 286,
+      "sentence": "Based on our projections, this action is projected to deliver a 2 percent reduction in Scope 3 GHG emissions compared with a 2019 baseline, equivalent to around 81,306 tonnes of CO\u2082e by 2030.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.662,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 287,
+      "sentence": "To reduce GHG emissions from production processes, we are therefore working with our suppliers in Tier 1, 2 and 3 with the aim to phase out on-site coal by 2026.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 288,
+      "sentence": "By 2030, we aim for all suppliers in Tier 1 to 3 to source 100 percent renewable electricity for the production of our garments \u2013 from spinning to finished product.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 289,
+      "sentence": "Based on our projections, this action is projected to deliver a 38 percent reduction in Scope 3 GHG emissions compared with a 2019 baseline, equivalent to around 1,565,387 tonnes of CO\u2082e by 2030.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.662,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 291,
+      "sentence": "Decarbonising transports To enable the decarbonisation of transportation to and from our stores, warehouses and customers, we have set targets to reduce absolute Scope 3 GHG emissions (excluding indirect use-phase emissions) by 90 percent by 2040 and 56 percent by 2030, compared with a 2019 baseline.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 294,
+      "sentence": "Based on our projections, this action is projected to deliver a 3 percent absolute reduction in Scope 3 emissions by 2030, compared with 2019 levels.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 300,
+      "sentence": "Based on our projections, this action is projected to deliver a 13 percent reduction in Scope 3 GHG emissions by 2030, compared with 2019 levels.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.8,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 313,
+      "sentence": "By the end of 2025, 10 Tier 1, 2, and 3 factories reported the use of on\u2011site coal boilers, down from 118 in 2022, showing strong progress toward our aim of full phase\u2011out by the end of 2026.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.675,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 327,
+      "sentence": "Minimising water pollution We have set a target to achieve 95 percent compliance with ZDHC Manufacturing Restricted Substances List (MRSL) for all processing units in Tier 1 and 2 of our supply chain by 2030.",
+      "page": "43",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 328,
+      "sentence": "In addition, we have set a target to achieve 100 percent compliance with the ZDHC Wastewater Guidelines (Foundation Level) by 2025 for all processing units in Tier 1 and 2 of our supply chain with on-site effluent treatment plants (ETP), ensuring that discharged water quality meets ZDHC\u2019s minimum environmental requirements.",
+      "page": "43",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.7,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.7
+    },
+    {
+      "claim_index": 81,
+      "sentence": "Although all our investments are long-term, they have in a short time created significant value both financially and operationally \u2014 for example by improving customer experience and enabling scaling and commercialisation of recycled and more sustainably sourced materials.",
+      "page": "51",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.027)",
+          "severity": 0.69,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.69
+    },
+    {
+      "claim_index": 94,
+      "sentence": "In our Sustainability Disclosure (at hmgroup. com/sustainability/ sustainability-reporting) we share more about our work to ensure that collected textiles are taken care of responsibly \u2014 either to be reused as a product, sold as second-hand or recycled.",
+      "page": "12",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.027)",
+          "severity": 0.69,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.69
+    },
+    {
+      "claim_index": 241,
+      "sentence": "Less severe climate impacts within the net zero and delayed \u00adtransition scenarios, coupled with improved resilience, mean that cotton prices are less severely impacted in these scenarios, but overall risks are still judged to be high.",
+      "page": "45",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.028)",
+          "severity": 0.69,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.69
+    },
+    {
+      "claim_index": 346,
+      "sentence": "We have allocated resources towards this action in the form of investments to increase the availability of recycled materials and through efforts to expand sourcing from suppliers that apply improved soil and rangeland management practices.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.029)",
+          "severity": 0.69,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.69
+    },
+    {
+      "claim_index": 362,
+      "sentence": "To address the limited access to recycled alternatives, we continued to support our investment in Syre for textile-\u00adtotextile recycled polyester and signed a multi-year agreement to source \u00adCIRCULOSE\u00ae as a replacement for virgin viscose.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.029)",
+          "severity": 0.69,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.69
+    },
+    {
+      "claim_index": 225,
+      "sentence": "Investing in new sourcing and recycling technologies To increase the availability of recycled or sustainably sourced materials and make them more affordable, we support the development, testing and scaling of alternative materials and recycling infrastructure at various stages.",
+      "page": "39",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.026)",
+          "severity": 0.68,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.68
+    },
+    {
+      "claim_index": 5,
+      "sentence": "Textile Exchange named H&M Group as a leading company within fibre and material sourcing in its report Material Change which is one of the most extensive analyses of how the textile industry is progressing in its transition to more sustainable materials and a circular economy.",
+      "page": "14",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.00; relies on vague/hedging vocabulary (ratio 0.022)",
+          "severity": 0.66,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.66
+    },
+    {
+      "claim_index": 23,
+      "sentence": "To achieve our 100 percent goal we will continue to work towards a balanced portfolio of Energy Attribute Certificates, power purchase agreements on large-scale renewables projects, and rooftop solar photovoltaics.",
+      "page": "31",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('Certificates') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 33,
+      "sentence": "To achieve our 100 percent goal we will continue to work towards a balanced portfolio of Energy Attribute Certificates, power purchase agreements on largescale renewables projects, and rooftop solar photovoltaics.",
+      "page": "37",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('Certificates') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 45,
+      "sentence": "As of January 2023, we have 17 approved projects with a potential annual reduction of 50,000 tonnes CO2e in our supply chain, and a potential additional reduction of approximately 140,000 tonnes beyond our own value chain.",
+      "page": "14",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.279,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('approved') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 77,
+      "sentence": "2025: 30 percent of our materials in commercial goods to be certified recycled.",
+      "page": "49",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('certified') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 124,
+      "sentence": "Compared to last year, this is a decrease of 9,794 tonnes CO2e \u2014 primarily due to a relative increase in our procurement of renewable energy certificates following closure of our operations in Russia.",
+      "page": "42",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('certificates') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 266,
+      "sentence": "We also collaborate with our business partners to increase the use and availability of certified, \u00adrecycled, and sustainably sourced materials.",
+      "page": "38",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('certified') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 310,
+      "sentence": "The share of renewable electricity coming from bundled certificates is 51.5 percent.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('certificates') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 339,
+      "sentence": "To achieve this ambition, we focus our efforts on eliminating business practices that harm ecosystems by increasing the use and availability of certified, recycled and sustainably sourced materials.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('certified') without naming the certifying body or standard",
+          "severity": 0.6,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.6
+    },
+    {
+      "claim_index": 263,
+      "sentence": "Although progress towards these targets has been made during the year, we anticipate future challenges related to the availability of recycled and sustainably sourced materials, and the management of global supply chains and business relationships in high-risk regions.",
+      "page": "35",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.095,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.10; relies on vague/hedging vocabulary (ratio 0.026)",
+          "severity": 0.59,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.59
+    },
+    {
+      "claim_index": 125,
+      "sentence": "This positive trend is primarily attributed to our ongoing efforts, including investments in recycled and sustainably sourced materials for garments and packaging, energy efficiency improvements and a shift to cleaner energy sources in our supply chain as well as decreased stock-in-trade.",
+      "page": "42",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.102,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.10; relies on vague/hedging vocabulary (ratio 0.024)",
+          "severity": 0.57,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.57
+    },
+    {
+      "claim_index": 22,
+      "sentence": "As one part of this we are working to source 100 percent renewable \u00adelectricity in our own operations and to increase the use of renewable electricity among our partners and suppliers.",
+      "page": "31",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 24,
+      "sentence": "As part of this, we assess not only our salient human rights issues on an annual basis, but also the long-term risks and impacts \u2013 such as what a shift to a more digital, circular and climate positive value chain could mean for future work.",
+      "page": "32",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.109,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.11; relies on vague/hedging vocabulary (ratio 0.023)",
+          "severity": 0.55,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 27,
+      "sentence": "Achievement 2021: -22 percent within scope 1 and 2 and -9 percent within scope 3.",
+      "page": "36",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 28,
+      "sentence": "2030: Use 100 percent renewable electricity in own operations, raising the bar on our energy sourcing criteria.",
+      "page": "36",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 32,
+      "sentence": "95 percent of electricity sourced for our own operations was renewable (90 percent in 2020).",
+      "page": "37",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 47,
+      "sentence": "We reduced relative water consumption in our supply chain by 38 percent, compared to a 2017 baseline.",
+      "page": "15",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 63,
+      "sentence": "Our sustainability-linked bond, which was issued in 2021, continues to provide an opportunity for investors to support, among other things, an accelerated transition to recycled materials and reduction of GHG emissions (scope 1, 2 and 3) in our supply chain.",
+      "page": "42",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 74,
+      "sentence": "2030: Reduce absolute scope 1, 2 and 31 greenhouse gas (GHG) emissions by 56 percent (baseline 2019).",
+      "page": "49",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 75,
+      "sentence": "Achievement 2022: 8 percent reduction in scope 1 and 2 emissions and 7 percent reduction in scope 3 emissions (from 2019 baseline).",
+      "page": "49",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 88,
+      "sentence": "H&M Group achieved a 22 percent reduction in scope 3 emissions from a 2019 baseline.",
+      "page": "8",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 89,
+      "sentence": "In addition, a 29 percent reduction in electricity intensity in H&M Group stores from a 2016 baseline exceeded the group\u2019s 25 percent goal seven years early, contributing to the reduction in scope 1 and 2 emissions.",
+      "page": "8",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 101,
+      "sentence": "2) Target boundary includes 100% of scope 1 and 2 emissions, and 100% of minimum boundary scope 3 emissions (which excludes indirect emissions from use of sold products).",
+      "page": "19",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 128,
+      "sentence": "Freshwater share in H&M Group\u2019s supply chain reduced to 84 percent compared to 87 percent in 2022.",
+      "page": "42",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 129,
+      "sentence": "Scope 2 emissions under the market-based approach are equal to 38,451 tonnes CO2e.",
+      "page": "42",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 141,
+      "sentence": "By investing in and streamlining our brands and supply chain, paired with maintained cost control, our cash flow from operating activities amounted to SEK 32 billion and an improved operating margin, although we didn\u2019t reach our ambition of 10 percent.",
+      "page": "7",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.298,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('improved') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 144,
+      "sentence": "In 2024, our scope 3 greenhouse gas emissions decreased by 24 percent compared to our 2019 baseline.",
+      "page": "8",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decreased') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 159,
+      "sentence": "The company\u2019s focus recycled and sustainably sourced materials, use of innovative materials, further improved planning accuracy, and growth in new and circular business models will improve the resilience of H&M Group\u2019s business and supply chain by reducing dependence on limited natural resources.",
+      "page": "27",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.111,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.11; relies on vague/hedging vocabulary (ratio 0.022)",
+          "severity": 0.55,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 166,
+      "sentence": "Targets and actions To reach our ambition and limit global warming to 1.5\u00b0C we have set targets related to our GHG emissions and energy consumption across our value chain.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 177,
+      "sentence": "100 percent of minimum boundary scope 3 emissions (which excludes \u00adindirect emissions from use of sold products).",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 178,
+      "sentence": "Production of goods and materials in the supply chain In 2024, the production of goods in tier 1, 2 and 3 accounted for about 48 percent of H&M Group\u2019s total GHG emissions.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.262,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 187,
+      "sentence": "Internal carbon pricing scheme Our internal carbon pricing supports our work to reduce GHG emissions from raw materials, production processes and transports, covering about 66 percent of our total scope 3 emissions in 2024.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.271,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduce') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 191,
+      "sentence": "Progress towards targets in 2024 Our absolute scope 1 and 2 emissions decreased by 41 percent compared with our 2019 baseline.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('Progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 194,
+      "sentence": "Our absolute scope 3 emissions (excluding use-phase emissions) decreased by 23.7 percent compared with our 2019 baseline, a reduction of 2,160,000 tonnes CO2e.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decreased') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 196,
+      "sentence": "Our ongoing efforts to shift to cleaner energy in our supply chain is showing results as emissions from fabric production increased less (3 percent) than the total garment material weight (8 percent) all compared to 2023.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.479,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 206,
+      "sentence": "For our full scope 3 emissions, including the use-phase all these changes corresponds to a decrease of 1 percent or 119,159 tonnes CO2e for 2023 and a 2 percent or 275,732 tonnes CO2e increase for 2019, and an additional absolute decrease between 2019 and 2023 of 394,890 tonnes CO2e compared to what was reported in our 2023 sustainability disclosure.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 207,
+      "sentence": "This update results in an increase in scope 1 & 2 emissions by 1 percent or 457 tonnes CO2e for 2023 compared to what was reported in our 2023 sustainability disclosure.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 208,
+      "sentence": "For the baseline year, we have adjusted refrigerants data due to incorrect square meter data used for stores in 2019, resulting in a decrease of 2 percent or 1,458 tonnes CO2e in scope 1 and 2 for that year compared to what was reported in 2023.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 210,
+      "sentence": "In addition, we have maintained steady progress toward our target of 100 percent MRSL compliance for chemical inputs and wastewater in tier 1 and 2 production factories, where we have similar results as last year.",
+      "page": "36",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 226,
+      "sentence": "In 2024, H&M Group spent SEK 1.7 billion on decarbonisation activities across the value chain, for example replacing conventional materials with recycled or sustainably sourced materials which stand for the bigger part of the spend, as well as phasing out fossil fuels and supporting energy efficiency initiatives.",
+      "page": "39",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 248,
+      "sentence": "The group is making good progress towards these targets, having re\u00adduced scope 3 emissions by 24 percent in 2024, against a 2019 baseline.",
+      "page": "46",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 257,
+      "sentence": "During the year our greenhouse gas emissions in Scope 1 and 2 decreased by 41 percent and in Scope 3 by 34.6 percent.",
+      "page": "12",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 305,
+      "sentence": "Initiatives beyond value chain mitigation To further contribute to the global transition to net-zero, we engage in nature-based projects that contribute to climate action beyond our value chain. \u00adPreventing deforestation and the destruction of natural ecosystems and \u00adhabitats is crucial to mitigating climate change and limiting global \u00adwarming to 1.5 \u00b0C.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 307,
+      "sentence": "Our progress and results During 2025, our absolute Scope 1 and 2 GHG emissions decreased by 41 percent compared with 2019.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 312,
+      "sentence": "Our 2025 absolute Scope 3 emissions under our science based target decreased by 34.6 percent compared with 2019 and 13.6 percent compared with last year, remaining well in line with our \u201356 percent 2030 target.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 316,
+      "sentence": "Scope 3 GHG emissions were calculated using 26 percent primary data.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 325,
+      "sentence": "For our total emissions in Scope 1 and 2, these changes correspond to an increase of 9 percent, or 3,838 tonnes of CO\u2082e for 2024, and an increase of 2 percent, or 1,174 tonnes of CO\u2082e for 2019, compared to what was reported in our 2024 annual and sustainability report.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 326,
+      "sentence": "For our full Scope 3 emissions, including the use-phase, all these changes correspond to a decrease of 11 percent or 984,000 tonnes CO2e for 2024 and a 13 percent or 1,528,000 tonnes CO2e decrease for 2019 compared to what was reported in our 2024 annual and sustainability report.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 329,
+      "sentence": "We also reached 100 percent of Tier 1 and 2 production units with ETP discharged water quality that is ZDHC wastewater compliant at Foundational Level.",
+      "page": "43",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 331,
+      "sentence": "Action: Improving water efficiency To reach our ambition, we have taken action to reduce the water intensity of our products and improve water efficiency among our Tier 1 and 2 suppliers during 2025.",
+      "page": "44",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 336,
+      "sentence": "The percentage of recycled water used in Tier 1 and 2 production units continues to increase and reached 20.3 percent compared with 18.4 percent last year.",
+      "page": "44",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 337,
+      "sentence": "Recycled and reused water Measures total recycled or reused water in Tier 1 and 2 units.",
+      "page": "44",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 384,
+      "sentence": "In our own operations, 91 percent of waste was directed to reuse and re\u00ad\u00ad cycling, 7 percent was directed to disposal, and 2 percent directed to landfill.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 390,
+      "sentence": "In our own operations, 91 percent of waste was directed to reuse and recycling, while 7 percent was sent for disposal and 2 percent to landfill.",
+      "page": "48",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.55,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.55
+    },
+    {
+      "claim_index": 317,
+      "sentence": "As part of the SBTi\u2019s validation of H&M Group\u2019s net-zero and near-term targets, all the categories in Scope 3 were screened, collecting relevant proxy data where primary data was not available, to identify all relevant emission sources across the H&M group\u2019s activities.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.226,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.23; relies on vague/hedging vocabulary (ratio 0.043)",
+          "severity": 0.54,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.54
+    },
+    {
+      "claim_index": 69,
+      "sentence": "As part of this, we assess not only our salient human rights issues on an annual basis, but also the long-term risks and impacts for different parts of our operations and value chain \u2014 such as what a shift to a net-zero and circular fashion industry could mean for future work across our value chain.",
+      "page": "43",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.126,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.13; relies on vague/hedging vocabulary (ratio 0.018)",
+          "severity": 0.52,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.52
+    },
+    {
+      "claim_index": 265,
+      "sentence": "The results show that H&M Group\u2019s planned and ongoing actions \u2013 including the shift to recycled and sustainably sourced materials, and investments to improve resource efficiency \u2013 support the organisation\u2019s ability to respond proactively to supply chain disruptions and maintain operational resilience in the short to medium term (within one to five years).",
+      "page": "36",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.126,
+      "sins": [
+        {
+          "sin": "vagueness",
+          "rationale": "no quantification and specificity 0.13; relies on vague/hedging vocabulary (ratio 0.018)",
+          "severity": 0.52,
+          "evidence_needed": "a number, a boundary/scope, and a baseline year"
+        }
+      ],
+      "max_severity": 0.52
+    },
+    {
+      "claim_index": 1,
+      "sentence": "Tripled the share of recycled materials used in our garments from 5.8 percent to 17.9 percent towards our goal 30 percent recycled materials by 2025.",
+      "page": "6",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 17,
+      "sentence": "Our goal is for 100 percent of our materials to come from recycled or other more sustainable sources by 2030.",
+      "page": "31",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 18,
+      "sentence": "An important step towards achieving 30 percent recycled materials by 2025 is that some of our collections are made of materials using new garment recycling technology \u2013 a new ground breaking technology.",
+      "page": "31",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 21,
+      "sentence": "H&M Group\u2019s goal is to reduce its greenhouse gas emissions in absolute figures by 56 percent by 2030 (baseline 2019)1.",
+      "page": "31",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 49,
+      "sentence": "In early 2022, we strengthened this ambition by introducing a goal to double our sales while halving our greenhouse gas (GHG) emissions by 20301.",
+      "page": "16",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 60,
+      "sentence": "Our goal is for 100 percent of our materials to be either recycled or sourced in a more sustainable way by 2030 (in 2022 we achieved 84 percent).",
+      "page": "40",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 61,
+      "sentence": "A milestone toward this goal is to achieve 30 percent recycled materials by 2025.",
+      "page": "40",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 85,
+      "sentence": "Our goal is for 100 percent of our materials to be made from recycled or sustainably sourced materials by 2030.",
+      "page": "4",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 102,
+      "sentence": "Our goal is for 100 percent of our materials to be either recycled or sustainably sourced by 2030 (in 2023 we achieved 85 percent), including 30 percent recycled materials by 2025 and a new ambition for 50 percent recycled materials by 2030.",
+      "page": "19",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 137,
+      "sentence": "Currently 89 percent of the materials we use are recycled or sustainably sourced, with a goal of 100 percent by 20301.",
+      "page": "4",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 139,
+      "sentence": "Raising the bar with recycled material ambition As we are moving closer to achieving the target of 30 percent recycled materials by 2025, the ambition is to now aim for using 50 percent recycled by 2030.",
+      "page": "6",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieving') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 145,
+      "sentence": "This sets us up well to reach our long-term goal of reducing greenhouse gas emissions by 56 percent by 2030.",
+      "page": "8",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reducing') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 146,
+      "sentence": "Currently, 85 percent of the materials we use are recycled or sustainably sourced, and we aim to make that 100 percent by 2030.",
+      "page": "8",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 149,
+      "sentence": "Ambitious long-term targets We have three ambitious long-term targets: \u00adlong-term sales growth of at least 10 percent per year, an operating margin that exceeds 10 percent and a 56 \u00adpercent reduction in greenhouse gas (GHG) emissions no later than 2030, with 2019 as a baseline2.",
+      "page": "10",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 152,
+      "sentence": "We have also launched a new ambition for 50 percent recycled materials by 20301.",
+      "page": "14",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 171,
+      "sentence": "For our stores, we have set a target to achieve a 36 percent reduction in electricity consumption per square metre and opening hour by 2030, against a 2016 baseline.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieve') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 179,
+      "sentence": "In 2024, the energy efficiency programme enrolled 78 new facilities, identifying potential reductions of more than 656,000 tonnes CO2e throughout the year.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reductions') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 180,
+      "sentence": "Since its launch in 2021, the programme has initiated 1027 projects, which have been or are being implemented by suppliers, resulting in total expected annual reductions of 350,000 tonnes CO2e.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reductions') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 181,
+      "sentence": "Since the start, we have funded a total of 23 projects with the potential emission reduction of 148,000 tonnes Co2e annually, of which 67,000 tonnes CO2e can be attributed to H&M Group\u2019s efforts.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 182,
+      "sentence": "During 2024, the operational projects resulted in a reduction of 98,000 tonnes CO2e, of which 45,000 tonnes CO2e can be attributed to H&M Group, as specified in note 1.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 186,
+      "sentence": "With CLG Europe we had the opportunity to meet the Executive Vice President of the European Commission to discuss setting an EU climate target of at least a 90 percent reduction by 2040.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 190,
+      "sentence": "We need carbon dioxide removal to achieve our 2040 net zero target to balance out any GHG emissions that remain after we have achieved at least 90 percent absolute reductions.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('achieve') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 192,
+      "sentence": "Compared to last year, this is a decrease of 25 percent or 13,607 tonnes CO2e.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 198,
+      "sentence": "Under the agreement, LEAF Coalition buyers, including H&M Group, have committed to purchasing over 4 million emissions reduction credits.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 199,
+      "sentence": "Progress towards targets in 2024 We have achieved a 32 percent reduction in electricity intensity in our stores (measured per square metre and opening hour) compared with our 2016 baseline.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('Progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 201,
+      "sentence": "These changes led to a decrease in emissions from end-of-life treatment by 30 percent or 26,613 tonnes CO2e for 2023, compared to what was reported in our 2023 sustainability disclosure.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 203,
+      "sentence": "This led to a decrease in emissions from these activities of 5 percent or 188,290 tonnes of CO2e for 2023.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('decrease') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 205,
+      "sentence": "We will include these in the reporting scope in the future, as well as in our target to phase out on-site coal entirely from all garment suppliers, in tiers 1, 2 and 3.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('phase out') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 219,
+      "sentence": "Our target is to use 100 percent recycled or sustainably sourced materials in our commercial products by 2030, ideally with at least half coming from \u00adrecycled sources.",
+      "page": "38",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 220,
+      "sentence": "We have set targets to reduce our plastic packaging volume by 25 percent by 2025, against a 2018 baseline, and use 100 percent recycled or sustainably sourced packaging materials by 2030.",
+      "page": "38",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduce') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 232,
+      "sentence": "In 2024, 89 percent of the materials used for our commercial products were recycled or sustainably sourced, which is well on track towards our 2030 goal.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('on track') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 236,
+      "sentence": "In 2024, 94 percent of all polyester used was re\u00ad\u00ad cycled, showing significant progress towards our 2025 target of using 100 percent recycled materials.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.0,
+      "sins": [
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 237,
+      "sentence": "For packaging, we increased the share of recycled materials to 52 percent.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('increased the share') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 246,
+      "sentence": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
+      "page": "46",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 247,
+      "sentence": "GHG emissions by 56 percent by 2030, and a target to reach net zero by 2040, with a minimum absolute GHG emission reduction of 90 percent.",
+      "page": "46",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 249,
+      "sentence": "H&M Group is \u00admaking good progress towards increasing the share of recycled materials, reaching a total share of 29.5 percent in 2024 for the full material basket, and 12 percent for \u00adcotton specifically.",
+      "page": "46",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('progress') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 254,
+      "sentence": "The H&M group has three long-term targets: long-term sales growth of at least 10 percent per year, an operating margin that exceeds 10 percent and a 56 percent reduction in greenhouse gas emissions1 no later than 2030, with 2019 as a baseline.",
+      "page": "58",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        },
+        {
+          "sin": "hidden_trade_off",
+          "rationale": "advertises an improvement ('reduction') in a report year when the company's own verified data shows TOTAL emissions rose",
+          "severity": 0.5,
+          "evidence_needed": "total-footprint context presented alongside the highlighted metric"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 256,
+      "sentence": "A 56 percent absolute reduction in greenhouse gas emissions1 no later than 2030, with 2019 as a baseline.",
+      "page": "12",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 270,
+      "sentence": "The analysis was conducted in 2024, covering scenarios over the shortterm (within one year), medium-term (by 2030) and long-term (by 2040) to align with the time-horizons used when setting our climate targets.",
+      "page": "39",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 280,
+      "sentence": "The aim of this action is to ensure we achieve a 36 percent reduction in electricity consumption per square metre and opening hour in all our stores by 2030, against a 2016 baseline.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.6,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 298,
+      "sentence": "This action is ongoing and planned until 2030 for when we aim to source 100 percent recycled or sustainably sourced materials in our products and packaging.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.233,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 332,
+      "sentence": "The aim of this action is to significantly reduce absolute usage of freshwater by 2030, compared with our 2022 baseline, and strengthen our efforts to improve water efficiency.",
+      "page": "44",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.3,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 358,
+      "sentence": "Resource use and inflows We have set a target to use 100 percent recycled or sustainably sourced materials in our products by 2030, with an aim to achieve 50 percent recycled materials.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 359,
+      "sentence": "In addition, we have set a milestone target to use at least 30 percent recycled materials in our products by 2025.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.5,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.5
+    },
+    {
+      "claim_index": 319,
+      "sentence": "Figures are based on both audited financial data, as well as upcharge costs for recycled and sustainably sourced materials and renewable electricity used in production.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "false_labels",
+          "rationale": "uses certification-style wording ('audited') without naming the certifying body or standard",
+          "severity": 0.45,
+          "evidence_needed": "the name of the certifying organisation and the standard applied"
+        }
+      ],
+      "max_severity": 0.45
+    },
+    {
+      "claim_index": 25,
+      "sentence": "For 2025 one of our goals is to design 100 percent of our packaging to be reusable and/or recyclable.",
+      "page": "32",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 29,
+      "sentence": "2025: Source 30 percent recycled materials.",
+      "page": "36",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 30,
+      "sentence": "2030: Make 100 percent of packaging from recycled or other more sustainably sourced \u00admaterials, with a preference for post-consumer recycled materials.",
+      "page": "36",
+      "publish_year": 2021,
+      "source_file": "data/raw/hm/2021_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 39,
+      "sentence": "Preferred transport options refers to modes of transport including 100% biofuel, electric and zero emissions vehicles1.",
+      "page": "5",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 48,
+      "sentence": "Building on this achievement, we launched our Water Strategy 2030, which focuses on absolute water use reduction rather than measuring relative water efficiency, to clearly decouple growth from resource use.",
+      "page": "15",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 57,
+      "sentence": "1) Delivery options emitting less greenhouse gas emissions compared to conventional delivery options, including 100% biofuel, electric and zero emissions vehicles.",
+      "page": "31",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 59,
+      "sentence": "In 2022, we launched our Water Strategy 2030, developed with input from brands, NGOs, water experts and key suppliers in each region.",
+      "page": "38",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 66,
+      "sentence": "So far, we have invested in more than 20 projects focusing on increasing our share of more sustainable materials and renewable energy, phasing out coal, advancing energy efficiency and enabling carbon removals, where return on investment is measured by GHG emission reductions, not financial gain.",
+      "page": "42",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 67,
+      "sentence": "In January 2022, we stopped onboarding new supplier factories with on-site coal boilers.",
+      "page": "42",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 70,
+      "sentence": "One of our goals is to make 100 percent of packaging from recycled or more sustainably sourced materials, with a preference for post-consumer recycled materials.",
+      "page": "45",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 76,
+      "sentence": "2030: 100 percent of our materials in commercial goods to be either recycled or other more sustainably sourced materials.",
+      "page": "49",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 78,
+      "sentence": "2030: Make 100 percent of packaging from recycled or other more sustainably sourced materials, with a preference for post-consumer recycled materials.",
+      "page": "49",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 79,
+      "sentence": "We reduced the relative production water usage by 38 percent, compared to 2017 baseline (driven by a 21% water recycling rate and 21% improvement in relative water efficiency).",
+      "page": "49",
+      "publish_year": 2022,
+      "source_file": "data/raw/hm/2022_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 86,
+      "sentence": "Our climate goals are set high and results show that we reduced greenhouse gas emissions by 22 percent in 2023.",
+      "page": "4",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 93,
+      "sentence": "The majority of our stores (91 percent) are equipped with LED lighting, which contributes to the reduction of electricity use per square meter with 29 percent compared to the base year 2016, surpassing our target of a 25 percent reduction seven years early.",
+      "page": "10",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 100,
+      "sentence": "We joined Frontier, an advanced market commitment for permanent carbon removal, to support the scaling of this emerging sector \u2014 which we need to balance out the maximum residual 10 percent of our emissions after we have achieved our 2040 emission reduction target.",
+      "page": "19",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 104,
+      "sentence": "Currently, our packaging is made from 79 percent recycled or sustainably sourced materials and we have reduced plastic packaging volume by 55 percent from our 2018 baseline.",
+      "page": "21",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 110,
+      "sentence": "On 6 March 2024 it was announced that the H&M group and Vargas Holding launch Syre, a new venture to scale textile-totextile recycled polyester.",
+      "page": "24",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 119,
+      "sentence": "H&M Group also has a EUR 500 million sustainability-linked bond outstanding since 2021 focused on increasing recycled material in commercial goods and GHG emission reduction.",
+      "page": "40",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 132,
+      "sentence": "We achieved 85 percent recycled or sustainably sourced materials in our commercial goods in 2023 (84 percent in 2022), including 25 percent recycled materials (23 percent in 2022).",
+      "page": "43",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 134,
+      "sentence": "69 percent of our remaining plastic is from recycled sources and 79 percent of our packaging is now made from recycled or sustainably sourced materials.",
+      "page": "43",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 136,
+      "sentence": "For 2023, the spend on recycled and sustainably sourced materials and decarbonisation amounted to a total of SEK 2.1 billion, which has been accounted for as cost of goods sold, equipment, tools, fixture and fittings, long-term loans to suppliers, prepaid expenses, selling expenses, and administrative expenses.",
+      "page": "54",
+      "publish_year": 2023,
+      "source_file": "data/raw/hm/2023_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 151,
+      "sentence": "In 2024, 89 percent of the materials were either recycled or sustainably sourced, of which 29.5 percent were recycled.",
+      "page": "14",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 169,
+      "sentence": "In 2040, our \u00adoverall target is to reach net zero by balancing out any remaining emissions through the use of permanent carbon dioxide removal.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 174,
+      "sentence": "At the end of 2024, five PPAs were operational and covered 20 percent of our total electricity consumption, up from 10 percent last year.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 176,
+      "sentence": "In 2024, we sourced renewable electricity equal to 96 percent of the group\u2019s total electricity use.",
+      "page": "32",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 193,
+      "sentence": "During 2024, we added the Philippines and Colombia to the countries we source renewable electricity for, bringing the total to 96 percent.",
+      "page": "33",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 202,
+      "sentence": "These changes led to a combined increase in emissions within other expenditures by 25 percent or 119,792 tonnes CO2e for 2023, compared to what was reported in our last year report.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 204,
+      "sentence": "This led to an increase of emissions from these activities by 1 percent or by 42,546 tonnes CO2e for 2023, \u00adcompared to what was reported in our 2023 sustainability disclosure.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 209,
+      "sentence": "Safe products free from harmful chemicals We aim for 100 percent compliance with ZDHC MRSL across all chemical inputs and wastewater.",
+      "page": "35",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 234,
+      "sentence": "In 2024, 29.5 percent of materials used in our commercial products came from recycled sources, almost reaching our 30 percent target a year early.",
+      "page": "40",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 240,
+      "sentence": "The packaging used by Sellpy meets the requirement of at least 65 percent of recycled material.",
+      "page": "42",
+      "publish_year": 2024,
+      "source_file": "data/raw/hm/2024_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 277,
+      "sentence": "Our targets and actions To ensure we achieve our ambition and contribute to the limiting of global warming to 1.5\u00b0C, we have set targets related to our key actions and decarbonisation levers in alignment with our climate transition plan.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 293,
+      "sentence": "Action: Optimising logistics and transition to low emission transports During 2025, we have taken action to optimise our logistics network, while expanding the use of zero-emission vehicles (ZEV).",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 297,
+      "sentence": "During 2025, we have therefore taken action to increase the use of recycled and \u00adsustainably sourced materials in our products and packaging.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 299,
+      "sentence": "In 2025, we allocated a total of SEK 1,244.5 m OpEx on initiatives with the aim to increase our use of recycled and sustainably sourced materials.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 304,
+      "sentence": "At the end of 2025, we have not cancelled any credits for permanent carbon removals, but we have received 388 tonnes.",
+      "page": "40",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 308,
+      "sentence": "The reduction since last year was mainly driven by the matching of renewable electricity with consumption in Australia, which contributed to lower emissions despite a marginal decline in our overall renewable electricity share from 96 percent in 2024 to 95 percent in 2025 due to updated RE100 criteria preventing matching in Romania and Serbia.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 311,
+      "sentence": "In our stores the electricity intensity (kWh/m\u00b2 per opening hour) decreased by 32 percent compared with the 2016 baseline.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.4,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 315,
+      "sentence": "In terms of governance, 10 percent of remuneration in the long-term \u00adincentive programme (\u2018LTIP 2025\u2019) was linked to climate-related considerations, supporting accountability for climate performance.",
+      "page": "41",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 320,
+      "sentence": "This change has led to a decrease in emissions from other expenditures by 29 percent or 164,000 tonnes CO2e for 2024 and a 41 percent or 290,000 tonnes CO2e decrease for 2019 compared to what was reported in our 2024 annual and sustainability report.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 321,
+      "sentence": "This change corresponds to a decrease of 31 percent or 1,269,000 tonnes CO2e for 2024 and a 30 percent or 1,574,000 tonnes CO2e decrease for 2019 compared to what was reported in our 2024 annual and sustainability report.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 322,
+      "sentence": "This change has led to an in\u00ad\u00ad crease of 46 percent or 12,000 tonnes CO2e for 2024 and a 126 percent or 29,000 tonnes CO2e increase for 2019 as compared to what was reported in our 2024 annual and sustainability report.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 323,
+      "sentence": "This change has led to an increase of 46 percent or 30,000 tonnes CO2e for 2024 and an 38 percent or 28,000 tonnes CO2e increase for 2019 as compared to what was reported in our 2024 annual and sustainability report.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 324,
+      "sentence": "Together, these lead to an increase of 2 percent or 10,000 tonnes CO2e for 2024, and a 1 percent or 10,000 tonnes CO2e decrease for 2019 as compared to what was reported in our 2024 annual and sustainability report.",
+      "page": "42",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 341,
+      "sentence": "While we have not yet set bio\u00addiversity-related targets for 2025, our existing materials targets \u2013 which aim to increase the share of recycled and sustainably sourced materials \u2013 are related to our actions to reduce pressure on ecosystems.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 342,
+      "sentence": "Action: Reducing the conversion of land and natural ecosystems In 2025, we have been working towards avoiding the conversion of natural ecosystems by increasing the availability and use of sustainably sourced materials.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 344,
+      "sentence": "Action: Reducing our land footprint In 2025, we have taken action to reduce our land footprint for cotton, wool and leather, by increasing the use of recycled materials and investing in \u00adagricultural practices that improve soil health, enhance water retention and protect biodiversity.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 347,
+      "sentence": "Action: Restoring landscape in India To support our objective of contributing to reversing nature loss and contributing to the Global Goals on Biodiversity, we are implementing landscapelevel projects in India, one submitted to SBTN as a Land Target 3 project.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 348,
+      "sentence": "Action: Restoring landscape in South Africa To support our objective of reversing nature loss and contributing to the Global Goals on Biodiversity, we are implementing landscape-level projects in South Africa, one submitted to SBTN as a Land Target 3 project.",
+      "page": "45",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 361,
+      "sentence": "Action: Increase the use and availability of recycled materials During 2025, we have taken action to increase the use of recycled materials in our products and packaging.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 365,
+      "sentence": "These actions support our 2030 target of achieving 100 percent recycled or sustainably sourced materials and contribute to our GHG emission reduction targets.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 366,
+      "sentence": "In 2025, we allocated a total of SEK 801 m OpEx on initiatives with the aim to increase the use and availability of recycled materials.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 367,
+      "sentence": "Action: Increase the use and availability of sustainably sourced materials During 2025, we took action to increase the use of sustainably sourced \u00admaterials in our products and packaging.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 368,
+      "sentence": "In 2025, we allocated a total of SEK 443.5 m OpEx on initiatives with the aim to increase the use and availability of sustainably sourced materials.",
+      "page": "46",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 378,
+      "sentence": "Our progress and results During 2025, 91 percent of the materials used in our commercial products were recycled or sustainably sourced, and 32 percent were recycled, in line with our targets.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 379,
+      "sentence": "The increase for recycled material was driven by an increase in the share of recycled polyester, now reaching 100 percent.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 380,
+      "sentence": "We made progress toward our target to increase recycled or sustainably sourced materials for packaging, reaching 86 percent during 2025.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 382,
+      "sentence": "Recycled packaging materials reached 51 percent, reflecting a gradual reduction in plastic and cardboard packaging where the share of recycled content is high.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 383,
+      "sentence": "Through our in\u2011store Garment Collect programme, we collected 17,808 tonnes of garments, directing 60 percent to reuse, 29 percent to recycling and 11 percent directed to disposal, prioritising energy recovery.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 385,
+      "sentence": "The 2 percent sent to landfill consists mainly of mixed waste that remains challenging to separate and recycle, such as food packaging, mixed foils and desiccants, in markets lacking other disposal methods.",
+      "page": "47",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 391,
+      "sentence": "Non-recycled waste amounted to 7,470 tonnes, representing 14 percent of total operational waste.",
+      "page": "48",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 392,
+      "sentence": "The packaging used by Sellpy meets the requirement of at least 65 percent recycled \u00admaterial.",
+      "page": "49",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    },
+    {
+      "claim_index": 395,
+      "sentence": "Our progress and results During 2025, we strengthened our efforts to reduce pressure on land and natural resources by increasing the use of recycled and sustainably sourced materials, with a particular focus on Tier 4.",
+      "page": "58",
+      "publish_year": 2025,
+      "source_file": "data/raw/hm/2025_sustainability_report.pdf",
+      "specificity_score": 0.2,
+      "sins": [
+        {
+          "sin": "no_proof",
+          "rationale": "states a measurable outcome but names no assurance, audit, standard or third-party verifier",
+          "severity": 0.35,
+          "evidence_needed": "an assurance statement or named third-party verifier for this figure"
+        }
+      ],
+      "max_severity": 0.35
+    }
+  ]
+}

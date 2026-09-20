@@ -291,6 +291,41 @@ positive_tone:
   - world-leading
   - best-in-class
 
+# Negative-affect vocabulary, paired with positive_tone above. Drives the
+# `sentiment` feature: (positive hits - negative hits) / word count. Kept
+# direction-neutral (no "decline"/"decrease" -- those can be GOOD news for an
+# emissions claim), company-agnostic per make check-leakage.
+negative_tone:
+  - concern
+  - concerned
+  - concerning
+  - challenge
+  - challenging
+  - shortfall
+  - shortfalls
+  - delay
+  - delayed
+  - delays
+  - setback
+  - setbacks
+  - unable
+  - difficult
+  - difficulty
+  - difficulties
+  - risk
+  - risks
+  - risky
+  - failed
+  - failure
+  - miss
+  - missed
+  - behind schedule
+  - behind target
+  - struggle
+  - struggled
+  - underperform
+  - underperformed
+
 # Map claim language onto the DiD metric names used in data/did/*.csv.
 # First matching family wins; Stage 6b then picks the company's actual
 # column that belongs to that family. No company names here.

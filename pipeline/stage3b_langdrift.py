@@ -38,6 +38,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from claim_link import match_family  # noqa: E402
+
 LANG_DIR = ROOT / "out" / "language"
 OUT_DIR = ROOT / "out" / "langdrift"
 
@@ -50,6 +53,10 @@ SPECIFICITY_DROP = 0.10
 # a commitment being FULFILLED. Comparisons are skipped unless both sides sit
 # on this scale.
 STRENGTH_RANK = {"firm": 2, "hedged": 1, "": 0}
+
+
+def _truthy(v) -> bool:
+    return str(v).strip().lower() == "true"
 
 
 def load_claims(company: str) -> Dict[int, List[dict]]:
@@ -65,32 +72,99 @@ def load_claims(company: str) -> Dict[int, List[dict]]:
     return dict(by_year)
 
 
-def match_years(a: List[dict], b: List[dict], threshold: float) -> List[Tuple[dict, dict, float]]:
+SLOT_WEIGHTS = {"metric_family": 0.40, "scope": 0.20, "deadline": 0.20, "claim_type": 0.20}
+SLOT_MATCH_THRESHOLD = 0.60   # a pair qualifies via slots alone at/above this
+DEADLINE_CLOSE_YEARS = 1
+
+
+def _row_slots(row: dict) -> dict:
+    """Precompute the structured slots used for matching, once per row, so
+    the O(n*m) pairing loop doesn't re-run match_family()'s regex scan
+    per (i, j) pair."""
+    return {
+        "family": match_family(row.get("sentence") or ""),
+        "scope": (row.get("scope") or "").strip(),
+        "deadline": deadline_of(row),
+        "claim_type": row.get("claim_type") or "",
+    }
+
+
+def slot_overlap(sa: dict, sb: dict) -> Tuple[float, List[str]]:
+    """Structured similarity from already-extracted Stage-2 slots, independent
+    of wording. Returns (score in [0,1], list of slot names that agreed) so a
+    match is explainable by WHICH slots agreed, not just a similarity float.
+    No single slot clears SLOT_MATCH_THRESHOLD alone (max weight 0.40), so a
+    slots-only match always needs at least two independently-agreeing slots --
+    that's what stops two unrelated claim_type='target' claims from matching
+    on that field by itself."""
+    score, agreed = 0.0, []
+    if sa["family"] and sb["family"] and sa["family"][0] == sb["family"][0]:
+        score += SLOT_WEIGHTS["metric_family"]
+        agreed.append(f"metric_family={sa['family'][0]}")
+    if sa["scope"] and sa["scope"] == sb["scope"]:
+        score += SLOT_WEIGHTS["scope"]
+        agreed.append(f"scope={sa['scope']}")
+    da, db = sa["deadline"], sb["deadline"]
+    if da and db and da.isdigit() and db.isdigit():
+        if da == db:
+            score += SLOT_WEIGHTS["deadline"]
+            agreed.append(f"deadline={da}")
+        elif abs(int(da) - int(db)) <= DEADLINE_CLOSE_YEARS:
+            score += SLOT_WEIGHTS["deadline"] * 0.5
+            agreed.append(f"deadline~{da}/{db}")
+    if sa["claim_type"] and sa["claim_type"] == sb["claim_type"]:
+        score += SLOT_WEIGHTS["claim_type"]
+        agreed.append(f"claim_type={sa['claim_type']}")
+    return round(score, 3), agreed
+
+
+def match_years(a: List[dict], b: List[dict], threshold: float
+                ) -> List[Tuple[dict, dict, float, float, List[str]]]:
     """Greedy best-first 1-to-1 matching between two years' claims.
 
     Character n-grams rather than words: report language is heavily templated,
     and char n-grams stay robust to the small morphological edits ('reduce' ->
-    'reducing') that are exactly what softening looks like."""
+    'reducing') that are exactly what softening looks like. This alone is
+    blind to paraphrase ('cut absolute emissions 50% by 2030' vs 'reduce our
+    carbon footprint by half within the decade'), so a pair also qualifies if
+    its STRUCTURED slots (metric family / scope / deadline / claim type)
+    agree strongly enough, even when the wording similarity is low."""
     if not a or not b:
         return []
     vec = TfidfVectorizer(analyzer="char_wb", ngram_range=(4, 5), min_df=1)
     X = vec.fit_transform([r["sentence"] for r in a] + [r["sentence"] for r in b])
     sim = cosine_similarity(X[: len(a)], X[len(a):])
 
-    pairs: List[Tuple[int, int, float]] = [
-        (i, j, float(sim[i, j]))
-        for i in range(len(a)) for j in range(len(b)) if sim[i, j] >= threshold
-    ]
-    pairs.sort(key=lambda t: -t[2])
+    slots_a = [_row_slots(r) for r in a]
+    slots_b = [_row_slots(r) for r in b]
+
+    pairs: List[Tuple[int, int, float, float, List[str], float]] = []
+    for i in range(len(a)):
+        for j in range(len(b)):
+            tfidf_sim = float(sim[i, j])
+            slot_score, agreed = slot_overlap(slots_a[i], slots_b[j])
+            qualifies_tfidf = tfidf_sim >= threshold
+            qualifies_slots = slot_score >= SLOT_MATCH_THRESHOLD
+            if not (qualifies_tfidf or qualifies_slots):
+                continue
+            # Rank by whichever signal cleared its own bar; if both cleared,
+            # the stronger of the two wins the rank so a confident textual
+            # match is never displaced by a weaker corroborating slot match,
+            # and vice versa.
+            rank = max(tfidf_sim if qualifies_tfidf else 0.0,
+                       slot_score if qualifies_slots else 0.0)
+            pairs.append((i, j, tfidf_sim, slot_score, agreed, rank))
+
+    pairs.sort(key=lambda t: -t[5])
     used_a: set = set()
     used_b: set = set()
     out = []
-    for i, j, s in pairs:
+    for i, j, tfidf_sim, slot_score, agreed, _rank in pairs:
         if i in used_a or j in used_b:
             continue
         used_a.add(i)
         used_b.add(j)
-        out.append((a[i], b[j], round(s, 3)))
+        out.append((a[i], b[j], round(tfidf_sim, 3), round(slot_score, 3), agreed))
     return out
 
 
@@ -118,7 +192,21 @@ def diff_pair(old: dict, new: dict, sim: float) -> List[dict]:
             "near-identical wording republished; no change in commitment or evidence")
 
     o_s, n_s = old.get("strength", ""), new.get("strength", "")
-    if o_s in STRENGTH_RANK and n_s in STRENGTH_RANK and o_s:
+    o_neg, n_neg = _truthy(old.get("negated")), _truthy(new.get("negated"))
+
+    if not o_neg and n_neg and o_s in ("firm", "hedged") and n_s in ("firm", "hedged"):
+        # The tier string is unchanged (e.g. firm -> firm), so STRENGTH_RANK
+        # alone sees no move -- but the claim now says the OPPOSITE of what it
+        # said before ("we will X" -> "we will NOT X"). A much stronger say-do
+        # signal than ordinary softening.
+        add("commitment_negated",
+            f"commitment now negated: previously '{o_s}', now '{n_s}' but negated")
+    elif o_neg or n_neg:
+        # Either side is negated but this isn't the real->negated transition
+        # above (e.g. both negated, or negated->real). Comparing tiers here
+        # would be a category error, so no strength-based event fires.
+        pass
+    elif o_s in STRENGTH_RANK and n_s in STRENGTH_RANK and o_s:
         if STRENGTH_RANK[n_s] < STRENGTH_RANK[o_s]:
             add("commitment_softened", f"commitment strength '{o_s}' -> '{n_s or 'none'}'")
     elif o_s == "achievement" and n_s == "hedged":
@@ -151,14 +239,29 @@ def analyse(company: str, threshold: float) -> dict:
     events: List[dict] = []
 
     for ya, yb in zip(years, years[1:]):
-        for old, new, sim in match_years(by_year[ya], by_year[yb], threshold):
-            for e in diff_pair(old, new, sim):
+        for old, new, tfidf_sim, slot_score, agreed in match_years(by_year[ya], by_year[yb], threshold):
+            matched_via = (
+                "both" if tfidf_sim >= threshold and slot_score >= SLOT_MATCH_THRESHOLD
+                else "text" if tfidf_sim >= threshold
+                else "slots"
+            )
+            # diff_pair's BOILERPLATE_THRESHOLD check is about near-identical
+            # WORDING, a text concept -- it must keep using the TF-IDF score,
+            # never the slot score.
+            for e in diff_pair(old, new, tfidf_sim):
                 events.append({
                     **e,
-                    "from_year": ya, "to_year": yb, "similarity": sim,
+                    "from_year": ya, "to_year": yb,
+                    "similarity": tfidf_sim,  # kept for backward compatibility
+                    "tfidf_similarity": tfidf_sim,
+                    "slot_similarity": slot_score,
+                    "matched_via": matched_via,
+                    "matched_slots": agreed,
                     "old_text": old["sentence"], "new_text": new["sentence"],
                     "old_page": old.get("page"), "new_page": new.get("page"),
                     "old_source": old.get("source_file"), "new_source": new.get("source_file"),
+                    "old_negated": _truthy(old.get("negated")), "new_negated": _truthy(new.get("negated")),
+                    "old_conditional": _truthy(old.get("conditional")), "new_conditional": _truthy(new.get("conditional")),
                 })
 
     for i, e in enumerate(events):
@@ -185,6 +288,7 @@ def report(res: dict, show: int) -> None:
 
     # Lead with the events that carry real signal, not recycled boilerplate.
     priority = ["commitment_softened", "achievement_reverted_to_aspiration",
+                "commitment_negated",
                 "deadline_dropped", "deadline_pushed",
                 "quantity_dropped", "scope_narrowed", "specificity_fell",
                 "boilerplate_recycled"]

@@ -266,6 +266,8 @@ const F = {
   esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,c=>(
     {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); },
   file(p){ return String(p||'').split('/').pop(); },
+  reportYear(p){ const m = F.file(p).match(/^(\d{4})/); return m ? m[1] : F.file(p).replace(/\.pdf$/i,''); },
+  cite(source, page){ return `(${F.reportYear(source)}${page!=null?', p.'+page:''})`; },
   paint(text, spans){
     if(!text) return '';
     if(!spans||!spans.length) return F.esc(text);
@@ -693,6 +695,11 @@ function chartTipOff(){
   if(tip) tip.classList.remove('on');
 }
 
+function pageFor(metric, year, source){
+  const p = (CO.did_points||[]).find(r=>r.metric===metric && r.year===year && r.source===source);
+  return p ? p.page : null;
+}
+
 function chart(){
   const partner = redefPartner(METRIC);
   const metrics = partner ? [METRIC, partner.peer].filter(Boolean) : [METRIC];
@@ -721,8 +728,8 @@ function chart(){
     const sorted = yearPts.slice().sort((a,b)=>String(a.source).localeCompare(String(b.source)));
     const id = tipStore(`<div class="k">Moved · ${e.year}</div>
       <div><b>${F.esc(metricTitle(METRIC))}</b></div>
-      <div>${F.esc(F.file(e.old_source))}: ${F.esc(e.old)}</div>
-      <div>${F.esc(F.file(e.new_source))}: ${F.esc(e.new)}</div>
+      <div>${F.esc(F.cite(e.old_source, pageFor(METRIC, e.year, e.old_source)))}: ${F.esc(e.old)}</div>
+      <div>${F.esc(F.cite(e.new_source, pageFor(METRIC, e.year, e.new_source)))}: ${F.esc(e.new)}</div>
       <div class="delta ${e.magnitude_pct>0?'up':'down'}" style="color:${e.magnitude_pct>0?'#f0b4aa':'#b7e0c8'}">${e.magnitude_pct==null?'':((e.magnitude_pct>0?'+':'')+F.num(e.magnitude_pct,1)+'%')}</div>`);
     const ya = Y(sorted[0].value), yb = Y(sorted[sorted.length-1].value);
     return `<line x1="${X(e.year).toFixed(1)}" x2="${X(e.year).toFixed(1)}"
@@ -761,13 +768,13 @@ function chart(){
         const id = tipStore(move
           ? `<div class="k">Moved · ${p.year}</div>
              <div><b>${F.esc(metricTitle(p.metric))}</b></div>
-             <div>${F.esc(F.file(move.old_source))}: ${F.esc(move.old)}</div>
-             <div>${F.esc(F.file(move.new_source))}: ${F.esc(move.new)}</div>
+             <div>${F.esc(F.cite(move.old_source, pageFor(p.metric, p.year, move.old_source)))}: ${F.esc(move.old)}</div>
+             <div>${F.esc(F.cite(move.new_source, pageFor(p.metric, p.year, move.new_source)))}: ${F.esc(move.new)}</div>
              <div class="delta">${move.magnitude_pct==null?'':((move.magnitude_pct>0?'+':'')+F.num(move.magnitude_pct,1)+'%')}</div>`
           : `<div class="k">${p.year}</div>
              <div><b>${F.esc(metricTitle(p.metric))}</b></div>
              <div>${F.num(p.value,2)} ${F.esc(p.unit||'')}</div>
-             <div>${F.esc(F.file(src))}</div>`);
+             <div>${F.esc(F.cite(src, p.page))}</div>`);
         return `<circle class="dot-pop" style="animation-delay:${200+j*70}ms"
         cx="${X(p.year).toFixed(1)}" cy="${Y(p.value).toFixed(1)}" r="${move?6:4.5}"
         fill="${cols[i%4]}" stroke="var(--paper)" stroke-width="1.5"

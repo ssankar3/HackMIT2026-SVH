@@ -128,7 +128,9 @@ class LinguisticFeatures(BaseModel):
     verification_present: Optional[bool] = None
     specificity_score: Optional[float] = Field(None, ge=0.0, le=1.0)
     readability: Optional[float] = None
-    sentiment: Optional[float] = None
+    sentiment: Optional[float] = Field(None, ge=-1.0, le=1.0)
+    negated: Optional[bool] = None
+    conditional: Optional[bool] = None
     highlights: List[HighlightSpan] = Field(default_factory=list)
     report_assured: Optional[bool] = None
 
@@ -189,6 +191,10 @@ class DriftEvent(BaseModel):
     old_source: Optional[str] = None
     new_source: Optional[str] = None
     page: Optional[int] = None
+    match_basis: Optional[str] = Field(
+        None, description="how old/new were matched across years: 'text' | 'slots' | 'both'"
+    )
+    matched_slots: List[str] = Field(default_factory=list)
 
 
 class DidPoint(BaseModel):

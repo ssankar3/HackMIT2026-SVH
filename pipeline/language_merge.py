@@ -217,7 +217,9 @@ def to_schema_claims(company: str, rows: List[dict],
                 "verification_present": _truthy(r.get("verification_present")),
                 "specificity_score": _f(r.get("specificity_score")),
                 "readability": _f(r.get("readability")),
-                "sentiment": None,
+                "sentiment": _f(r.get("sentiment")),
+                "negated": _truthy(r.get("negated")),
+                "conditional": _truthy(r.get("conditional")),
                 "highlights": _parse_highlights(r.get("highlights_json")),
                 "report_assured": _truthy(r.get("report_assured")),
             },
@@ -233,6 +235,13 @@ def compute_say_do(company: str, did_rows: List[dict]) -> dict:
     return score_say_do(load_claim_rows(company), did_rows)
 
 
+# Stage3b's own event vocabulary -> the frozen schema's DriftType enum. A
+# negated firm/hedged commitment IS the commitment being dropped, so it maps
+# onto the existing commitment_dropped value rather than adding a new enum
+# member. Everything else keeps the prior behaviour (wording_softened).
+DRIFT_TYPE_MAP = {"commitment_negated": "commitment_dropped"}
+
+
 def to_schema_drift(company: str, ld: dict) -> List[dict]:
     """Language drift events in the DriftEvent shape. `year` is the REPORT year
     that introduced the change, which is what makes them joinable against
@@ -242,7 +251,7 @@ def to_schema_drift(company: str, ld: dict) -> List[dict]:
         out.append({
             "drift_id": e.get("event_id", f"{company}-lang-{i:03d}"),
             "year": int(e["to_year"]),
-            "type": "wording_softened",
+            "type": DRIFT_TYPE_MAP.get(e["type"], "wording_softened"),
             "canonical_metric": None,
             "old": e["old_text"][:300],
             "new": e["new_text"][:300],
@@ -252,6 +261,8 @@ def to_schema_drift(company: str, ld: dict) -> List[dict]:
             "old_source": e.get("old_source"),
             "new_source": e.get("new_source"),
             "page": e.get("new_page") if isinstance(e.get("new_page"), int) else None,
+            "match_basis": e.get("matched_via"),
+            "matched_slots": e.get("matched_slots", []),
         })
     return out
 

@@ -1,0 +1,143 @@
+{
+  "company": "microsoft",
+  "series": [
+    {
+      "year": 2021,
+      "n_claims": 198,
+      "mean_specificity": 0.2158,
+      "vague_ratio": 0.0044,
+      "hedging_ratio": 0.0079,
+      "future_ratio": 0.0497,
+      "quantified_share": 0.672,
+      "verified_share": 0.051,
+      "scope_share": 0.116,
+      "passive_share": 0.152,
+      "readability": 29.8,
+      "say_more_prove_less": 0.44,
+      "firm_share": 0.343,
+      "hedged_share": 0.035,
+      "commitment_ratio": 9.71,
+      "report_assured": false,
+      "assurance_auditor": null,
+      "assurance_page": null
+    },
+    {
+      "year": 2022,
+      "n_claims": 203,
+      "mean_specificity": 0.1752,
+      "vague_ratio": 0.0023,
+      "hedging_ratio": 0.0091,
+      "future_ratio": 0.0249,
+      "quantified_share": 0.675,
+      "verified_share": 0.025,
+      "scope_share": 0.118,
+      "passive_share": 0.143,
+      "readability": 28.7,
+      "say_more_prove_less": 0.23,
+      "firm_share": 0.202,
+      "hedged_share": 0.025,
+      "commitment_ratio": 8.2,
+      "report_assured": true,
+      "assurance_auditor": null,
+      "assurance_page": 17
+    },
+    {
+      "year": 2023,
+      "n_claims": 170,
+      "mean_specificity": 0.1819,
+      "vague_ratio": 0.0027,
+      "hedging_ratio": 0.0103,
+      "future_ratio": 0.0273,
+      "quantified_share": 0.653,
+      "verified_share": 0.035,
+      "scope_share": 0.153,
+      "passive_share": 0.188,
+      "readability": 29.1,
+      "say_more_prove_less": 0.32,
+      "firm_share": 0.153,
+      "hedged_share": 0.071,
+      "commitment_ratio": 2.17,
+      "report_assured": true,
+      "assurance_auditor": null,
+      "assurance_page": 42
+    },
+    {
+      "year": 2024,
+      "n_claims": 199,
+      "mean_specificity": 0.1852,
+      "vague_ratio": 0.006,
+      "hedging_ratio": 0.0061,
+      "future_ratio": 0.0317,
+      "quantified_share": 0.698,
+      "verified_share": 0.02,
+      "scope_share": 0.111,
+      "passive_share": 0.116,
+      "readability": 25.0,
+      "say_more_prove_less": 0.48,
+      "firm_share": 0.171,
+      "hedged_share": 0.045,
+      "commitment_ratio": 3.78,
+      "report_assured": false,
+      "assurance_auditor": null,
+      "assurance_page": null
+    },
+    {
+      "year": 2025,
+      "n_claims": 76,
+      "mean_specificity": 0.1638,
+      "vague_ratio": 0.0047,
+      "hedging_ratio": 0.0098,
+      "future_ratio": 0.0098,
+      "quantified_share": 0.776,
+      "verified_share": 0.066,
+      "scope_share": 0.145,
+      "passive_share": 0.066,
+      "readability": 16.1,
+      "say_more_prove_less": 0.31,
+      "firm_share": 0.053,
+      "hedged_share": 0.092,
+      "commitment_ratio": 0.57,
+      "report_assured": false,
+      "assurance_auditor": null,
+      "assurance_page": null
+    }
+  ],
+  "n_claims": 846,
+  "assurance": {
+    "2021": {
+      "assured": false,
+      "quote": null,
+      "page": null,
+      "auditor": null,
+      "source": "data/raw/microsoft/2021_sustainability_report.pdf"
+    },
+    "2022": {
+      "assured": true,
+      "quote": "ty requirements to include independent third-party assurance of emissions data and to deliver a minimum 55 percent greenhouse gas (GHG) re",
+      "page": 17,
+      "auditor": null,
+      "source": "data/raw/microsoft/2022_sustainability_report.pdf"
+    },
+    "2023": {
+      "assured": true,
+      "quote": "stics percentages were included in our third-party assurance.",
+      "page": 42,
+      "auditor": null,
+      "source": "data/raw/microsoft/2023_sustainablity_report.pdf"
+    },
+    "2024": {
+      "assured": false,
+      "quote": null,
+      "page": null,
+      "auditor": null,
+      "source": "data/raw/microsoft/2024_sustainability_report.pdf"
+    },
+    "2025": {
+      "assured": false,
+      "quote": null,
+      "page": null,
+      "auditor": null,
+      "source": "data/raw/microsoft/2025_sustainability_report.pdf"
+    }
+  }
+}

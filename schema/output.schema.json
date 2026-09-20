@@ -657,6 +657,26 @@
           ],
           "default": null,
           "title": "Page"
+        },
+        "match_basis": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "how old/new were matched across years: 'text' | 'slots' | 'both'",
+          "title": "Match Basis"
+        },
+        "matched_slots": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matched Slots",
+          "type": "array"
         }
       },
       "required": [
@@ -1009,6 +1029,8 @@
         "sentiment": {
           "anyOf": [
             {
+              "maximum": 1.0,
+              "minimum": -1.0,
               "type": "number"
             },
             {
@@ -1017,6 +1039,30 @@
           ],
           "default": null,
           "title": "Sentiment"
+        },
+        "negated": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Negated"
+        },
+        "conditional": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conditional"
         },
         "highlights": {
           "items": {

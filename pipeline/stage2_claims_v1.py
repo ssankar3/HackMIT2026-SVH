@@ -35,6 +35,7 @@ LEXICONS = ROOT / "config" / "lexicons.yaml"
 CSV_FIELDS = [
     "sentence", "page", "section_path", "claim_type", "strength", "quantity",
     "baseline", "deadline", "scope", "slot_fill_score", "source_file",
+    "negated", "conditional",
 ]
 
 # A line appearing on more than this share of pages is running header/footer.
@@ -381,6 +382,48 @@ WEAK_ENV = {
     "sustainab", "environment", "supply chain", "material", "packaging",
 }
 
+# Negation/conditional scope. A strength keyword ("will", "aim") is only a
+# real commitment if no negator/conditional sits in the SAME clause -- "We
+# will not achieve X" and "We will reduce X if regulators allow" must not
+# read as unconditional firm targets. Bounded by clause punctuation on both
+# sides since the negator can land either before or after the matched word
+# ("will" is checked before "not" in find_strength's own scan order).
+RE_CLAUSE_BOUNDARY = re.compile(r"[,;:.!?]")
+# "not" excludes the "not only X but also Y" / "not just X but also Y"
+# correlative-conjunction idiom -- that "not" doesn't negate anything, it's
+# part of an additive construction, and without the exclusion it flooded
+# real reports with false negatives (e.g. "committed to reducing not just
+# operational carbon but also embodied carbon" is not a negated commitment).
+RE_NEGATION = re.compile(
+    r"\bnot\b(?!\s+(?:only|just)\b)|\bn't\b|\bnever\b|\bno longer\b|"
+    r"\bunable to\b|\bfails?\s+to\b|\bfailed\s+to\b", re.I)
+RE_CONDITIONAL = re.compile(
+    r"\b(?:if|unless|provided that|subject to|contingent (?:on|upon)|"
+    r"conditional (?:on|upon)|assuming|as long as)\b", re.I)
+
+
+def _clause_span(s: str, start: int, end: int) -> Tuple[int, int]:
+    left = [m.end() for m in RE_CLAUSE_BOUNDARY.finditer(s[:start])]
+    right = [m.start() for m in RE_CLAUSE_BOUNDARY.finditer(s[end:])]
+    lo = left[-1] if left else 0
+    hi = end + right[0] if right else len(s)
+    return lo, hi
+
+
+def is_negated(s: str, span: Tuple[int, int]) -> bool:
+    lo, hi = _clause_span(s, *span)
+    return bool(RE_NEGATION.search(s[lo:hi]))
+
+
+def is_conditional(s: str, span: Tuple[int, int]) -> bool:
+    lo, hi = _clause_span(s, *span)
+    if RE_CONDITIONAL.search(s[lo:hi]):
+        return True
+    # Trailing conditionals often attach with no comma before "if"
+    # ("...by 2030 if regulatory conditions allow"), landing outside the
+    # comma-bounded clause above; also scan to the sentence end.
+    return bool(RE_CONDITIONAL.search(s[span[1]:]))
+
 
 def find_quantity(s: str) -> str:
     """A quantity is a number with a unit, a percent, or a non-year bare number
@@ -422,15 +465,18 @@ def find_scope(s: str, lex: Lex) -> str:
     return "; ".join(out)
 
 
-def find_strength(s: str, lex: Lex) -> str:
+def find_strength(s: str, lex: Lex) -> Tuple[str, Optional[Tuple[int, int]]]:
     """firm > hedged > achievement. Firm wins a tie because 'we will aim to'
-    still carries a commitment verb the company can be held to."""
+    still carries a commitment verb the company can be held to. Returns the
+    matched keyword's (start, end) span too, so callers can check whether a
+    negation/conditional sits in the same clause."""
     low = f" {s.lower()} "
     for tier in ("firm", "hedged", "achievement"):
         for w in lex.strength[tier]:
-            if re.search(rf"\b{re.escape(w)}\b", low):
-                return tier
-    return ""
+            m = re.search(rf"\b{re.escape(w)}\b", low)
+            if m:
+                return tier, (m.start() - 1, m.end() - 1)  # undo leading-space offset
+    return "", None
 
 
 def classify(s: str, lex: Lex, deadline: str, strength: str, quantity: str) -> str:
@@ -504,7 +550,9 @@ def run(pdf: Path, max_pages: int, out_dir: Path) -> Tuple[List[dict], Stats, st
             baseline = find_baseline(body)
             deadline = find_deadline(body)
             scope = find_scope(body, lex)
-            strength = find_strength(body, lex)
+            strength, strength_span = find_strength(body, lex)
+            negated = is_negated(body, strength_span) if strength_span else False
+            conditional = is_conditional(body, strength_span) if strength_span else False
             ctype = classify(body, lex, deadline, strength, quantity)
             if not is_material(body, ctype, quantity, lex):
                 st.dropped_immaterial += 1
@@ -517,6 +565,7 @@ def run(pdf: Path, max_pages: int, out_dir: Path) -> Tuple[List[dict], Stats, st
                 "baseline": baseline, "deadline": deadline, "scope": scope,
                 "slot_fill_score": slot_fill(ctype, slots),
                 "source_file": str(pdf.relative_to(ROOT)) if pdf.is_relative_to(ROOT) else str(pdf),
+                "negated": negated, "conditional": conditional,
             })
     st.claims = len(rows)
 

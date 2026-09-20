@@ -150,6 +150,10 @@ def _year(v) -> Optional[int]:
         return None
 
 
+def _truthy(v) -> bool:
+    return str(v).strip().lower() in {"true", "1", "yes"}
+
+
 def glidepath(family: str, target: float, target_is_pct: bool,
               baseline_year: Optional[int], deadline: Optional[int],
               series: List[dict], as_of_year: int) -> Optional[dict]:
@@ -233,8 +237,14 @@ def score_say_do(claim_rows: List[dict], did_rows: List[dict],
     as_of_year = as_of_year or 2025
 
     links: List[dict] = []
+    n_excluded = 0
     for r in claim_rows:
         if (r.get("claim_type") or "") != "target":
+            continue
+        if _truthy(r.get("negated")) or _truthy(r.get("conditional")):
+            # A negated or conditional target is not a real forward
+            # commitment to hold the company to -- do not link it into say-do.
+            n_excluded += 1
             continue
         hit = match_family(r.get("sentence") or "")
         if not hit:
@@ -280,6 +290,7 @@ def score_say_do(claim_rows: List[dict], did_rows: List[dict],
             "n_linked": len(links),
             "n_measurable": len(measurable),
             "n_behind": len(behind),
+            "n_excluded_negated_or_conditional": n_excluded,
             "links": links[:40],
             "reason": (
                 f"only {len(measurable)} target(s) could be pinned to a verified "
@@ -292,6 +303,7 @@ def score_say_do(claim_rows: List[dict], did_rows: List[dict],
             "n_linked": len(links),
             "n_measurable": len(measurable),
             "n_behind": len(behind),
+            "n_excluded_negated_or_conditional": n_excluded,
             "links": links[:40],
             "reason": (
                 "every linked target is a share metric (renewable/recycled). "
@@ -307,6 +319,7 @@ def score_say_do(claim_rows: List[dict], did_rows: List[dict],
         "n_measurable": len(measurable),
         "n_behind": len(behind),
         "n_on_track": len(measurable) - len(behind),
+        "n_excluded_negated_or_conditional": n_excluded,
         "links": links[:40],
         "formula": "100 * (linked targets behind glidepath) / (measurable linked targets)",
         "reason": None,

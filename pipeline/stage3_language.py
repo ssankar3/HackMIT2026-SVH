@@ -110,6 +110,7 @@ class Lexicons:
         self.hedging = low("hedging")
         self.verification = low("verification")
         self.positive = low("positive_tone")
+        self.negative = low("negative_tone")
         self.future = ["will", "aim", "target", "goal", "ambition", "plan",
                        "by 2030", "by 2040", "by 2050", "future", "intend", "commit"]
 
@@ -134,6 +135,7 @@ def highlight_spans(text: str, lx: Lexicons, quantity: str = "",
         ("hedge", lx.hedging),
         ("verify", lx.verification),
         ("positive", lx.positive),
+        ("negative", lx.negative),
     ):
         for t in terms:
             for m in re.finditer(rf"\b{re.escape(t)}\b", low):
@@ -187,6 +189,10 @@ def detect_assurance(pdf: Path, max_pages: int = 60) -> dict:
     return {"assured": bool(quote), "quote": quote, "page": page, "auditor": auditor}
 
 
+def _truthy(v) -> bool:
+    return str(v).strip().lower() == "true"
+
+
 def claim_features(row: dict, lx: Lexicons) -> dict:
     s = row["sentence"]
     low = s.lower()
@@ -196,6 +202,9 @@ def claim_features(row: dict, lx: Lexicons) -> dict:
     vague = ratio(low, lx.vague, n)
     hedge = ratio(low, lx.hedging, n)
     future = ratio(low, lx.future, n) + (0.02 if RE_FUTURE_YEAR.search(s) else 0.0)
+    pos_ratio = ratio(low, lx.positive, n)
+    neg_ratio = ratio(low, lx.negative, n)
+    sentiment = round(max(-1.0, min(1.0, pos_ratio - neg_ratio)), 4)
 
     quantified = bool(row.get("quantity"))
     has_baseline = bool(row.get("baseline"))
@@ -223,6 +232,9 @@ def claim_features(row: dict, lx: Lexicons) -> dict:
         "date_present": has_deadline,
         "scope_present": has_scope,
         "verification_present": verified,
+        "negated": _truthy(row.get("negated")),
+        "conditional": _truthy(row.get("conditional")),
+        "sentiment": sentiment,
         "specificity_score": specificity,
         "readability": flesch_reading_ease(s),
         "passive_voice": bool(RE_PASSIVE.search(s)),
@@ -244,8 +256,12 @@ def aggregate(year: int, rows: List[dict]) -> dict:
 
     n_quant = sum(1 for r in rows if r["quantification_present"])
     tone = sum(r["positive_tone_words"] for r in rows)
-    firm = sum(1 for r in rows if r["strength"] == "firm")
-    hedged = sum(1 for r in rows if r["strength"] == "hedged")
+    # Negated claims are excluded from the commitment-mix counts: a claim that
+    # says "we will NOT do X" is the opposite of a real commitment, and
+    # counting it toward firm_share would overstate how many commitments the
+    # company is actually making.
+    firm = sum(1 for r in rows if r["strength"] == "firm" and not r["negated"])
+    hedged = sum(1 for r in rows if r["strength"] == "hedged" and not r["negated"])
 
     reads = [r["readability"] for r in rows if r["readability"] is not None]
     return {
@@ -259,7 +275,10 @@ def aggregate(year: int, rows: List[dict]) -> dict:
         "verified_share": share("verification_present"),
         "scope_share": share("scope_present"),
         "passive_share": share("passive_voice"),
+        "negated_share": share("negated"),
+        "conditional_share": share("conditional"),
         "readability": round(statistics.mean(reads), 1) if reads else None,
+        "mean_sentiment": mean("sentiment"),
         # headline aggregates
         "say_more_prove_less": round(tone / n_quant, 2) if n_quant else None,
         "firm_share": round(firm / n, 3) if n else None,
