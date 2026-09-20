@@ -22,7 +22,8 @@
       "commitment_ratio": 0.5,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2022,
@@ -45,7 +46,8 @@
       "commitment_ratio": 0.25,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2023,
@@ -68,7 +70,8 @@
       "commitment_ratio": 0.57,
       "report_assured": true,
       "assurance_auditor": "Deloitte",
-      "assurance_page": 29
+      "assurance_page": 29,
+      "assurance_level": "limited"
     },
     {
       "year": 2024,
@@ -91,7 +94,8 @@
       "commitment_ratio": 0.5,
       "report_assured": true,
       "assurance_auditor": "Deloitte",
-      "assurance_page": 22
+      "assurance_page": 22,
+      "assurance_level": "limited"
     },
     {
       "year": 2025,
@@ -114,7 +118,8 @@
       "commitment_ratio": 0.14,
       "report_assured": true,
       "assurance_auditor": null,
-      "assurance_page": 3
+      "assurance_page": 3,
+      "assurance_level": "limited"
     }
   ],
   "n_claims": 397,
@@ -124,6 +129,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/hm/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -131,6 +137,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/hm/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -138,6 +145,7 @@
       "quote": "e has provided other services, such as limited assurance of the Sustainability Disclosure and consulting work, primarily tax advice. D",
       "page": 29,
       "auditor": "Deloitte",
+      "level": "limited",
       "source": "data/raw/hm/2023_sustainability_report.pdf"
     },
     "2024": {
@@ -145,6 +153,7 @@
       "quote": "e has provided other services, such as limited assurance of the sustainability progress report and consulting work, primarily tax advic",
       "page": 22,
       "auditor": "Deloitte",
+      "level": "limited",
       "source": "data/raw/hm/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -152,6 +161,7 @@
       "quote": "port 175 Auditor\u2019s report 176 Auditor\u2019s limited assurance report on the sustainability statement 180 Definitions of key financial per",
       "page": 3,
       "auditor": null,
+      "level": "limited",
       "source": "data/raw/hm/2025_sustainability_report.pdf"
     }
   }

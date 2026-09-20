@@ -22,7 +22,8 @@
       "commitment_ratio": 6.25,
       "report_assured": true,
       "assurance_auditor": null,
-      "assurance_page": 33
+      "assurance_page": 33,
+      "assurance_level": "unspecified"
     },
     {
       "year": 2022,
@@ -45,7 +46,8 @@
       "commitment_ratio": 5.22,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2023,
@@ -68,7 +70,8 @@
       "commitment_ratio": 3.62,
       "report_assured": true,
       "assurance_auditor": null,
-      "assurance_page": 51
+      "assurance_page": 51,
+      "assurance_level": "unspecified"
     },
     {
       "year": 2024,
@@ -91,7 +94,8 @@
       "commitment_ratio": 2.07,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     },
     {
       "year": 2025,
@@ -114,7 +118,8 @@
       "commitment_ratio": 3.1,
       "report_assured": false,
       "assurance_auditor": null,
-      "assurance_page": null
+      "assurance_page": null,
+      "assurance_level": null
     }
   ],
   "n_claims": 848,
@@ -124,6 +129,7 @@
       "quote": "s traceable to the source, and requires third-party verification of water quality and dozens of other quality standards. See Whole Foods Market",
       "page": 33,
       "auditor": null,
+      "level": "unspecified",
       "source": "data/raw/amazon/2021_sustainability_report.pdf"
     },
     "2022": {
@@ -131,6 +137,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/amazon/2022_sustainability_report.pdf"
     },
     "2023": {
@@ -138,6 +145,7 @@
       "quote": "We accept audits completed by qualified independent audit firms based on our own standards and those of industry associations, including",
       "page": 51,
       "auditor": null,
+      "level": "unspecified",
       "source": "data/raw/amazon/2023_sustainability_report.pdf"
     },
     "2024": {
@@ -145,6 +153,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/amazon/2024_sustainability_report.pdf"
     },
     "2025": {
@@ -152,6 +161,7 @@
       "quote": null,
       "page": null,
       "auditor": null,
+      "level": null,
       "source": "data/raw/amazon/2025_sustainability_report.pdf"
     }
   }
