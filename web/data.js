@@ -1,7 +1,7 @@
 window.__GREENWASH_DATA__ = {
  "amazon": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T05:08:30+00:00",
+  "generated_at": "2026-09-20T05:35:11+00:00",
   "summary": {
    "company": "amazon",
    "display_name": "Amazon",
@@ -16431,7 +16431,7 @@ window.__GREENWASH_DATA__ = {
  },
  "hm": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T05:08:30+00:00",
+  "generated_at": "2026-09-20T05:35:11+00:00",
   "summary": {
    "company": "hm",
    "display_name": "H&M Group",
@@ -31527,7 +31527,7 @@ window.__GREENWASH_DATA__ = {
  },
  "microsoft": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-09-20T05:08:30+00:00",
+  "generated_at": "2026-09-20T05:35:11+00:00",
   "summary": {
    "company": "microsoft",
    "display_name": "Microsoft",

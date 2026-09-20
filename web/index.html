@@ -41,7 +41,8 @@
   .pill.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
   .tag{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);
     border:1px solid var(--rule);padding:3px 7px;border-radius:5px}
-  .try-btn{margin-left:auto;background:var(--paper);border:1px solid var(--rule2);
+  .try-actions{margin-left:auto;display:flex;gap:8px}
+  .try-btn{background:var(--paper);border:1px solid var(--rule2);
     color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer;
     font:650 13px/1 var(--sans);transition:.18s}
   .try-btn:hover,.try-btn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -65,6 +66,24 @@
     font:18px/1.5 var(--serif);display:block}
   .try-panel textarea:focus{outline:2px solid rgba(42,107,79,.25);border-color:var(--leaf)}
   .try-out{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
+  .try-panel label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;
+    color:var(--ink3);margin:16px 0 6px;font-weight:650}
+  .try-panel label:first-of-type{margin-top:0}
+  .try-panel input[type=text],.try-panel input[type=number],.try-panel input[type=url]{
+    width:100%;background:var(--bg);border:1px solid var(--rule2);border-radius:10px;
+    padding:10px 12px;color:var(--ink);font:14px/1.4 var(--sans);display:block}
+  .try-panel input:focus{outline:2px solid rgba(42,107,79,.25);border-color:var(--leaf)}
+  .yr-range{display:flex;gap:10px;align-items:center}
+  .yr-range input{width:90px}
+  .yr-row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+  .yr-row .yr-label{width:44px;flex:none;font:650 13px/1 var(--mono);color:var(--ink2)}
+  .add-co-submit{margin-top:18px;width:100%;background:var(--ink);color:var(--bg);
+    border:none;border-radius:999px;padding:12px 14px;cursor:pointer;font:650 14px/1 var(--sans)}
+  .add-co-submit:disabled{opacity:.5;cursor:default}
+  .add-co-status{margin-top:14px;font-size:13px;line-height:1.5}
+  .add-co-status .err{color:var(--rust)}
+  .add-co-status .warn{color:var(--amber)}
+  .add-co-status .ok{color:var(--leaf)}
 
   .card{background:var(--paper);border:1px solid var(--rule);border-radius:16px;
     padding:22px 24px;margin-bottom:18px;box-shadow:0 1px 0 rgba(28,24,20,.03)}
@@ -223,7 +242,10 @@
   <div class="mast">
     <div class="brand">Restated</div>
     <div class="pills" id="pills"></div>
-    <button class="try-btn" id="tryBtn" type="button" onclick="openTry()">Try a claim</button>
+    <div class="try-actions">
+      <button class="try-btn" id="addCoBtn" type="button" onclick="openAddCo()">Try a company</button>
+      <button class="try-btn" id="tryBtn" type="button" onclick="openTry()">Try a claim</button>
+    </div>
   </div>
 </header>
 
@@ -239,6 +261,37 @@
     <textarea id="pasteBox" placeholder="Paste a sentence from a sustainability report…"
       aria-label="Paste a claim to analyse" oninput="onPaste(this.value)"></textarea>
     <div id="pastePanel"></div>
+  </aside>
+</div>
+
+<div class="try-layer" id="addCoLayer" onclick="if(event.target===this) closeAddCo()">
+  <aside class="try-panel" id="addCoDrawer" aria-hidden="true" aria-labelledby="addCoTitle">
+    <div class="try-head">
+      <div>
+        <p class="kicker" id="addCoTitle">Try a company</p>
+        <h2>Build a new dashboard</h2>
+      </div>
+      <button class="try-close" type="button" onclick="closeAddCo()" aria-label="Close">×</button>
+    </div>
+    <p style="font-size:13px;color:var(--ink2);margin:0 0 4px">
+      Enter a company and a year range, then paste a direct link to that
+      company's sustainability report PDF for each year. Nothing is
+      guessed or searched for automatically &mdash; the reports have to be
+      linked here. Numeric restatement scoring will show as
+      &ldquo;unmeasurable&rdquo; for a new company, since that figure only
+      comes from hand-verified data.
+    </p>
+    <label for="addCoName">Company name</label>
+    <input type="text" id="addCoName" placeholder="e.g. Patagonia" autocomplete="off" />
+    <label>Year range</label>
+    <div class="yr-range">
+      <input type="number" id="addCoFrom" placeholder="From" min="2000" oninput="renderYearInputs()" />
+      <span>&ndash;</span>
+      <input type="number" id="addCoTo" placeholder="To" min="2000" oninput="renderYearInputs()" />
+    </div>
+    <div id="addCoYears" style="margin-top:14px"></div>
+    <button class="add-co-submit" id="addCoSubmit" type="button" onclick="submitAddCo()">Build dashboard</button>
+    <div class="add-co-status" id="addCoStatus"></div>
   </aside>
 </div>
 
@@ -354,6 +407,86 @@ function onPaste(v){
       ${a.sins.map(s=>`<span class="sinchip">${F.esc(s.sin)}</span>`).join('')}
     </div>
   </div>`;
+}
+
+const MAX_ADD_CO_YEARS = 8;
+
+function setAddCo(open){
+  const layer = document.getElementById('addCoLayer');
+  const drawer = document.getElementById('addCoDrawer');
+  layer.classList.toggle('on', open);
+  document.getElementById('addCoBtn').classList.toggle('on', open);
+  drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+  document.body.style.overflowY = open ? 'hidden' : '';
+  if(open){ renderYearInputs(); setTimeout(()=>document.getElementById('addCoName').focus(), 280); }
+}
+function openAddCo(){ setAddCo(true); }
+function closeAddCo(){ setAddCo(false); }
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeAddCo(); });
+
+function renderYearInputs(){
+  const box = document.getElementById('addCoYears');
+  const from = parseInt(document.getElementById('addCoFrom').value, 10);
+  const to = parseInt(document.getElementById('addCoTo').value, 10);
+  if(!from || !to || to < from){ box.innerHTML = ''; return; }
+  if(to - from + 1 > MAX_ADD_CO_YEARS){
+    box.innerHTML = `<p class="empty">Pick a range of ${MAX_ADD_CO_YEARS} years or fewer.</p>`;
+    return;
+  }
+  const existing = {};
+  box.querySelectorAll('input[data-year]').forEach(inp => { existing[inp.dataset.year] = inp.value; });
+  const years = [];
+  for(let y = from; y <= to; y++) years.push(y);
+  box.innerHTML = years.map(y => `
+    <div class="yr-row">
+      <span class="yr-label">${y}</span>
+      <input type="url" data-year="${y}" placeholder="https://…/${y}-sustainability-report.pdf"
+        value="${F.esc(existing[y] || '')}" />
+    </div>`).join('');
+}
+
+async function submitAddCo(){
+  const nameInput = document.getElementById('addCoName');
+  const status = document.getElementById('addCoStatus');
+  const submitBtn = document.getElementById('addCoSubmit');
+  const name = nameInput.value.trim();
+  const urlInputs = [...document.querySelectorAll('#addCoYears input[data-year]')];
+  const reports = urlInputs
+    .map(inp => ({ year: parseInt(inp.dataset.year, 10), url: inp.value.trim() }))
+    .filter(r => r.url);
+
+  status.innerHTML = '';
+  if(!name){ status.innerHTML = '<p class="err">Enter a company name.</p>'; return; }
+  if(!reports.length){ status.innerHTML = '<p class="err">Enter at least one report URL.</p>'; return; }
+
+  submitBtn.disabled = true;
+  status.innerHTML = `<p>Downloading ${reports.length} report${reports.length>1?'s':''} and running analysis&hellip; this can take a minute.</p>`;
+  try{
+    const res = await fetch('/api/add-company', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ company: name, reports }),
+    });
+    const j = await res.json();
+    if(!j.ok){
+      status.innerHTML = `<p class="err">${F.esc(j.error || 'Something went wrong.')}</p>`;
+      submitBtn.disabled = false;
+      return;
+    }
+    const notes = [];
+    if(j.warnings && j.warnings.length) notes.push(...j.warnings.map(w => `<p class="warn">${F.esc(w)}</p>`));
+    if(j.failed && j.failed.length) notes.push(...j.failed.map(f =>
+      `<p class="warn">${f.year ? f.year+': ' : ''}${F.esc(f.error)}</p>`));
+    status.innerHTML = notes.join('') + '<p class="ok">Loading dashboard&hellip;</p>';
+
+    const data = await (await fetch(`public/data/${j.slug}.json?t=${Date.now()}`)).json();
+    DATA[j.slug] = data;
+    closeAddCo();
+    select(j.slug);
+  }catch(e){
+    status.innerHTML = `<p class="err">Request failed: ${F.esc(String(e))}</p>`;
+  }finally{
+    submitBtn.disabled = false;
+  }
 }
 
 const SUBS = [

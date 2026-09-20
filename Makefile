@@ -53,8 +53,8 @@ all: schema saydo lang score
 
 demo: all
 	@echo ""
-	@echo "Dashboard -> http://localhost:$(PORT)/"
-	@cd web && $(PY) -m http.server $(PORT)
+	@echo "Dashboard -> http://localhost:$(PORT)/  (includes live 'Try a company' endpoint)"
+	@$(PY) pipeline/live_server.py $(PORT)
 
 eval:
 	@$(PY) - <<'EOF'
